@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="handbook">
+<head>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Handbook</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/css-reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="app-wrapper">
+        <header id="app-header">
+            <ul class="main-nav">
+                <li ui-sref-active="active"><a class="tab-c" ui-sref="c">C</a></li>
+                <li ui-sref-active="active"><a class="tab-p" ui-sref="p">P</a></li>
+                <li ui-sref-active="active"><a class="tab-part-1" ui-sref="part-1.intro">1</a></li>
+                <li ui-sref-active="active"><a class="tab-part-2" ui-sref="part-2.intro">2</a></li>
+                <li ui-sref-active="active"><a class="tab-part-3" ui-sref="part-3.intro">3</a></li>
+                <li ui-sref-active="active"><a class="tab-part-4" ui-sref="part-4.intro">4</a></li>
+                <li ui-sref-active="active"><a class="tab-part-5" ui-sref="part-5.intro">5</a></li>
+                <li ui-sref-active="active"><a class="tab-part-6" ui-sref="part-6.intro">6</a></li>
+                <li ui-sref-active="active"><a class="tab-part-7" ui-sref="part-7.intro">7</a></li>
+                <li ui-sref-active="active"><a class="tab-part-8" ui-sref="part-8.intro">8</a></li>
+                <li ui-sref-active="active"><a class="tab-part-9" ui-sref="part-9.intro">9</a></li>
+                <li ui-sref-active="active"><a class="tab-part-10" ui-sref="part-10.intro">10</a></li>
+                <li ui-sref-active="active"><a class="tab-academic-english" ui-sref="academic-english">Academic English</a></li>
+                <li ui-sref-active="active"><a class="tab-search" ui-sref="search">Search</a></li>
+                <li ui-sref-active="active"><a class="tab-glossary" ui-sref="glossary">Glossary</a></li>
+                <li ui-sref-active="active"><a class="tab-you" ui-sref="you">You</a></li>
+            </ul>
+        </header>
+
+        <div class="part-view" ui-view></div>
+
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery-ui-1.11.2.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-animate.min.js"></script>
+        <script src="js/angular-ui-router.min.js"></script>
+        <script src="js/app.js"></script>
+    </div>
+</body>
+</html>

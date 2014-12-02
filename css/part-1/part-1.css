@@ -1,0 +1,27 @@
+.part-1 .part-1-intro {
+  background-image: url('/assets/part-1/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+}
+.part-1 .what-will-you-learn {
+  background-image: url('/assets/part-1/what-will-you-learn/background.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+}
+.part-1 .what-is-composing {
+  background-image: url('/assets/part-1/what-is-composing/background.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+}
+.part-1 .what-is-rhetoric {
+  background-image: url('/assets/part-1/what-is-rhetoric/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+}
+.part-1 .what-is-rhetoric .audience {
+  test: audience;
+}

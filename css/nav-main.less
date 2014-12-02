@@ -1,0 +1,55 @@
+@import 'colors.less';
+
+#app-header {
+	border-bottom: 4px solid #d0d0d0;
+	height: 40px;
+}
+
+.main-nav {
+	overflow: hidden;
+	padding: 8px 4px 0 4px;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+
+ 	li {
+		display: inline-block;
+		font-size: 0;
+
+		&.active > a {
+			background-color: #c0c0c0;
+		}
+
+		a {
+			background-color: #fff;
+			moz-border-radius: 4px 4px 0 0;
+			border-radius: 4px 4px 0 0;
+			-webkit-box-shadow: 2px 0 4px 0 rgba(0, 0, 0, .25);
+			-moz-box-shadow: 2px 0 4px 0 rgba(0, 0, 0, .25);
+			box-shadow: 2px 0 4px 0 rgba(0, 0, 0, .25);
+			color: #fff;
+			display: block;
+			font-size: 16px;
+			margin: 0 4px;
+			padding: 6px 8px;
+			text-align: center;
+
+			&.tab-c,
+			&.tab-p { color: #000; }
+			&.tab-part-1 { background-color: @part-1-darker; }
+			&.tab-part-2 { background-color: @part-2-darker; }
+			&.tab-part-3 { background-color: @part-3-darker; }
+			&.tab-part-4 { background-color: @part-4-darker; }
+			&.tab-part-5 { background-color: @part-5-darker; }
+			&.tab-part-6 { background-color: @part-6-darker; }
+			&.tab-part-7 { background-color: @part-7-darker; }
+			&.tab-part-8 { background-color: @part-8-darker; }
+			&.tab-part-9 { background-color: @part-9-darker; }
+			&.tab-part-10 { background-color: @part-10-darker; }
+			&.tab-academic-english { background-color: @academic-english-darker; }
+			&.tab-search { background-color: @search-darker; }
+			&.tab-glossary { background-color: @glossary-darker; }
+			&.tab-you { background-color: @you-darker; }
+		}
+	}
+}

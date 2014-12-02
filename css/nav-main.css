@@ -1,0 +1,78 @@
+#app-header {
+  border-bottom: 4px solid #d0d0d0;
+  height: 40px;
+}
+.main-nav {
+  overflow: hidden;
+  padding: 8px 4px 0 4px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.main-nav li {
+  display: inline-block;
+  font-size: 0;
+}
+.main-nav li.active > a {
+  background-color: #c0c0c0;
+}
+.main-nav li a {
+  background-color: #fff;
+  moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  -webkit-box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.25);
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  margin: 0 4px;
+  padding: 6px 8px;
+  text-align: center;
+}
+.main-nav li a.tab-c,
+.main-nav li a.tab-p {
+  color: #000;
+}
+.main-nav li a.tab-part-1 {
+  background-color: #75993d;
+}
+.main-nav li a.tab-part-2 {
+  background-color: #6e78a6;
+}
+.main-nav li a.tab-part-3 {
+  background-color: #917fa5;
+}
+.main-nav li a.tab-part-4 {
+  background-color: #a2a55e;
+}
+.main-nav li a.tab-part-5 {
+  background-color: #99226e;
+}
+.main-nav li a.tab-part-6 {
+  background-color: #a5732a;
+}
+.main-nav li a.tab-part-7 {
+  background-color: #499987;
+}
+.main-nav li a.tab-part-8 {
+  background-color: #397999;
+}
+.main-nav li a.tab-part-9 {
+  background-color: #74629a;
+}
+.main-nav li a.tab-part-10 {
+  background-color: #993733;
+}
+.main-nav li a.tab-academic-english {
+  background-color: #d6df23;
+}
+.main-nav li a.tab-search {
+  background-color: #f89a1c;
+}
+.main-nav li a.tab-glossary {
+  background-color: #ed1c24;
+}
+.main-nav li a.tab-you {
+  background-color: #2e3092;
+}

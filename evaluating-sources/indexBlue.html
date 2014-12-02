@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <title>HTML5 mini Audio player</title>
+        <link href="css/playerBlue.css?id=23" rel="stylesheet"
+        type="text/css">
+        <script src="js/jquery.js">
+            
+        </script>
+        <script src="js/jquery-ui.js">
+            
+        </script>
+        <!-- Acorn Media Player specific -->
+        <link href="css/pageBase.css?id=201" rel="stylesheet" type="text/css">
+        <script src="js/playerBlue.js?id=1391">
+            
+        </script>
+        <!-- Theme -->
+        <link href="css/accessBlue.css?id=21" rel="stylesheet" type="text/css">
+        <!-- Call the plugin -->
+        <script>
+           	jQuery(function() {
+                jQuery('video, audio').acornMediaPlayer();
+				});
+		</script>
+    </head>
+    
+    <body>
+        <section>
+            <figure>
+                <audio controls="controls" preload="metadata"
+                aria-describedby="full-descript">
+                    <source src="audio/audio.mp3?id=29"  type="audio/mpeg"/>
+                    Your browser does not support the audio element.
+                </audio>
+            </figure>
+        </section>
+    </body>
+
+</html>

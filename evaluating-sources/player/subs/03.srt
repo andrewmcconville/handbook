@@ -1,0 +1,304 @@
+1
+00:00:00,616 --> 00:00:03,956
+>> Hello, my name is Jerro Sand [assumed
+spelling], and today, I'm working on a paper
+
+2
+00:00:03,956 --> 00:00:06,736
+for an econ class about how
+nutritional information
+
+3
+00:00:07,046 --> 00:00:09,386
+on packaging affects people's food purchases.
+
+4
+00:00:09,906 --> 00:00:14,886
+So I was really happy when I found this
+article about how parents mostly want
+
+5
+00:00:14,886 --> 00:00:19,746
+to buy healthy food for their families, but
+their decision is based on the cost of the food
+
+6
+00:00:19,966 --> 00:00:22,916
+and whether or not they're being
+distracted by their kids while shopping.
+
+7
+00:00:23,006 --> 00:00:27,516
+I found a PDF of this article on the
+database of my college library website.
+
+8
+00:00:28,606 --> 00:00:33,666
+I'm following the APA format for a periodical,
+but then I have to add additional information
+
+9
+00:00:33,926 --> 00:00:35,896
+that comes along with finding
+this article online.
+
+10
+00:00:36,396 --> 00:00:41,086
+As with any citation in APA format,
+I put the author's name first.
+
+11
+00:00:41,906 --> 00:00:46,526
+In the article, there are three authors.
+
+12
+00:00:46,666 --> 00:00:50,626
+Science and social science articles
+often have a couple of authors,
+
+13
+00:00:50,626 --> 00:00:52,236
+which is always a bit of a pain to type.
+
+14
+00:00:52,796 --> 00:00:56,316
+You've got to put the author's first
+-- the first author's last name first,
+
+15
+00:00:56,466 --> 00:01:02,586
+and then that person initials, including
+two initials if two names are given.
+
+16
+00:01:02,586 --> 00:01:06,256
+But luckily, in this article, these
+authors only use their first names.
+
+17
+00:01:07,106 --> 00:01:11,656
+Then you would do the same for its second
+author, and then the same for a third author.
+
+18
+00:01:12,416 --> 00:01:17,036
+And when you do this, you've got to keep
+all the commas and periods all straight,
+
+19
+00:01:17,036 --> 00:01:22,006
+a period after each initial and then
+a comma before each new last name.
+
+20
+00:01:22,696 --> 00:01:27,376
+At least AP lets you put an ampersand
+before the last author's name instead
+
+21
+00:01:27,376 --> 00:01:29,196
+of having to spell the word "and."
+
+22
+00:01:30,006 --> 00:01:32,186
+You can find the ampersand
+on your keyboard by holding
+
+23
+00:01:32,186 --> 00:01:34,746
+down your shift key and pressing
+the number seven.
+
+24
+00:01:35,556 --> 00:01:39,526
+Then in parenthesis, you put the
+year the article was published.
+
+25
+00:01:40,156 --> 00:01:43,466
+So right here, this article
+was published in 2009.
+
+26
+00:01:44,736 --> 00:01:48,426
+Next in an APA citation, you put the
+article's title in quotation marks.
+
+27
+00:01:49,146 --> 00:01:54,936
+Here, the article's title is "An Exploration
+of parents' food purchasing behaviours."
+
+28
+00:01:55,406 --> 00:02:02,816
+Only the first word of the title gets
+capitalized, as seen here, and if there's colon
+
+29
+00:02:02,816 --> 00:02:06,826
+in the middle of the title, the first word
+after the colon also gets capitalized.
+
+30
+00:02:06,976 --> 00:02:11,146
+And notice how I kept this
+British spelling of "behaviours"
+
+31
+00:02:11,296 --> 00:02:12,766
+since that's how it appears in the title.
+
+32
+00:02:12,856 --> 00:02:15,656
+So when you cite your source, you have
+
+33
+00:02:15,656 --> 00:02:18,396
+to spell the title exactly how
+it's spelled in the article.
+
+34
+00:02:19,646 --> 00:02:22,446
+Then comes the periodical's name in italics.
+
+35
+00:02:23,306 --> 00:02:24,966
+"Appetite" is the title of this journal.
+
+36
+00:02:26,116 --> 00:02:32,016
+A comma goes after the periodical name, followed
+by the volume number of this particular journal.
+
+37
+00:02:32,566 --> 00:02:36,756
+The volume number for this particular
+journal is 53, found right here.
+
+38
+00:02:37,176 --> 00:02:38,616
+It's following the periodical name.
+
+39
+00:02:39,096 --> 00:02:41,736
+The volume number goes right
+after the periodical name
+
+40
+00:02:41,736 --> 00:02:43,686
+in the citation, and it is in italics, too.
+
+41
+00:02:44,216 --> 00:02:46,856
+If there were an issue date, it would be --
+
+42
+00:02:47,256 --> 00:02:49,796
+it would go into parenthesis
+following the volume number,
+
+43
+00:02:50,116 --> 00:02:53,256
+but because there is no other number
+in this information at the very top
+
+44
+00:02:53,256 --> 00:02:55,646
+of the page, I can leave out an issue date.
+
+45
+00:02:56,206 --> 00:02:57,616
+The page numbers come next.
+
+46
+00:02:57,896 --> 00:03:01,196
+It's awfully sweet of this periodical
+to put the page numbers here
+
+47
+00:03:01,196 --> 00:03:02,556
+at the very top of the page, too.
+
+48
+00:03:03,476 --> 00:03:07,336
+If I had found a print -- found this
+article in the print version of the journal,
+
+49
+00:03:07,666 --> 00:03:10,036
+I'd be done now, but now
+I have to add information
+
+50
+00:03:10,036 --> 00:03:12,246
+about having found the article online.
+
+51
+00:03:13,286 --> 00:03:17,036
+At the very end goes this
+digital object identifier.
+
+52
+00:03:17,456 --> 00:03:22,316
+This number is usually somewhere on the first
+page of an online periodical, but you often have
+
+53
+00:03:22,316 --> 00:03:23,586
+to look a bit in this periodical.
+
+54
+00:03:24,006 --> 00:03:25,186
+It's way down at the bottom.
+
+55
+00:03:25,536 --> 00:03:29,916
+Here in this article, it's down at the lower
+left-hand corner of the article right here.
+
+56
+00:03:31,596 --> 00:03:35,146
+I like this idea of digital
+object identifier code
+
+57
+00:03:35,146 --> 00:03:38,886
+so that we can always find an article
+online even if someone moves it around.
+
+58
+00:03:39,766 --> 00:03:46,276
+The thing I always forget is that there is no
+period after the digital object identifier.
+
+59
+00:03:47,016 --> 00:03:52,826
+I worked hard to remember always to put a period
+at the end of a citation, but you can't put one
+
+60
+00:03:53,136 --> 00:03:58,106
+with a digital object identifier because
+people would think the period was a part
+
+61
+00:03:58,346 --> 00:04:00,716
+of the identifier, and it's not, so no period.
+
+62
+00:04:01,566 --> 00:04:02,326
+And that's it.
+
+63
+00:04:02,616 --> 00:04:03,676
+I'm done with this citation.
+
+64
+00:04:03,676 --> 00:04:05,576
+I only have six more to do
+before I can go to bed.
+
+65
+00:04:05,876 --> 00:04:06,206
+Thank you.
+
