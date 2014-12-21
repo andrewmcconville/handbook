@@ -3,6 +3,7 @@
   height: 40px;
 }
 .main-nav {
+  font-family: 'Lora', serif;
   overflow: hidden;
   padding: 8px 4px 0 4px;
   position: absolute;
