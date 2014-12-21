@@ -1,5 +1,6 @@
 @import 'colors.less';
 @import 'nav-main.less';
+@import 'nav-left.less';
 
 * {
 	box-sizing: border-box;
@@ -9,7 +10,6 @@ html,
 body {
 	background-color: #cbdde7;
 	font-family: 'Lato', sans-serif;
-	height: 100%;
 }
 
 h1 {
@@ -32,45 +32,13 @@ a {
 	overflow: hidden;
 	position: absolute;
 	right: 0;
-	width: 1024px;
+	width: 980px;
 }
 
-.nav-left {
-	background-color: #fff;
-	bottom: 0;
-	box-shadow: inset -24px 0 24px -24px rgba(0, 0, 0, 0.375);
-	left: 0;
-	padding: 4px 4px 4px 8px;
-	position: absolute;
-	top: 0;
-	width: 200px;
-
-	li.active > a {
-		background-color: #666;
-		color: #fff;
-	}
-
-	li a {
-		display: inline-block;
-		padding: 4px;
-	}
-}
-
-.sub-nav {
-	display: none;
-	padding: 4px 4px 4px 8px;
-
-	li.active a > {
-		background-color: #666;
-		color: #fff;
-	}
-
-	li a {
-		display: inline-block;
-		padding: 4px;
-	}
-}
-
+/*
+ * A 'part-view' is everything under the top nav tabs.
+ * The left nav and main content make up a 'part-view'
+ */
 .part-view {
 	bottom: 0;
 	overflow: hidden;
@@ -104,6 +72,9 @@ a {
 	}
 }
 
+/*
+ * A 'page-view' is the main content area.
+ */
 .page-view {
 	background-color: #fff;
 	bottom: 0;
@@ -119,12 +90,10 @@ a {
 	}
 
 	&.ng-enter {
-		//opacity: 0;
 		transform: translate3d(100%, 0, 0);
 	}
 
 	&.ng-enter-active {
-		//opacity: 1;
 		transform: translate3d(0, 0, 0);
 	}
 

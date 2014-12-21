@@ -77,34 +77,6 @@
 .main-nav li a.tab-you {
   background-color: #2e3092;
 }
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  background-color: #cbdde7;
-  font-family: 'Lato', sans-serif;
-  height: 100%;
-}
-h1 {
-  font-size: 20px;
-}
-h2 {
-  font-size: 18px;
-}
-a {
-  color: blue;
-  text-decoration: none;
-}
-#app-wrapper {
-  height: 690px;
-  left: 0;
-  margin: auto;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  width: 1024px;
-}
 .nav-left {
   background-color: #fff;
   bottom: 0;
@@ -135,6 +107,37 @@ a {
   display: inline-block;
   padding: 4px;
 }
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #cbdde7;
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 18px;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+#app-wrapper {
+  height: 690px;
+  left: 0;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: 980px;
+}
+/*
+ * A 'part-view' is everything under the top nav tabs.
+ * The left nav and main content make up a 'part-view'
+ */
 .part-view {
   bottom: 0;
   overflow: hidden;
@@ -162,6 +165,9 @@ a {
   opacity: 1;
   z-index: 0;
 }
+/*
+ * A 'page-view' is the main content area.
+ */
 .page-view {
   background-color: #fff;
   bottom: 0;

@@ -1,0 +1,30 @@
+.nav-left {
+  background-color: #fff;
+  bottom: 0;
+  box-shadow: inset -24px 0 24px -24px rgba(0, 0, 0, 0.375);
+  left: 0;
+  padding: 4px 4px 4px 8px;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+.nav-left li.active > a {
+  background-color: #666;
+  color: #fff;
+}
+.nav-left li a {
+  display: inline-block;
+  padding: 4px;
+}
+.sub-nav {
+  display: none;
+  padding: 4px 4px 4px 8px;
+}
+.sub-nav li.active a {
+  background-color: #666;
+  color: #fff;
+}
+.sub-nav li a {
+  display: inline-block;
+  padding: 4px;
+}
