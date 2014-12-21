@@ -1,0 +1,192 @@
+#app-header {
+  border-bottom: 4px solid #d0d0d0;
+  height: 40px;
+}
+.main-nav {
+  overflow: hidden;
+  padding: 8px 4px 0 4px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.main-nav li {
+  display: inline-block;
+  font-size: 0;
+}
+.main-nav li.active > a {
+  background-color: #c0c0c0;
+}
+.main-nav li a {
+  background-color: #fff;
+  moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  -webkit-box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.25);
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  margin: 0 4px;
+  padding: 6px 8px;
+  text-align: center;
+}
+.main-nav li a.tab-c,
+.main-nav li a.tab-p {
+  color: #000;
+}
+.main-nav li a.tab-part-1 {
+  background-color: #75993d;
+}
+.main-nav li a.tab-part-2 {
+  background-color: #6e78a6;
+}
+.main-nav li a.tab-part-3 {
+  background-color: #917fa5;
+}
+.main-nav li a.tab-part-4 {
+  background-color: #a2a55e;
+}
+.main-nav li a.tab-part-5 {
+  background-color: #99226e;
+}
+.main-nav li a.tab-part-6 {
+  background-color: #a5732a;
+}
+.main-nav li a.tab-part-7 {
+  background-color: #499987;
+}
+.main-nav li a.tab-part-8 {
+  background-color: #397999;
+}
+.main-nav li a.tab-part-9 {
+  background-color: #74629a;
+}
+.main-nav li a.tab-part-10 {
+  background-color: #993733;
+}
+.main-nav li a.tab-academic-english {
+  background-color: #d6df23;
+}
+.main-nav li a.tab-search {
+  background-color: #f89a1c;
+}
+.main-nav li a.tab-glossary {
+  background-color: #ed1c24;
+}
+.main-nav li a.tab-you {
+  background-color: #2e3092;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #cbdde7;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+h1 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 18px;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+#app-wrapper {
+  height: 690px;
+  left: 0;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: 1024px;
+}
+.nav-left {
+  background-color: #fff;
+  bottom: 0;
+  box-shadow: inset -24px 0 24px -24px rgba(0, 0, 0, 0.375);
+  left: 0;
+  padding: 4px 4px 4px 8px;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+.nav-left li.active > a {
+  background-color: #666;
+  color: #fff;
+}
+.nav-left li a {
+  display: inline-block;
+  padding: 4px;
+}
+.sub-nav {
+  display: none;
+  padding: 4px 4px 4px 8px;
+}
+.sub-nav li.active a {
+  background-color: #666;
+  color: #fff;
+}
+.sub-nav li a {
+  display: inline-block;
+  padding: 4px;
+}
+.part-view {
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40px;
+  z-index: 1;
+}
+.part-view.ng-enter,
+.part-view.ng-leave {
+  transition: all 0.5s ease-in-out;
+}
+.part-view.ng-enter {
+  opacity: 0;
+}
+.part-view.ng-enter-active {
+  opacity: 1;
+}
+.part-view.ng-leave {
+  opacity: 1;
+  z-index: 0;
+}
+.part-view.ng-leave-active {
+  opacity: 1;
+  z-index: 0;
+}
+.page-view {
+  background-color: #fff;
+  bottom: 0;
+  position: absolute;
+  left: 200px;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.page-view.ng-enter,
+.page-view.ng-leave {
+  transition: all 0.5s ease-in-out;
+}
+.page-view.ng-enter {
+  transform: translate3d(100%, 0, 0);
+}
+.page-view.ng-enter-active {
+  transform: translate3d(0, 0, 0);
+}
+.page-view.ng-leave {
+  z-index: 0;
+}
+.page-view.ng-leave-active {
+  z-index: 0;
+}
+.page-view .page-view-inner {
+  height: 100%;
+  width: 100%;
+}
