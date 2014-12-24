@@ -1,27 +1,24 @@
 .part-1 .intro {
-  background-image: url('/part-1/intro/assets/img/background.jpg');
+  background-image: url("intro/assets/img/background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: center top;
-}
+  background-position: center top; }
 .part-1 .what-is-composing {
-  background-image: url('/part-1/what-is-composing/assets/img/background.png');
+  background-image: url("/part-1/what-is-composing/assets/img/background.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: center top;
-}
+  background-position: center top; }
 .part-1 .what-is-rhetoric {
-  background-image: url('/part-1/what-is-rhetoric/assets/img/background.jpg');
+  background-image: url("/part-1/what-is-rhetoric/assets/img/background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: center top;
-}
-.part-1 .what-is-rhetoric .audience {
-  test: audience;
-}
+  background-position: center top; }
+  .part-1 .what-is-rhetoric .audience {
+    test: audience; }
 .part-1 .what-will-you-learn {
-  background-image: url('/part-1/what-will-you-learn/assets/img/background.png');
+  background-image: url("/part-1/what-will-you-learn/assets/img/background.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: center top;
-}
+  background-position: center top; }
+
+/*# sourceMappingURL=part-1.css.map */

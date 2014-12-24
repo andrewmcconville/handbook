@@ -1,17 +1,16 @@
 #app-header {
   border-bottom: 4px solid #d0d0d0;
   height: 40px;
-  position: relative;
-}
+  position: relative; }
+
 .logo-home-link {
   display: block;
   padding-top: 4px;
-  width: 214px;
-}
-.logo-home-link .logo {
-  height: 30px;
-  width: 100px;
-}
+  width: 214px; }
+  .logo-home-link .logo {
+    height: 30px;
+    width: 100px; }
+
 .main-nav {
   font-family: 'Lora', serif;
   font-size: 0;
@@ -21,74 +20,56 @@
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 1;
-}
-.main-nav .tab {
-  display: inline-block;
-  margin: 0 4px;
-}
-.main-nav .tab a {
-  background-color: #fff;
-  moz-border-radius: 4px 4px 0 0;
-  border-radius: 4px 4px 0 0;
-  -webkit-box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.25);
-  color: #fff;
-  display: block;
-  height: 28px;
-  font-size: 16px;
-  overflow: hidden;
-  padding-top: 8px;
-  text-align: center;
-  width: 28px;
-}
-.main-nav .tab a.tab-c,
-.main-nav .tab a.tab-p {
-  color: #000;
-}
-.main-nav .tab a.tab-part-1 {
-  background-color: #75993d;
-}
-.main-nav .tab a.tab-part-2 {
-  background-color: #6e78a6;
-}
-.main-nav .tab a.tab-part-3 {
-  background-color: #917fa5;
-}
-.main-nav .tab a.tab-part-4 {
-  background-color: #a2a55e;
-}
-.main-nav .tab a.tab-part-5 {
-  background-color: #99226e;
-}
-.main-nav .tab a.tab-part-6 {
-  background-color: #a5732a;
-}
-.main-nav .tab a.tab-part-7 {
-  background-color: #499987;
-}
-.main-nav .tab a.tab-part-8 {
-  background-color: #397999;
-}
-.main-nav .tab a.tab-part-9 {
-  background-color: #74629a;
-}
-.main-nav .tab a.tab-part-10 {
-  background-color: #993733;
-}
-.main-nav .tab a.tab-academic-english {
-  background-color: #d6df23;
-}
-.main-nav .tab a.tab-search {
-  background-color: #f89a1c;
-}
-.main-nav .tab a.tab-glossary {
-  background-color: #ed1c24;
-}
-.main-nav .tab a.tab-you {
-  background-color: #2e3092;
-}
+  z-index: 1; }
+  .main-nav .tab {
+    display: inline-block;
+    margin: 0 4px; }
+    .main-nav .tab a {
+      background-color: #fff;
+      moz-border-radius: 4px 4px 0 0;
+      border-radius: 4px 4px 0 0;
+      -webkit-box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.25);
+      color: #fff;
+      display: block;
+      height: 28px;
+      font-size: 16px;
+      overflow: hidden;
+      padding-top: 8px;
+      text-align: center;
+      width: 28px; }
+      .main-nav .tab a.tab-c, .main-nav .tab a.tab-p {
+        color: #000; }
+      .main-nav .tab a.tab-part-1 {
+        background-color: #75993d; }
+      .main-nav .tab a.tab-part-2 {
+        background-color: #6e78a6; }
+      .main-nav .tab a.tab-part-3 {
+        background-color: #917fa5; }
+      .main-nav .tab a.tab-part-4 {
+        background-color: #a2a55e; }
+      .main-nav .tab a.tab-part-5 {
+        background-color: #99226e; }
+      .main-nav .tab a.tab-part-6 {
+        background-color: #a5732a; }
+      .main-nav .tab a.tab-part-7 {
+        background-color: #499987; }
+      .main-nav .tab a.tab-part-8 {
+        background-color: #397999; }
+      .main-nav .tab a.tab-part-9 {
+        background-color: #74629a; }
+      .main-nav .tab a.tab-part-10 {
+        background-color: #993733; }
+      .main-nav .tab a.tab-academic-english {
+        background-color: #d6df23; }
+      .main-nav .tab a.tab-search {
+        background-color: #f89a1c; }
+      .main-nav .tab a.tab-glossary {
+        background-color: #ed1c24; }
+      .main-nav .tab a.tab-you {
+        background-color: #2e3092; }
+
 .nav-left {
   background-color: #fff;
   bottom: 0;
@@ -96,49 +77,45 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 216px;
-}
-.nav-left li.active > a {
-  background-color: #666;
-  color: #fff;
-}
-.nav-left li a {
-  display: inline-block;
-  padding: 4px;
-}
+  width: 216px; }
+  .nav-left li.active > a {
+    background-color: #666;
+    color: #fff; }
+  .nav-left li a {
+    display: inline-block;
+    padding: 4px; }
+
 .sub-nav {
   display: none;
-  padding: 4px 4px 4px 8px;
-}
-.sub-nav li.active a {
-  background-color: #666;
-  color: #fff;
-}
-.sub-nav li a {
-  display: inline-block;
-  padding: 4px;
-}
+  padding: 4px 4px 4px 8px; }
+  .sub-nav li.active a > {
+    background-color: #666;
+    color: #fff; }
+  .sub-nav li a {
+    display: inline-block;
+    padding: 4px; }
+
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 html,
 body {
   background-color: #cbdde7;
-  font-family: 'Lato', sans-serif;
-}
+  font-family: 'Lato', sans-serif; }
+
 h1 {
-  font-size: 20px;
-}
+  font-size: 20px; }
+
 h2 {
-  font-size: 18px;
-}
+  font-size: 18px; }
+
 a {
   color: blue;
-  text-decoration: none;
-}
+  text-decoration: none; }
+
 img {
-  display: block;
-}
+  display: block; }
+
 #app-wrapper {
   height: 644px;
   left: 0;
@@ -147,8 +124,8 @@ img {
   position: absolute;
   right: 0;
   top: 0;
-  width: 980px;
-}
+  width: 980px; }
+
 /*
  * A 'part-view' is everything under the top nav tabs.
  * The left nav and main content make up a 'part-view'
@@ -160,26 +137,20 @@ img {
   left: 0;
   right: 0;
   top: 40px;
-  z-index: 1;
-}
-.part-view.ng-enter,
-.part-view.ng-leave {
-  transition: all 0.5s ease-in-out;
-}
-.part-view.ng-enter {
-  opacity: 0;
-}
-.part-view.ng-enter-active {
-  opacity: 1;
-}
-.part-view.ng-leave {
-  opacity: 1;
-  z-index: 0;
-}
-.part-view.ng-leave-active {
-  opacity: 1;
-  z-index: 0;
-}
+  z-index: 1; }
+  .part-view.ng-enter, .part-view.ng-leave {
+    transition: all .5s ease-in-out; }
+  .part-view.ng-enter {
+    opacity: 0; }
+  .part-view.ng-enter-active {
+    opacity: 1; }
+  .part-view.ng-leave {
+    opacity: 1;
+    z-index: 0; }
+  .part-view.ng-leave-active {
+    opacity: 1;
+    z-index: 0; }
+
 /*
  * A 'page-view' is the main content area.
  */
@@ -190,25 +161,19 @@ img {
   left: 214px;
   right: 0;
   top: 0;
-  z-index: 1;
-}
-.page-view.ng-enter,
-.page-view.ng-leave {
-  transition: all 0.5s ease-in-out;
-}
-.page-view.ng-enter {
-  transform: translate3d(100%, 0, 0);
-}
-.page-view.ng-enter-active {
-  transform: translate3d(0, 0, 0);
-}
-.page-view.ng-leave {
-  z-index: 0;
-}
-.page-view.ng-leave-active {
-  z-index: 0;
-}
-.page-view .page-view-inner {
-  height: 100%;
-  width: 100%;
-}
+  z-index: 1; }
+  .page-view.ng-enter, .page-view.ng-leave {
+    transition: all .5s ease-in-out; }
+  .page-view.ng-enter {
+    transform: translate3d(100%, 0, 0); }
+  .page-view.ng-enter-active {
+    transform: translate3d(0, 0, 0); }
+  .page-view.ng-leave {
+    z-index: 0; }
+  .page-view.ng-leave-active {
+    z-index: 0; }
+  .page-view .page-view-inner {
+    height: 100%;
+    width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

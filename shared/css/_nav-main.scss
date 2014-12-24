@@ -1,4 +1,4 @@
-@import 'colors.less';
+@import 'colors';
 
 #app-header {
 	border-bottom: 4px solid #d0d0d0;
@@ -50,20 +50,20 @@
 
 			&.tab-c,
 			&.tab-p { color: #000; }
-			&.tab-part-1 { background-color: @part-1-darker; }
-			&.tab-part-2 { background-color: @part-2-darker; }
-			&.tab-part-3 { background-color: @part-3-darker; }
-			&.tab-part-4 { background-color: @part-4-darker; }
-			&.tab-part-5 { background-color: @part-5-darker; }
-			&.tab-part-6 { background-color: @part-6-darker; }
-			&.tab-part-7 { background-color: @part-7-darker; }
-			&.tab-part-8 { background-color: @part-8-darker; }
-			&.tab-part-9 { background-color: @part-9-darker; }
-			&.tab-part-10 { background-color: @part-10-darker; }
-			&.tab-academic-english { background-color: @academic-english-darker; }
-			&.tab-search { background-color: @search-darker; }
-			&.tab-glossary { background-color: @glossary-darker; }
-			&.tab-you { background-color: @you-darker; }
+			&.tab-part-1 { background-color: $part-1-darker; }
+			&.tab-part-2 { background-color: $part-2-darker; }
+			&.tab-part-3 { background-color: $part-3-darker; }
+			&.tab-part-4 { background-color: $part-4-darker; }
+			&.tab-part-5 { background-color: $part-5-darker; }
+			&.tab-part-6 { background-color: $part-6-darker; }
+			&.tab-part-7 { background-color: $part-7-darker; }
+			&.tab-part-8 { background-color: $part-8-darker; }
+			&.tab-part-9 { background-color: $part-9-darker; }
+			&.tab-part-10 { background-color: $part-10-darker; }
+			&.tab-academic-english { background-color: $academic-english-darker; }
+			&.tab-search { background-color: $search-darker; }
+			&.tab-glossary { background-color: $glossary-darker; }
+			&.tab-you { background-color: $you-darker; }
 		}
 	}
 }
