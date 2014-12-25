@@ -1,5 +1,9 @@
 @import '../shared/css/colors';
 
+#app-header {
+	border-bottom-color: $part-1-darker;
+}
+
 .part-1 {
 	@import 'intro/intro.scss';
 	@import 'rhetoric-and-a-process-for-composing/rhetoric-and-a-process-for-composing.scss';
@@ -10,17 +14,25 @@
 
 	.nav-left {
 		.nav-heading {
-			background-color: $part-1-dark;
+			background-color: $part-1-darker;
 		}
 
 		.nav {
 			.active > a {
 				background-color: $part-1-light;
 			}
+
+			li a:hover {
+				background-color: $part-1-light;
+			}
 		}
 
 		.sub-nav {
 			.active > a {
+				background-color: $part-1-lighter;
+			}
+
+			li a:hover {
 				background-color: $part-1-lighter;
 			}	
 		}

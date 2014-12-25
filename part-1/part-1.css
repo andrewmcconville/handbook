@@ -1,3 +1,6 @@
+#app-header {
+  border-bottom-color: #75993d; }
+
 .part-1 .intro {
   background-image: url("intro/assets/img/background.jpg");
   background-repeat: no-repeat;
@@ -21,10 +24,14 @@
   background-size: 100% auto;
   background-position: center top; }
 .part-1 .nav-left .nav-heading {
-  background-color: #abc06b; }
+  background-color: #75993d; }
 .part-1 .nav-left .nav .active > a {
   background-color: #c6d87d; }
+.part-1 .nav-left .nav li a:hover {
+  background-color: #c6d87d; }
 .part-1 .nav-left .sub-nav .active > a {
+  background-color: #e7eb98; }
+.part-1 .nav-left .sub-nav li a:hover {
   background-color: #e7eb98; }
 
 /*# sourceMappingURL=part-1.css.map */

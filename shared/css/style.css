@@ -73,7 +73,7 @@
 .nav-left {
   background-color: #fff;
   bottom: 0;
-  box-shadow: inset -24px 0 24px -24px rgba(0, 0, 0, 0.375);
+  box-shadow: inset -16px 0 16px -16px rgba(0, 0, 0, 0.25);
   font-size: 12px;
   left: 0;
   position: absolute;
@@ -84,20 +84,25 @@
   color: #fff;
   font-size: 14px;
   font-weight: 700;
-  padding: 8px 12px 8px 12px; }
+  line-height: 125%;
+  padding: 6px 12px 7px 10px; }
 
 .nav li a {
+  background-color: #fff;
+  box-shadow: inset -16px 0 16px -16px rgba(0, 0, 0, 0.25);
   color: #444;
   display: block;
   font-weight: 700;
-  padding: 8px 14px; }
+  padding: 8px 10px; }
 
 .sub-nav {
   display: none; }
   .sub-nav li a {
+    background-color: #fff;
+    box-shadow: inset -16px 0 16px -16px rgba(0, 0, 0, 0.25);
     display: block;
     font-weight: 300;
-    padding: 6px 14px 6px 32px; }
+    padding: 5px 14px 5px 24px; }
 
 * {
   box-sizing: border-box; }
