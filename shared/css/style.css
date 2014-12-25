@@ -39,6 +39,14 @@
       padding-top: 8px;
       text-align: center;
       width: 28px; }
+      .main-nav .tab a.tab-text {
+        font-size: 12px;
+        padding: 8px 4px 0 4px;
+        width: auto; }
+      .main-nav .tab a.top-2 {
+        padding-top: 2px; }
+      .main-nav .tab a.top-5 {
+        padding-top: 5px; }
       .main-nav .tab a.tab-c, .main-nav .tab a.tab-p {
         color: #000; }
       .main-nav .tab a.tab-part-1 {
@@ -68,7 +76,11 @@
       .main-nav .tab a.tab-glossary {
         background-color: #ed1c24; }
       .main-nav .tab a.tab-you {
-        background-color: #2e3092; }
+        background-color: #2e3092;
+        font-size: 18px; }
+    .main-nav .tab.tab-you-wrapper {
+      float: right;
+      margin-right: 8px; }
 
 .nav-left {
   background-color: #fff;

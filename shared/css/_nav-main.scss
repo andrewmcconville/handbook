@@ -48,6 +48,20 @@
 			text-align: center;
 			width: 28px;
 
+			&.tab-text {
+				font-size: 12px;
+				padding: 8px 4px 0 4px;
+				width: auto;
+			}
+
+			&.top-2 {
+				padding-top: 2px;
+			}
+
+			&.top-5 {
+				padding-top: 5px;
+			}
+
 			&.tab-c,
 			&.tab-p { color: #000; }
 			&.tab-part-1 { background-color: $part-1-darker; }
@@ -63,7 +77,15 @@
 			&.tab-academic-english { background-color: $academic-english-darker; }
 			&.tab-search { background-color: $search-darker; }
 			&.tab-glossary { background-color: $glossary-darker; }
-			&.tab-you { background-color: $you-darker; }
+			&.tab-you {
+				background-color: $you-darker;
+				font-size: 18px;
+			}
+		}
+
+		&.tab-you-wrapper {
+			float: right;	
+			margin-right: 8px;
 		}
 	}
 }
