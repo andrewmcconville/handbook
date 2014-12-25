@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,cAAO;EACN,gBAAgB,EAAE,sCAAsC;EACxD,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,SAAS;EAC1B,mBAAmB,EAAE,UAAU;ACJhC,0BAAmB;EAClB,gBAAgB,EAAE,0DAA0D;EAC5E,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,SAAS;EAC1B,mBAAmB,EAAE,UAAU;ACJhC,yBAAkB;EACjB,gBAAgB,EAAE,yDAAyD;EAC3E,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,SAAS;EAC1B,mBAAmB,EAAE,UAAU;ECJhC,mCAAU;IACT,IAAI,EAAE,QAAQ;ACDf,4BAAqB;EACpB,gBAAgB,EAAE,4DAA4D;EAC9E,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,SAAS;EAC1B,mBAAmB,EAAE,UAAU",
-"sources": ["intro/intro.scss","what-is-composing/what-is-composing.scss","what-is-rhetoric/what-is-rhetoric.scss","what-is-rhetoric/audience/audience.scss","what-will-you-learn/what-will-you-learn.scss"],
+"mappings": "AAAA,cAAO;EACN,gBAAgB,EAAE,sCAAsC;EACxD,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,SAAS;EAC1B,mBAAmB,EAAE,UAAU;ACJhC,0BAAmB;EAClB,gBAAgB,EAAE,0DAA0D;EAC5E,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,SAAS;EAC1B,mBAAmB,EAAE,UAAU;ACJhC,yBAAkB;EACjB,gBAAgB,EAAE,yDAAyD;EAC3E,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,SAAS;EAC1B,mBAAmB,EAAE,UAAU;ECJhC,mCAAU;IACT,IAAI,EAAE,QAAQ;ACDf,4BAAqB;EACpB,gBAAgB,EAAE,4DAA4D;EAC9E,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,SAAS;EAC1B,mBAAmB,EAAE,UAAU;ACO9B,8BAAa;EACZ,gBAAgB,ECXL,OAAO;ADelB,kCAAY;EACX,gBAAgB,ECfL,OAAO;ADoBnB,sCAAY;EACX,gBAAgB,ECpBH,OAAO",
+"sources": ["intro/_intro.scss","what-is-composing/_what-is-composing.scss","what-is-rhetoric/_what-is-rhetoric.scss","what-is-rhetoric/audience/_audience.scss","what-will-you-learn/_what-will-you-learn.scss","part-1.scss","../shared/css/_colors.scss"],
 "names": [],
 "file": "part-1.css"
 }

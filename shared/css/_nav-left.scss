@@ -2,33 +2,35 @@
 	background-color: #fff;
 	bottom: 0;
 	box-shadow: inset -24px 0 24px -24px rgba(0, 0, 0, 0.375);
+	font-size: 12px;
 	left: 0;
 	position: absolute;
 	top: 0;
 	width: 216px;
+}
 
-	li.active > a {
-		background-color: #666;
-		color: #fff;
-	}
+.nav-heading {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 8px 12px 8px 12px;
+}
 
+.nav {
 	li a {
-		display: inline-block;
-		padding: 4px;
+		color: #444;
+		display: block;
+		font-weight: 700;
+		padding: 8px 14px;
 	}
 }
 
 .sub-nav {
 	display: none;
-	padding: 4px 4px 4px 8px;
-
-	li.active a > {
-		background-color: #666;
-		color: #fff;
-	}
 
 	li a {
-		display: inline-block;
-		padding: 4px;
+		display: block;
+		font-weight: 300;
+		padding: 6px 14px 6px 32px;
 	}
 }

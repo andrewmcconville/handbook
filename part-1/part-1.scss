@@ -1,3 +1,5 @@
+@import '../shared/css/colors';
+
 .part-1 {
 	@import 'intro/intro.scss';
 	@import 'rhetoric-and-a-process-for-composing/rhetoric-and-a-process-for-composing.scss';
@@ -5,4 +7,22 @@
 	@import 'what-is-composing/what-is-composing.scss';
 	@import 'what-is-rhetoric/what-is-rhetoric.scss';
 	@import 'what-will-you-learn/what-will-you-learn.scss';
+
+	.nav-left {
+		.nav-heading {
+			background-color: $part-1-dark;
+		}
+
+		.nav {
+			.active > a {
+				background-color: $part-1-light;
+			}
+		}
+
+		.sub-nav {
+			.active > a {
+				background-color: $part-1-lighter;
+			}	
+		}
+	}
 }
