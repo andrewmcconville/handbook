@@ -2,27 +2,15 @@
   border-bottom-color: #75993d; }
 
 .part-1 .intro {
-  background-image: url("intro/assets/img/background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center top; }
+  background-image: url("intro/assets/img/background.jpg"); }
 .part-1 .what-is-composing {
-  background-image: url("/part-1/what-is-composing/assets/img/background.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center top; }
+  background-image: url("/part-1/what-is-composing/assets/img/background.png"); }
 .part-1 .what-is-rhetoric {
-  background-image: url("/part-1/what-is-rhetoric/assets/img/background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center top; }
+  background-image: url("/part-1/what-is-rhetoric/assets/img/background.jpg"); }
   .part-1 .what-is-rhetoric .audience {
     test: audience; }
 .part-1 .what-will-you-learn {
-  background-image: url("/part-1/what-will-you-learn/assets/img/background.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center top; }
+  background-image: url("/part-1/what-will-you-learn/assets/img/background.png"); }
 .part-1 .nav-left .nav-heading {
   background-color: #75993d; }
 .part-1 .nav-left .nav .active > a {

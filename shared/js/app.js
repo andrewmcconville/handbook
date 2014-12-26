@@ -6,7 +6,13 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 	$stateProvider
 		.state('home', {
 			url: '/',
-			templateUrl: 'home/home.html'
+			templateUrl: 'home/home.html',
+        	controller: function($scope) {
+        		$('#app-header').on('click', '.tab', function(){
+        			$('#app-header .tab').removeClass('active');
+        			$(this).addClass('active');
+        		});
+        	}
 		})
 		/*
 		 * PART 1
@@ -17,7 +23,6 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
         	controller: function($scope) {
         		$scope.$on('$stateChangeSuccess', function(event){
 					setTimeout(function(){
-
 						$('.active').parents('li').addClass('active');
 					    $('.nav-left .active').children('.sub-nav').slideDown();
 
@@ -26,7 +31,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					        $(this).children('.sub-nav').slideDown();
 					    });
 
-					}, 1);
+					}, 0);
 				});
         	}
 		})

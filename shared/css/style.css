@@ -177,6 +177,15 @@ img {
     opacity: 1;
     z-index: 0; }
 
+.part-heading {
+  font-size: 48px;
+  padding: 30px 20px;
+  text-transform: uppercase; }
+  .part-heading .font-light {
+    font-weight: 300; }
+  .part-heading .font-heavy {
+    font-weight: 600; }
+
 /*
  * A 'page-view' is the main content area.
  */
@@ -201,5 +210,9 @@ img {
   .page-view .page-view-inner {
     height: 100%;
     width: 100%; }
+  .page-view .intro {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */

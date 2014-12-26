@@ -77,6 +77,20 @@ img {
 	}
 }
 
+.part-heading {
+	font-size: 48px;
+	padding: 30px 20px;
+	text-transform: uppercase;
+
+	.font-light {
+		font-weight: 300;
+	}
+
+	.font-heavy {
+		font-weight: 600;
+	}
+}
+
 /*
  * A 'page-view' is the main content area.
  */
@@ -113,5 +127,11 @@ img {
 	.page-view-inner {
 		height: 100%;
 		width: 100%;
+	}
+
+	.intro {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 }
