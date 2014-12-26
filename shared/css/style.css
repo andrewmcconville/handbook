@@ -1,7 +1,8 @@
 #app-header {
   border-bottom: 4px solid #d0d0d0;
   height: 40px;
-  position: relative; }
+  position: relative;
+  z-index: 2; }
 
 .logo-home-link {
   display: block;
@@ -15,16 +16,19 @@
   font-family: 'Lora', serif;
   font-size: 0;
   left: 216px;
-  overflow: hidden;
   padding-top: 8px;
   position: absolute;
   right: 0;
   text-transform: uppercase;
-  top: 0;
-  z-index: 1; }
+  top: 0; }
   .main-nav .tab {
     display: inline-block;
     margin: 0 4px; }
+    .main-nav .tab.active a {
+      -moz-border-radius: 4px 4px 4px 4px;
+      border-radius: 4px 4px 4px 4px;
+      height: 38px;
+      margin-bottom: -10px; }
     .main-nav .tab a {
       background-color: #fff;
       -moz-border-radius: 4px 4px 0 0;

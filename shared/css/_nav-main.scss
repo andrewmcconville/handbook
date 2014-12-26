@@ -4,6 +4,7 @@
 	border-bottom: 4px solid #d0d0d0;
 	height: 40px;
 	position: relative;
+	z-index: 2;
 }
 
 .logo-home-link {
@@ -21,17 +22,24 @@
 	font-family: 'Lora', serif;
 	font-size: 0;
 	left: 216px;
-	overflow: hidden;
 	padding-top: 8px;
 	position: absolute;
 	right: 0;
 	text-transform: uppercase;
 	top: 0;
-	z-index: 1;
 
  	.tab {
 		display: inline-block;
 		margin: 0 4px;
+
+		&.active {
+			a {
+				-moz-border-radius: 4px 4px 4px 4px;
+				border-radius: 4px 4px 4px 4px;
+				height: 38px;
+				margin-bottom: -10px;
+			}
+		}
 
 		a {
 			background-color: #fff;
