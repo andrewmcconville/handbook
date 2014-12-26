@@ -1,6 +1,15 @@
+.home .instructions {
+  bottom: 64px;
+  font-size: 13px;
+  line-height: 137.5%;
+  padding: 12px;
+  position: absolute; }
+  .home .instructions p {
+    margin-bottom: 24px; }
 .home .page-view {
-  background-image: url('/home/assets/img/cover-colorful-swirls.jpg');
+  background-image: url("/home/assets/img/cover-colorful-swirls.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: center top;
-}
+  background-position: center top; }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,4 +1,16 @@
 .home {
+	.instructions {
+		bottom: 64px;
+		font-size: 13px;
+		line-height: 137.5%;
+		padding: 12px;
+		position: absolute;
+
+		p {
+			margin-bottom: 24px;
+		}
+	}
+
 	.page-view {
 		background-image: url('/home/assets/img/cover-colorful-swirls.jpg');
 		background-repeat: no-repeat;

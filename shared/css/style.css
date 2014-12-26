@@ -19,6 +19,7 @@
   padding-top: 8px;
   position: absolute;
   right: 0;
+  text-transform: uppercase;
   top: 0;
   z-index: 1; }
   .main-nav .tab {
@@ -43,10 +44,10 @@
         font-size: 12px;
         padding: 8px 4px 0 4px;
         width: auto; }
-      .main-nav .tab a.top-2 {
+      .main-nav .tab a.top-ae {
         padding-top: 2px; }
-      .main-nav .tab a.top-5 {
-        padding-top: 5px; }
+      .main-nav .tab a.top-you {
+        padding-top: 6px; }
       .main-nav .tab a.tab-c, .main-nav .tab a.tab-p {
         color: #000; }
       .main-nav .tab a.tab-part-1 {

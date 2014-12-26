@@ -25,6 +25,7 @@
 	padding-top: 8px;
 	position: absolute;
 	right: 0;
+	text-transform: uppercase;
 	top: 0;
 	z-index: 1;
 
@@ -54,12 +55,12 @@
 				width: auto;
 			}
 
-			&.top-2 {
+			&.top-ae {
 				padding-top: 2px;
 			}
 
-			&.top-5 {
-				padding-top: 5px;
+			&.top-you {
+				padding-top: 6px;
 			}
 
 			&.tab-c,
