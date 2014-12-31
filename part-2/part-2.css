@@ -1,15 +1,16 @@
-#app-header {
-  border-bottom-color: #6e78a6; }
-
-.part-2 .nav-left .nav-heading {
-  background-color: #6e78a6; }
-.part-2 .nav-left .nav .active > a {
-  background-color: #949dc9; }
-.part-2 .nav-left .nav li a:hover {
-  background-color: #949dc9; }
-.part-2 .nav-left .sub-nav .active > a {
-  background-color: #b9c1e2; }
-.part-2 .nav-left .sub-nav li a:hover {
-  background-color: #b9c1e2; }
+.part-2 .nav-left {
+  border-top-color: #6e78a6; }
+  .part-2 .nav-left .nav-heading {
+    background-color: #6e78a6; }
+  .part-2 .nav-left .nav .active > a {
+    background-color: #949dc9; }
+  .part-2 .nav-left .nav li a:hover {
+    background-color: #949dc9; }
+  .part-2 .nav-left .sub-nav .active > a {
+    background-color: #b9c1e2; }
+  .part-2 .nav-left .sub-nav li a:hover {
+    background-color: #b9c1e2; }
+.part-2 .page-view {
+  border-top-color: #6e78a6; }
 
 /*# sourceMappingURL=part-2.css.map */

@@ -1,6 +1,5 @@
 #app-header {
-  border-bottom: 4px solid #d0d0d0;
-  height: 40px;
+  height: 36px;
   position: relative;
   z-index: 2; }
 
@@ -89,6 +88,7 @@
 
 .nav-left {
   background-color: #fff;
+  border-top: 4px solid #d0d0d0;
   bottom: 0;
   box-shadow: inset -16px 0 16px -16px rgba(0, 0, 0, 0.25);
   font-size: 12px;
@@ -160,7 +160,7 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  top: 40px;
+  top: 36px;
   z-index: 1; }
   .part-view.ng-enter, .part-view.ng-leave {
     transition: all 250ms ease-in-out; }
@@ -189,6 +189,7 @@ img {
  */
 .page-view {
   background-color: #fff;
+  border-top: 4px solid #d0d0d0;
   bottom: 0;
   position: absolute;
   left: 216px;

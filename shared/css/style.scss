@@ -50,7 +50,7 @@ img {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 40px;
+	top: 36px;
 	z-index: 1;
 
 	&.ng-enter,
@@ -96,6 +96,7 @@ img {
  */
 .page-view {
 	background-color: #fff;
+	border-top: 4px solid #d0d0d0;
 	bottom: 0;
 	position: absolute;
 	left: 216px;

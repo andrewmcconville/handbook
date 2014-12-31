@@ -1,11 +1,9 @@
 @import '../shared/css/colors';
 
-#app-header {
-	border-bottom-color: $part-2-darker;
-}
-
 .part-2 {
 	.nav-left {
+		border-top-color: $part-2-darker;
+
 		.nav-heading {
 			background-color: $part-2-darker;
 		}
@@ -29,5 +27,9 @@
 				background-color: $part-2-lighter;
 			}	
 		}
+	}
+
+	.page-view {
+		border-top-color: $part-2-darker;
 	}
 }
