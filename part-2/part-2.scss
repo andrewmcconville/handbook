@@ -1,0 +1,33 @@
+@import '../shared/css/colors';
+
+#app-header {
+	border-bottom-color: $part-2-darker;
+}
+
+.part-2 {
+	.nav-left {
+		.nav-heading {
+			background-color: $part-2-darker;
+		}
+
+		.nav {
+			.active > a {
+				background-color: $part-2-light;
+			}
+
+			li a:hover {
+				background-color: $part-2-light;
+			}
+		}
+
+		.sub-nav {
+			.active > a {
+				background-color: $part-2-lighter;
+			}
+
+			li a:hover {
+				background-color: $part-2-lighter;
+			}	
+		}
+	}
+}
