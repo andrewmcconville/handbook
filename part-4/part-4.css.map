@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGC,iBAAU;EACT,gBAAgB,ECWF,OAAO;EDTrB,8BAAa;IACZ,gBAAgB,ECQH,OAAO;EDJpB,kCAAY;IACX,gBAAgB,ECKL,OAAO;EDFnB,iCAAW;IACV,gBAAgB,ECCL,OAAO;EDInB,sCAAY;IACX,gBAAgB,ECJH,OAAO;EDOrB,qCAAW;IACV,gBAAgB,ECRH,OAAO;ADavB,kBAAW;EACV,gBAAgB,ECjBF,OAAO",
+"sources": ["part-4.scss","../shared/css/_colors.scss"],
+"names": [],
+"file": "part-4.css"
+}

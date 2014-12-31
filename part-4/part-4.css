@@ -1,0 +1,16 @@
+.part-4 .nav-left {
+  border-top-color: #a2a55e; }
+  .part-4 .nav-left .nav-heading {
+    background-color: #a2a55e; }
+  .part-4 .nav-left .nav .active > a {
+    background-color: #d7d67e; }
+  .part-4 .nav-left .nav li a:hover {
+    background-color: #d7d67e; }
+  .part-4 .nav-left .sub-nav .active > a {
+    background-color: #f1ef92; }
+  .part-4 .nav-left .sub-nav li a:hover {
+    background-color: #f1ef92; }
+.part-4 .page-view {
+  border-top-color: #a2a55e; }
+
+/*# sourceMappingURL=part-4.css.map */

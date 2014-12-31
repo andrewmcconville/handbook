@@ -1,0 +1,35 @@
+@import '../shared/css/colors';
+
+.part-4 {
+	.nav-left {
+		border-top-color: $part-4-darker;
+
+		.nav-heading {
+			background-color: $part-4-darker;
+		}
+
+		.nav {
+			.active > a {
+				background-color: $part-4-light;
+			}
+
+			li a:hover {
+				background-color: $part-4-light;
+			}
+		}
+
+		.sub-nav {
+			.active > a {
+				background-color: $part-4-lighter;
+			}
+
+			li a:hover {
+				background-color: $part-4-lighter;
+			}	
+		}
+	}
+
+	.page-view {
+		border-top-color: $part-4-darker;
+	}
+}
