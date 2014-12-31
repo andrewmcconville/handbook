@@ -28,6 +28,8 @@
       border-radius: 4px 4px 4px 4px;
       height: 38px;
       margin-bottom: -10px; }
+    .main-nav .tab.inactive {
+      opacity: .20; }
     .main-nav .tab a {
       background-color: #fff;
       -moz-border-radius: 4px 4px 0 0;
