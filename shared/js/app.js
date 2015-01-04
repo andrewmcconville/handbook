@@ -122,5 +122,16 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		.state('part-5.intro', {
 			url: '/',
 			templateUrl: 'part-5/intro/intro.html'
+		})
+		/* 
+		 * PART 6
+		 */
+		.state('part-6', {
+			url: '/part-6',
+			templateUrl: 'part-6/part-6.html'
+		})
+		.state('part-6.intro', {
+			url: '/',
+			templateUrl: 'part-6/intro/intro.html'
 		});
 }]);

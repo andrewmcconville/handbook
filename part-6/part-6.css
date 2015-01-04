@@ -1,0 +1,16 @@
+.part-6 .nav-left {
+  border-top-color: #a5732a; }
+  .part-6 .nav-left .nav-heading {
+    background-color: #a5732a; }
+  .part-6 .nav-left .nav .active > a {
+    background-color: #d99633; }
+  .part-6 .nav-left .nav li a:hover {
+    background-color: #d99633; }
+  .part-6 .nav-left .sub-nav .active > a {
+    background-color: #f2a839; }
+  .part-6 .nav-left .sub-nav li a:hover {
+    background-color: #f2a839; }
+.part-6 .page-view {
+  border-top-color: #a5732a; }
+
+/*# sourceMappingURL=part-6.css.map */
