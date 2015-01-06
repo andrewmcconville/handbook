@@ -12,7 +12,7 @@
     width: 100px; }
 
 .main-nav {
-  font-family: 'Lora', serif;
+  font-family: 'Merriweather', serif;
   font-size: 0;
   left: 216px;
   padding-top: 8px;
@@ -113,7 +113,7 @@
   cursor: pointer;
   display: block;
   line-height: 15px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 6px 10px; }
 
 .sub-nav {
@@ -128,7 +128,7 @@
 html,
 body {
   background-color: #cbdde7;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif; }
 
 h1 {
   font-size: 20px; }
