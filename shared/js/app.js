@@ -79,17 +79,17 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/understanding-your-project-or-assignment',
 			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-your-project-or-assignment.html'
 		})
-			.state('part-1.responding-to-a-written-assignment', {
-				url: '/responding-to-a-written-assignment',
-				templateUrl: 'part-1/understanding-your-project-or-assignment/responding-to-a-written-assignment.html'
+			.state('part-1.understanding-your-project-or-assignment/responding-to-a-written-assignment', {
+				url: '/understanding-your-project-or-assignment/responding-to-a-written-assignment',
+				templateUrl: 'part-1/understanding-your-project-or-assignment/responding-to-a-written-assignment/responding-to-a-written-assignment.html'
 			})
-			.state('part-1.sample-research-paper-assignment', {
-				url: '/sample-research-paper-assignment',
-				templateUrl: 'part-1/understanding-your-project-or-assignment/sample-research-paper-assignment.html'
+			.state('part-1.understanding-your-project-or-assignment/sample-research-paper-assignment', {
+				url: '/understanding-your-project-or-assignment/sample-research-paper-assignment',
+				templateUrl: 'part-1/understanding-your-project-or-assignment/sample-research-paper-assignment/sample-research-paper-assignment.html'
 			})
-			.state('part-1.understanding-other-projects', {
-				url: '/understanding-other-projects',
-				templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects.html'
+			.state('part-1.understanding-your-project-or-assignment/understanding-other-projects', {
+				url: '/understanding-your-project-or-assignment/understanding-other-projects',
+				templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/understanding-other-projects.html'
 			})
 		/* 
 		 * PART 2
