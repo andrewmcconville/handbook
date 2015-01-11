@@ -19,7 +19,7 @@
 
 .main-nav {
 	font-family: 'Merriweather', serif;
-	left: 216px;
+	left: 242px;
 	padding-top: 10px;
 	position: absolute;
 	right: 0;
@@ -32,10 +32,15 @@
 
 		&.active {
 			a {
-				-moz-border-radius: 4px 4px 4px 4px;
-				border-radius: 4px 4px 4px 4px;
+				-moz-border-radius: 6px 6px 6px 6px;
+				border-radius: 6px 6px 6px 6px;
 				height: 38px;
 				margin-bottom: -10px;
+
+				&.tab-text {
+					-moz-border-radius: 12px 12px 12px 12px;
+					border-radius: 12px 12px 12px 12px;
+				}
 			}
 		}
 
@@ -45,8 +50,8 @@
 
 		a {
 			background-color: #fff;
-			-moz-border-radius: 5px 5px 0 0;
-			border-radius: 5px 5px 0 0;
+			-moz-border-radius: 6px 6px 0 0;
+			border-radius: 6px 6px 0 0;
 			-webkit-box-shadow: 2px 0 5px 0 rgba(0, 0, 0, .4);
 			-moz-box-shadow: 2px 0 5px 0 rgba(0, 0, 0, .4);
 			box-shadow: 2px 0 5px 0 rgba(0, 0, 0, .4);
@@ -60,13 +65,15 @@
 			width: 28px;
 
 			&.tab-text {
-				font-size: 12px;
+				-moz-border-radius: 12px 12px 0 0;
+				border-radius: 12px 12px 0 0;
+				font-size: 11px;
 				padding: 10px 4px 0 4px;
 				width: auto;
 			}
 
 			&.top-ae {
-				padding-top: 2px;
+				padding-top: 3px;
 			}
 
 			&.top-you {

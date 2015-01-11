@@ -13,7 +13,7 @@
 
 .main-nav {
   font-family: 'Merriweather', serif;
-  left: 216px;
+  left: 242px;
   padding-top: 10px;
   position: absolute;
   right: 0;
@@ -23,14 +23,16 @@
     float: left;
     margin: 0 4px; }
     .main-nav .tab.active a {
-      border-radius: 4px 4px 4px 4px;
+      border-radius: 6px 6px 6px 6px;
       height: 38px;
       margin-bottom: -10px; }
+      .main-nav .tab.active a.tab-text {
+        border-radius: 12px 12px 12px 12px; }
     .main-nav .tab.inactive {
       opacity: .20; }
     .main-nav .tab a {
       background-color: #fff;
-      border-radius: 5px 5px 0 0;
+      border-radius: 6px 6px 0 0;
       box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.4);
       color: #fff;
       display: block;
@@ -41,11 +43,12 @@
       text-align: center;
       width: 28px; }
       .main-nav .tab a.tab-text {
-        font-size: 12px;
+        border-radius: 12px 12px 0 0;
+        font-size: 11px;
         padding: 10px 4px 0 4px;
         width: auto; }
       .main-nav .tab a.top-ae {
-        padding-top: 2px; }
+        padding-top: 3px; }
       .main-nav .tab a.top-you {
         padding-top: 6px; }
       .main-nav .tab a.tab-c, .main-nav .tab a.tab-p {
