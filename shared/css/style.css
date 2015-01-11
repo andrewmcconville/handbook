@@ -30,14 +30,14 @@
       opacity: .20; }
     .main-nav .tab a {
       background-color: #fff;
-      border-radius: 4px 4px 0 0;
-      box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.25);
+      border-radius: 5px 5px 0 0;
+      box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.4);
       color: #fff;
       display: block;
       height: 28px;
       font-size: 16px;
       overflow: hidden;
-      padding-top: 8px;
+      padding-top: 6px;
       text-align: center;
       width: 28px; }
       .main-nav .tab a.tab-text {

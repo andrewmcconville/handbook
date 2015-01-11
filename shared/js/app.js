@@ -189,5 +189,16 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		.state('part-10.intro', {
 			url: '/',
 			templateUrl: 'part-10/intro/intro.html'
+		})
+		/* 
+		 * GLOSSARY
+		 */
+		.state('glossary', {
+			url: '/glossary',
+			templateUrl: 'glossary/glossary.html'
+		})
+		.state('glossary.intro', {
+			url: '/',
+			templateUrl: 'glossary/intro/intro.html'
 		});
 }]);

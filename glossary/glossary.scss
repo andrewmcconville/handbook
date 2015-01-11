@@ -1,0 +1,35 @@
+@import '../shared/css/colors';
+
+.glossary {
+	.nav-left {
+		border-top-color: $glossary-darker;
+
+		.nav-heading {
+			background-color: $glossary-darker;
+		}
+
+		.nav {
+			.active > a {
+				background-color: $glossary-light;
+			}
+
+			li a:hover {
+				background-color: $glossary-light;
+			}
+		}
+
+		.sub-nav {
+			.active > a {
+				background-color: $glossary-lighter;
+			}
+
+			li a:hover {
+				background-color: $glossary-lighter;
+			}
+		}
+	}
+
+	.page-view {
+		border-top-color: $glossary-darker; 
+	}
+}
