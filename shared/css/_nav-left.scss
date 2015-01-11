@@ -11,7 +11,7 @@
 	left: 0;
 	position: absolute;
 	top: 0;
-	width: 216px;
+	width: 242px;
 }
 
 .nav-heading {
@@ -23,9 +23,11 @@
 }
 
 .nav {
+	background-color: #fff;
+	@include box-shadow;
+	min-height: 100%;
+
 	li a {
-		background-color: #fff;
-		@include box-shadow;
 		color: #444;
 		cursor: pointer;
 		display: block;

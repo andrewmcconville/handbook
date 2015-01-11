@@ -1,14 +1,14 @@
 @import 'colors';
 
 #app-header {
-	height: 36px;
+	height: 38px;
 	position: relative;
 	z-index: 2;
 }
 
 .logo-home-link {
 	display: block;
-	padding-top: 4px;
+	padding-top: 6px;
 	width: 214px;
 
 	.logo {
@@ -20,7 +20,7 @@
 .main-nav {
 	font-family: 'Merriweather', serif;
 	left: 216px;
-	padding-top: 8px;
+	padding-top: 10px;
 	position: absolute;
 	right: 0;
 	text-transform: uppercase;

@@ -30,14 +30,14 @@ img {
 }
 
 #app-wrapper {
-	height: 644px;
+	height: 672px;
 	left: 0;
 	margin: auto;
 	overflow: hidden;
 	position: absolute;
 	right: 0;
 	top: 0;
-	width: 980px;
+	width: 1024px;
 }
 
 /*
@@ -50,7 +50,7 @@ img {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 36px;
+	top: 38px;
 	z-index: 1;
 
 	&.ng-enter,
@@ -99,7 +99,7 @@ img {
 	border-top: 4px solid #d0d0d0;
 	bottom: 0;
 	position: absolute;
-	left: 216px;
+	left: 242px;
 	right: 0;
 	top: 0;
 	z-index: 1;

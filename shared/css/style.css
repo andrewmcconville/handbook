@@ -1,11 +1,11 @@
 #app-header {
-  height: 36px;
+  height: 38px;
   position: relative;
   z-index: 2; }
 
 .logo-home-link {
   display: block;
-  padding-top: 4px;
+  padding-top: 6px;
   width: 214px; }
   .logo-home-link .logo {
     height: 30px;
@@ -14,7 +14,7 @@
 .main-nav {
   font-family: 'Merriweather', serif;
   left: 216px;
-  padding-top: 8px;
+  padding-top: 10px;
   position: absolute;
   right: 0;
   text-transform: uppercase;
@@ -96,7 +96,7 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 216px; }
+  width: 242px; }
 
 .nav-heading {
   color: #fff;
@@ -105,15 +105,17 @@
   line-height: 125%;
   padding: 6px 12px 7px 10px; }
 
-.nav li a {
+.nav {
   background-color: #fff;
   box-shadow: inset -16px 0 16px -16px rgba(0, 0, 0, 0.25);
-  color: #444;
-  cursor: pointer;
-  display: block;
-  line-height: 15px;
-  font-weight: 600;
-  padding: 6px 10px; }
+  min-height: 100%; }
+  .nav li a {
+    color: #444;
+    cursor: pointer;
+    display: block;
+    line-height: 15px;
+    font-weight: 600;
+    padding: 6px 10px; }
 
 .sub-nav {
   display: none; }
@@ -143,14 +145,14 @@ img {
   display: block; }
 
 #app-wrapper {
-  height: 644px;
+  height: 672px;
   left: 0;
   margin: auto;
   overflow: hidden;
   position: absolute;
   right: 0;
   top: 0;
-  width: 980px; }
+  width: 1024px; }
 
 /*
  * A 'part-view' is everything under the top nav tabs.
@@ -162,7 +164,7 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  top: 36px;
+  top: 38px;
   z-index: 1; }
   .part-view.ng-enter, .part-view.ng-leave {
     transition: all 250ms ease-in-out; }
@@ -194,7 +196,7 @@ img {
   border-top: 4px solid #d0d0d0;
   bottom: 0;
   position: absolute;
-  left: 216px;
+  left: 242px;
   right: 0;
   top: 0;
   z-index: 1; }
