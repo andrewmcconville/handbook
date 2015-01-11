@@ -46,7 +46,7 @@
       width: 28px; }
       .main-nav .tab a.tab-text {
         font-size: 12px;
-        padding: 8px 4px 0 4px;
+        padding: 10px 4px 0 4px;
         width: auto; }
       .main-nav .tab a.top-ae {
         padding-top: 2px; }
@@ -129,7 +129,8 @@
 html,
 body {
   background-color: #cbdde7;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-tap-highlight-color: transparent; }
 
 h1 {
   font-size: 20px; }
