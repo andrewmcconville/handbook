@@ -211,5 +211,16 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		.state('glossary.intro', {
 			url: '/',
 			templateUrl: 'glossary/intro/intro.html'
+		})
+		/* 
+		 * YOU
+		 */
+		.state('you', {
+			url: '/you',
+			templateUrl: 'you/you.html'
+		})
+		.state('you.intro', {
+			url: '/',
+			templateUrl: 'you/intro/intro.html'
 		});
 }]);
