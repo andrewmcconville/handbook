@@ -44,13 +44,21 @@
         </header>
 
         <div class="part-view" ui-view></div>
-
-        <script src="shared/js/angular.min.js"></script>
-        <script src="shared/js/angular-ui-router.min.js"></script>
-        <script src="shared/js/angular-animate.min.js"></script>
-        <script src="shared/js/jquery-2.1.1.min.js"></script>
-        <script src="shared/js/jquery-ui-1.11.2.min.js"></script>
-        <script src="shared/js/app.js"></script>
     </div>
+
+    <script src="shared/js/angular.min.js"></script>
+    <script src="shared/js/angular-ui-router.min.js"></script>
+    <script src="shared/js/angular-animate.min.js"></script>
+    <script src="shared/js/jquery-2.1.1.min.js"></script>
+    <script src="shared/js/jquery-ui-1.11.2.min.js"></script>
+    <script src="shared/js/fastclick.js"></script>
+    <script src="shared/js/app.js"></script>
+    <script>
+        if ('addEventListener' in document) {
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        }
+    </script>
 </body>
 </html>
