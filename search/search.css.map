@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGC,iBAAU;EACT,gBAAgB,ECmDF,OAAO;EDjDrB,8BAAa;IACZ,gBAAgB,ECgDH,OAAO;ED5CpB,kCAAY;IACX,gBAAgB,EC6CL,OAAO;ED1CnB,iCAAW;IACV,gBAAgB,ECyCL,OAAO;EDpCnB,sCAAY;IACX,gBAAgB,ECoCH,OAAO;EDjCrB,qCAAW;IACV,gBAAgB,ECgCH,OAAO;AD3BvB,kBAAW;EACV,gBAAgB,ECuBF,OAAO",
+"sources": ["search.scss","../shared/css/_colors.scss"],
+"names": [],
+"file": "search.css"
+}

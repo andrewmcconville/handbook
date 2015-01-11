@@ -1,0 +1,16 @@
+.search .nav-left {
+  border-top-color: #f89a1c; }
+  .search .nav-left .nav-heading {
+    background-color: #f89a1c; }
+  .search .nav-left .nav .active > a {
+    background-color: #f89a1c; }
+  .search .nav-left .nav li a:hover {
+    background-color: #f89a1c; }
+  .search .nav-left .sub-nav .active > a {
+    background-color: #f89a1c; }
+  .search .nav-left .sub-nav li a:hover {
+    background-color: #f89a1c; }
+.search .page-view {
+  border-top-color: #f89a1c; }
+
+/*# sourceMappingURL=search.css.map */

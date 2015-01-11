@@ -1,0 +1,35 @@
+@import '../shared/css/colors';
+
+.search {
+	.nav-left {
+		border-top-color: $search-darker;
+
+		.nav-heading {
+			background-color: $search-darker;
+		}
+
+		.nav {
+			.active > a {
+				background-color: $search-light;
+			}
+
+			li a:hover {
+				background-color: $search-light;
+			}
+		}
+
+		.sub-nav {
+			.active > a {
+				background-color: $search-lighter;
+			}
+
+			li a:hover {
+				background-color: $search-lighter;
+			}
+		}
+	}
+
+	.page-view {
+		border-top-color: $search-darker; 
+	}
+}

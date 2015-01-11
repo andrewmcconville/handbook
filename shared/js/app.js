@@ -193,6 +193,17 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		/* 
 		 * GLOSSARY
 		 */
+		.state('search', {
+			url: '/search',
+			templateUrl: 'search/search.html'
+		})
+		.state('search.intro', {
+			url: '/',
+			templateUrl: 'search/intro/intro.html'
+		})
+		/* 
+		 * GLOSSARY
+		 */
 		.state('glossary', {
 			url: '/glossary',
 			templateUrl: 'glossary/glossary.html'
