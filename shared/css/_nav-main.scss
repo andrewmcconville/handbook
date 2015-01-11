@@ -19,7 +19,6 @@
 
 .main-nav {
 	font-family: 'Merriweather', serif;
-	font-size: 0;
 	left: 216px;
 	padding-top: 8px;
 	position: absolute;
@@ -28,7 +27,7 @@
 	top: 0;
 
  	.tab {
-		display: inline-block;
+ 		float: left;
 		margin: 0 4px;
 
 		&.active {

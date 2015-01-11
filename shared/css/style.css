@@ -13,7 +13,6 @@
 
 .main-nav {
   font-family: 'Merriweather', serif;
-  font-size: 0;
   left: 216px;
   padding-top: 8px;
   position: absolute;
@@ -21,7 +20,7 @@
   text-transform: uppercase;
   top: 0; }
   .main-nav .tab {
-    display: inline-block;
+    float: left;
     margin: 0 4px; }
     .main-nav .tab.active a {
       -moz-border-radius: 4px 4px 4px 4px;
