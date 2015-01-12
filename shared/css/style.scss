@@ -83,6 +83,14 @@ img {
 	padding: 30px 20px;
 	text-transform: uppercase;
 
+	&.dark-text {
+		color: #000;
+	}
+
+	&.light-text {
+		color: #fff;
+	}
+
 	.font-light {
 		font-weight: 300;
 	}
