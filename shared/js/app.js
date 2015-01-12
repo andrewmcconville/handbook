@@ -16,6 +16,17 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			templateUrl: 'writers-concerns/intro/intro.html'
 		})
 		/*
+		 * WRITERS PROCESS
+		 */
+		.state('writers-process', {
+			url: '/writers-process',
+			templateUrl: 'writers-process/writers-process.html'
+		})
+		.state('writers-process.intro', {
+			url: '/',
+			templateUrl: 'writers-process/intro/intro.html'
+		})
+		/*
 		 * HOME
 		 */
 		.state('home', {

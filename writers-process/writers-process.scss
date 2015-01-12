@@ -1,0 +1,36 @@
+@import '../shared/css/colors';
+
+.writers-process {
+	.nav-left {
+		background-color: $writers-process-darker;
+		border-top-color: $writers-process-darker;
+
+		.nav-heading {
+			background-color: $writers-process-darker;
+		}
+
+		.nav {
+			.active > a {
+				background-color: $writers-process-light;
+			}
+
+			li a:hover {
+				background-color: $writers-process-light;
+			}
+		}
+
+		.sub-nav {
+			.active > a {
+				background-color: $writers-process-lighter;
+			}
+
+			li a:hover {
+				background-color: $writers-process-lighter;
+			}	
+		}
+	}
+
+	.page-view {
+		border-top-color: $writers-process-darker;
+	}
+}
