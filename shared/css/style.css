@@ -113,13 +113,13 @@
     cursor: pointer;
     display: block;
     line-height: 15px;
-    font-weight: 600;
+    font-weight: 700;
     padding: 6px 18px 6px 10px; }
 
 .sub-nav {
   display: none; }
   .sub-nav li a {
-    font-weight: 300;
+    font-weight: 400;
     padding: 5px 14px 5px 24px; }
 
 * {
@@ -221,4 +221,5 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
+
 /*# sourceMappingURL=style.css.map */
