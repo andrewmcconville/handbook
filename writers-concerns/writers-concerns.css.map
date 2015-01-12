@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGC,2BAAU;EACT,gBAAgB,ECJQ,IAAI;EDK5B,gBAAgB,ECLQ,IAAI;EDO5B,wCAAa;IACZ,gBAAgB,ECRO,IAAI;EDY3B,4CAAY;IACX,gBAAgB,ECXK,IAAI;EDc1B,2CAAW;IACV,gBAAgB,ECfK,IAAI;EDoB1B,gDAAY;IACX,gBAAgB,ECpBO,IAAI;EDuB5B,+CAAW;IACV,gBAAgB,ECxBO,IAAI;AD6B9B,4BAAW;EACV,gBAAgB,ECjCQ,IAAI",
+"sources": ["writers-concerns.scss","../shared/css/_colors.scss"],
+"names": [],
+"file": "writers-concerns.css"
+}

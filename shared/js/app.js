@@ -4,6 +4,20 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 	$urlRouterProvider.otherwise('/');
 
 	$stateProvider
+		/*
+		 * WRITERS CONCERNS
+		 */
+		.state('writers-concerns', {
+			url: '/writers-concerns',
+			templateUrl: 'writers-concerns/writers-concerns.html'
+		})
+		.state('writers-concerns.intro', {
+			url: '/',
+			templateUrl: 'writers-concerns/intro/intro.html'
+		})
+		/*
+		 * HOME
+		 */
 		.state('home', {
 			url: '/',
 			templateUrl: 'home/home.html',

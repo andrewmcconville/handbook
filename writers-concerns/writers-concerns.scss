@@ -1,0 +1,36 @@
+@import '../shared/css/colors';
+
+.writers-concerns {
+	.nav-left {
+		background-color: $writers-concerns-darker;
+		border-top-color: $writers-concerns-darker;
+
+		.nav-heading {
+			background-color: $writers-concerns-darker;
+		}
+
+		.nav {
+			.active > a {
+				background-color: $writers-concerns-light;
+			}
+
+			li a:hover {
+				background-color: $writers-concerns-light;
+			}
+		}
+
+		.sub-nav {
+			.active > a {
+				background-color: $writers-concerns-lighter;
+			}
+
+			li a:hover {
+				background-color: $writers-concerns-lighter;
+			}	
+		}
+	}
+
+	.page-view {
+		border-top-color: $writers-concerns-darker;
+	}
+}
