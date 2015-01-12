@@ -1,6 +1,8 @@
 @import '../shared/css/colors';
 
 .part-3 {
+	@import 'intro/intro.scss';
+	
 	.nav-left {
 		border-top-color: $part-3-darker;
 

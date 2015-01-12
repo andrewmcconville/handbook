@@ -1,6 +1,8 @@
 @import '../shared/css/colors';
 
 .writers-process {
+	@import 'intro/intro.scss';
+	
 	.nav-left {
 		background-color: $writers-process-darker;
 		border-top-color: $writers-process-darker;
