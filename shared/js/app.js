@@ -249,3 +249,34 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			templateUrl: 'you/intro/intro.html'
 		});
 }]);
+
+app.run(function($templateCache, $http) {
+	$http.get('writers-concerns/writers-concerns.html', {cache:$templateCache});
+	$http.get('writers-concerns/intro/intro.html', {cache:$templateCache});
+});
+
+/*
+$(document).ready(function() {
+	function preload(arrayOfImages) {
+		$(arrayOfImages).each(function(){
+			$('<img/>')[0].src = this;
+		});
+	}
+
+	// Usage:
+
+	preload([
+		'/writers-concerns/intro/assets/img/background-image.jpg',
+		'/writers-process/intro/assets/img/background-image.jpg',
+		'/part-1/intro/assets/img/background-image.jpg',
+		'/part-2/intro/assets/img/background-image.jpg',
+		'/part-3/intro/assets/img/background-image.jpg',
+		'/part-4/intro/assets/img/background-image.jpg',
+		'/part-5/intro/assets/img/background-image.jpg',
+		'/part-6/intro/assets/img/background-image.jpg',
+		'/part-7/intro/assets/img/background-image.jpg',
+		'/part-8/intro/assets/img/background-image.jpg',
+		'/part-9/intro/assets/img/background-image.jpg'
+	]);
+});
+*/
