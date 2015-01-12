@@ -250,20 +250,45 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		});
 }]);
 
+/*
+ * cache angular templates
+ */
 app.run(function($templateCache, $http) {
 	$http.get('writers-concerns/writers-concerns.html', {cache:$templateCache});
 	$http.get('writers-concerns/intro/intro.html', {cache:$templateCache});
+	$http.get('writers-process/writers-process.html', {cache:$templateCache});
+	$http.get('writers-process/intro/intro.html', {cache:$templateCache});
+	$http.get('part-1/part-1.html', {cache:$templateCache});
+	$http.get('part-1/intro/intro.html', {cache:$templateCache});
+	$http.get('part-2/part-2.html', {cache:$templateCache});
+	$http.get('part-2/intro/intro.html', {cache:$templateCache});
+	$http.get('part-3/part-3.html', {cache:$templateCache});
+	$http.get('part-3/intro/intro.html', {cache:$templateCache});
+	$http.get('part-4/part-4.html', {cache:$templateCache});
+	$http.get('part-4/intro/intro.html', {cache:$templateCache});
+	$http.get('part-5/part-5.html', {cache:$templateCache});
+	$http.get('part-5/intro/intro.html', {cache:$templateCache});
+	$http.get('part-6/part-6.html', {cache:$templateCache});
+	$http.get('part-6/intro/intro.html', {cache:$templateCache});
+	$http.get('part-7/part-7.html', {cache:$templateCache});
+	$http.get('part-7/intro/intro.html', {cache:$templateCache});
+	$http.get('part-8/part-8.html', {cache:$templateCache});
+	$http.get('part-8/intro/intro.html', {cache:$templateCache});
+	$http.get('part-9/part-9.html', {cache:$templateCache});
+	$http.get('part-9/intro/intro.html', {cache:$templateCache});
+	$http.get('part-10/part-10.html', {cache:$templateCache});
+	$http.get('part-10/intro/intro.html', {cache:$templateCache});
 });
 
 /*
+ * preload images
+ */
 $(document).ready(function() {
 	function preload(arrayOfImages) {
 		$(arrayOfImages).each(function(){
 			$('<img/>')[0].src = this;
 		});
 	}
-
-	// Usage:
 
 	preload([
 		'/writers-concerns/intro/assets/img/background-image.jpg',
@@ -279,4 +304,3 @@ $(document).ready(function() {
 		'/part-9/intro/assets/img/background-image.jpg'
 	]);
 });
-*/
