@@ -216,7 +216,18 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			templateUrl: 'part-10/intro/intro.html'
 		})
 		/* 
-		 * GLOSSARY
+		 * ACADEMIC ENGLISH
+		 */
+		.state('academic-english', {
+			url: '/academic-english',
+			templateUrl: 'academic-english/academic-english.html'
+		})
+		.state('academic-english.intro', {
+			url: '/',
+			templateUrl: 'academic-english/intro/intro.html'
+		})
+		/* 
+		 * SEARCH
 		 */
 		.state('search', {
 			url: '/search',
