@@ -56,7 +56,7 @@ img {
 
 	&.ng-enter,
 	&.ng-leave {
-		transition: all 250ms ease-in-out;
+		transition: all 250ms ease-out;
 	}
 
 	&.ng-enter {
@@ -116,7 +116,7 @@ img {
 
 	&.ng-enter,
 	&.ng-leave {
-		transition: all .5s ease-in-out;
+		transition: all .5s ease-out;
 	}
 
 	&.ng-enter {
