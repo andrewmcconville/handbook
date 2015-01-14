@@ -22,14 +22,12 @@
   .main-nav .tab {
     float: left;
     margin: 0 4px; }
-    .main-nav .tab.active a {
+    .main-nav .tab.active a, .main-nav .tab.active-you a {
       border-radius: 6px 6px 6px 6px;
       height: 38px;
       margin-bottom: -10px; }
-      .main-nav .tab.active a.tab-text {
+      .main-nav .tab.active a.tab-text, .main-nav .tab.active-you a.tab-text {
         border-radius: 12px 12px 12px 12px; }
-    .main-nav .tab.inactive {
-      opacity: .20; }
     .main-nav .tab a {
       background-color: #fff;
       border-radius: 6px 6px 0 0;

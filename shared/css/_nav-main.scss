@@ -30,7 +30,8 @@
  		float: left;
 		margin: 0 4px;
 
-		&.active {
+		&.active,
+		&.active-you {
 			a {
 				-moz-border-radius: 6px 6px 6px 6px;
 				border-radius: 6px 6px 6px 6px;
@@ -42,10 +43,6 @@
 					border-radius: 12px 12px 12px 12px;
 				}
 			}
-		}
-
-		&.inactive {
-			opacity: .20;
 		}
 
 		a {
