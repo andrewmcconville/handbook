@@ -182,13 +182,14 @@ img {
 
 .part-heading {
   font-size: 48px;
-  padding: 30px 20px;
+  padding: 26px 20px;
   text-transform: uppercase; }
   .part-heading.dark-text {
     color: #000; }
   .part-heading.light-text {
     color: #fff; }
   .part-heading .font-light {
+    font-size: 46x;
     font-weight: 300; }
   .part-heading .font-heavy {
     font-weight: 600; }
