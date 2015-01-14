@@ -22,14 +22,16 @@
   .main-nav .tab {
     float: left;
     margin: 0 4px; }
-    .main-nav .tab.active a {
+    .main-nav .tab.active a, .main-nav .tab.active-you a {
       border-radius: 6px 6px 6px 6px;
       height: 38px;
-      margin-bottom: -10px; }
-      .main-nav .tab.active a.tab-text {
-        border-radius: 12px 12px 12px 12px; }
-    .main-nav .tab.inactive {
-      opacity: .20; }
+      margin-bottom: -10px;
+      -webkit-transition: all 250ms ease-out;
+              transition: all 250ms ease-out; }
+      .main-nav .tab.active a.tab-text, .main-nav .tab.active-you a.tab-text {
+        border-radius: 12px 12px 12px 12px;
+        -webkit-transition: all 250ms ease-out;
+                transition: all 250ms ease-out; }
     .main-nav .tab a {
       background-color: #fff;
       border-radius: 6px 6px 0 0;
@@ -41,12 +43,16 @@
       overflow: hidden;
       padding-top: 6px;
       text-align: center;
-      width: 28px; }
+      width: 28px;
+      -webkit-transition: all 250ms ease-out;
+              transition: all 250ms ease-out; }
       .main-nav .tab a.tab-text {
         border-radius: 12px 12px 0 0;
         font-size: 11px;
         padding: 10px 4px 0 4px;
-        width: auto; }
+        width: auto;
+        -webkit-transition: all 250ms ease-out;
+                transition: all 250ms ease-out; }
       .main-nav .tab a.top-ae {
         padding-top: 3px; }
       .main-nav .tab a.top-you {
@@ -103,6 +109,12 @@
   font-weight: 700;
   line-height: 125%;
   padding: 6px 12px 7px 10px; }
+  .nav-heading.big-text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 90%;
+    padding-top: 12px;
+    text-transform: uppercase; }
 
 .nav {
   background-color: #fff;
@@ -167,8 +179,8 @@ img {
   top: 38px;
   z-index: 1; }
   .part-view.ng-enter, .part-view.ng-leave {
-    -webkit-transition: all 250ms ease-in-out;
-            transition: all 250ms ease-in-out; }
+    -webkit-transition: all 250ms ease-out;
+            transition: all 250ms ease-out; }
   .part-view.ng-enter {
     opacity: 0; }
   .part-view.ng-enter-active {
@@ -182,13 +194,14 @@ img {
 
 .part-heading {
   font-size: 48px;
-  padding: 30px 20px;
+  padding: 26px 20px;
   text-transform: uppercase; }
   .part-heading.dark-text {
     color: #000; }
   .part-heading.light-text {
     color: #fff; }
   .part-heading .font-light {
+    font-size: 46x;
     font-weight: 300; }
   .part-heading .font-heavy {
     font-weight: 600; }
@@ -206,8 +219,8 @@ img {
   top: 0;
   z-index: 1; }
   .page-view.ng-enter, .page-view.ng-leave {
-    -webkit-transition: all .5s ease-in-out;
-            transition: all .5s ease-in-out; }
+    -webkit-transition: all .5s ease-out;
+            transition: all .5s ease-out; }
   .page-view.ng-enter {
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0); }

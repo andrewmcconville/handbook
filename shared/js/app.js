@@ -1,5 +1,12 @@
 var app = angular.module('handbook', ['ui.router', 'ngAnimate']);
 
+app.run([
+	"$rootScope", "$state", "$stateParams", function($rootScope, $state, $stateParams) {
+		$rootScope.$state = $state;
+		return $rootScope.$stateParams = $stateParams;
+	}
+]);
+
 app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
 	$urlRouterProvider.otherwise('/');
 
@@ -32,12 +39,12 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		.state('home', {
 			url: '/',
 			templateUrl: 'home/home.html',
-        	controller: function($scope) {
+        	controller: function($scope, $state) {
         		$('#app-header').on('click', '.tab', function(){
         			$('#app-header .tab').removeClass('active');
         			$(this).addClass('active');
         		});
-        	}
+			}
 		})
 		/*
 		 * PART 1
@@ -45,8 +52,9 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		.state('part-1', {
 			url: '/part-1',
 			templateUrl: 'part-1/part-1.html',
-        	controller: function($scope) {
+        	controller: function($scope, $state) {
         		$scope.$on('$stateChangeSuccess', function(event){
+					//$state.go('part-1.intro');
 					setTimeout(function(){
 						$('.active').parents('li').addClass('active');
 					    $('.nav-left .active').children('.sub-nav').slideDown();
@@ -58,6 +66,12 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 
 					}, 0);
 				});
+
+				//$state.go('part-1.intro');
+
+				$scope.changeState = function () {
+					//$state.go('part-1.intro');
+				};
         	}
 		})
 		.state('part-1.intro', {
