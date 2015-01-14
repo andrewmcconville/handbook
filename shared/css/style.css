@@ -109,6 +109,12 @@
   font-weight: 700;
   line-height: 125%;
   padding: 6px 12px 7px 10px; }
+  .nav-heading.big-text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 90%;
+    padding-top: 12px;
+    text-transform: uppercase; }
 
 .nav {
   background-color: #fff;
