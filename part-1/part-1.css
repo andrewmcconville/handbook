@@ -3,7 +3,8 @@
 .part-1 .what-is-composing {
   background-image: url("/part-1/what-is-composing/assets/img/background.png"); }
 .part-1 .what-is-rhetoric {
-  background-image: url("/part-1/what-is-rhetoric/assets/img/background.jpg"); }
+  background-image: url("/part-1/what-is-rhetoric/assets/img/background.jpg");
+  background-size: cover; }
   .part-1 .what-is-rhetoric .audience {
     test: audience; }
 .part-1 .what-will-you-learn {
