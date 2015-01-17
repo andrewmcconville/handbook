@@ -29,6 +29,23 @@ var fakeNav = function() {
 app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
 	$urlRouterProvider.otherwise('/');
 
+	$urlRouterProvider.when('/writers-concerns', '/writers-concerns/intro');
+	$urlRouterProvider.when('/writers-process', '/writers-process/intro');
+	$urlRouterProvider.when('/part-1', '/part-1/intro');
+	$urlRouterProvider.when('/part-2', '/part-2/intro');
+	$urlRouterProvider.when('/part-3', '/part-3/intro');
+	$urlRouterProvider.when('/part-4', '/part-4/intro');
+	$urlRouterProvider.when('/part-5', '/part-5/intro');
+	$urlRouterProvider.when('/part-6', '/part-6/intro');
+	$urlRouterProvider.when('/part-7', '/part-7/intro');
+	$urlRouterProvider.when('/part-8', '/part-8/intro');
+	$urlRouterProvider.when('/part-9', '/part-9/intro');
+	$urlRouterProvider.when('/part-10', '/part-10/intro');
+	$urlRouterProvider.when('/academic-english', '/academic-english/intro');
+	$urlRouterProvider.when('/search', '/search/intro');
+	$urlRouterProvider.when('/glossary', '/glossary/intro');
+	$urlRouterProvider.when('/you', '/you/intro');
+
 	$stateProvider
 		/*
 		 * WRITERS CONCERNS
@@ -41,7 +58,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
         	}
 		})
 		.state('writers-concerns.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'writers-concerns/intro/intro.html'
 		})
 		/*
@@ -55,7 +72,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
         	}
 		})
 		.state('writers-process.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'writers-process/intro/intro.html'
 		})
 		/*
@@ -100,7 +117,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
         	}
 		})
 		.state('part-1.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'part-1/intro/intro.html'
 		})
 		.state('part-1.what-will-you-learn', {
@@ -166,7 +183,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
         	}
 		})
 		.state('part-2.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'part-2/intro/intro.html'
 		})
 		/* 
@@ -180,7 +197,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
         	}
 		})
 		.state('part-3.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'part-3/intro/intro.html'
 		})
 		/* 
@@ -194,7 +211,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
         	}
 		})
 		.state('part-4.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'part-4/intro/intro.html'
 		})
 		/* 
@@ -208,7 +225,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
         	}
 		})
 		.state('part-5.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'part-5/intro/intro.html'
 		})
 		/* 
@@ -222,7 +239,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
         	}
 		})
 		.state('part-6.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'part-6/intro/intro.html'
 		})
 		/* 
@@ -236,7 +253,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
         	}
 		})
 		.state('part-7.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'part-7/intro/intro.html'
 		})
 		/* 
@@ -250,7 +267,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
         	}
 		})
 		.state('part-8.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'part-8/intro/intro.html'
 		})
 		/* 
@@ -264,7 +281,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
         	}
 		})
 		.state('part-9.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'part-9/intro/intro.html'
 		})
 		/* 
@@ -278,7 +295,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
         	}
 		})
 		.state('part-10.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'part-10/intro/intro.html'
 		})
 		/* 
@@ -289,7 +306,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			templateUrl: 'academic-english/academic-english.html'
 		})
 		.state('academic-english.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'academic-english/intro/intro.html'
 		})
 		/* 
@@ -300,7 +317,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			templateUrl: 'search/search.html'
 		})
 		.state('search.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'search/intro/intro.html'
 		})
 		/* 
@@ -311,7 +328,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			templateUrl: 'glossary/glossary.html'
 		})
 		.state('glossary.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'glossary/intro/intro.html'
 		})
 		/* 
@@ -322,7 +339,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			templateUrl: 'you/you.html'
 		})
 		.state('you.intro', {
-			url: '/',
+			url: '/intro',
 			templateUrl: 'you/intro/intro.html'
 		});
 }]);
@@ -330,6 +347,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 /*
  * cache angular templates
  */
+/*
 app.run(function($templateCache, $http) {
 	$http.get('writers-concerns/writers-concerns.html', {cache:$templateCache});
 	$http.get('writers-concerns/intro/intro.html', {cache:$templateCache});
@@ -356,6 +374,7 @@ app.run(function($templateCache, $http) {
 	$http.get('part-10/part-10.html', {cache:$templateCache});
 	$http.get('part-10/intro/intro.html', {cache:$templateCache});
 });
+*/
 
 
 
@@ -380,6 +399,6 @@ $(document).ready(function() {
 		'../../part-6/intro/assets/img/background-image.jpg',
 		'../../part-7/intro/assets/img/background-image.jpg',
 		'../../part-8/intro/assets/img/background-image.jpg',
-		'../../../part-9/intro/assets/img/background-image.jpg'
+		'../../part-9/intro/assets/img/background-image.jpg'
 	]);
 });
