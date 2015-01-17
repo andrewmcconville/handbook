@@ -7,9 +7,7 @@
   .home .instructions p {
     margin-bottom: 24px; }
 .home .page-view {
-  background-image: url("/home/assets/img/cover-colorful-swirls.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center top; }
+  background-image: url("assets/img/cover-colorful-swirls.jpg");
+  background-size: cover; }
 
 /*# sourceMappingURL=home.css.map */

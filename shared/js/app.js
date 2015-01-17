@@ -370,16 +370,16 @@ $(document).ready(function() {
 	}
 
 	preload([
-		'/writers-concerns/intro/assets/img/background-image.jpg',
-		'/writers-process/intro/assets/img/background-image.jpg',
-		'/part-1/intro/assets/img/background-image.jpg',
-		'/part-2/intro/assets/img/background-image.jpg',
-		'/part-3/intro/assets/img/background-image.jpg',
-		'/part-4/intro/assets/img/background-image.jpg',
-		'/part-5/intro/assets/img/background-image.jpg',
-		'/part-6/intro/assets/img/background-image.jpg',
-		'/part-7/intro/assets/img/background-image.jpg',
-		'/part-8/intro/assets/img/background-image.jpg',
-		'/part-9/intro/assets/img/background-image.jpg'
+		'../../writers-concerns/intro/assets/img/background-image.jpg',
+		'../../writers-process/intro/assets/img/background-image.jpg',
+		'../../part-1/intro/assets/img/background-image.jpg',
+		'../../part-2/intro/assets/img/background-image.jpg',
+		'../../part-3/intro/assets/img/background-image.jpg',
+		'../../part-4/intro/assets/img/background-image.jpg',
+		'../../part-5/intro/assets/img/background-image.jpg',
+		'../../part-6/intro/assets/img/background-image.jpg',
+		'../../part-7/intro/assets/img/background-image.jpg',
+		'../../part-8/intro/assets/img/background-image.jpg',
+		'../../../part-9/intro/assets/img/background-image.jpg'
 	]);
 });
