@@ -23,21 +23,18 @@
     float: left;
     margin: 0 4px; }
     .main-nav .tab.active a, .main-nav .tab.active-you a {
-      -moz-border-radius: 6px 6px 6px 6px;
       border-radius: 6px 6px 6px 6px;
       height: 38px;
       margin-bottom: -10px;
-      transition: all 250ms ease-out; }
+      -webkit-transition: all 250ms ease-out;
+              transition: all 250ms ease-out; }
       .main-nav .tab.active a.tab-text, .main-nav .tab.active-you a.tab-text {
-        -moz-border-radius: 12px 12px 12px 12px;
         border-radius: 12px 12px 12px 12px;
-        transition: all 250ms ease-out; }
+        -webkit-transition: all 250ms ease-out;
+                transition: all 250ms ease-out; }
     .main-nav .tab a {
       background-color: #fff;
-      -moz-border-radius: 6px 6px 0 0;
       border-radius: 6px 6px 0 0;
-      -webkit-box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.4);
-      -moz-box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.4);
       box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.4);
       color: #fff;
       display: block;
@@ -47,14 +44,15 @@
       padding-top: 6px;
       text-align: center;
       width: 28px;
-      transition: all 250ms ease-out; }
+      -webkit-transition: all 250ms ease-out;
+              transition: all 250ms ease-out; }
       .main-nav .tab a.tab-text {
-        -moz-border-radius: 12px 12px 0 0;
         border-radius: 12px 12px 0 0;
         font-size: 11px;
         padding: 10px 4px 0 4px;
         width: auto;
-        transition: all 250ms ease-out; }
+        -webkit-transition: all 250ms ease-out;
+                transition: all 250ms ease-out; }
       .main-nav .tab a.top-ae {
         padding-top: 3px; }
       .main-nav .tab a.top-you {
@@ -103,6 +101,8 @@
   left: 0;
   position: absolute;
   top: 0;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
   width: 242px; }
 
 .nav-heading {
@@ -179,33 +179,31 @@ img {
   left: 0;
   right: 0;
   top: 38px;
+  -webkit-transition: all 550ms;
+  transition: all 550ms;
   z-index: 1; }
-  .part-view.ng-enter, .part-view.ng-leave {
-    transition: all 250ms ease-out; }
-  .part-view.ng-enter {
+  .part-view.ng-enter .nav-left {
     opacity: 0; }
-  .part-view.ng-enter-active {
+  .part-view.ng-enter .page-view {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  .part-view.ng-enter-active .nav-left {
     opacity: 1; }
+  .part-view.ng-enter-active .page-view {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
   .part-view.ng-leave {
-    opacity: 1;
     z-index: 0; }
+    .part-view.ng-leave .nav-left {
+      opacity: 1; }
+    .part-view.ng-leave .page-view {
+      z-index: 0; }
   .part-view.ng-leave-active {
-    opacity: 1;
     z-index: 0; }
-
-.part-heading {
-  font-size: 48px;
-  padding: 26px 20px;
-  text-transform: uppercase; }
-  .part-heading.dark-text {
-    color: #000; }
-  .part-heading.light-text {
-    color: #fff; }
-  .part-heading .font-light {
-    font-size: 46x;
-    font-weight: 300; }
-  .part-heading .font-heavy {
-    font-weight: 600; }
+    .part-view.ng-leave-active .nav-left {
+      opacity: 1; }
+    .part-view.ng-leave-active .page-view {
+      z-index: 0; }
 
 /*
  * A 'page-view' is the main content area.
@@ -218,12 +216,14 @@ img {
   left: 242px;
   right: 0;
   top: 0;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
   z-index: 1; }
-  .page-view.ng-enter, .page-view.ng-leave {
-    transition: all .5s ease-out; }
   .page-view.ng-enter {
+    -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0); }
   .page-view.ng-enter-active {
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
   .page-view.ng-leave {
     z-index: 0; }
@@ -236,5 +236,19 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
+
+.part-heading {
+  font-size: 48px;
+  padding: 26px 20px;
+  text-transform: uppercase; }
+  .part-heading.dark-text {
+    color: #000; }
+  .part-heading.light-text {
+    color: #fff; }
+  .part-heading .font-light {
+    font-size: 46px;
+    font-weight: 300; }
+  .part-heading .font-heavy {
+    font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */
