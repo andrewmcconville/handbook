@@ -29,6 +29,10 @@ var fakeNav = function() {
 app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
 	$urlRouterProvider.otherwise('/');
 
+	/*
+	 * Would rather setup a default route to each parts /intro
+	 * Users should never land on part parent eg: /part-1
+	 */
 	$urlRouterProvider.when('/writers-concerns', '/writers-concerns/intro');
 	$urlRouterProvider.when('/writers-process', '/writers-process/intro');
 	$urlRouterProvider.when('/part-1', '/part-1/intro');
@@ -47,6 +51,19 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 	$urlRouterProvider.when('/you', '/you/intro');
 
 	$stateProvider
+		/*
+		 * HOME
+		 */
+		.state('home', {
+			url: '/',
+			templateUrl: 'home/home.html',
+        	controller: function($scope, $state) {
+        		$('#app-header').on('click', '.tab', function(){
+        			$('#app-header .tab').removeClass('active');
+        			$(this).addClass('active');
+        		});
+			}
+		})
 		/*
 		 * WRITERS CONCERNS
 		 */
@@ -76,27 +93,14 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			templateUrl: 'writers-process/intro/intro.html'
 		})
 		/*
-		 * HOME
-		 */
-		.state('home', {
-			url: '/',
-			templateUrl: 'home/home.html',
-        	controller: function($scope, $state) {
-        		$('#app-header').on('click', '.tab', function(){
-        			$('#app-header .tab').removeClass('active');
-        			$(this).addClass('active');
-        		});
-			}
-		})
-		/*
 		 * PART 1
 		 */
 		.state('part-1', {
 			url: '/part-1',
 			templateUrl: 'part-1/part-1.html',
         	controller: function($scope, $state) {
+        		//open and closes part-1 menu
         		$scope.$on('$stateChangeSuccess', function(event){
-					//$state.go('part-1.intro');
 					setTimeout(function(){
 						$('.active').parents('li').addClass('active');
 					    $('.nav-left .active').children('.sub-nav').slideDown();
@@ -108,12 +112,6 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 
 					}, 0);
 				});
-
-				//$state.go('part-1.intro');
-
-				$scope.changeState = function () {
-					//$state.go('part-1.intro');
-				};
         	}
 		})
 		.state('part-1.intro', {
@@ -132,26 +130,26 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/what-is-rhetoric',
 			templateUrl: 'part-1/what-is-rhetoric/what-is-rhetoric.html'
 		})
-			.state('part-1.what-is-rhetoric/audience', {
-				url: '/what-is-rhetoric/audience',
-				templateUrl: 'part-1/what-is-rhetoric/audience/audience.html'
-			})
-			.state('part-1.what-is-rhetoric/purpose', {
-				url: '/what-is-rhetoric/purpose',
-				templateUrl: 'part-1/what-is-rhetoric/purpose/purpose.html'
-			})
-			.state('part-1.what-is-rhetoric/context', {
-				url: '/what-is-rhetoric/context',
-				templateUrl: 'part-1/what-is-rhetoric/context/context.html'
-			})
-			.state('part-1.what-is-rhetoric/strategies', {
-				url: '/what-is-rhetoric/strategies',
-				templateUrl: 'part-1/what-is-rhetoric/strategies/strategies.html'
-			})
-			.state('part-1.what-is-rhetoric/how-the-parts-work-together', {
-				url: '/what-is-rhetoric/how-the-parts-work-together',
-				templateUrl: 'part-1/what-is-rhetoric/how-the-parts-work-together/how-the-parts-work-together.html'
-			})
+		.state('part-1.what-is-rhetoric/audience', {
+			url: '/what-is-rhetoric/audience',
+			templateUrl: 'part-1/what-is-rhetoric/audience/audience.html'
+		})
+		.state('part-1.what-is-rhetoric/purpose', {
+			url: '/what-is-rhetoric/purpose',
+			templateUrl: 'part-1/what-is-rhetoric/purpose/purpose.html'
+		})
+		.state('part-1.what-is-rhetoric/context', {
+			url: '/what-is-rhetoric/context',
+			templateUrl: 'part-1/what-is-rhetoric/context/context.html'
+		})
+		.state('part-1.what-is-rhetoric/strategies', {
+			url: '/what-is-rhetoric/strategies',
+			templateUrl: 'part-1/what-is-rhetoric/strategies/strategies.html'
+		})
+		.state('part-1.what-is-rhetoric/how-the-parts-work-together', {
+			url: '/what-is-rhetoric/how-the-parts-work-together',
+			templateUrl: 'part-1/what-is-rhetoric/how-the-parts-work-together/how-the-parts-work-together.html'
+		})
 		.state('part-1.rhetoric-and-a-process-for-composing', {
 			url: '/rhetoric-and-a-process-for-composing',
 			templateUrl: 'part-1/rhetoric-and-a-process-for-composing/rhetoric-and-a-process-for-composing.html'
@@ -160,18 +158,18 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/understanding-your-project-or-assignment',
 			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-your-project-or-assignment.html'
 		})
-			.state('part-1.understanding-your-project-or-assignment/responding-to-a-written-assignment', {
-				url: '/understanding-your-project-or-assignment/responding-to-a-written-assignment',
-				templateUrl: 'part-1/understanding-your-project-or-assignment/responding-to-a-written-assignment/responding-to-a-written-assignment.html'
-			})
-			.state('part-1.understanding-your-project-or-assignment/sample-research-paper-assignment', {
-				url: '/understanding-your-project-or-assignment/sample-research-paper-assignment',
-				templateUrl: 'part-1/understanding-your-project-or-assignment/sample-research-paper-assignment/sample-research-paper-assignment.html'
-			})
-			.state('part-1.understanding-your-project-or-assignment/understanding-other-projects', {
-				url: '/understanding-your-project-or-assignment/understanding-other-projects',
-				templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/understanding-other-projects.html'
-			})
+		.state('part-1.understanding-your-project-or-assignment/responding-to-a-written-assignment', {
+			url: '/understanding-your-project-or-assignment/responding-to-a-written-assignment',
+			templateUrl: 'part-1/understanding-your-project-or-assignment/responding-to-a-written-assignment/responding-to-a-written-assignment.html'
+		})
+		.state('part-1.understanding-your-project-or-assignment/sample-research-paper-assignment', {
+			url: '/understanding-your-project-or-assignment/sample-research-paper-assignment',
+			templateUrl: 'part-1/understanding-your-project-or-assignment/sample-research-paper-assignment/sample-research-paper-assignment.html'
+		})
+		.state('part-1.understanding-your-project-or-assignment/understanding-other-projects', {
+			url: '/understanding-your-project-or-assignment/understanding-other-projects',
+			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/understanding-other-projects.html'
+		})
 		/* 
 		 * PART 2
 		 */
@@ -347,7 +345,6 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 /*
  * cache angular templates
  */
-/*
 app.run(function($templateCache, $http) {
 	$http.get('writers-concerns/writers-concerns.html', {cache:$templateCache});
 	$http.get('writers-concerns/intro/intro.html', {cache:$templateCache});
@@ -374,7 +371,6 @@ app.run(function($templateCache, $http) {
 	$http.get('part-10/part-10.html', {cache:$templateCache});
 	$http.get('part-10/intro/intro.html', {cache:$templateCache});
 });
-*/
 
 
 
@@ -399,6 +395,7 @@ $(document).ready(function() {
 		'../../part-6/intro/assets/img/background-image.jpg',
 		'../../part-7/intro/assets/img/background-image.jpg',
 		'../../part-8/intro/assets/img/background-image.jpg',
-		'../../part-9/intro/assets/img/background-image.jpg'
+		'../../part-9/intro/assets/img/background-image.jpg',
+		'../../part-10/intro/assets/img/background-image.jpg'
 	]);
 });

@@ -101,8 +101,8 @@
   left: 0;
   position: absolute;
   top: 0;
-  -webkit-transition: all 250ms ease-out;
-          transition: all 250ms ease-out;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
   width: 242px; }
 
 .nav-heading {
@@ -179,19 +179,19 @@ img {
   left: 0;
   right: 0;
   top: 38px;
-  -webkit-transition: all 500ms ease-out;
-          transition: all 500ms ease-out;
+  -webkit-transition: all 550ms;
+  transition: all 550ms;
   z-index: 1; }
   .part-view.ng-enter .nav-left {
     opacity: 0; }
   .part-view.ng-enter .page-view {
     -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0); }
+    transform: translate3d(100%, 0, 0); }
   .part-view.ng-enter-active .nav-left {
     opacity: 1; }
   .part-view.ng-enter-active .page-view {
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, 0, 0); }
   .part-view.ng-leave {
     z-index: 0; }
     .part-view.ng-leave .nav-left {
@@ -209,6 +209,7 @@ img {
  * A 'page-view' is the main content area.
  */
 .page-view {
+  background-color: #fff;
   border-top: 4px solid #d0d0d0;
   bottom: 0;
   position: absolute;
@@ -216,14 +217,14 @@ img {
   right: 0;
   top: 0;
   -webkit-transition: all 500ms;
-          transition: all 500ms;
+  transition: all 500ms;
   z-index: 1; }
   .page-view.ng-enter {
     -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0); }
+    transform: translate3d(100%, 0, 0); }
   .page-view.ng-enter-active {
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, 0, 0); }
   .page-view.ng-leave {
     z-index: 0; }
   .page-view.ng-leave-active {
@@ -245,7 +246,7 @@ img {
   .part-heading.light-text {
     color: #fff; }
   .part-heading .font-light {
-    font-size: 46x;
+    font-size: 46px;
     font-weight: 300; }
   .part-heading .font-heavy {
     font-weight: 600; }
