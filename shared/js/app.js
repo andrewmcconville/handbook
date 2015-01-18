@@ -396,6 +396,13 @@ $(document).ready(function() {
 		'../../part-7/intro/assets/img/background-image.jpg',
 		'../../part-8/intro/assets/img/background-image.jpg',
 		'../../part-9/intro/assets/img/background-image.jpg',
-		'../../part-10/intro/assets/img/background-image.jpg'
+		'../../part-10/intro/assets/img/background-image.jpg',
+		'../../academic-english/intro/assets/img/content.jpg',
+		'../../search/assets/left-nav.png',
+		'../../search/assets/content.jpg',
+		'../../glossary/assets/left-nav.png',
+		'../../glossary/assets/content.png',
+		'../../you/assets/left-nav.png',
+		'../../you/assets/content.png'
 	]);
 });
