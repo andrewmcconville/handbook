@@ -1,3 +1,11 @@
+@import 'colors';
+
 .what-will-you-learn {
-	
+	padding: 20px;
+
+	.icon-triangle {
+		fill: $part-1-dark;
+		height: 32px;
+		width: 16px
+	}
 }
