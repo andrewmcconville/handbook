@@ -1,11 +1,32 @@
 @import 'colors';
 
 .what-will-you-learn {
-	padding: 20px;
+	padding: 32px;
+
+	.body-copy {
+		margin-bottom: 24px;
+	}
 
 	.icon-triangle {
 		fill: $part-1-dark;
+		filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.333));
 		height: 32px;
+		margin-right: 4px;
 		width: 16px
+	}
+
+	.text {
+		font-size: 16px;
+		font-weight: 600;
+		position: relative;
+		top: -10px;
+	}
+
+	.description {
+		padding-left: 36px;
+
+		p {
+			margin-bottom: 8px;
+		}
 	}
 }

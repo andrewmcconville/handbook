@@ -1,8 +1,8 @@
 .body-copy {
-  font-family: 'Merriweather', serif;
-  font-size: 14px;
-  line-height: 18px; }
+  font-family: 'Merriweather', serif; }
   .body-copy p {
+    font-size: 14px;
+    line-height: 20px;
     text-indent: 20px; }
     .body-copy p:nth-child(1) {
       text-indent: 0; }
@@ -10,13 +10,17 @@
 strong {
   font-weight: 600; }
 
+.all-caps {
+  text-transform: uppercase; }
+
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  padding: 5px 8px 0 8px; }
 
 #app-header {
   height: 38px;
@@ -165,9 +169,17 @@ button {
     -webkit-filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.333));
             filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.333));
     height: 32px;
+    margin-right: 4px;
     width: 16px; }
-  .what-will-you-learn .term {
-    text-transform: uppercase; }
+  .what-will-you-learn .text {
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    top: -10px; }
+  .what-will-you-learn .description {
+    padding-left: 36px; }
+    .what-will-you-learn .description p {
+      margin-bottom: 8px; }
 
 * {
   box-sizing: border-box; }
