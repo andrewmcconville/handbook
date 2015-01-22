@@ -1,0 +1,17 @@
+.body-copy {
+	font-family: 'Merriweather', serif;
+	font-size: 14px;
+	line-height: 18px;
+
+	p {
+		text-indent: 20px;
+
+		&:nth-child(1) {
+			text-indent: 0;
+		}
+	}
+}
+
+strong {
+	font-weight: 600;
+}
