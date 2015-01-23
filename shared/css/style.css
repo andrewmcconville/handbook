@@ -1,3 +1,29 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.body-copy {
+  font-family: 'Lora', serif; }
+  .body-copy p {
+    font-size: 14px;
+    line-height: 20px;
+    text-indent: 20px; }
+    .body-copy p:nth-child(1) {
+      text-indent: 0; }
+
+strong {
+  font-weight: 600; }
+
+.all-caps {
+  text-transform: uppercase; }
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+
 #app-header {
   height: 38px;
   position: relative;
@@ -12,7 +38,7 @@
     width: 100px; }
 
 .main-nav {
-  font-family: 'Merriweather', serif;
+  font-family: 'Lora', serif;
   left: 242px;
   padding-top: 10px;
   position: absolute;
@@ -134,15 +160,39 @@
   display: none; }
   .sub-nav li a {
     font-weight: 400;
-    padding: 5px 18px 5px 24px; }
+    padding: 4px 18px 4px 24px; }
+
+.what-will-you-learn {
+  padding: 32px 160px 32px 32px; }
+  .what-will-you-learn .body-copy {
+    margin-bottom: 24px; }
+  .what-will-you-learn .button {
+    padding: 0 10px 0 2px; }
+  .what-will-you-learn .icon-triangle {
+    background-image: url(../assets/img/triangle-shadow.png);
+    background-size: 100%;
+    fill: #abc06b;
+    height: 50px;
+    padding: 9px;
+    position: relative;
+    top: 2px;
+    width: 34px; }
+  .what-will-you-learn .text {
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    top: -16px; }
+  .what-will-you-learn .description {
+    padding-left: 36px; }
+    .what-will-you-learn .description p {
+      font-size: 14px;
+      margin-bottom: 8px; }
 
 * {
   box-sizing: border-box; }
 
-html,
 body {
   background-color: #cbdde7;
-  font-family: 'Source Sans Pro', sans-serif;
   -webkit-tap-highlight-color: transparent; }
 
 h1 {
