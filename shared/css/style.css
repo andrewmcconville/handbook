@@ -1,5 +1,8 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
 .body-copy {
-  font-family: 'Merriweather', serif; }
+  font-family: 'Lora', serif; }
   .body-copy p {
     font-size: 14px;
     line-height: 20px;
@@ -36,7 +39,7 @@ button {
     width: 100px; }
 
 .main-nav {
-  font-family: 'Merriweather', serif;
+  font-family: 'Lora', serif;
   left: 242px;
   padding-top: 10px;
   position: absolute;
@@ -185,10 +188,8 @@ button {
 * {
   box-sizing: border-box; }
 
-html,
 body {
   background-color: #cbdde7;
-  font-family: 'Source Sans Pro', sans-serif;
   -webkit-tap-highlight-color: transparent; }
 
 h1 {
