@@ -22,8 +22,7 @@ button {
   appearance: none;
   background-color: transparent;
   border: none;
-  cursor: pointer;
-  padding: 5px 8px 0 8px; }
+  cursor: pointer; }
 
 #app-header {
   height: 38px;
@@ -167,18 +166,22 @@ button {
   padding: 32px 160px 32px 32px; }
   .what-will-you-learn .body-copy {
     margin-bottom: 24px; }
+  .what-will-you-learn .button {
+    padding: 0 10px 0 2px; }
   .what-will-you-learn .icon-triangle {
+    background-image: url(../assets/img/triangle-shadow.png);
+    background-size: 100%;
     fill: #abc06b;
-    -webkit-filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.333));
-            filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.333));
-    height: 32px;
-    margin-right: 4px;
-    width: 16px; }
+    height: 50px;
+    padding: 9px;
+    position: relative;
+    top: 2px;
+    width: 34px; }
   .what-will-you-learn .text {
     font-size: 16px;
     font-weight: 600;
     position: relative;
-    top: -10px; }
+    top: -16px; }
   .what-will-you-learn .description {
     padding-left: 36px; }
     .what-will-you-learn .description p {
