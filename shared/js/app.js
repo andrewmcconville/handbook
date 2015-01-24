@@ -30,6 +30,8 @@ app.run([
 		$templateCache.put("cached=part-9/intro/intro.html", $http({method: 'GET', url: 'part-9/intro/intro.html', cache: true}));
 		$templateCache.put("cached=part-10/part-10.html", $http({method: 'GET', url: 'part-10/part-10.html', cache: true}));
 		$templateCache.put("cached=part-10/intro/intro.html", $http({method: 'GET', url: 'part-10/intro/intro.html', cache: true}));
+		$templateCache.put("cached=part-11/part-11.html", $http({method: 'GET', url: 'part-11/part-11.html', cache: true}));
+		$templateCache.put("cached=part-11/intro/intro.html", $http({method: 'GET', url: 'part-11/intro/intro.html', cache: true}));
 
 		$rootScope.$state = $state;
 		return $rootScope.$stateParams = $stateParams;
@@ -74,7 +76,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 	$urlRouterProvider.when('/part-8', '/part-8/intro');
 	$urlRouterProvider.when('/part-9', '/part-9/intro');
 	$urlRouterProvider.when('/part-10', '/part-10/intro');
-	$urlRouterProvider.when('/academic-english', '/academic-english/intro');
+	$urlRouterProvider.when('/part-11', '/part-11/intro');
 	$urlRouterProvider.when('/search', '/search/intro');
 	$urlRouterProvider.when('/glossary', '/glossary/intro');
 	$urlRouterProvider.when('/you', '/you/intro');
@@ -326,15 +328,18 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			templateUrl: 'cached=part-10/intro/intro.html'
 		})
 		/* 
-		 * ACADEMIC ENGLISH
+		 * PART 11
 		 */
-		.state('academic-english', {
-			url: '/academic-english',
-			templateUrl: 'academic-english/academic-english.html'
+		.state('part-11', {
+			url: '/part-11',
+			templateUrl: 'cached=part-11/part-11.html',
+        	controller: function() {
+        		fakeNav();
+        	}
 		})
-		.state('academic-english.intro', {
+		.state('part-11.intro', {
 			url: '/intro',
-			templateUrl: 'academic-english/intro/intro.html'
+			templateUrl: 'cached=part-11/intro/intro.html'
 		})
 		/* 
 		 * SEARCH
@@ -398,7 +403,7 @@ $(document).ready(function() {
 		'../../part-8/intro/assets/img/background-image.jpg',
 		'../../part-9/intro/assets/img/background-image.jpg',
 		'../../part-10/intro/assets/img/background-image.jpg',
-		'../../academic-english/intro/assets/img/content.jpg',
+		'../../part-11/intro/assets/img/background-image.jpg',
 		'../../search/assets/left-nav.png',
 		'../../search/assets/content.jpg',
 		'../../glossary/assets/left-nav.png',

@@ -65,9 +65,10 @@ button {
       color: #fff;
       display: block;
       height: 28px;
-      font-size: 16px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
       overflow: hidden;
-      padding-top: 6px;
       text-align: center;
       width: 28px;
       -webkit-transition: all 250ms ease-out;
@@ -100,13 +101,13 @@ button {
       .main-nav .tab a.tab-part-7 {
         background-color: #499987; }
       .main-nav .tab a.tab-part-8 {
-        background-color: #397999; }
+        background-color: #771b7b; }
       .main-nav .tab a.tab-part-9 {
-        background-color: #74629a; }
+        background-color: #397999; }
       .main-nav .tab a.tab-part-10 {
+        background-color: #74629a; }
+      .main-nav .tab a.tab-part-11 {
         background-color: #993733; }
-      .main-nav .tab a.tab-academic-english {
-        background-color: #d6df23; }
       .main-nav .tab a.tab-search {
         background-color: #f89a1c; }
       .main-nav .tab a.tab-glossary {

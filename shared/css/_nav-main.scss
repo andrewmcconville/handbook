@@ -57,9 +57,10 @@
 			color: #fff;
 			display: block;
 			height: 28px;
-			font-size: 16px;
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 24px;
 			overflow: hidden;
-			padding-top: 6px;
 			text-align: center;
 			width: 28px;
 			transition: all 250ms ease-out;
@@ -93,7 +94,7 @@
 			&.tab-part-8 { background-color: $part-8-darker; }
 			&.tab-part-9 { background-color: $part-9-darker; }
 			&.tab-part-10 { background-color: $part-10-darker; }
-			&.tab-academic-english { background-color: $academic-english-darker; }
+			&.tab-part-11 { background-color: $part-11-darker; }
 			&.tab-search { background-color: $search-darker; }
 			&.tab-glossary { background-color: $glossary-darker; }
 			&.tab-you {

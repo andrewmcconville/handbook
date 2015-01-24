@@ -4,6 +4,7 @@
 	@import 'intro/intro.scss';
 	
 	.nav-left {
+		background-color: $part-8-darker;
 		border-top-color: $part-8-darker;
 
 		.nav-heading {
@@ -27,11 +28,11 @@
 
 			li a:hover {
 				background-color: $part-8-lighter;
-			}
+			}	
 		}
 	}
 
 	.page-view {
-		border-top-color: $part-8-darker; 
+		border-top-color: $part-8-darker;
 	}
 }
