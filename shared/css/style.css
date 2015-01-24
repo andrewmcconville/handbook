@@ -75,15 +75,11 @@ button {
               transition: all 250ms ease-out; }
       .main-nav .tab a.tab-text {
         border-radius: 12px 12px 0 0;
-        font-size: 11px;
-        padding: 10px 4px 0 4px;
+        font-size: 13px;
+        padding: 2px 6px 0 6px;
         width: auto;
         -webkit-transition: all 250ms ease-out;
                 transition: all 250ms ease-out; }
-      .main-nav .tab a.top-ae {
-        padding-top: 3px; }
-      .main-nav .tab a.top-you {
-        padding-top: 8px; }
       .main-nav .tab a.tab-c, .main-nav .tab a.tab-p {
         color: #000; }
       .main-nav .tab a.tab-part-1 {
@@ -109,12 +105,14 @@ button {
       .main-nav .tab a.tab-part-11 {
         background-color: #993733; }
       .main-nav .tab a.tab-search {
-        background-color: #f89a1c; }
+        background-color: #da8227;
+        font-family: 'Open Sana', sans-serif; }
       .main-nav .tab a.tab-glossary {
-        background-color: #ed1c24; }
+        background-color: #ed1c24;
+        font-family: 'Open Sana', sans-serif; }
       .main-nav .tab a.tab-you {
         background-color: #2e3092;
-        font-size: 18px; }
+        font-size: 21px; }
     .main-nav .tab.tab-you-wrapper {
       float: right;
       margin-right: 33px; }
@@ -294,7 +292,8 @@ img {
 
 .part-heading {
   font-size: 48px;
-  padding: 26px 20px;
+  line-height: 52px;
+  padding: 22px 20px;
   text-transform: uppercase; }
   .part-heading.dark-text {
     color: #000; }

@@ -68,18 +68,10 @@
 			&.tab-text {
 				-moz-border-radius: 12px 12px 0 0;
 				border-radius: 12px 12px 0 0;
-				font-size: 11px;
-				padding: 10px 4px 0 4px;
+				font-size: 13px;
+				padding: 2px 6px 0 6px;
 				width: auto;
 				transition: all 250ms ease-out;
-			}
-
-			&.top-ae {
-				padding-top: 3px;
-			}
-
-			&.top-you {
-				padding-top: 8px;
 			}
 
 			&.tab-c,
@@ -95,11 +87,17 @@
 			&.tab-part-9 { background-color: $part-9-darker; }
 			&.tab-part-10 { background-color: $part-10-darker; }
 			&.tab-part-11 { background-color: $part-11-darker; }
-			&.tab-search { background-color: $search-darker; }
-			&.tab-glossary { background-color: $glossary-darker; }
+			&.tab-search {
+				background-color: $search-darker;
+				font-family: 'Open Sana', sans-serif;
+			}
+			&.tab-glossary {
+				background-color: $glossary-darker;
+				font-family: 'Open Sana', sans-serif;
+			}
 			&.tab-you {
 				background-color: $you-darker;
-				font-size: 18px;
+				font-size: 21px;
 			}
 		}
 
