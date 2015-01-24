@@ -130,9 +130,9 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/part-1',
 			templateUrl: 'cached=part-1/part-1.html',
         	controller: function($scope, $state) {
-        		//open and closes part-1 menu
         		$scope.$on('$stateChangeSuccess', function(event){
 					setTimeout(function(){
+        				//open and closes part-1 menu
 						$('.active').parents('li').addClass('active');
 					    $('.nav-left .active').children('.sub-nav').slideDown();
 
@@ -140,6 +140,9 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					        $(this).siblings().find('.sub-nav').slideUp();
 					        $(this).children('.sub-nav').slideDown();
 					    });
+
+					    //adds focus to left nav
+					    $('.nav > li:eq(0) > a:eq(0)').focus();
 
 					}, 0);
 				});
