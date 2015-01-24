@@ -4,10 +4,10 @@ body {
 
 .body-copy {
 	font-family: 'Lora', serif;
+	font-size: 13px;
+	line-height: 19.5px;
 
 	p {
-		font-size: 14px;
-		line-height: 20px;
 		text-indent: 20px;
 
 		&:nth-child(1) {
