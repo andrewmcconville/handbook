@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAGC,2BAAU;EACT,gBAAgB,ECwDQ,OAAO;EDvD/B,gBAAgB,ECuDQ,OAAO;EDrD/B,wCAAa;IACZ,gBAAgB,ECoDO,OAAO;EDhD9B,4CAAY;IACX,gBAAgB,ECiDK,OAAO;ED9C7B,2CAAW;IACV,gBAAgB,EC6CK,OAAO;EDxC7B,gDAAY;IACX,gBAAgB,ECwCO,OAAO;EDrC/B,+CAAW;IACV,gBAAgB,ECoCO,OAAO;AD/BjC,4BAAW;EACV,gBAAgB,EC2BQ,OAAO",
-"sources": ["academic-english.scss","../shared/css/_colors.scss"],
-"names": [],
-"file": "academic-english.css"
-}
