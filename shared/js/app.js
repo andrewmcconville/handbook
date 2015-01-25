@@ -1,5 +1,14 @@
 var app = angular.module('handbook', ['ui.router', 'ngAnimate']);
 
+app.controller('what-is-composing-ctrl', ['$scope', function($scope) {
+	$scope.isOpen = false;
+
+	$scope.showPopup = function() {
+		$scope.isOpen = !$scope.isOpen;
+	};
+}]);
+
+
 app.run([
 	"$rootScope", "$state", "$stateParams", "$templateCache", "$http", function($rootScope, $state, $stateParams, $templateCache, $http) {
 
