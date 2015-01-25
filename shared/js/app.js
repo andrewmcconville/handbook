@@ -1,5 +1,14 @@
 var app = angular.module('handbook', ['ui.router', 'ngAnimate']);
 
+app.controller('what-is-composing-ctrl', ['$scope', function($scope) {
+	$scope.isOpen = false;
+
+	$scope.showPopup = function() {
+		$scope.isOpen = !$scope.isOpen;
+	};
+}]);
+
+
 app.run([
 	"$rootScope", "$state", "$stateParams", "$templateCache", "$http", function($rootScope, $state, $stateParams, $templateCache, $http) {
 
@@ -158,7 +167,16 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		})
 		.state('part-1.what-is-composing', {
 			url: '/what-is-composing',
-			templateUrl: 'part-1/what-is-composing/what-is-composing.html'
+			templateUrl: 'part-1/what-is-composing/what-is-composing.html',
+			// controller: function($scope) {
+			// 	console.log('HELLLOOO');
+			// 	$scope.isOpen = false;
+			//
+			// 	$scope.showPopup = function() {
+			// 		console.log($scope.isOpen);
+			// 		$scope.isOpen = !$scope.isOpen;
+			// 	};
+			// }
 		})
 		.state('part-1.what-is-rhetoric', {
 			url: '/what-is-rhetoric',
@@ -204,7 +222,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/understanding-your-project-or-assignment/understanding-other-projects',
 			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/understanding-other-projects.html'
 		})
-		/* 
+		/*
 		 * PART 2
 		 */
 		.state('part-2', {
@@ -218,7 +236,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/intro',
 			templateUrl: 'cached=part-2/intro/intro.html'
 		})
-		/* 
+		/*
 		 * PART 3
 		 */
 		.state('part-3', {
@@ -232,7 +250,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/intro',
 			templateUrl: 'cached=part-3/intro/intro.html'
 		})
-		/* 
+		/*
 		 * PART 4
 		 */
 		.state('part-4', {
@@ -246,7 +264,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/intro',
 			templateUrl: 'cached=part-4/intro/intro.html'
 		})
-		/* 
+		/*
 		 * PART 5
 		 */
 		.state('part-5', {
@@ -260,7 +278,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/intro',
 			templateUrl: 'cached=part-5/intro/intro.html'
 		})
-		/* 
+		/*
 		 * PART 6
 		 */
 		.state('part-6', {
@@ -274,7 +292,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/intro',
 			templateUrl: 'cached=part-6/intro/intro.html'
 		})
-		/* 
+		/*
 		 * PART 7
 		 */
 		.state('part-7', {
@@ -288,7 +306,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/intro',
 			templateUrl: 'cached=part-7/intro/intro.html'
 		})
-		/* 
+		/*
 		 * PART 8
 		 */
 		.state('part-8', {
@@ -302,7 +320,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/intro',
 			templateUrl: 'cached=part-8/intro/intro.html'
 		})
-		/* 
+		/*
 		 * PART 9
 		 */
 		.state('part-9', {
@@ -316,7 +334,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/intro',
 			templateUrl: 'cached=part-9/intro/intro.html'
 		})
-		/* 
+		/*
 		 * PART 10
 		 */
 		.state('part-10', {
@@ -330,7 +348,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/intro',
 			templateUrl: 'cached=part-10/intro/intro.html'
 		})
-		/* 
+		/*
 		 * PART 11
 		 */
 		.state('part-11', {
@@ -344,7 +362,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/intro',
 			templateUrl: 'cached=part-11/intro/intro.html'
 		})
-		/* 
+		/*
 		 * SEARCH
 		 */
 		.state('search', {
@@ -355,7 +373,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/intro',
 			templateUrl: 'search/intro/intro.html'
 		})
-		/* 
+		/*
 		 * GLOSSARY
 		 */
 		.state('glossary', {
@@ -366,7 +384,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/intro',
 			templateUrl: 'glossary/intro/intro.html'
 		})
-		/* 
+		/*
 		 * YOU
 		 */
 		.state('you', {

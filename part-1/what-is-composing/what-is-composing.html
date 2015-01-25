@@ -1,3 +1,63 @@
-﻿<div class="page-view-inner what-is-composing">
+﻿<div ng-controller="what-is-composing-ctrl" class="page-view-inner what-is-composing">
+	<div class="supporting-text">
+		<h2 class="body-heading">What is Composing?</h2>
+		<div class="body-copy">
+			<p>Composing a paper, you arrange words into sentences into paragraphs, hoping the arrangement will engage your readers. Composing a poster, you arrange words and photographs and colors, hoping viewers will want to look at the poster and heed its purposes. Composing a podcast, you arrange voices and other sounds, hoping others want to listen. In other words, composing—as we use it in this book—refers to written, visual, oral, and mixed-media texts that you create.</p>
+			<p>The New London Group—British and American teachers who research how we learn to communicate—argues that composing requires three steps, shown to the right.</p>
+		</div>
 
+		<p class="instructions">Click each of the three steps to learn more.</p>
+
+		<div class="body-copy">
+			<p>This composing process shapes what we propose in this handbook. If you are to be an effective and satisfied composer, you need to learn the designs that are available to you—the conventions, grammars, and expectations—so you can make what audiences can understand but also so that you can design for your own purposes.</p>
+		</div>
+	</div>
+	<div class="interaction">
+		<div class="button-popup-container-1">
+			<button class="button" ng-click="showPopup()">
+				<span class="number">1</span>
+				<span class="text">available designs</span>
+			</button>
+			<div ng-show="isOpen" class="popup">
+				<button class="button-close-popup" ng-click="showPopup()">
+					<svg class="icon-x">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="shared/assets/img/icon-sprite.svg#icon-x"></use>
+					</svg>
+				</button>
+				No matter the medium—written, visual, oral, or some mix—we compose with elements and arrangements already familiar to others. These existing elements and arrangements are called available designs by the New London Group.
+			</div>
+		</div>
+
+
+		<div class="button-popup-container-2">
+			<button class="button" ng-click="showPopup()">
+				<span class="number">2</span>
+				<span class="text">designs</span>
+			</button>
+			<div ng-show="isOpen" class="popup">
+				<button class="button-close-popup" ng-click="showPopup()">
+					<svg class="icon-x">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="shared/assets/img/icon-sprite.svg#icon-x"></use>
+					</svg>
+				</button>
+				As we compose our texts out of available designs, we are designing. We try out new words, shapes, colors, and other possibiities from all that is available to us.
+			</div>
+		</div>
+
+
+		<div class="button-popup-container-3">
+			<button class="button" ng-click="showPopup()">
+				<span class="number">3</span>
+				<span class="text">the redesigned</span>
+			</button>
+			<div ng-show="isOpen" class="popup">
+				<button class="button-close-popup" ng-click="showPopup()">
+					<svg class="icon-x">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="shared/assets/img/icon-sprite.svg#icon-x"></use>
+					</svg>
+				</button>
+				When we finish composing, we have made the redesigned, something new out of past possibilities. The redesigned, in turn, becomes new available designs for our, or others’, future composing.
+			</div>
+		</div>
+	</div>
 </div>
