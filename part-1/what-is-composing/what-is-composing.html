@@ -1,4 +1,4 @@
-﻿<div class="page-view-inner what-is-composing">
+﻿<div ng-controller="what-is-composing-ctrl" class="page-view-inner what-is-composing">
 	<div class="supporting-text">
 		<h2 class="body-heading">What is Composing?</h2>
 		<div class="body-copy">
@@ -14,11 +14,11 @@
 	</div>
 	<div class="interaction">
 		<div class="button-popup-container-1">
-			<button class="button">
+			<button class="button" ng-click="showPopup()">
 				<span class="number">1</span>
 				<span class="text">available designs</span>
 			</button>
-			<div class="popup">No matter the medium—written, visual, oral, or some mix—we compose with elements and arrangements already familiar to others. These existing elements and arrangements are called available designs by the New London Group.</div>
+			<div ng-show="isOpen" class="popup">No matter the medium—written, visual, oral, or some mix—we compose with elements and arrangements already familiar to others. These existing elements and arrangements are called available designs by the New London Group.</div>
 		</div>
 
 	</div>
