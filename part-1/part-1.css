@@ -20,6 +20,14 @@
   left: 10px;
   position: absolute;
   top: 70px; }
+.part-1 .what-is-composing .button-popup-container-2 {
+  left: 272px;
+  position: absolute;
+  top: 230px; }
+.part-1 .what-is-composing .button-popup-container-3 {
+  left: 0;
+  position: absolute;
+  top: 304px; }
 .part-1 .what-is-composing .button {
   background-color: #abc06b;
   box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.5);
@@ -30,7 +38,8 @@
   z-index: 0; }
   .part-1 .what-is-composing .button .number {
     font-size: 26px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-right: 4px; }
   .part-1 .what-is-composing .button .text {
     font-size: 24px;
     font-weight: 300; }
@@ -39,9 +48,22 @@
   border: 1px solid #000;
   box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.5);
   font-size: 14px;
-  padding: 32px 24px;
+  padding: 16px 24px 44px 24px;
   position: relative;
+  width: 400px;
   z-index: 1; }
+  .part-1 .what-is-composing .popup .button-close-popup {
+    background-color: #000;
+    border-radius: 100%;
+    display: block;
+    height: 20px;
+    margin-bottom: 16px;
+    padding: 4px;
+    width: 20px; }
+  .part-1 .what-is-composing .popup .icon-x {
+    fill: #fff;
+    height: 12px;
+    width: 12px; }
 .part-1 .what-is-rhetoric {
   background-image: url("what-is-rhetoric/assets/img/background.jpg");
   background-size: cover; }
