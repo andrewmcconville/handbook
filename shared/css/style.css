@@ -1,6 +1,12 @@
 body {
   font-family: 'Source Sans Pro', sans-serif; }
 
+.body-heading {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
 .body-copy {
   font-family: 'Lora', serif;
   font-size: 13px;
@@ -9,6 +15,12 @@ body {
     text-indent: 20px; }
     .body-copy p:nth-child(1) {
       text-indent: 0; }
+
+.instructions {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 16px 0; }
 
 strong {
   font-weight: 600; }

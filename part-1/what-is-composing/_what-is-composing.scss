@@ -1,3 +1,10 @@
 .what-is-composing {
-	background-image: url('what-is-composing/assets/img/background.png');
+	.supporting-text {
+		bottom: 0;
+		left: 420px;
+		padding: 32px;
+		position: absolute;
+		right: 0;
+		top: 0
+	}
 }

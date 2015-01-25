@@ -1,7 +1,12 @@
 .part-1 .intro {
   background-image: url("intro/assets/img/background-image.jpg"); }
-.part-1 .what-is-composing {
-  background-image: url("what-is-composing/assets/img/background.png"); }
+.part-1 .what-is-composing .supporting-text {
+  bottom: 0;
+  left: 420px;
+  padding: 32px;
+  position: absolute;
+  right: 0;
+  top: 0; }
 .part-1 .what-is-rhetoric {
   background-image: url("what-is-rhetoric/assets/img/background.jpg");
   background-size: cover; }
@@ -22,5 +27,7 @@
     background-color: #e7eb98; }
 .part-1 .page-view {
   border-top-color: #75993d; }
+.part-1 .instructions {
+  color: #75993d; }
 
 /*# sourceMappingURL=part-1.css.map */
