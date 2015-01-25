@@ -5,6 +5,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   font-weight: 700;
+  margin-bottom: 4px;
   text-transform: uppercase; }
 
 .body-copy {
@@ -34,7 +35,8 @@ button {
   appearance: none;
   background-color: transparent;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif; }
 
 #app-header {
   height: 38px;
