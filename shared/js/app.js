@@ -163,20 +163,25 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		})
 		.state('part-1.what-will-you-learn', {
 			url: '/what-will-you-learn',
-			templateUrl: 'part-1/what-will-you-learn/what-will-you-learn.html'
+			templateUrl: 'part-1/what-will-you-learn/what-will-you-learn.html',
+			controller: function($scope) {
+				$('.accordion-list .button').on('click touch', function(){
+					if($(this).parent().next('.description').is(':visible')){
+						$(this).removeClass('open');
+						$(this).parent().next('.description').slideUp();
+					} else {
+						$('.accordion-list .button').removeClass('open');
+						$('.accordion-list .description').slideUp();
+
+						$(this).addClass('open');
+						$(this).parent().next('.description').slideDown();
+					}
+				});
+			}
 		})
 		.state('part-1.what-is-composing', {
 			url: '/what-is-composing',
-			templateUrl: 'part-1/what-is-composing/what-is-composing.html',
-			// controller: function($scope) {
-			// 	console.log('HELLLOOO');
-			// 	$scope.isOpen = false;
-			//
-			// 	$scope.showPopup = function() {
-			// 		console.log($scope.isOpen);
-			// 		$scope.isOpen = !$scope.isOpen;
-			// 	};
-			// }
+			templateUrl: 'part-1/what-is-composing/what-is-composing.html'
 		})
 		.state('part-1.what-is-rhetoric', {
 			url: '/what-is-rhetoric',
