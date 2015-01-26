@@ -1,0 +1,9 @@
+<div ng-class="container">
+  <button class="button" ng-click="showPopup()">
+    <span class="number" ng-bind="number"></span>
+    <span class="text" ng-bind="text"></span>
+  </button>
+  <div ng-show="isOpen">
+    <popup ng-bind="content"></popup>
+  </div>
+</div>
