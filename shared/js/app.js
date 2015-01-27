@@ -49,6 +49,23 @@ app.directive('popup', function() {
 	};
 });
 
+app.directive('rhetoricLearnIt', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'shared/directives/rhetoricLearnIt/rhetoricLearnIt.tpl.html',
+		scope: {
+			title: '@title',
+			text: '@text'
+		},
+		controller: ['$scope', function($scope) {
+			$scope.isOpen = false;
+
+			$scope.showPopup = function() {
+				$scope.isOpen = !$scope.isOpen;
+			};
+		}]
+	};
+});
 
 app.run([
 	"$rootScope", "$state", "$stateParams", "$templateCache", "$http", function($rootScope, $state, $stateParams, $templateCache, $http) {
