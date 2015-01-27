@@ -432,4 +432,12 @@ $(document).ready(function() {
 		'../../you/assets/left-nav.png',
 		'../../you/assets/content.png'
 	]);
+	/*
+	 * adds focus to left nav
+	 */
+	$('.main-nav').on('click touch', function(){
+		setTimeout(function(){
+			$('.part-view .nav > li:eq(0) > a:eq(0)').focus();
+		}, 0);
+	});
 });
