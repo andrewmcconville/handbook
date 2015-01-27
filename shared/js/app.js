@@ -42,10 +42,7 @@ app.directive('popup', function() {
 		restrict: 'E',
 		replace: true,
 		templateUrl: 'shared/directives/popup/popup.tpl.html',
-		transclude: true,
-		// scope: {
-		// 	showPopup: "&clickCb"
-		// }
+		transclude: true
 	};
 });
 
@@ -122,7 +119,7 @@ var fakeNav = function() {
 		$(this).siblings().find('.sub-nav').slideUp();
 		$(this).children('.sub-nav').slideDown();
     });
-}
+};
 
 app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
 	$urlRouterProvider.otherwise('/');
