@@ -204,10 +204,6 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					        $(this).siblings().find('.sub-nav').slideUp();
 					        $(this).children('.sub-nav').slideDown();
 					    });
-
-					    //adds focus to left nav
-					    $('.nav > li:eq(0) > a:eq(0)').focus();
-
 					}, 0);
 				});
         	}

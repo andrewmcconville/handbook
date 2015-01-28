@@ -1,3 +1,18 @@
 .understanding-your-project-or-assignment {
-	
+	background-image: url('understanding-your-project-or-assignment/assets/img/background-image.jpg');
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: 450px 425px;
+	padding: 54px 330px 0 24px;
+
+	.list {
+		font-weight: 600;
+		margin-top: 8px;
+		padding-left: 30px;
+
+		li {
+			list-style-type: circle;
+			margin-bottom: 8px;
+		}
+	}
 }
