@@ -95,25 +95,25 @@ button {
     .tab a.tab-c, .tab a.tab-p {
       color: #000; }
     .tab a.tab-part-1 {
-      background-color: #75993d; }
+      background-color: #769b3e; }
     .tab a.tab-part-2 {
-      background-color: #6e78a6; }
+      background-color: #6e78a7; }
     .tab a.tab-part-3 {
-      background-color: #917fa5; }
+      background-color: #9280a7; }
     .tab a.tab-part-4 {
-      background-color: #a2a55e; }
+      background-color: #a4a75f; }
     .tab a.tab-part-5 {
-      background-color: #99226e; }
+      background-color: #9a226f; }
     .tab a.tab-part-6 {
       background-color: #a5732a; }
     .tab a.tab-part-7 {
-      background-color: #499987; }
+      background-color: #499a89; }
     .tab a.tab-part-8 {
-      background-color: #771b7b; }
+      background-color: #781b7b; }
     .tab a.tab-part-9 {
-      background-color: #397999; }
+      background-color: #377b9b; }
     .tab a.tab-part-10 {
-      background-color: #74629a; }
+      background-color: #75639b; }
     .tab a.tab-part-11 {
       background-color: #993733; }
     .tab a.tab-search {
@@ -144,27 +144,27 @@ button {
   .main-nav-hover.open {
     opacity: 1; }
   .main-nav-hover.tab-part-1 {
-    background-color: #75993d; }
+    background-color: #769b3e; }
     .main-nav-hover.tab-part-1 .full-description {
       -webkit-transform: translate3d(10px, 0, 0);
               transform: translate3d(10px, 0, 0); }
   .main-nav-hover.tab-part-2 {
-    background-color: #6e78a6; }
+    background-color: #6e78a7; }
     .main-nav-hover.tab-part-2 .full-description {
       -webkit-transform: translate3d(46px, 0, 0);
               transform: translate3d(46px, 0, 0); }
   .main-nav-hover.tab-part-3 {
-    background-color: #917fa5; }
+    background-color: #9280a7; }
     .main-nav-hover.tab-part-3 .full-description {
       -webkit-transform: translate3d(82px, 0, 0);
               transform: translate3d(82px, 0, 0); }
   .main-nav-hover.tab-part-4 {
-    background-color: #a2a55e; }
+    background-color: #a4a75f; }
     .main-nav-hover.tab-part-4 .full-description {
       -webkit-transform: translate3d(118px, 0, 0);
               transform: translate3d(118px, 0, 0); }
   .main-nav-hover.tab-part-5 {
-    background-color: #99226e; }
+    background-color: #9a226f; }
     .main-nav-hover.tab-part-5 .full-description {
       -webkit-transform: translate3d(154px, 0, 0);
               transform: translate3d(154px, 0, 0); }
@@ -174,22 +174,22 @@ button {
       -webkit-transform: translate3d(190px, 0, 0);
               transform: translate3d(190px, 0, 0); }
   .main-nav-hover.tab-part-7 {
-    background-color: #499987; }
+    background-color: #499a89; }
     .main-nav-hover.tab-part-7 .full-description {
       -webkit-transform: translate3d(226px, 0, 0);
               transform: translate3d(226px, 0, 0); }
   .main-nav-hover.tab-part-8 {
-    background-color: #771b7b; }
+    background-color: #781b7b; }
     .main-nav-hover.tab-part-8 .full-description {
       -webkit-transform: translate3d(262px, 0, 0);
               transform: translate3d(262px, 0, 0); }
   .main-nav-hover.tab-part-9 {
-    background-color: #397999; }
+    background-color: #377b9b; }
     .main-nav-hover.tab-part-9 .full-description {
       -webkit-transform: translate3d(298px, 0, 0);
               transform: translate3d(298px, 0, 0); }
   .main-nav-hover.tab-part-10 {
-    background-color: #74629a; }
+    background-color: #75639b; }
     .main-nav-hover.tab-part-10 .full-description {
       -webkit-transform: translate3d(334px, 0, 0);
               transform: translate3d(334px, 0, 0); }
@@ -293,7 +293,7 @@ button {
   .what-will-you-learn .icon-triangle {
     background-image: url(../assets/img/triangle-shadow.png);
     background-size: 100%;
-    fill: #abc06b;
+    fill: #abc16c;
     height: 50px;
     padding: 9px;
     position: relative;

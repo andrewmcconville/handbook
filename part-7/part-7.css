@@ -1,18 +1,18 @@
 .part-7 .intro {
   background-image: url("intro/assets/img/background-image.jpg"); }
 .part-7 .nav-left {
-  border-top-color: #499987; }
+  border-top-color: #499a89; }
   .part-7 .nav-left .nav-heading {
-    background-color: #499987; }
+    background-color: #499a89; }
   .part-7 .nav-left .nav .active > a {
-    background-color: #82ccbe; }
+    background-color: #81cdbf; }
   .part-7 .nav-left .nav li a:hover {
-    background-color: #82ccbe; }
+    background-color: #81cdbf; }
   .part-7 .nav-left .sub-nav .active > a {
-    background-color: #adddd9; }
+    background-color: #acded9; }
   .part-7 .nav-left .sub-nav li a:hover {
-    background-color: #adddd9; }
+    background-color: #acded9; }
 .part-7 .page-view {
-  border-top-color: #499987; }
+  border-top-color: #499a89; }
 
 /*# sourceMappingURL=part-7.css.map */
