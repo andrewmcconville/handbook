@@ -1,7 +1,8 @@
-<div class="popup" ng-transclude>
+<div class="popup" ng-transclue>
   <button class="button-close-popup">
-    <svg class="icon-x">
+    <svg class="icon-x" ng-click="closeCb()">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="shared/assets/img/icon-sprite.svg#icon-x"></use>
     </svg>
   </button>
+  <p ng-bind="content"></p>
 </div>

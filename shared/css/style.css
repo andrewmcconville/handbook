@@ -285,11 +285,8 @@ button {
   .what-will-you-learn .button {
     padding: 0 10px 0 2px; }
     .what-will-you-learn .button.open .icon-triangle {
-      -webkit-transform: rotate(90deg);
-          -ms-transform: rotate(90deg);
-              transform: rotate(90deg);
-      -webkit-transition: all 300ms;
-              transition: all 300ms; }
+      transform: rotate(90deg);
+      transition: all 300ms; }
   .what-will-you-learn .icon-triangle {
     background-image: url(../assets/img/triangle-shadow.png);
     background-size: 100%;
@@ -298,11 +295,8 @@ button {
     padding: 9px;
     position: relative;
     top: 2px;
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-transition: all 300ms;
-            transition: all 300ms;
+    transform: rotate(0deg);
+    transition: all 300ms;
     width: 34px; }
   .what-will-you-learn .text {
     font-size: 16px;

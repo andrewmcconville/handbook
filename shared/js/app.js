@@ -3,35 +3,35 @@ var app = angular.module('handbook', ['ui.router', 'ngAnimate']);
 /*
  * Directives
  */
+app.directive('popupContainer', function() {
+	return {
+		restrict: 'A',
+		controller: ['$scope', function($scope) {
+			$scope.popupActive = null;
+		}]
+	};
+});
+
 app.directive('interactionPopup', function() {
 	return {
 		retrict: 'E',
 		templateUrl: 'shared/directives/interactionPopup/interactionPopup.tpl.html',
 		scope: {
-			number: '@number',
-			text: '@text',
-			content: '@content'
+			id: '@',
+			text: '@',
+			content: '@'
 		},
 		controller: ['$scope', function($scope) {
 			$scope.isOpen = false;
 
-			switch($scope.number) {
-				case '1':
-					$scope.container = 'button-popup-container-1';
-					break;
-				case '2':
-					$scope.container = 'button-popup-container-2';
-					break;
-				case '3':
-					$scope.container = 'button-popup-container-3';
-					break;
-				default:
-					$scope.container = '';
-					break;
-			}
+			$scope.container = 'button-popup-container-' + $scope.id;
 
-			$scope.showPopup = function() {
-				$scope.isOpen = !$scope.isOpen;
+			$scope.showPopup = function(id) {
+				if($scope.$parent.popupActive === id) {
+					$scope.$parent.popupActive = null;
+				} else {
+					$scope.$parent.popupActive = id;
+				}
 			};
 		}]
 	};
@@ -40,9 +40,12 @@ app.directive('interactionPopup', function() {
 app.directive('popup', function() {
 	return {
 		restrict: 'E',
-		replace: true,
+		transclue: true,
 		templateUrl: 'shared/directives/popup/popup.tpl.html',
-		transclude: true
+		scope: {
+			'content': '=',
+			'closeCb': '&'
+		}
 	};
 });
 
@@ -51,14 +54,19 @@ app.directive('rhetoricLearnIt', function() {
 		restrict: 'E',
 		templateUrl: 'shared/directives/rhetoricLearnIt/rhetoricLearnIt.tpl.html',
 		scope: {
-			title: '@title',
-			text: '@text'
+			id: '@',
+			title: '@',
+			text: '@',
 		},
 		controller: ['$scope', function($scope) {
 			$scope.isOpen = false;
 
-			$scope.showPopup = function() {
-				$scope.isOpen = !$scope.isOpen;
+			$scope.showPopup = function(id) {
+				if($scope.$parent.popupActive === id) {
+					$scope.$parent.popupActive = null;
+				} else {
+					$scope.$parent.popupActive = id;
+				}
 			};
 		}]
 	};

@@ -1,9 +1,9 @@
 <div ng-class="container">
-  <button class="button" ng-click="showPopup()">
-    <span class="number" ng-bind="number"></span>
+  <button class="button" ng-click="showPopup(id)">
+    <span class="number" ng-bind="id"></span>
     <span class="text" ng-bind="text"></span>
   </button>
-  <div ng-show="isOpen">
-    <popup ng-bind="content"></popup>
+  <div ng-show="$parent.popupActive === id">
+    <popup content="content" close-cb="showPopup(id)"></popup>
   </div>
 </div>
