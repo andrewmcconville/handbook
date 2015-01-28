@@ -1,9 +1,8 @@
-
 <div>
-  <div ng-click="showPopup()">
+  <div ng-click="showPopup(id)">
     <span ng-bind="title"></span>
   </div>
-  <div ng-show="isOpen">
-    <popup ng-bind="text"></popup>
+  <div ng-show="$parent.popupActive === id">
+    <popup content="text" close-cb="showPopup(id)"></popup>
   </div>
 </div>
