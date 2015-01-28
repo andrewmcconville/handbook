@@ -4,201 +4,201 @@
 	height: 38px;
 	position: relative;
 	z-index: 2;
-}
 
-.logo-home-link {
-	display: block;
-	padding-top: 6px;
-	width: 214px;
+	.logo-home-link {
+		display: block;
+		padding-top: 6px;
+		width: 214px;
 
-	.logo {
-		height: 30px;
-		width: 100px;
+		.logo {
+			height: 30px;
+			width: 100px;
+		}
 	}
-}
 
-.main-nav {
-	font-family: 'Lora', serif;
-	left: 242px;
-	position: absolute;
-	right: 0;
-	text-transform: uppercase;
-	top: 10px;
-}
+	.main-nav {
+		font-family: 'Lora', serif;
+		left: 242px;
+		position: absolute;
+		right: 0;
+		text-transform: uppercase;
+		top: 10px;
+	}
 
-.tab {
-	float: left;
-	padding: 0 4px;
+	.tab {
+		float: left;
+		padding: 0 4px;
 
-	&.active,
-	&.active-you {
+		&.active,
+		&.active-you {
+			a {
+				border-radius: 6px 6px 6px 6px;
+				height: 38px;
+				margin-bottom: -10px;
+				transition: all 250ms ease-out;
+
+				&.tab-text {
+					transition: all 250ms ease-out;
+				}
+			}
+		}
+
 		a {
-			border-radius: 6px 6px 6px 6px;
-			height: 38px;
-			margin-bottom: -10px;
+			background-color: #fff;
+			border-radius: 6px 6px 0 0;
+			box-shadow: 2px 0 5px 0 rgba(0, 0, 0, .4);
+			color: #fff;
+			display: block;
+			height: 28px;
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 24px;
+			overflow: hidden;
+			text-align: center;
+			width: 28px;
 			transition: all 250ms ease-out;
 
 			&.tab-text {
+				//border-radius: 12px 12px 0 0;
+				font-size: 13px;
+				padding: 2px 6px 0 6px;
+				width: auto;
 				transition: all 250ms ease-out;
 			}
+
+			&.tab-c,
+			&.tab-p { color: #000; }
+			&.tab-part-1 { background-color: $part-1-darker; }
+			&.tab-part-2 { background-color: $part-2-darker; }
+			&.tab-part-3 { background-color: $part-3-darker; }
+			&.tab-part-4 { background-color: $part-4-darker; }
+			&.tab-part-5 { background-color: $part-5-darker; }
+			&.tab-part-6 { background-color: $part-6-darker; }
+			&.tab-part-7 { background-color: $part-7-darker; }
+			&.tab-part-8 { background-color: $part-8-darker; }
+			&.tab-part-9 { background-color: $part-9-darker; }
+			&.tab-part-10 { background-color: $part-10-darker; }
+			&.tab-part-11 { background-color: $part-11-darker; }
+			&.tab-search {
+				background-color: $search-darker;
+				font-family: 'Open Sana', sans-serif;
+			}
+			&.tab-glossary {
+				background-color: $glossary-darker;
+				font-family: 'Open Sana', sans-serif;
+			}
+			&.tab-you {
+				background-color: $you-darker;
+				font-size: 21px;
+			}
+		}
+
+		&.tab-you-wrapper {
+			float: right;	
+			margin-right: 33px;
 		}
 	}
 
-	a {
-		background-color: #fff;
-		border-radius: 6px 6px 0 0;
-		box-shadow: 2px 0 5px 0 rgba(0, 0, 0, .4);
+	.main-nav-hover {
+		background-color: #555;
+		box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .25);
 		color: #fff;
-		display: block;
-		height: 28px;
-		font-size: 20px;
-		font-weight: 700;
-		line-height: 24px;
-		overflow: hidden;
-		text-align: center;
-		width: 28px;
+		height: 38px;
+		left: 242px;
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: 38px;
 		transition: all 250ms ease-out;
 
-		&.tab-text {
-			//border-radius: 12px 12px 0 0;
-			font-size: 13px;
-			padding: 2px 6px 0 6px;
-			width: auto;
-			transition: all 250ms ease-out;
+		&.open {
+			opacity: 1;
 		}
 
-		&.tab-c,
-		&.tab-p { color: #000; }
-		&.tab-part-1 { background-color: $part-1-darker; }
-		&.tab-part-2 { background-color: $part-2-darker; }
-		&.tab-part-3 { background-color: $part-3-darker; }
-		&.tab-part-4 { background-color: $part-4-darker; }
-		&.tab-part-5 { background-color: $part-5-darker; }
-		&.tab-part-6 { background-color: $part-6-darker; }
-		&.tab-part-7 { background-color: $part-7-darker; }
-		&.tab-part-8 { background-color: $part-8-darker; }
-		&.tab-part-9 { background-color: $part-9-darker; }
-		&.tab-part-10 { background-color: $part-10-darker; }
-		&.tab-part-11 { background-color: $part-11-darker; }
+		&.tab-part-1 {
+			background-color: $part-1-darker;
+			.full-description { transform: translate3d(10px, 0, 0); }
+		}
+
+		&.tab-part-2 {
+			background-color: $part-2-darker;
+			.full-description{ transform: translate3d(46px, 0, 0); }
+		}
+
+		&.tab-part-3 {
+			background-color: $part-3-darker;
+			.full-description{ transform: translate3d(82px, 0, 0); }
+		}
+
+		&.tab-part-4 {
+			background-color: $part-4-darker;
+			.full-description{ transform: translate3d(118px, 0, 0); }
+		}
+
+		&.tab-part-5 {
+			background-color: $part-5-darker;
+			.full-description{ transform: translate3d(154px, 0, 0); }
+		}
+
+		&.tab-part-6 {
+			background-color: $part-6-darker;
+			.full-description{ transform: translate3d(190px, 0, 0); }
+		}
+
+		&.tab-part-7 {
+			background-color: $part-7-darker;
+			.full-description{ transform: translate3d(226px, 0, 0); }
+		}
+
+		&.tab-part-8 {
+			background-color: $part-8-darker;
+			.full-description{ transform: translate3d(262px, 0, 0); }
+		}
+
+		&.tab-part-9 {
+			background-color: $part-9-darker;
+			.full-description{ transform: translate3d(298px, 0, 0); }
+		}
+
+		&.tab-part-10 {
+			background-color: $part-10-darker;
+			.full-description{ transform: translate3d(334px, 0, 0); }
+		}
+
+		&.tab-part-11 {
+			background-color: $part-11-darker;
+			.full-description{ transform: translate3d(370px, 0, 0); }
+		}
+
+		&.tab-c {
+			background-color: #555;
+			.full-description{ transform: translate3d(406px, 0, 0); }
+		}
+
+		&.tab-p {
+			background-color: #555;
+			.full-description{ transform: translate3d(442px, 0, 0); }
+		}
+
 		&.tab-search {
 			background-color: $search-darker;
-			font-family: 'Open Sana', sans-serif;
+			.full-description{ transform: translate3d(478px, 0, 0); }
 		}
+
 		&.tab-glossary {
 			background-color: $glossary-darker;
-			font-family: 'Open Sana', sans-serif;
+			.full-description{ transform: translate3d(550px, 0, 0); }
 		}
+
 		&.tab-you {
 			background-color: $you-darker;
-			font-size: 21px;
+			.full-description{ transform: translate3d(636px, 0, 0); }
 		}
 	}
 
-	&.tab-you-wrapper {
-		float: right;	
-		margin-right: 33px;
+	.full-description {
+		position: absolute;
+		top: 8px;
+		transition: all 250ms ease-out;
 	}
-}
-
-.main-nav-hover {
-	background-color: #555;
-	box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .25);
-	color: #fff;
-	height: 38px;
-	left: 242px;
-	opacity: 0;
-	position: absolute;
-	right: 0;
-	top: 38px;
-	transition: all 250ms ease-out;
-
-	&.open {
-		opacity: 1;
-	}
-
-	&.tab-part-1 {
-		background-color: $part-1-darker;
-		.full-description { transform: translate3d(10px, 0, 0); }
-	}
-
-	&.tab-part-2 {
-		background-color: $part-2-darker;
-		.full-description{ transform: translate3d(46px, 0, 0); }
-	}
-
-	&.tab-part-3 {
-		background-color: $part-3-darker;
-		.full-description{ transform: translate3d(82px, 0, 0); }
-	}
-
-	&.tab-part-4 {
-		background-color: $part-4-darker;
-		.full-description{ transform: translate3d(118px, 0, 0); }
-	}
-
-	&.tab-part-5 {
-		background-color: $part-5-darker;
-		.full-description{ transform: translate3d(154px, 0, 0); }
-	}
-
-	&.tab-part-6 {
-		background-color: $part-6-darker;
-		.full-description{ transform: translate3d(190px, 0, 0); }
-	}
-
-	&.tab-part-7 {
-		background-color: $part-7-darker;
-		.full-description{ transform: translate3d(226px, 0, 0); }
-	}
-
-	&.tab-part-8 {
-		background-color: $part-8-darker;
-		.full-description{ transform: translate3d(262px, 0, 0); }
-	}
-
-	&.tab-part-9 {
-		background-color: $part-9-darker;
-		.full-description{ transform: translate3d(298px, 0, 0); }
-	}
-
-	&.tab-part-10 {
-		background-color: $part-10-darker;
-		.full-description{ transform: translate3d(334px, 0, 0); }
-	}
-
-	&.tab-part-11 {
-		background-color: $part-11-darker;
-		.full-description{ transform: translate3d(370px, 0, 0); }
-	}
-
-	&.tab-c {
-		background-color: #555;
-		.full-description{ transform: translate3d(406px, 0, 0); }
-	}
-
-	&.tab-p {
-		background-color: #555;
-		.full-description{ transform: translate3d(442px, 0, 0); }
-	}
-
-	&.tab-search {
-		background-color: $search-darker;
-		.full-description{ transform: translate3d(478px, 0, 0); }
-	}
-
-	&.tab-glossary {
-		background-color: $glossary-darker;
-		.full-description{ transform: translate3d(550px, 0, 0); }
-	}
-
-	&.tab-you {
-		background-color: $you-darker;
-		.full-description{ transform: translate3d(636px, 0, 0); }
-	}
-}
-
-.full-description {
-	position: absolute;
-	top: 8px;
-	transition: all 250ms ease-out;
 }

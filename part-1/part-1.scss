@@ -36,6 +36,14 @@
 		}
 	}
 
+	.learn-try-nav {
+		background-color: $part-1-dark;
+
+		.tab {
+			background-color: $part-1-lighter;
+		}
+	}
+
 	.page-view {
 		border-top-color: $part-1-darker;
 	}

@@ -77,6 +77,10 @@
     background-color: #e7ec99; }
   .part-1 .nav-left .sub-nav li a:hover {
     background-color: #e7ec99; }
+.part-1 .learn-try-nav {
+  background-color: #abc16c; }
+  .part-1 .learn-try-nav .tab {
+    background-color: #e7ec99; }
 .part-1 .page-view {
   border-top-color: #769b3e; }
 .part-1 .instructions {

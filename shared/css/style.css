@@ -42,193 +42,188 @@ button {
   height: 38px;
   position: relative;
   z-index: 2; }
-
-.logo-home-link {
-  display: block;
-  padding-top: 6px;
-  width: 214px; }
-  .logo-home-link .logo {
-    height: 30px;
-    width: 100px; }
-
-.main-nav {
-  font-family: 'Lora', serif;
-  left: 242px;
-  position: absolute;
-  right: 0;
-  text-transform: uppercase;
-  top: 10px; }
-
-.tab {
-  float: left;
-  padding: 0 4px; }
-  .tab.active a, .tab.active-you a {
-    border-radius: 6px 6px 6px 6px;
-    height: 38px;
-    margin-bottom: -10px;
-    -webkit-transition: all 250ms ease-out;
-            transition: all 250ms ease-out; }
-    .tab.active a.tab-text, .tab.active-you a.tab-text {
-      -webkit-transition: all 250ms ease-out;
-              transition: all 250ms ease-out; }
-  .tab a {
-    background-color: #fff;
-    border-radius: 6px 6px 0 0;
-    box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.4);
-    color: #fff;
+  #app-header .logo-home-link {
     display: block;
-    height: 28px;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    overflow: hidden;
-    text-align: center;
-    width: 28px;
-    -webkit-transition: all 250ms ease-out;
-            transition: all 250ms ease-out; }
-    .tab a.tab-text {
-      font-size: 13px;
-      padding: 2px 6px 0 6px;
-      width: auto;
+    padding-top: 6px;
+    width: 214px; }
+    #app-header .logo-home-link .logo {
+      height: 30px;
+      width: 100px; }
+  #app-header .main-nav {
+    font-family: 'Lora', serif;
+    left: 242px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 10px; }
+  #app-header .tab {
+    float: left;
+    padding: 0 4px; }
+    #app-header .tab.active a, #app-header .tab.active-you a {
+      border-radius: 6px 6px 6px 6px;
+      height: 38px;
+      margin-bottom: -10px;
       -webkit-transition: all 250ms ease-out;
               transition: all 250ms ease-out; }
-    .tab a.tab-c, .tab a.tab-p {
-      color: #000; }
-    .tab a.tab-part-1 {
+      #app-header .tab.active a.tab-text, #app-header .tab.active-you a.tab-text {
+        -webkit-transition: all 250ms ease-out;
+                transition: all 250ms ease-out; }
+    #app-header .tab a {
+      background-color: #fff;
+      border-radius: 6px 6px 0 0;
+      box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.4);
+      color: #fff;
+      display: block;
+      height: 28px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      overflow: hidden;
+      text-align: center;
+      width: 28px;
+      -webkit-transition: all 250ms ease-out;
+              transition: all 250ms ease-out; }
+      #app-header .tab a.tab-text {
+        font-size: 13px;
+        padding: 2px 6px 0 6px;
+        width: auto;
+        -webkit-transition: all 250ms ease-out;
+                transition: all 250ms ease-out; }
+      #app-header .tab a.tab-c, #app-header .tab a.tab-p {
+        color: #000; }
+      #app-header .tab a.tab-part-1 {
+        background-color: #769b3e; }
+      #app-header .tab a.tab-part-2 {
+        background-color: #6e78a7; }
+      #app-header .tab a.tab-part-3 {
+        background-color: #9280a7; }
+      #app-header .tab a.tab-part-4 {
+        background-color: #a4a75f; }
+      #app-header .tab a.tab-part-5 {
+        background-color: #9a226f; }
+      #app-header .tab a.tab-part-6 {
+        background-color: #a5732a; }
+      #app-header .tab a.tab-part-7 {
+        background-color: #499a89; }
+      #app-header .tab a.tab-part-8 {
+        background-color: #781b7b; }
+      #app-header .tab a.tab-part-9 {
+        background-color: #377b9b; }
+      #app-header .tab a.tab-part-10 {
+        background-color: #75639b; }
+      #app-header .tab a.tab-part-11 {
+        background-color: #993733; }
+      #app-header .tab a.tab-search {
+        background-color: #da8227;
+        font-family: 'Open Sana', sans-serif; }
+      #app-header .tab a.tab-glossary {
+        background-color: #ed1c24;
+        font-family: 'Open Sana', sans-serif; }
+      #app-header .tab a.tab-you {
+        background-color: #2e3092;
+        font-size: 21px; }
+    #app-header .tab.tab-you-wrapper {
+      float: right;
+      margin-right: 33px; }
+  #app-header .main-nav-hover {
+    background-color: #555;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.25);
+    color: #fff;
+    height: 38px;
+    left: 242px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 38px;
+    -webkit-transition: all 250ms ease-out;
+            transition: all 250ms ease-out; }
+    #app-header .main-nav-hover.open {
+      opacity: 1; }
+    #app-header .main-nav-hover.tab-part-1 {
       background-color: #769b3e; }
-    .tab a.tab-part-2 {
+      #app-header .main-nav-hover.tab-part-1 .full-description {
+        -webkit-transform: translate3d(10px, 0, 0);
+                transform: translate3d(10px, 0, 0); }
+    #app-header .main-nav-hover.tab-part-2 {
       background-color: #6e78a7; }
-    .tab a.tab-part-3 {
+      #app-header .main-nav-hover.tab-part-2 .full-description {
+        -webkit-transform: translate3d(46px, 0, 0);
+                transform: translate3d(46px, 0, 0); }
+    #app-header .main-nav-hover.tab-part-3 {
       background-color: #9280a7; }
-    .tab a.tab-part-4 {
+      #app-header .main-nav-hover.tab-part-3 .full-description {
+        -webkit-transform: translate3d(82px, 0, 0);
+                transform: translate3d(82px, 0, 0); }
+    #app-header .main-nav-hover.tab-part-4 {
       background-color: #a4a75f; }
-    .tab a.tab-part-5 {
+      #app-header .main-nav-hover.tab-part-4 .full-description {
+        -webkit-transform: translate3d(118px, 0, 0);
+                transform: translate3d(118px, 0, 0); }
+    #app-header .main-nav-hover.tab-part-5 {
       background-color: #9a226f; }
-    .tab a.tab-part-6 {
+      #app-header .main-nav-hover.tab-part-5 .full-description {
+        -webkit-transform: translate3d(154px, 0, 0);
+                transform: translate3d(154px, 0, 0); }
+    #app-header .main-nav-hover.tab-part-6 {
       background-color: #a5732a; }
-    .tab a.tab-part-7 {
+      #app-header .main-nav-hover.tab-part-6 .full-description {
+        -webkit-transform: translate3d(190px, 0, 0);
+                transform: translate3d(190px, 0, 0); }
+    #app-header .main-nav-hover.tab-part-7 {
       background-color: #499a89; }
-    .tab a.tab-part-8 {
+      #app-header .main-nav-hover.tab-part-7 .full-description {
+        -webkit-transform: translate3d(226px, 0, 0);
+                transform: translate3d(226px, 0, 0); }
+    #app-header .main-nav-hover.tab-part-8 {
       background-color: #781b7b; }
-    .tab a.tab-part-9 {
+      #app-header .main-nav-hover.tab-part-8 .full-description {
+        -webkit-transform: translate3d(262px, 0, 0);
+                transform: translate3d(262px, 0, 0); }
+    #app-header .main-nav-hover.tab-part-9 {
       background-color: #377b9b; }
-    .tab a.tab-part-10 {
+      #app-header .main-nav-hover.tab-part-9 .full-description {
+        -webkit-transform: translate3d(298px, 0, 0);
+                transform: translate3d(298px, 0, 0); }
+    #app-header .main-nav-hover.tab-part-10 {
       background-color: #75639b; }
-    .tab a.tab-part-11 {
+      #app-header .main-nav-hover.tab-part-10 .full-description {
+        -webkit-transform: translate3d(334px, 0, 0);
+                transform: translate3d(334px, 0, 0); }
+    #app-header .main-nav-hover.tab-part-11 {
       background-color: #993733; }
-    .tab a.tab-search {
-      background-color: #da8227;
-      font-family: 'Open Sana', sans-serif; }
-    .tab a.tab-glossary {
-      background-color: #ed1c24;
-      font-family: 'Open Sana', sans-serif; }
-    .tab a.tab-you {
-      background-color: #2e3092;
-      font-size: 21px; }
-  .tab.tab-you-wrapper {
-    float: right;
-    margin-right: 33px; }
-
-.main-nav-hover {
-  background-color: #555;
-  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.25);
-  color: #fff;
-  height: 38px;
-  left: 242px;
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  top: 38px;
-  -webkit-transition: all 250ms ease-out;
-          transition: all 250ms ease-out; }
-  .main-nav-hover.open {
-    opacity: 1; }
-  .main-nav-hover.tab-part-1 {
-    background-color: #769b3e; }
-    .main-nav-hover.tab-part-1 .full-description {
-      -webkit-transform: translate3d(10px, 0, 0);
-              transform: translate3d(10px, 0, 0); }
-  .main-nav-hover.tab-part-2 {
-    background-color: #6e78a7; }
-    .main-nav-hover.tab-part-2 .full-description {
-      -webkit-transform: translate3d(46px, 0, 0);
-              transform: translate3d(46px, 0, 0); }
-  .main-nav-hover.tab-part-3 {
-    background-color: #9280a7; }
-    .main-nav-hover.tab-part-3 .full-description {
-      -webkit-transform: translate3d(82px, 0, 0);
-              transform: translate3d(82px, 0, 0); }
-  .main-nav-hover.tab-part-4 {
-    background-color: #a4a75f; }
-    .main-nav-hover.tab-part-4 .full-description {
-      -webkit-transform: translate3d(118px, 0, 0);
-              transform: translate3d(118px, 0, 0); }
-  .main-nav-hover.tab-part-5 {
-    background-color: #9a226f; }
-    .main-nav-hover.tab-part-5 .full-description {
-      -webkit-transform: translate3d(154px, 0, 0);
-              transform: translate3d(154px, 0, 0); }
-  .main-nav-hover.tab-part-6 {
-    background-color: #a5732a; }
-    .main-nav-hover.tab-part-6 .full-description {
-      -webkit-transform: translate3d(190px, 0, 0);
-              transform: translate3d(190px, 0, 0); }
-  .main-nav-hover.tab-part-7 {
-    background-color: #499a89; }
-    .main-nav-hover.tab-part-7 .full-description {
-      -webkit-transform: translate3d(226px, 0, 0);
-              transform: translate3d(226px, 0, 0); }
-  .main-nav-hover.tab-part-8 {
-    background-color: #781b7b; }
-    .main-nav-hover.tab-part-8 .full-description {
-      -webkit-transform: translate3d(262px, 0, 0);
-              transform: translate3d(262px, 0, 0); }
-  .main-nav-hover.tab-part-9 {
-    background-color: #377b9b; }
-    .main-nav-hover.tab-part-9 .full-description {
-      -webkit-transform: translate3d(298px, 0, 0);
-              transform: translate3d(298px, 0, 0); }
-  .main-nav-hover.tab-part-10 {
-    background-color: #75639b; }
-    .main-nav-hover.tab-part-10 .full-description {
-      -webkit-transform: translate3d(334px, 0, 0);
-              transform: translate3d(334px, 0, 0); }
-  .main-nav-hover.tab-part-11 {
-    background-color: #993733; }
-    .main-nav-hover.tab-part-11 .full-description {
-      -webkit-transform: translate3d(370px, 0, 0);
-              transform: translate3d(370px, 0, 0); }
-  .main-nav-hover.tab-c {
-    background-color: #555; }
-    .main-nav-hover.tab-c .full-description {
-      -webkit-transform: translate3d(406px, 0, 0);
-              transform: translate3d(406px, 0, 0); }
-  .main-nav-hover.tab-p {
-    background-color: #555; }
-    .main-nav-hover.tab-p .full-description {
-      -webkit-transform: translate3d(442px, 0, 0);
-              transform: translate3d(442px, 0, 0); }
-  .main-nav-hover.tab-search {
-    background-color: #da8227; }
-    .main-nav-hover.tab-search .full-description {
-      -webkit-transform: translate3d(478px, 0, 0);
-              transform: translate3d(478px, 0, 0); }
-  .main-nav-hover.tab-glossary {
-    background-color: #ed1c24; }
-    .main-nav-hover.tab-glossary .full-description {
-      -webkit-transform: translate3d(550px, 0, 0);
-              transform: translate3d(550px, 0, 0); }
-  .main-nav-hover.tab-you {
-    background-color: #2e3092; }
-    .main-nav-hover.tab-you .full-description {
-      -webkit-transform: translate3d(636px, 0, 0);
-              transform: translate3d(636px, 0, 0); }
-
-.full-description {
-  position: absolute;
-  top: 8px;
-  -webkit-transition: all 250ms ease-out;
-          transition: all 250ms ease-out; }
+      #app-header .main-nav-hover.tab-part-11 .full-description {
+        -webkit-transform: translate3d(370px, 0, 0);
+                transform: translate3d(370px, 0, 0); }
+    #app-header .main-nav-hover.tab-c {
+      background-color: #555; }
+      #app-header .main-nav-hover.tab-c .full-description {
+        -webkit-transform: translate3d(406px, 0, 0);
+                transform: translate3d(406px, 0, 0); }
+    #app-header .main-nav-hover.tab-p {
+      background-color: #555; }
+      #app-header .main-nav-hover.tab-p .full-description {
+        -webkit-transform: translate3d(442px, 0, 0);
+                transform: translate3d(442px, 0, 0); }
+    #app-header .main-nav-hover.tab-search {
+      background-color: #da8227; }
+      #app-header .main-nav-hover.tab-search .full-description {
+        -webkit-transform: translate3d(478px, 0, 0);
+                transform: translate3d(478px, 0, 0); }
+    #app-header .main-nav-hover.tab-glossary {
+      background-color: #ed1c24; }
+      #app-header .main-nav-hover.tab-glossary .full-description {
+        -webkit-transform: translate3d(550px, 0, 0);
+                transform: translate3d(550px, 0, 0); }
+    #app-header .main-nav-hover.tab-you {
+      background-color: #2e3092; }
+      #app-header .main-nav-hover.tab-you .full-description {
+        -webkit-transform: translate3d(636px, 0, 0);
+                transform: translate3d(636px, 0, 0); }
+  #app-header .full-description {
+    position: absolute;
+    top: 8px;
+    -webkit-transition: all 250ms ease-out;
+            transition: all 250ms ease-out; }
 
 .nav-left {
   background-color: #fff;
@@ -278,6 +273,43 @@ button {
     font-weight: 400;
     padding: 4px 16px 4px 24px; }
 
+.learn-try-nav {
+  background-color: #888888;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 32px; }
+  .learn-try-nav .rotated-nav-header {
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    font-size: 14px;
+    margin: 60px 0px auto 4px;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
+    .learn-try-nav .rotated-nav-header.learn {
+      margin-bottom: 30px; }
+    .learn-try-nav .rotated-nav-header.try {
+      margin-bottom: 16px; }
+    .learn-try-nav .rotated-nav-header .it {
+      color: #fff; }
+  .learn-try-nav .tab {
+    border-radius: 4px 0 0 4px;
+    color: black;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 0 4px 4px;
+    text-align: center;
+    width: 28px;
+    -webkit-transition: all 300ms;
+            transition: all 300ms; }
+    .learn-try-nav .tab:hover {
+      background-color: #fff !important;
+      -webkit-transition: all 300ms;
+              transition: all 300ms; }
+
 .what-will-you-learn {
   padding: 32px 160px 32px 32px; }
   .what-will-you-learn .body-copy {
@@ -285,8 +317,11 @@ button {
   .what-will-you-learn .button {
     padding: 0 10px 0 2px; }
     .what-will-you-learn .button.open .icon-triangle {
-      transform: rotate(90deg);
-      transition: all 300ms; }
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg);
+      -webkit-transition: all 300ms;
+              transition: all 300ms; }
   .what-will-you-learn .icon-triangle {
     background-image: url(../assets/img/triangle-shadow.png);
     background-size: 100%;
@@ -295,8 +330,11 @@ button {
     padding: 9px;
     position: relative;
     top: 2px;
-    transform: rotate(0deg);
-    transition: all 300ms;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: all 300ms;
+            transition: all 300ms;
     width: 34px; }
   .what-will-you-learn .text {
     font-size: 16px;
