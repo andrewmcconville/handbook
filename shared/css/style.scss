@@ -4,6 +4,7 @@
 @import 'nav-main';
 @import 'nav-left';
 @import 'what-will-you-learn';
+@import '../directives/popup/popup.scss';
 
 * {
 	box-sizing: border-box;
@@ -26,7 +27,7 @@ a {
 	color: blue;
 	text-decoration: none;
 }
-	
+
 img {
 	display: block;
 }
@@ -80,13 +81,13 @@ img {
 	}
 
 	&.ng-leave {
-		z-index: 0;		
+		z-index: 0;
 		.nav-left {opacity: 1;}
 		.page-view {z-index: 0;}
 	}
 
 	&.ng-leave-active {
-		z-index: 0;		
+		z-index: 0;
 		.nav-left {opacity: 1;}
 		.page-view {z-index: 0;}
 	}

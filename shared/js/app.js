@@ -1,13 +1,68 @@
 var app = angular.module('handbook', ['ui.router', 'ngAnimate']);
 
-app.controller('what-is-composing-ctrl', ['$scope', function($scope) {
-	$scope.isOpen = false;
+/*
+ * Directives
+ */
+app.directive('interactionPopup', function() {
+	return {
+		retrict: 'E',
+		templateUrl: 'shared/directives/interactionPopup/interactionPopup.tpl.html',
+		scope: {
+			number: '@number',
+			text: '@text',
+			content: '@content'
+		},
+		controller: ['$scope', function($scope) {
+			$scope.isOpen = false;
 
-	$scope.showPopup = function() {
-		$scope.isOpen = !$scope.isOpen;
+			switch($scope.number) {
+				case '1':
+					$scope.container = 'button-popup-container-1';
+					break;
+				case '2':
+					$scope.container = 'button-popup-container-2';
+					break;
+				case '3':
+					$scope.container = 'button-popup-container-3';
+					break;
+				default:
+					$scope.container = '';
+					break;
+			}
+
+			$scope.showPopup = function() {
+				$scope.isOpen = !$scope.isOpen;
+			};
+		}]
 	};
-}]);
+});
 
+app.directive('popup', function() {
+	return {
+		restrict: 'E',
+		replace: true,
+		templateUrl: 'shared/directives/popup/popup.tpl.html',
+		transclude: true
+	};
+});
+
+app.directive('rhetoricLearnIt', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'shared/directives/rhetoricLearnIt/rhetoricLearnIt.tpl.html',
+		scope: {
+			title: '@title',
+			text: '@text'
+		},
+		controller: ['$scope', function($scope) {
+			$scope.isOpen = false;
+
+			$scope.showPopup = function() {
+				$scope.isOpen = !$scope.isOpen;
+			};
+		}]
+	};
+});
 
 app.run([
 	"$rootScope", "$state", "$stateParams", "$templateCache", "$http", function($rootScope, $state, $stateParams, $templateCache, $http) {
@@ -64,7 +119,7 @@ var fakeNav = function() {
 		$(this).siblings().find('.sub-nav').slideUp();
 		$(this).children('.sub-nav').slideDown();
     });
-}
+};
 
 app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
 	$urlRouterProvider.otherwise('/');
