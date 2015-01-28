@@ -504,4 +504,28 @@ $(document).ready(function() {
 			$('.part-view .nav > li:eq(0) > a:eq(0)').focus();
 		}, 0);
 	});
+	/*
+	 * main nav hover states
+	 */	 
+	setTimeout(function(){
+		$('.main-nav').on({
+			mouseenter: function(){
+				$('.main-nav-hover').addClass('open');
+			},
+			mouseleave: function(){
+				$('.main-nav-hover').removeClass('open');
+			}
+		});
+
+		$('.main-nav .tab').on({
+			mouseenter: function(){
+				$('.main-nav-hover').addClass($('a', this).attr('class'));
+				$('.main-nav-hover .full-description').text($('a', this).attr('data-title'));
+			},
+			mouseleave: function(){
+				$('.main-nav-hover').removeClass($('a', this).attr('class'));
+				$('.main-nav-hover .full-description').text('');
+			}
+		});	
+	}, 0);
 });
