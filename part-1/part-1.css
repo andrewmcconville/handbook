@@ -59,8 +59,11 @@
 .part-1 .what-is-rhetoric {
   background-image: url("what-is-rhetoric/assets/img/background.jpg");
   background-size: cover; }
-  .part-1 .what-is-rhetoric .audience {
-    test: audience; }
+  .part-1 .what-is-rhetoric .bottom-left {
+    bottom: 20px;
+    position: absolute;
+    right: 10px;
+    width: 400px; }
 .part-1 .nav-left {
   background-color: #769b3e;
   border-top-color: #769b3e; }

@@ -1,6 +1,11 @@
 .what-is-rhetoric {
 	background-image: url('what-is-rhetoric/assets/img/background.jpg');
 	background-size: cover;
-	
-	@import 'audience/audience.scss';
+
+	.bottom-left {
+		bottom: 20px;
+		position: absolute;
+		right: 10px;
+		width: 400px;
+	}
 }
