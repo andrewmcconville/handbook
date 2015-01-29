@@ -42,7 +42,7 @@
   position: absolute;
   top: 304px; }
 .part-1 .what-is-composing .button {
-  background-color: #abc06b;
+  background-color: #abc16c;
   box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.5);
   color: #fff;
   line-height: 28px;
@@ -59,24 +59,31 @@
 .part-1 .what-is-rhetoric {
   background-image: url("what-is-rhetoric/assets/img/background.jpg");
   background-size: cover; }
-  .part-1 .what-is-rhetoric .audience {
-    test: audience; }
+  .part-1 .what-is-rhetoric .bottom-left {
+    bottom: 20px;
+    position: absolute;
+    right: 10px;
+    width: 400px; }
 .part-1 .nav-left {
-  background-color: #75993d;
-  border-top-color: #75993d; }
+  background-color: #769b3e;
+  border-top-color: #769b3e; }
   .part-1 .nav-left .nav-heading {
-    background-color: #75993d; }
+    background-color: #769b3e; }
   .part-1 .nav-left .nav .active > a {
-    background-color: #c6d87d; }
+    background-color: #c7da7e; }
   .part-1 .nav-left .nav li a:hover {
-    background-color: #c6d87d; }
+    background-color: #c7da7e; }
   .part-1 .nav-left .sub-nav .active > a {
-    background-color: #e7eb98; }
+    background-color: #e7ec99; }
   .part-1 .nav-left .sub-nav li a:hover {
-    background-color: #e7eb98; }
+    background-color: #e7ec99; }
+.part-1 .learn-try-nav {
+  background-color: #abc16c; }
+  .part-1 .learn-try-nav .tab {
+    background-color: #e7ec99; }
 .part-1 .page-view {
-  border-top-color: #75993d; }
+  border-top-color: #769b3e; }
 .part-1 .instructions {
-  color: #75993d; }
+  color: #769b3e; }
 
 /*# sourceMappingURL=part-1.css.map */

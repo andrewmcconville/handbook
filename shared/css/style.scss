@@ -3,6 +3,7 @@
 @import 'buttons';
 @import 'nav-main';
 @import 'nav-left';
+@import 'nav-learn-try';
 @import 'what-will-you-learn';
 @import '../directives/popup/popup.scss';
 
@@ -138,26 +139,10 @@ img {
 	}
 }
 
-.part-heading {
-	font-size: 48px;
-	line-height: 52px;
-	padding: 22px 20px;
-	text-transform: uppercase;
-
-	&.dark-text {
-		color: #000;
-	}
-
-	&.light-text {
-		color: #fff;
-	}
-
-	.font-light {
-		font-size: 46px;
-		font-weight: 300;
-	}
-
-	.font-heavy {
-		font-weight: 600;
-	}
+.learn-try-view {
+	bottom: 0;
+	left: 32px;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
