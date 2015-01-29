@@ -247,26 +247,26 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/what-is-rhetoric',
 			templateUrl: 'part-1/what-is-rhetoric/what-is-rhetoric.html'
 		})
-		.state('part-1.what-is-rhetoric/audience', {
-			url: '/what-is-rhetoric/audience',
-			templateUrl: 'part-1/what-is-rhetoric/audience/audience.html'
-		})
-		.state('part-1.what-is-rhetoric/purpose', {
-			url: '/what-is-rhetoric/purpose',
-			templateUrl: 'part-1/what-is-rhetoric/purpose/purpose.html'
-		})
-		.state('part-1.what-is-rhetoric/context', {
-			url: '/what-is-rhetoric/context',
-			templateUrl: 'part-1/what-is-rhetoric/context/context.html'
-		})
-		.state('part-1.what-is-rhetoric/strategies', {
-			url: '/what-is-rhetoric/strategies',
-			templateUrl: 'part-1/what-is-rhetoric/strategies/strategies.html'
-		})
-		.state('part-1.what-is-rhetoric/how-the-parts-work-together', {
-			url: '/what-is-rhetoric/how-the-parts-work-together',
-			templateUrl: 'part-1/what-is-rhetoric/how-the-parts-work-together/how-the-parts-work-together.html'
-		})
+			.state('part-1.what-is-rhetoric/audience', {
+				url: '/what-is-rhetoric/audience',
+				templateUrl: 'part-1/what-is-rhetoric/audience/audience.html'
+			})
+			.state('part-1.what-is-rhetoric/purpose', {
+				url: '/what-is-rhetoric/purpose',
+				templateUrl: 'part-1/what-is-rhetoric/purpose/purpose.html'
+			})
+			.state('part-1.what-is-rhetoric/context', {
+				url: '/what-is-rhetoric/context',
+				templateUrl: 'part-1/what-is-rhetoric/context/context.html'
+			})
+			.state('part-1.what-is-rhetoric/strategies', {
+				url: '/what-is-rhetoric/strategies',
+				templateUrl: 'part-1/what-is-rhetoric/strategies/strategies.html'
+			})
+			.state('part-1.what-is-rhetoric/how-the-parts-work-together', {
+				url: '/what-is-rhetoric/how-the-parts-work-together',
+				templateUrl: 'part-1/what-is-rhetoric/how-the-parts-work-together/how-the-parts-work-together.html'
+			})
 		.state('part-1.rhetoric-and-a-process-for-composing', {
 			url: '/rhetoric-and-a-process-for-composing',
 			templateUrl: 'part-1/rhetoric-and-a-process-for-composing/rhetoric-and-a-process-for-composing.html'
@@ -283,18 +283,14 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/understanding-your-project-or-assignment',
 			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-your-project-or-assignment.html'
 		})
-		.state('part-1.understanding-your-project-or-assignment/responding-to-a-written-assignment', {
-			url: '/understanding-your-project-or-assignment/responding-to-a-written-assignment',
-			templateUrl: 'part-1/understanding-your-project-or-assignment/responding-to-a-written-assignment/responding-to-a-written-assignment.html'
-		})
-		.state('part-1.understanding-your-project-or-assignment/sample-research-paper-assignment', {
-			url: '/understanding-your-project-or-assignment/sample-research-paper-assignment',
-			templateUrl: 'part-1/understanding-your-project-or-assignment/sample-research-paper-assignment/sample-research-paper-assignment.html'
-		})
-		.state('part-1.understanding-your-project-or-assignment/understanding-other-projects', {
-			url: '/understanding-your-project-or-assignment/understanding-other-projects',
-			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/understanding-other-projects.html'
-		})
+			.state('part-1.understanding-your-project-or-assignment/responding-to-a-written-assignment', {
+				url: '/understanding-your-project-or-assignment/responding-to-a-written-assignment',
+				templateUrl: 'part-1/understanding-your-project-or-assignment/responding-to-a-written-assignment/responding-to-a-written-assignment.html'
+			})
+			.state('part-1.understanding-your-project-or-assignment/understanding-other-projects', {
+				url: '/understanding-your-project-or-assignment/understanding-other-projects',
+				templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/understanding-other-projects.html'
+			})
 		/*
 		 * PART 2
 		 */
