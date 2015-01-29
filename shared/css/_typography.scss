@@ -2,6 +2,30 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+.part-heading {
+	font-size: 48px;
+	line-height: 52px;
+	padding: 22px 20px;
+	text-transform: uppercase;
+
+	&.dark-text {
+		color: #000;
+	}
+
+	&.light-text {
+		color: #fff;
+	}
+
+	.font-light {
+		font-size: 46px;
+		font-weight: 300;
+	}
+
+	.font-heavy {
+		font-weight: 600;
+	}
+}
+
 .body-heading {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 15px;

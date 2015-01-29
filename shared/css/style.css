@@ -1,6 +1,21 @@
 body {
   font-family: 'Source Sans Pro', sans-serif; }
 
+.part-heading {
+  font-size: 48px;
+  line-height: 52px;
+  padding: 22px 20px;
+  text-transform: uppercase; }
+  .part-heading.dark-text {
+    color: #000; }
+  .part-heading.light-text {
+    color: #fff; }
+  .part-heading .font-light {
+    font-size: 46px;
+    font-weight: 300; }
+  .part-heading .font-heavy {
+    font-weight: 600; }
+
 .body-heading {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
@@ -470,19 +485,11 @@ img {
     background-repeat: no-repeat;
     background-size: cover; }
 
-.part-heading {
-  font-size: 48px;
-  line-height: 52px;
-  padding: 22px 20px;
-  text-transform: uppercase; }
-  .part-heading.dark-text {
-    color: #000; }
-  .part-heading.light-text {
-    color: #fff; }
-  .part-heading .font-light {
-    font-size: 46px;
-    font-weight: 300; }
-  .part-heading .font-heavy {
-    font-weight: 600; }
+.learn-try-view {
+  bottom: 0;
+  left: 32px;
+  position: absolute;
+  right: 0;
+  top: 0; }
 
 /*# sourceMappingURL=style.css.map */
