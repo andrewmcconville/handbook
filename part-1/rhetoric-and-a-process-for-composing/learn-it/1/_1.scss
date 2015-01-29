@@ -1,3 +1,56 @@
-.rhetoric-and-a-process-for-composing {
-	
+.learn-it-1 {
+	padding: 32px 22px;
+
+	.popup {
+		padding: 14px 24px 24px 24px;
+		width: 440px;
+	}
+
+	.content {
+		width: 200px;
+	}
+
+	.interactive-area {
+		cursor: pointer;
+		left: 290px;
+		position: absolute;
+		right: 32px;
+		top: 32px;
+	}
+
+	.interaction {
+		background: linear-gradient(to right, $part-1-light 0%,#ffffff 100%);
+		box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.25);
+		display: block;
+		height: 52px;
+		margin-bottom: 16px;
+		position: relative;
+		text-align: left;
+		width: 100%;
+		z-index: 0;
+
+		&.active {
+			z-index: 1;
+		}
+
+		.title {
+			font-size: 16px;
+			font-weight: 600;
+			left: 16px;
+			position: absolute;
+			top: 16px;
+			z-index: 1;
+		}
+
+		.content {
+			left: -12px;
+			position: absolute;
+			top: -24px;
+			z-index: 0;
+
+			p {
+				padding: 12px 0 0 4px;
+			}
+		}
+	}
 }

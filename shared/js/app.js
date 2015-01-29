@@ -139,6 +139,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 	$urlRouterProvider.when('/writers-concerns', '/writers-concerns/intro');
 	$urlRouterProvider.when('/writers-process', '/writers-process/intro');
 	$urlRouterProvider.when('/part-1', '/part-1/intro');
+	$urlRouterProvider.when('/part-1/rhetoric-and-a-process-for-composing', '/part-1/rhetoric-and-a-process-for-composing/learn-it-1');
 	$urlRouterProvider.when('/part-2', '/part-2/intro');
 	$urlRouterProvider.when('/part-3', '/part-3/intro');
 	$urlRouterProvider.when('/part-4', '/part-4/intro');
@@ -271,11 +272,11 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			templateUrl: 'part-1/rhetoric-and-a-process-for-composing/rhetoric-and-a-process-for-composing.html'
 		})
 			.state('part-1.rhetoric-and-a-process-for-composing.learn-it-1', {
-				url: '/rhetoric-and-a-process-for-composing/learn-it-1',
+				url: '/learn-it-1',
 				templateUrl: 'part-1/rhetoric-and-a-process-for-composing/learn-it/1/1.html'
 			})
 			.state('part-1.rhetoric-and-a-process-for-composing.try-it-1', {
-				url: '/rhetoric-and-a-process-for-composing/try-it-1',
+				url: '/try-it-1',
 				templateUrl: 'part-1/rhetoric-and-a-process-for-composing/try-it/1/1.html'
 			})
 		.state('part-1.understanding-your-project-or-assignment', {

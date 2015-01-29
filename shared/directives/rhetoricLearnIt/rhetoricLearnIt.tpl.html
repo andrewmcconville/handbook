@@ -1,8 +1,8 @@
-<div>
-  <div ng-click="showPopup(id)">
+<button class="interaction" ng-click="showPopup(id)" ng-class="{'active': $parent.popupActive === id}">
+  <div class="title">
     <span ng-bind="title"></span>
   </div>
-  <div ng-show="$parent.popupActive === id">
+  <div class="content" ng-show="$parent.popupActive === id">
     <popup content="text" close-cb="showPopup(id)"></popup>
   </div>
-</div>
+</button>
