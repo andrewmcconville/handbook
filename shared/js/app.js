@@ -274,6 +274,10 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 				url: '/rhetoric-and-a-process-for-composing/learn-it-1',
 				templateUrl: 'part-1/rhetoric-and-a-process-for-composing/learn-it/1/1.html'
 			})
+			.state('part-1.rhetoric-and-a-process-for-composing.try-it-1', {
+				url: '/rhetoric-and-a-process-for-composing/try-it-1',
+				templateUrl: 'part-1/rhetoric-and-a-process-for-composing/try-it/1/1.html'
+			})
 		.state('part-1.understanding-your-project-or-assignment', {
 			url: '/understanding-your-project-or-assignment',
 			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-your-project-or-assignment.html'
