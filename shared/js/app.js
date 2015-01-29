@@ -139,6 +139,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 	$urlRouterProvider.when('/writers-concerns', '/writers-concerns/intro');
 	$urlRouterProvider.when('/writers-process', '/writers-process/intro');
 	$urlRouterProvider.when('/part-1', '/part-1/intro');
+	$urlRouterProvider.when('/part-1/rhetoric-and-a-process-for-composing', '/part-1/rhetoric-and-a-process-for-composing/learn-it-1');
 	$urlRouterProvider.when('/part-2', '/part-2/intro');
 	$urlRouterProvider.when('/part-3', '/part-3/intro');
 	$urlRouterProvider.when('/part-4', '/part-4/intro');

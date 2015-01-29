@@ -1,5 +1,7 @@
 .part-1 .intro {
   background-image: url("intro/assets/img/background-image.jpg"); }
+.part-1 .learn-it-1 {
+  padding: 32px 22px; }
 .part-1 .understanding-your-project-or-assignment {
   background-image: url("understanding-your-project-or-assignment/assets/img/background-image.jpg");
   background-position: right bottom;
