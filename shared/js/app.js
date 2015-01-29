@@ -272,11 +272,11 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			templateUrl: 'part-1/rhetoric-and-a-process-for-composing/rhetoric-and-a-process-for-composing.html'
 		})
 			.state('part-1.rhetoric-and-a-process-for-composing.learn-it-1', {
-				url: '/rhetoric-and-a-process-for-composing/learn-it-1',
+				url: '/learn-it-1',
 				templateUrl: 'part-1/rhetoric-and-a-process-for-composing/learn-it/1/1.html'
 			})
 			.state('part-1.rhetoric-and-a-process-for-composing.try-it-1', {
-				url: '/rhetoric-and-a-process-for-composing/try-it-1',
+				url: '/try-it-1',
 				templateUrl: 'part-1/rhetoric-and-a-process-for-composing/try-it/1/1.html'
 			})
 		.state('part-1.understanding-your-project-or-assignment', {

@@ -51,7 +51,8 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0; }
 
 #app-header {
   height: 38px;
@@ -113,7 +114,7 @@ button {
       #app-header .tab a.tab-part-3 {
         background-color: #9280a7; }
       #app-header .tab a.tab-part-4 {
-        background-color: #a4a75f; }
+        background-color: #717245; }
       #app-header .tab a.tab-part-5 {
         background-color: #9a226f; }
       #app-header .tab a.tab-part-6 {
@@ -170,7 +171,7 @@ button {
         -webkit-transform: translate3d(82px, 0, 0);
                 transform: translate3d(82px, 0, 0); }
     #app-header .main-nav-hover.tab-part-4 {
-      background-color: #a4a75f; }
+      background-color: #717245; }
       #app-header .main-nav-hover.tab-part-4 .full-description {
         -webkit-transform: translate3d(118px, 0, 0);
                 transform: translate3d(118px, 0, 0); }
@@ -488,10 +489,24 @@ img {
     background-size: cover; }
 
 .learn-try-view {
+  background-color: #fff;
   bottom: 0;
   left: 32px;
   position: absolute;
   right: 0;
-  top: 0; }
+  top: 0;
+  -webkit-transition: all 200ms;
+          transition: all 200ms;
+  z-index: 1; }
+  .learn-try-view.ng-enter {
+    opacity: 0; }
+  .learn-try-view.ng-enter-active {
+    opacity: 1; }
+  .learn-try-view.ng-leave {
+    opacity: 1;
+    z-index: 0; }
+  .learn-try-view.ng-leave-active {
+    opacity: 1;
+    z-index: 0; }
 
 /*# sourceMappingURL=style.css.map */
