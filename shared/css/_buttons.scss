@@ -24,3 +24,10 @@ button {
 	text-transform: uppercase;
 	text-shadow: 0 0 6px rgba($clickable-dark, .25);
 }
+
+.btn-expander {
+	background-image: url(../assets/img/triangle-shadow.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 34px 50px;
+}
