@@ -220,12 +220,12 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/what-will-you-learn',
 			templateUrl: 'part-1/what-will-you-learn/what-will-you-learn.html',
 			controller: function($scope) {
-				$('.accordion-list .btn-expander').on('click touch', function(){
+				$('.accordion-list .button').on('click touch', function(){
 					if($(this).parent().next('.description').is(':visible')){
 						$(this).removeClass('open');
 						$(this).parent().next('.description').slideUp();
 					} else {
-						$('.accordion-list .btn-expander').removeClass('open');
+						$('.accordion-list .button').removeClass('open');
 						$('.accordion-list .description').slideUp();
 
 						$(this).addClass('open');
