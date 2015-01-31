@@ -161,12 +161,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		.state('home', {
 			url: '/',
 			templateUrl: 'cached=home/home.html',
-        	controller: function($scope, $state, $templateCache) {
-        		$('#app-header').on('click', '.tab', function(){
-        			$('#app-header .tab').removeClass('active');
-        			$(this).addClass('active');
-        		});
-			}
+        	controller: 'homeCtrl'
 		})
 		/*
 		 * WRITERS CONCERNS
@@ -174,7 +169,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		.state('writers-concerns', {
 			url: '/writers-concerns',
 			templateUrl: 'cached=writers-concerns/writers-concerns.html',
-        	controller: function($templateCache) {
+        	controller: function() {
         		fakeNav();
         	}
 		})

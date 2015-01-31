@@ -1,6 +1,9 @@
 body {
   font-family: 'Source Sans Pro', sans-serif; }
 
+a {
+  text-decoration: none; }
+
 .part-heading {
   font-size: 48px;
   line-height: 52px;
@@ -53,6 +56,20 @@ button {
   cursor: pointer;
   font-family: 'Source Sans Pro', sans-serif;
   padding: 0; }
+
+.btn-primary {
+  background: -webkit-linear-gradient(top, #6ccff6 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #6ccff6 0%, #ffffff 100%);
+  border: 1px solid #00b8f0;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.125), inset 2px 2px 6px -2px white, inset -1px -1px 6px -2px rgba(0, 184, 240, 0.5);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 8px 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 0 6px rgba(0, 184, 240, 0.25); }
 
 #app-header {
   height: 38px;
@@ -137,7 +154,9 @@ button {
         font-family: 'Open Sana', sans-serif; }
       #app-header .tab a.tab-you {
         background-color: #2e3092;
-        font-size: 21px; }
+        font-size: 20px;
+        max-width: 100px;
+        text-overflow: ellipsis; }
     #app-header .tab.tab-you-wrapper {
       float: right;
       margin-right: 33px; }
@@ -389,25 +408,44 @@ button {
     height: 12px;
     width: 12px; }
 
-* {
-  box-sizing: border-box; }
-
 body {
   background-color: #cbdde7;
-  -webkit-tap-highlight-color: transparent; }
-
-h1 {
-  font-size: 20px; }
-
-h2 {
-  font-size: 18px; }
-
-a {
-  color: blue;
-  text-decoration: none; }
+  -webkit-tap-highlight-color: #cbdde7; }
 
 img {
   display: block; }
+
+.config-prompt-overlay {
+  background-color: rgba(203, 221, 231, 0.75);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1; }
+  .config-prompt-overlay .message-box {
+    background-color: #faf0c8;
+    box-shadow: 4px 4px 32px 0 rgba(0, 0, 0, 0.25), 1px 1px 8px 0 rgba(0, 0, 0, 0.333);
+    height: 210px;
+    left: 0;
+    margin: auto;
+    padding: 24px;
+    position: absolute;
+    right: 0;
+    top: 180px;
+    width: 400px; }
+  .config-prompt-overlay .input-name {
+    border: 1px solid #00b8f0;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.125), inset 2px 2px 6px -2px white, inset -1px -1px 6px -2px rgba(0, 184, 240, 0.5);
+    height: 48px;
+    font-size: 18px;
+    padding: 0 12px;
+    width: 100%; }
+  .config-prompt-overlay .btn-primary {
+    bottom: 24px;
+    position: absolute;
+    right: 24px; }
 
 #app-wrapper {
   height: 672px;
@@ -417,7 +455,8 @@ img {
   position: absolute;
   right: 0;
   top: 0;
-  width: 1024px; }
+  width: 1024px;
+  z-index: 0; }
 
 /*
  * A 'part-view' is everything under the top nav tabs.
@@ -431,18 +470,18 @@ img {
   right: 0;
   top: 38px;
   -webkit-transition: all 550ms;
-  transition: all 550ms;
+          transition: all 550ms;
   z-index: 1; }
   .part-view.ng-enter .nav-left {
     opacity: 0; }
   .part-view.ng-enter .page-view {
     -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
+            transform: translate3d(100%, 0, 0); }
   .part-view.ng-enter-active .nav-left {
     opacity: 1; }
   .part-view.ng-enter-active .page-view {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+            transform: translate3d(0, 0, 0); }
   .part-view.ng-leave {
     z-index: 0; }
     .part-view.ng-leave .nav-left {
@@ -488,6 +527,9 @@ img {
     background-repeat: no-repeat;
     background-size: cover; }
 
+/*
+ * A 'learn-try-view' is the main content area with vertical tabs on the left.
+ */
 .learn-try-view {
   background-color: #fff;
   bottom: 0;
