@@ -420,7 +420,7 @@ img {
   display: block; }
 
 .config-prompt-overlay {
-  background-color: rgba(203, 221, 231, 0.75);
+  background-color: rgba(203, 221, 231, 0.875);
   bottom: 0;
   left: 0;
   position: absolute;
@@ -428,7 +428,9 @@ img {
   top: 0;
   z-index: 1; }
   .config-prompt-overlay .message-box {
-    background-color: #faf0c8;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url("../../home/assets/img/colorful-swirls-crop-blur.jpg");
+    background-size: cover;
     box-shadow: 4px 4px 32px 0 rgba(0, 0, 0, 0.25), 1px 1px 8px 0 rgba(0, 0, 0, 0.333);
     height: 210px;
     left: 0;
