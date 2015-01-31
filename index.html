@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <title>Handbook</title>
 
-    <style>body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}</style>
+    <style>*{box-sizing:border-box;}body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,cite,em,img,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,figcaption,footer,header,menu,nav,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}ol,ul{list-style:none}blockquote{quotes:none}blockquote:before,blockquote:after{content:none}table{border-collapse:collapse;border-spacing:0}</style>
 
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
@@ -17,7 +17,15 @@
     <link rel="stylesheet" type="text/css" href="shared/css/style.css">
 </head>
 
-<body>
+<body ng-controller="homeCtrl">
+    <aside class="config-prompt-overlay" ng-hide="hasName == true">
+        <div class="message-box">
+            <p class="instructions">Please enter your name:</p>
+            <input type="text" class="input-name" placeholder="Your Name" tabindex="1" ng-model="username"/>
+            <button class="btn-primary" tabindex="2" ng-click="hasName = true">Done</button>
+        </div>
+    </aside>
+
     <div id="app-wrapper">
         <header id="app-header">
             <span class="logo-home-link">
@@ -39,7 +47,7 @@
                 <li class="tab" ui-sref-active="active"><a class="tab-p" ui-sref="writers-process" tabindex="14" data-title="One Writer's Process">P</a></li>
                 <li class="tab" ui-sref-active="active"><a class="tab-text tab-search" ui-sref="search" tabindex="15" data-title="Find a topic or theme">Search</a></li>
                 <li class="tab" ui-sref-active="active"><a class="tab-text tab-glossary" ui-sref="glossary" tabindex="16" data-title="Browse vocabulary">Glossary</a></li>
-                <li class="tab tab-you-wrapper" ui-sref-active="active"><a class="tab-text top-you tab-you" ui-sref="you" tabindex="17" data-title="View your progress">You</a></li>
+                <li class="tab tab-you-wrapper" ui-sref-active="active"><a class="tab-text top-you tab-you" ui-sref="you" tabindex="17" data-title="View your progress">{{username || 'You'}}</a></li>
             </ul>
             <div class="main-nav-hover">
                 <div class="full-description"></div>
@@ -56,6 +64,7 @@
     <script src="shared/js/fastclick.js"></script>
     <script src="shared/js/svg4everybody.min.js"></script>
     <script src="shared/js/app.js"></script>
+    <script src="home/homeCtrl.js"></script>
     <script>
         if ('addEventListener' in document) {
             document.addEventListener('DOMContentLoaded', function() {
