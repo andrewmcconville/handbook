@@ -1,36 +1,63 @@
+//global structure
 @import 'colors';
 @import 'typography';
 @import 'buttons';
 @import 'nav-main';
 @import 'nav-left';
 @import 'nav-learn-try';
+//global components
 @import 'what-will-you-learn';
 @import '../directives/popup/popup.scss';
 
-* {
-	box-sizing: border-box;
-}
-
 body {
 	background-color: #cbdde7;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-h1 {
-	font-size: 20px;
-}
-
-h2 {
-	font-size: 18px;
-}
-
-a {
-	color: blue;
-	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(203, 221, 231, 1);
 }
 
 img {
 	display: block;
+}
+
+.config-prompt-overlay {
+	background-color: rgba(203, 221, 231, .75);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+
+	.message-box {
+		background-color: rgba(250, 240, 200, 1);
+		box-shadow: 4px 4px 32px 0 rgba(0, 0, 0, .25), 1px 1px 8px 0 rgba(0, 0, 0, .333);
+		height: 210px;
+		left: 0;
+		margin: auto;
+		padding: 24px;
+		position: absolute;
+		right: 0;
+		top: 180px;
+		width: 400px;
+	}
+
+	.input-name {
+		border: 1px solid $clickable-dark;
+		border-radius: 8px;
+		box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .125),
+				inset 2px 2px 6px -2px rgba(255, 255, 255, 1),
+				inset -1px -1px 6px -2px rgba($clickable-dark, .5);
+		height: 48px;
+		font-size: 18px;
+		padding: 0 12px;
+		width: 100%;
+
+	}
+
+	.btn-primary {
+		bottom: 24px;
+		position: absolute;
+		right: 24px;
+	}
 }
 
 #app-wrapper {
@@ -42,6 +69,7 @@ img {
 	right: 0;
 	top: 0;
 	width: 1024px;
+	z-index: 0;
 }
 
 /*
@@ -55,7 +83,6 @@ img {
 	left: 0;
 	right: 0;
 	top: 38px;
-	-webkit-transition: all 550ms;
 	transition: all 550ms;
 	z-index: 1;
 
@@ -65,7 +92,6 @@ img {
 		}
 
 		.page-view {
-			-webkit-transform: translate3d(100%, 0, 0);
 			transform: translate3d(100%, 0, 0);
 		}
 	}
@@ -76,7 +102,6 @@ img {
 		}
 
 		.page-view {
-			-webkit-transform: translate3d(0, 0, 0);
 			transform: translate3d(0, 0, 0);
 		}
 	}
@@ -136,6 +161,9 @@ img {
 	}
 }
 
+/*
+ * A 'learn-try-view' is the main content area with vertical tabs on the left.
+ */
 .learn-try-view {
 	background-color: #fff;
 	bottom: 0;
