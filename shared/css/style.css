@@ -55,6 +55,7 @@ button {
   border: none;
   cursor: pointer;
   font-family: 'Source Sans Pro', sans-serif;
+  overflow: visible;
   padding: 0; }
 
 .btn-primary {
@@ -76,6 +77,62 @@ button {
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 34px 50px; }
+
+.checkbox {
+  margin-left: -9999px;
+  position: absolute; }
+  .checkbox:checked + .checkbox-label .filled {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+            transform: scale(1, 1); }
+  .checkbox + .checkbox-label {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    height: 22px;
+    line-height: 20px;
+    overflow: hidden;
+    padding-left: 24px;
+    position: relative;
+    text-transform: uppercase;
+    vertical-align: middle; }
+
+.checkbox-label .filled {
+  background-color: #00b8f0;
+  border-radius: 100%;
+  bottom: 0;
+  height: 12px;
+  left: 4px;
+  margin: auto;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: scale(0.75, 0.75);
+      -ms-transform: scale(0.75, 0.75);
+          transform: scale(0.75, 0.75);
+  -webkit-transition: all 150ms ease-out;
+          transition: all 150ms ease-out;
+  width: 12px;
+  z-index: 1; }
+.checkbox-label .empty {
+  background-color: #ddf2fd;
+  border: 1px solid #00b8f0;
+  border-radius: 100%;
+  bottom: 0;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.125), inset 3px 3px 6px -3px white, inset -2px -2px 6px -2px rgba(0, 184, 240, 0.5);
+  height: 20px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  width: 20px;
+  z-index: 0; }
+.checkbox-label .text {
+  margin-top: 1px; }
 
 #app-header {
   height: 38px;
