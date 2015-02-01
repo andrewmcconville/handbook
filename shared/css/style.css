@@ -72,12 +72,6 @@ button {
   text-transform: uppercase;
   text-shadow: 0 0 6px rgba(0, 184, 240, 0.25); }
 
-.btn-expander {
-  background-image: url(../assets/img/triangle-shadow.png);
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 34px 50px; }
-
 .checkbox {
   margin-left: -9999px;
   position: absolute; }
@@ -414,26 +408,40 @@ button {
   padding: 32px 160px 32px 32px; }
   .what-will-you-learn .body-copy {
     margin-bottom: 24px; }
-  .what-will-you-learn .button {
+  .what-will-you-learn .btn-expander {
     padding: 0 10px 0 2px; }
-    .what-will-you-learn .button.open .icon-triangle {
+    .what-will-you-learn .btn-expander.open .icon-triangle-container {
       -webkit-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
               transform: rotate(90deg);
       -webkit-transition: all 300ms;
               transition: all 300ms; }
-  .what-will-you-learn .icon-triangle {
-    fill: #abc16c;
-    height: 50px;
-    padding: 9px;
+  .what-will-you-learn .icon-triangle-container {
+    display: inline-block;
     position: relative;
     top: 2px;
     -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
             transform: rotate(0deg);
     -webkit-transition: all 300ms;
-            transition: all 300ms;
-    width: 34px; }
+            transition: all 300ms; }
+  .what-will-you-learn .icon-triangle {
+    fill: #abc16c;
+    height: 50px;
+    padding: 9px;
+    position: relative;
+    width: 34px;
+    z-index: 1; }
+  .what-will-you-learn .icon-triangle-shadow {
+    background-image: url(../assets/img/triangle-shadow.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 34px 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    width: 34px;
+    z-index: 0; }
   .what-will-you-learn .text {
     font-size: 16px;
     font-weight: 600;
