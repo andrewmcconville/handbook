@@ -67,3 +67,11 @@
 		margin-top: 1px;
 	}
 }
+
+.select {
+	background-color: $clickable-lighter;
+	border: 1px solid $clickable-dark;
+	height: 40px;
+	padding: 8px;
+	width: 200px;
+}

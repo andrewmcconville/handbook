@@ -128,6 +128,13 @@ button {
 .checkbox-label .text {
   margin-top: 1px; }
 
+.select {
+  background-color: #ddf2fd;
+  border: 1px solid #00b8f0;
+  height: 40px;
+  padding: 8px;
+  width: 200px; }
+
 #app-header {
   height: 38px;
   position: relative;
