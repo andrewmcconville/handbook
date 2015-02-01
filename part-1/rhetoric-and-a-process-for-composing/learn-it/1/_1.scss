@@ -11,7 +11,6 @@
 	}
 
 	.interactive-area {
-		cursor: pointer;
 		left: 290px;
 		position: absolute;
 		right: 32px;
@@ -52,5 +51,13 @@
 				padding: 12px 0 0 4px;
 			}
 		}
+	}
+
+	.img-overlay {
+		height: 568px;
+		left: 208px;
+		pointer-events: none;
+		position: absolute;
+		top: 8px;
 	}
 }
