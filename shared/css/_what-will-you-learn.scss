@@ -7,13 +7,21 @@
 		margin-bottom: 24px;
 	}
 
-	.button {
+	.btn-expander {
 		padding: 0 10px 0 2px;
 
-		&.open .icon-triangle {
+		&.open .icon-triangle-container {
 			transform: rotate(90deg);
 			transition: all 300ms;
 		}
+	}
+
+	.icon-triangle-container {
+		display: inline-block;
+		position: relative;
+		top: 2px;
+		transform: rotate(0deg);
+		transition: all 300ms;
 	}
 
 	.icon-triangle {
@@ -21,10 +29,20 @@
 		height: 50px;
 		padding: 9px;
 		position: relative;
-		top: 2px;
-		transform: rotate(0deg);
-		transition: all 300ms;
 		width: 34px;
+		z-index: 1;
+	}
+
+	.icon-triangle-shadow {
+		background-image: url(../assets/img/triangle-shadow.png);
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 34px 50px;
+		height: 50px;
+		position: absolute;
+		top: 0;
+		width: 34px;
+		z-index: 0;
 	}
 
 	.text {
