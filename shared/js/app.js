@@ -146,6 +146,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 	$urlRouterProvider.when('/part-1', '/part-1/intro');
 	$urlRouterProvider.when('/part-1/rhetoric-and-a-process-for-composing', '/part-1/rhetoric-and-a-process-for-composing/learn-it-1');
 	$urlRouterProvider.when('/part-1/understanding-your-project-or-assignment/understanding-a-class-assignment', '/part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it-1');
+	$urlRouterProvider.when('/part-1/understanding-your-project-or-assignment/understanding-other-projects', '/part-1/understanding-your-project-or-assignment/understanding-other-projects/learn-it-1');
 	$urlRouterProvider.when('/part-2', '/part-2/intro');
 	$urlRouterProvider.when('/part-3', '/part-3/intro');
 	$urlRouterProvider.when('/part-4', '/part-4/intro');
@@ -308,6 +309,14 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 				url: '/understanding-your-project-or-assignment/understanding-other-projects',
 				templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/understanding-other-projects.html'
 			})
+				.state('part-1.understanding-your-project-or-assignment/understanding-other-projects.learn-it-1', {
+					url: '/learn-it-1',
+					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/learn-it/1/1.html'
+				})
+				.state('part-1.understanding-your-project-or-assignment/understanding-other-projects.learn-it-2', {
+					url: '/learn-it-2',
+					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/learn-it/2/2.html'
+				})
 		/*
 		 * PART 2
 		 */
