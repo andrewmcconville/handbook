@@ -291,6 +291,18 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					url: '/learn-it-1',
 					templateUrl: 'part-1/understanding-your-project-or-assignment/responding-to-a-written-assignment/learn-it/1/1.html'
 				})
+				.state('part-1.understanding-your-project-or-assignment/responding-to-a-written-assignment.learn-it-2', {
+					url: '/learn-it-2',
+					templateUrl: 'part-1/understanding-your-project-or-assignment/responding-to-a-written-assignment/learn-it/2/2.html'
+				})
+				.state('part-1.understanding-your-project-or-assignment/responding-to-a-written-assignment.learn-it-3', {
+					url: '/learn-it-3',
+					templateUrl: 'part-1/understanding-your-project-or-assignment/responding-to-a-written-assignment/learn-it/3/3.html'
+				})
+				.state('part-1.understanding-your-project-or-assignment/responding-to-a-written-assignment.try-it-1', {
+					url: '/try-it-1',
+					templateUrl: 'part-1/understanding-your-project-or-assignment/responding-to-a-written-assignment/try-it/1/1.html'
+				})
 			.state('part-1.understanding-your-project-or-assignment/understanding-other-projects', {
 				url: '/understanding-your-project-or-assignment/understanding-other-projects',
 				templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/understanding-other-projects.html'
