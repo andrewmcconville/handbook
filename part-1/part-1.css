@@ -114,24 +114,22 @@
     .part-1 .understanding-your-project-or-assignment .list li {
       list-style-type: circle;
       margin-bottom: 8px; }
-.part-1 .responding-to-a-written-assignment {
-  background-color: pink; }
-  .part-1 .responding-to-a-written-assignment .learn-it-1 {
-    height: 100%;
-    padding: 40px;
-    width: 100%; }
-  .part-1 .responding-to-a-written-assignment .learn-it-2 {
-    height: 100%;
-    padding: 40px;
-    width: 100%; }
-  .part-1 .responding-to-a-written-assignment .learn-it-3 {
-    height: 100%;
-    padding: 40px;
-    width: 100%; }
-  .part-1 .responding-to-a-written-assignment .try-it-1 {
-    height: 100%;
-    padding: 40px;
-    width: 100%; }
+.part-1 .understanding-a-class-assignment .learn-it-1 {
+  height: 100%;
+  padding: 40px;
+  width: 100%; }
+.part-1 .understanding-a-class-assignment .learn-it-2 {
+  height: 100%;
+  padding: 40px;
+  width: 100%; }
+.part-1 .understanding-a-class-assignment .learn-it-3 {
+  height: 100%;
+  padding: 40px;
+  width: 100%; }
+.part-1 .understanding-a-class-assignment .try-it-1 {
+  height: 100%;
+  padding: 40px;
+  width: 100%; }
 .part-1 .nav-left {
   background-color: #769b3e;
   border-top-color: #769b3e; }
