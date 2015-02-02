@@ -282,6 +282,10 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 				url: '/understanding-your-project-or-assignment/responding-to-a-written-assignment',
 				templateUrl: 'part-1/understanding-your-project-or-assignment/responding-to-a-written-assignment/responding-to-a-written-assignment.html'
 			})
+				.state('part-1.understanding-your-project-or-assignment/responding-to-a-written-assignment.learn-it-1', {
+					url: '/learn-it-1',
+					templateUrl: 'part-1/understanding-your-project-or-assignment/responding-to-a-written-assignment/learn-it/1/1.html'
+				})
 			.state('part-1.understanding-your-project-or-assignment/understanding-other-projects', {
 				url: '/understanding-your-project-or-assignment/understanding-other-projects',
 				templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/understanding-other-projects.html'
