@@ -1,68 +1,5 @@
 .part-1 .intro {
   background-image: url("intro/assets/img/background-image.jpg"); }
-.part-1 .learn-it-1 {
-  padding: 32px 22px; }
-  .part-1 .learn-it-1 .popup {
-    padding: 14px 24px 24px 24px;
-    width: 440px; }
-  .part-1 .learn-it-1 .content {
-    width: 200px; }
-  .part-1 .learn-it-1 .interactive-area {
-    left: 290px;
-    position: absolute;
-    right: 32px;
-    top: 32px; }
-  .part-1 .learn-it-1 .interaction {
-    background: -webkit-linear-gradient(left, #c7da7e 0%, #ffffff 100%);
-    background: linear-gradient(to right, #c7da7e 0%, #ffffff 100%);
-    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.25);
-    display: block;
-    height: 52px;
-    margin-bottom: 16px;
-    position: relative;
-    text-align: left;
-    width: 100%;
-    z-index: 0; }
-    .part-1 .learn-it-1 .interaction.active {
-      z-index: 1; }
-    .part-1 .learn-it-1 .interaction .title {
-      font-size: 16px;
-      font-weight: 600;
-      left: 16px;
-      position: absolute;
-      top: 16px;
-      z-index: 1; }
-    .part-1 .learn-it-1 .interaction .content {
-      left: -12px;
-      position: absolute;
-      top: -24px;
-      z-index: 0; }
-      .part-1 .learn-it-1 .interaction .content p {
-        padding: 12px 0 0 4px; }
-  .part-1 .learn-it-1 .img-overlay {
-    height: 568px;
-    left: 208px;
-    pointer-events: none;
-    position: absolute;
-    top: 8px; }
-.part-1 .try-it-1 {
-  background-image: url("rhetoric-and-a-process-for-composing/try-it/1/temp-content.jpg");
-  background-size: cover;
-  height: 100%;
-  width: 100%; }
-.part-1 .understanding-your-project-or-assignment {
-  background-image: url("understanding-your-project-or-assignment/assets/img/background-image.jpg");
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: 450px 425px;
-  padding: 54px 330px 0 24px; }
-  .part-1 .understanding-your-project-or-assignment .list {
-    font-weight: 600;
-    margin-top: 8px;
-    padding-left: 30px; }
-    .part-1 .understanding-your-project-or-assignment .list li {
-      list-style-type: circle;
-      margin-bottom: 8px; }
 .part-1 .what-is-composing .supporting-text {
   bottom: 0;
   left: 420px;
@@ -114,6 +51,93 @@
     position: absolute;
     right: 10px;
     width: 400px; }
+.part-1 .rhetoric-and-a-process-for-composing .learn-it-1 {
+  padding: 32px 22px; }
+  .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .popup {
+    padding: 14px 24px 24px 24px;
+    width: 440px; }
+  .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .content {
+    width: 200px; }
+  .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .interactive-area {
+    left: 290px;
+    position: absolute;
+    right: 32px;
+    top: 32px; }
+  .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .interaction {
+    background: -webkit-linear-gradient(left, #c7da7e 0%, #ffffff 100%);
+    background: linear-gradient(to right, #c7da7e 0%, #ffffff 100%);
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.25);
+    display: block;
+    height: 52px;
+    margin-bottom: 16px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    z-index: 0; }
+    .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .interaction.active {
+      z-index: 1; }
+    .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .interaction .title {
+      font-size: 16px;
+      font-weight: 600;
+      left: 16px;
+      position: absolute;
+      top: 16px;
+      z-index: 1; }
+    .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .interaction .content {
+      left: -12px;
+      position: absolute;
+      top: -24px;
+      z-index: 0; }
+      .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .interaction .content p {
+        padding: 12px 0 0 4px; }
+  .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .img-overlay {
+    height: 568px;
+    left: 208px;
+    pointer-events: none;
+    position: absolute;
+    top: 8px; }
+.part-1 .rhetoric-and-a-process-for-composing .try-it-1 {
+  background-image: url("rhetoric-and-a-process-for-composing/try-it/1/temp-content.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%; }
+.part-1 .understanding-your-project-or-assignment {
+  background-image: url("understanding-your-project-or-assignment/assets/img/background-image.jpg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 450px 425px;
+  padding: 54px 330px 0 24px; }
+  .part-1 .understanding-your-project-or-assignment .list {
+    font-weight: 600;
+    margin-top: 8px;
+    padding-left: 30px; }
+    .part-1 .understanding-your-project-or-assignment .list li {
+      list-style-type: circle;
+      margin-bottom: 8px; }
+.part-1 .understanding-a-class-assignment .learn-it-1 {
+  height: 100%;
+  padding: 40px;
+  width: 100%; }
+.part-1 .understanding-a-class-assignment .learn-it-2 {
+  height: 100%;
+  padding: 40px;
+  width: 100%; }
+.part-1 .understanding-a-class-assignment .learn-it-3 {
+  height: 100%;
+  padding: 40px;
+  width: 100%; }
+.part-1 .understanding-a-class-assignment .try-it-1 {
+  height: 100%;
+  padding: 40px;
+  width: 100%; }
+.part-1 .understanding-other-projects .learn-it-1 {
+  height: 100%;
+  padding: 40px;
+  width: 100%; }
+.part-1 .understanding-other-projects .learn-it-2 {
+  height: 100%;
+  padding: 40px;
+  width: 100%; }
 .part-1 .nav-left {
   background-color: #769b3e;
   border-top-color: #769b3e; }
