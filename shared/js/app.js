@@ -45,6 +45,11 @@ app.directive('popup', function() {
 		scope: {
 			'content': '=',
 			'closeCb': '&'
+		},
+		link: function (scope, element, attr) {
+			element.on('click', function (e) {
+				e.stopPropagation();
+			});
 		}
 	};
 });
@@ -510,7 +515,7 @@ $(document).ready(function() {
 	});
 	/*
 	 * main nav hover states
-	 */	 
+	 */
 	setTimeout(function(){
 		$('.main-nav').on({
 			mouseenter: function(){
@@ -530,6 +535,6 @@ $(document).ready(function() {
 				$('.main-nav-hover').removeClass($('a', this).attr('class'));
 				$('.main-nav-hover .full-description').text('');
 			}
-		});	
+		});
 	}, 0);
 });
