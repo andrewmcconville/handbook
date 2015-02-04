@@ -29,6 +29,16 @@
 		}
 	}
 
+	.temp-name {
+		color: #fff;
+		font-size: 21px;
+		font-weight: 300;
+		left: 64px;
+		position: absolute;
+		top: 150px;
+		z-index: 1;
+	}
+
 	.page-view {
 		border-top-color: $you-darker; 
 	}
