@@ -101,6 +101,9 @@
   background-size: cover;
   height: 100%;
   width: 100%; }
+  .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .instructions-container {
+    padding: 20px 0 0 32px;
+    width: 250px; }
 .part-1 .understanding-your-project-or-assignment {
   background-image: url("understanding-your-project-or-assignment/assets/img/background-image.jpg");
   background-position: right bottom;
@@ -159,5 +162,4 @@
   border-top-color: #769b3e; }
 .part-1 .instructions {
   color: #769b3e; }
-
 /*# sourceMappingURL=part-1.css.map */
