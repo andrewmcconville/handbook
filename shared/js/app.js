@@ -80,35 +80,35 @@ app.directive('rhetoricLearnIt', function() {
 app.run([
 	"$rootScope", "$state", "$stateParams", "$templateCache", "$http", function($rootScope, $state, $stateParams, $templateCache, $http) {
 
-		$templateCache.put("cached=home/home.html", $http({method: 'GET', url: 'home/home.html', cache: true}));
-		$templateCache.put("cached=writers-concerns/writers-concerns.html", $http({method: 'GET', url: 'writers-concerns/writers-concerns.html', cache: true}));
-		$templateCache.put("cached=writers-concerns/intro/intro.html", $http({method: 'GET', url: 'writers-concerns/intro/intro.html', cache: true}));
-		$templateCache.put("cached=writers-process/writers-process.html", $http({method: 'GET', url: 'writers-process/writers-process.html', cache: true}));
-		$templateCache.put("cached=writers-process/intro/intro.html", $http({method: 'GET', url: 'writers-process/intro/intro.html', cache: true}));
-		$templateCache.put("cached=writers-process/writers-process.html", $http({method: 'GET', url: 'writers-process/writers-process.html', cache: true}));
-		$templateCache.put("cached=writers-process/intro/intro.html", $http({method: 'GET', url: 'writers-process/intro/intro.html', cache: true}));
-		$templateCache.put("cached=part-1/part-1.html", $http({method: 'GET', url: 'part-1/part-1.html', cache: true}));
-		$templateCache.put("cached=part-1/intro/intro.html", $http({method: 'GET', url: 'part-1/intro/intro.html', cache: true}));
-		$templateCache.put("cached=part-2/part-2.html", $http({method: 'GET', url: 'part-2/part-2.html', cache: true}));
-		$templateCache.put("cached=part-2/intro/intro.html", $http({method: 'GET', url: 'part-2/intro/intro.html', cache: true}));
-		$templateCache.put("cached=part-3/part-3.html", $http({method: 'GET', url: 'part-3/part-3.html', cache: true}));
-		$templateCache.put("cached=part-3/intro/intro.html", $http({method: 'GET', url: 'part-3/intro/intro.html', cache: true}));
-		$templateCache.put("cached=part-4/part-4.html", $http({method: 'GET', url: 'part-4/part-4.html', cache: true}));
-		$templateCache.put("cached=part-4/intro/intro.html", $http({method: 'GET', url: 'part-4/intro/intro.html', cache: true}));
-		$templateCache.put("cached=part-5/part-5.html", $http({method: 'GET', url: 'part-5/part-5.html', cache: true}));
-		$templateCache.put("cached=part-5/intro/intro.html", $http({method: 'GET', url: 'part-5/intro/intro.html', cache: true}));
-		$templateCache.put("cached=part-6/part-6.html", $http({method: 'GET', url: 'part-6/part-6.html', cache: true}));
-		$templateCache.put("cached=part-6/intro/intro.html", $http({method: 'GET', url: 'part-6/intro/intro.html', cache: true}));
-		$templateCache.put("cached=part-7/part-7.html", $http({method: 'GET', url: 'part-7/part-7.html', cache: true}));
-		$templateCache.put("cached=part-7/intro/intro.html", $http({method: 'GET', url: 'part-7/intro/intro.html', cache: true}));
-		$templateCache.put("cached=part-8/part-8.html", $http({method: 'GET', url: 'part-8/part-8.html', cache: true}));
-		$templateCache.put("cached=part-8/intro/intro.html", $http({method: 'GET', url: 'part-8/intro/intro.html', cache: true}));
-		$templateCache.put("cached=part-9/part-9.html", $http({method: 'GET', url: 'part-9/part-9.html', cache: true}));
-		$templateCache.put("cached=part-9/intro/intro.html", $http({method: 'GET', url: 'part-9/intro/intro.html', cache: true}));
-		$templateCache.put("cached=part-10/part-10.html", $http({method: 'GET', url: 'part-10/part-10.html', cache: true}));
-		$templateCache.put("cached=part-10/intro/intro.html", $http({method: 'GET', url: 'part-10/intro/intro.html', cache: true}));
-		$templateCache.put("cached=part-11/part-11.html", $http({method: 'GET', url: 'part-11/part-11.html', cache: true}));
-		$templateCache.put("cached=part-11/intro/intro.html", $http({method: 'GET', url: 'part-11/intro/intro.html', cache: true}));
+		// $templateCache.put("home/home.html", $http({method: 'GET', url: 'home/home.html', cache: true}));
+		// $templateCache.put("writers-concerns/writers-concerns.html", $http({method: 'GET', url: 'writers-concerns/writers-concerns.html', cache: true}));
+		// $templateCache.put("writers-concerns/intro/intro.html", $http({method: 'GET', url: 'writers-concerns/intro/intro.html', cache: true}));
+		// $templateCache.put("writers-process/writers-process.html", $http({method: 'GET', url: 'writers-process/writers-process.html', cache: true}));
+		// $templateCache.put("writers-process/intro/intro.html", $http({method: 'GET', url: 'writers-process/intro/intro.html', cache: true}));
+		// $templateCache.put("writers-process/writers-process.html", $http({method: 'GET', url: 'writers-process/writers-process.html', cache: true}));
+		// $templateCache.put("writers-process/intro/intro.html", $http({method: 'GET', url: 'writers-process/intro/intro.html', cache: true}));
+		// $templateCache.put("part-1/part-1.html", $http({method: 'GET', url: 'part-1/part-1.html', cache: true}));
+		// $templateCache.put("part-1/intro/intro.html", $http({method: 'GET', url: 'part-1/intro/intro.html', cache: true}));
+		// $templateCache.put("part-2/part-2.html", $http({method: 'GET', url: 'part-2/part-2.html', cache: true}));
+		// $templateCache.put("part-2/intro/intro.html", $http({method: 'GET', url: 'part-2/intro/intro.html', cache: true}));
+		// $templateCache.put("part-3/part-3.html", $http({method: 'GET', url: 'part-3/part-3.html', cache: true}));
+		// $templateCache.put("part-3/intro/intro.html", $http({method: 'GET', url: 'part-3/intro/intro.html', cache: true}));
+		// $templateCache.put("part-4/part-4.html", $http({method: 'GET', url: 'part-4/part-4.html', cache: true}));
+		// $templateCache.put("part-4/intro/intro.html", $http({method: 'GET', url: 'part-4/intro/intro.html', cache: true}));
+		// $templateCache.put("part-5/part-5.html", $http({method: 'GET', url: 'part-5/part-5.html', cache: true}));
+		// $templateCache.put("part-5/intro/intro.html", $http({method: 'GET', url: 'part-5/intro/intro.html', cache: true}));
+		// $templateCache.put("part-6/part-6.html", $http({method: 'GET', url: 'part-6/part-6.html', cache: true}));
+		// $templateCache.put("part-6/intro/intro.html", $http({method: 'GET', url: 'part-6/intro/intro.html', cache: true}));
+		// $templateCache.put("part-7/part-7.html", $http({method: 'GET', url: 'part-7/part-7.html', cache: true}));
+		// $templateCache.put("part-7/intro/intro.html", $http({method: 'GET', url: 'part-7/intro/intro.html', cache: true}));
+		// $templateCache.put("part-8/part-8.html", $http({method: 'GET', url: 'part-8/part-8.html', cache: true}));
+		// $templateCache.put("part-8/intro/intro.html", $http({method: 'GET', url: 'part-8/intro/intro.html', cache: true}));
+		// $templateCache.put("part-9/part-9.html", $http({method: 'GET', url: 'part-9/part-9.html', cache: true}));
+		// $templateCache.put("part-9/intro/intro.html", $http({method: 'GET', url: 'part-9/intro/intro.html', cache: true}));
+		// $templateCache.put("part-10/part-10.html", $http({method: 'GET', url: 'part-10/part-10.html', cache: true}));
+		// $templateCache.put("part-10/intro/intro.html", $http({method: 'GET', url: 'part-10/intro/intro.html', cache: true}));
+		// $templateCache.put("part-11/part-11.html", $http({method: 'GET', url: 'part-11/part-11.html', cache: true}));
+		// $templateCache.put("part-11/intro/intro.html", $http({method: 'GET', url: 'part-11/intro/intro.html', cache: true}));
 
 		$rootScope.$state = $state;
 		return $rootScope.$stateParams = $stateParams;
@@ -167,7 +167,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('home', {
 			url: '/',
-			templateUrl: 'cached=home/home.html',
+			templateUrl: 'home/home.html',
         	controller: 'homeCtrl'
 		})
 		/*
@@ -175,35 +175,35 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('writers-concerns', {
 			url: '/writers-concerns',
-			templateUrl: 'cached=writers-concerns/writers-concerns.html',
+			templateUrl: 'writers-concerns/writers-concerns.html',
         	controller: function() {
         		fakeNav();
         	}
 		})
 		.state('writers-concerns.intro', {
 			url: '/intro',
-			templateUrl: 'cached=writers-concerns/intro/intro.html'
+			templateUrl: 'writers-concerns/intro/intro.html'
 		})
 		/*
 		 * WRITERS PROCESS
 		 */
 		.state('writers-process', {
 			url: '/writers-process',
-			templateUrl: 'cached=writers-process/writers-process.html',
+			templateUrl: 'writers-process/writers-process.html',
         	controller: function() {
         		fakeNav();
         	}
 		})
 		.state('writers-process.intro', {
 			url: '/intro',
-			templateUrl: 'cached=writers-process/intro/intro.html'
+			templateUrl: 'writers-process/intro/intro.html'
 		})
 		/*
 		 * PART 1
 		 */
 		.state('part-1', {
 			url: '/part-1',
-			templateUrl: 'cached=part-1/part-1.html',
+			templateUrl: 'part-1/part-1.html',
         	controller: function($scope, $state) {
         		$scope.$on('$stateChangeSuccess', function(event){
 					setTimeout(function(){
@@ -221,7 +221,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		})
 		.state('part-1.intro', {
 			url: '/intro',
-			templateUrl: 'cached=part-1/intro/intro.html'
+			templateUrl: 'part-1/intro/intro.html'
 		})
 		.state('part-1.what-will-you-learn', {
 			url: '/what-will-you-learn',
@@ -322,140 +322,140 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('part-2', {
 			url: '/part-2',
-			templateUrl: 'cached=part-2/part-2.html',
+			templateUrl: 'part-2/part-2.html',
         	controller: function() {
         		fakeNav();
         	}
 		})
 		.state('part-2.intro', {
 			url: '/intro',
-			templateUrl: 'cached=part-2/intro/intro.html'
+			templateUrl: 'part-2/intro/intro.html'
 		})
 		/*
 		 * PART 3
 		 */
 		.state('part-3', {
 			url: '/part-3',
-			templateUrl: 'cached=part-3/part-3.html',
+			templateUrl: 'part-3/part-3.html',
         	controller: function() {
         		fakeNav();
         	}
 		})
 		.state('part-3.intro', {
 			url: '/intro',
-			templateUrl: 'cached=part-3/intro/intro.html'
+			templateUrl: 'part-3/intro/intro.html'
 		})
 		/*
 		 * PART 4
 		 */
 		.state('part-4', {
 			url: '/part-4',
-			templateUrl: 'cached=part-4/part-4.html',
+			templateUrl: 'part-4/part-4.html',
         	controller: function() {
         		fakeNav();
         	}
 		})
 		.state('part-4.intro', {
 			url: '/intro',
-			templateUrl: 'cached=part-4/intro/intro.html'
+			templateUrl: 'part-4/intro/intro.html'
 		})
 		/*
 		 * PART 5
 		 */
 		.state('part-5', {
 			url: '/part-5',
-			templateUrl: 'cached=part-5/part-5.html',
+			templateUrl: 'part-5/part-5.html',
         	controller: function() {
         		fakeNav();
         	}
 		})
 		.state('part-5.intro', {
 			url: '/intro',
-			templateUrl: 'cached=part-5/intro/intro.html'
+			templateUrl: 'part-5/intro/intro.html'
 		})
 		/*
 		 * PART 6
 		 */
 		.state('part-6', {
 			url: '/part-6',
-			templateUrl: 'cached=part-6/part-6.html',
+			templateUrl: 'part-6/part-6.html',
         	controller: function() {
         		fakeNav();
         	}
 		})
 		.state('part-6.intro', {
 			url: '/intro',
-			templateUrl: 'cached=part-6/intro/intro.html'
+			templateUrl: 'part-6/intro/intro.html'
 		})
 		/*
 		 * PART 7
 		 */
 		.state('part-7', {
 			url: '/part-7',
-			templateUrl: 'cached=part-7/part-7.html',
+			templateUrl: 'part-7/part-7.html',
         	controller: function() {
         		fakeNav();
         	}
 		})
 		.state('part-7.intro', {
 			url: '/intro',
-			templateUrl: 'cached=part-7/intro/intro.html'
+			templateUrl: 'part-7/intro/intro.html'
 		})
 		/*
 		 * PART 8
 		 */
 		.state('part-8', {
 			url: '/part-8',
-			templateUrl: 'cached=part-8/part-8.html',
+			templateUrl: 'part-8/part-8.html',
         	controller: function() {
         		fakeNav();
         	}
 		})
 		.state('part-8.intro', {
 			url: '/intro',
-			templateUrl: 'cached=part-8/intro/intro.html'
+			templateUrl: 'part-8/intro/intro.html'
 		})
 		/*
 		 * PART 9
 		 */
 		.state('part-9', {
 			url: '/part-9',
-			templateUrl: 'cached=part-9/part-9.html',
+			templateUrl: 'part-9/part-9.html',
         	controller: function() {
         		fakeNav();
         	}
 		})
 		.state('part-9.intro', {
 			url: '/intro',
-			templateUrl: 'cached=part-9/intro/intro.html'
+			templateUrl: 'part-9/intro/intro.html'
 		})
 		/*
 		 * PART 10
 		 */
 		.state('part-10', {
 			url: '/part-10',
-			templateUrl: 'cached=part-10/part-10.html',
+			templateUrl: 'part-10/part-10.html',
         	controller: function() {
         		fakeNav();
         	}
 		})
 		.state('part-10.intro', {
 			url: '/intro',
-			templateUrl: 'cached=part-10/intro/intro.html'
+			templateUrl: 'part-10/intro/intro.html'
 		})
 		/*
 		 * PART 11
 		 */
 		.state('part-11', {
 			url: '/part-11',
-			templateUrl: 'cached=part-11/part-11.html',
+			templateUrl: 'part-11/part-11.html',
         	controller: function() {
         		fakeNav();
         	}
 		})
 		.state('part-11.intro', {
 			url: '/intro',
-			templateUrl: 'cached=part-11/intro/intro.html'
+			templateUrl: 'part-11/intro/intro.html'
 		})
 		/*
 		 * SEARCH
