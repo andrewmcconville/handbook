@@ -134,6 +134,21 @@ var fakeNav = function() {
     });
 };
 
+var accordionList = function() {
+	$('.accordion-list .btn-expander').on('click touch', function(){
+		if($(this).parent().next('.description').is(':visible')){
+			$(this).removeClass('open');
+			$(this).parent().next('.description').slideUp();
+		} else {
+			$('.accordion-list .btn-expander').removeClass('open');
+			$('.accordion-list .description').slideUp();
+
+			$(this).addClass('open');
+			$(this).parent().next('.description').slideDown();
+		}
+	});
+}
+
 app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
 	$urlRouterProvider.otherwise('/');
 
@@ -227,18 +242,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/what-will-you-learn',
 			templateUrl: 'part-1/what-will-you-learn/what-will-you-learn.html',
 			controller: function($scope) {
-				$('.accordion-list .btn-expander').on('click touch', function(){
-					if($(this).parent().next('.description').is(':visible')){
-						$(this).removeClass('open');
-						$(this).parent().next('.description').slideUp();
-					} else {
-						$('.accordion-list .btn-expander').removeClass('open');
-						$('.accordion-list .description').slideUp();
-
-						$(this).addClass('open');
-						$(this).parent().next('.description').slideDown();
-					}
-				});
+				accordionList();
 			}
 		})
 		.state('part-1.what-is-composing', {
@@ -311,7 +315,10 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			})
 				.state('part-1.understanding-your-project-or-assignment/understanding-other-projects.learn-it-1', {
 					url: '/learn-it-1',
-					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/learn-it/1/1.html'
+					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/learn-it/1/1.html',
+					controller: function() {
+						accordionList();
+					}
 				})
 				.state('part-1.understanding-your-project-or-assignment/understanding-other-projects.learn-it-2', {
 					url: '/learn-it-2',
