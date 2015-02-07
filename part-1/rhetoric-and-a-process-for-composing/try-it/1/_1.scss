@@ -1,6 +1,115 @@
 .try-it-1 {
-	background-image: url('rhetoric-and-a-process-for-composing/try-it/1/temp-content.jpg');
-	background-size: cover;
 	height: 100%;
 	width: 100%;
+
+	.instructions-container {
+		padding: 32px 0 0 22px;
+		width: 260px;
+	}
+
+	.draggable-items {
+		left: 60px;
+		position: absolute;
+		top: 200px;
+		z-index: 1;
+
+		.drag-1 {
+			left: 72px;
+			top: 0;
+		}
+
+		.drag-2 {
+			left: 8px;
+			top: 50px;
+		}
+
+		.drag-3 {
+			left: 60px;
+			top: 100px;
+		}
+
+		.drag-4 {
+			left: 0px;
+			top: 150px;
+		}
+
+		.drag-5 {
+			left: 100px;
+			top: 200px;
+		}
+
+		.drag-6 {
+			left: 44px;
+			top: 250px;
+		}
+
+		.drag-7 {
+			left: 124px;
+			top: 300px;
+		}
+
+		.drag-8 {
+			left: 24px;
+			top: 350px;
+		}
+	}
+
+	.draggable {
+		background-color: $part-1-dark;
+		border: 1px solid #000;
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, .25);
+		cursor: move;
+		font-weight: 600;
+		height: 40px;
+		padding: 8px 24px;
+		position: absolute;
+		width: 266px;
+	}
+
+	.drop-zone {
+		left: 430px;
+		position: absolute;
+		top: 80px;
+		z-index: 0;
+	}
+
+	.drop-list-background {
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+
+	.dotted-item {
+		border: 2px dashed #000;
+		height: 40px;
+		margin-bottom: 8px;
+		width: 266px;
+	}
+
+	.drop-list {
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+
+	.btn-done {
+		left: 160px;
+		position: absolute;
+		top: 390px;
+	}
+
+	.popup {
+		font-weight: 600;
+		padding-top: 60px; 
+		position: absolute;
+		right: 40px;
+		top: 460px;
+		z-index: 3;
+	}
+
+	.btn-reset {
+		right: 10px;
+		position: absolute;
+		top: 10px;
+	}
 }

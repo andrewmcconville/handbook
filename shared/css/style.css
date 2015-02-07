@@ -29,7 +29,8 @@ a {
 .body-copy {
   font-family: 'Lora', serif;
   font-size: 13px;
-  line-height: 19.5px; }
+  line-height: 19.5px;
+  margin-bottom: 16px; }
   .body-copy p {
     text-indent: 20px; }
     .body-copy p:nth-child(1) {
@@ -39,7 +40,7 @@ a {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   font-weight: 600;
-  margin: 16px 0; }
+  margin-bottom: 16px; }
 
 strong {
   font-weight: 600; }
@@ -66,7 +67,7 @@ button {
   color: #fff;
   font-size: 20px;
   font-weight: 700;
-  padding: 8px 12px;
+  padding: 8px 24px;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-shadow: 0 0 6px rgba(0, 184, 240, 0.25); }
@@ -457,6 +458,7 @@ img {
   background-color: rgba(203, 221, 231, 0.875);
   bottom: 0;
   left: 0;
+  min-height: 672px;
   position: absolute;
   right: 0;
   top: 0;
