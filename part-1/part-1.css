@@ -217,7 +217,7 @@
   width: 100%; }
   .part-1 .understanding-other-projects .learn-it-2 .left {
     position: absolute;
-    top: 90px;
+    top: 100px;
     width: 158px; }
   .part-1 .understanding-other-projects .learn-it-2 .radio-label {
     display: block;
@@ -225,11 +225,11 @@
   .part-1 .understanding-other-projects .learn-it-2 .right {
     background-color: #f0f0f0;
     bottom: 0;
-    padding: 32px;
+    padding: 40px 50px 40px 40px;
     position: absolute;
     right: 0;
-    top: 90px;
-    width: 500px; }
+    top: 100px;
+    width: 530px; }
   .part-1 .understanding-other-projects .learn-it-2 .highlight-area {
     left: 0;
     position: absolute;
@@ -237,29 +237,57 @@
     z-index: 1; }
   .part-1 .understanding-other-projects .learn-it-2 .highlight {
     background-color: rgba(0, 184, 240, 0.25);
+    opacity: 0;
+    -webkit-transition: all 150ms;
+            transition: all 150ms;
     position: absolute; }
+    .part-1 .understanding-other-projects .learn-it-2 .highlight.showing {
+      opacity: 1;
+      -webkit-transition: all 150ms;
+              transition: all 150ms; }
   .part-1 .understanding-other-projects .learn-it-2 .purpose-highlight {
     height: 92px;
-    left: 20px;
-    top: 182px;
-    width: 460px; }
+    left: 30px;
+    right: 30px;
+    top: 182px; }
   .part-1 .understanding-other-projects .learn-it-2 .audience-highlight-1 {
     height: 19px;
-    right: 20px;
+    right: 52px;
     top: 140px;
-    width: 167px; }
+    width: 157px; }
   .part-1 .understanding-other-projects .learn-it-2 .audience-highlight-2 {
     height: 19px;
-    left: 20px;
+    left: 30px;
     top: 162px;
-    width: 94px; }
+    width: 90px; }
   .part-1 .understanding-other-projects .learn-it-2 .body-copy-written {
     margin-bottom: 0;
     position: relative;
     z-index: 1; }
   .part-1 .understanding-other-projects .learn-it-2 .fixed-width {
     display: inline-block;
-    width: 48px; }
+    width: 44px; }
+  .part-1 .understanding-other-projects .learn-it-2 .popup {
+    opacity: 0;
+    -webkit-transition: all 150ms;
+            transition: all 150ms;
+    position: absolute; }
+    .part-1 .understanding-other-projects .learn-it-2 .popup.showing {
+      opacity: 1;
+      -webkit-transition: all 150ms;
+              transition: all 150ms; }
+  .part-1 .understanding-other-projects .learn-it-2 .popup-1 {
+    left: 80px;
+    right: 22px;
+    top: 314px; }
+  .part-1 .understanding-other-projects .learn-it-2 .popup-2 {
+    left: -54px;
+    right: 10px;
+    top: 220px; }
+  .part-1 .understanding-other-projects .learn-it-2 .popup-3 {
+    left: 170px;
+    right: 20px;
+    top: -80px; }
 .part-1 .nav-left {
   background-color: #769b3e;
   border-top-color: #769b3e; }

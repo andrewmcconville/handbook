@@ -5,7 +5,7 @@
 
 	.left {
 		position: absolute;
-		top: 90px;
+		top: 100px;
 		width: 158px;
 	}
 
@@ -17,11 +17,11 @@
 	.right {
 		background-color: #f0f0f0;
 		bottom: 0;
-		padding: 32px;
+		padding: 40px 50px 40px 40px ;
 		position: absolute;
 		right: 0;
-		top: 90px;
-		width: 500px;
+		top: 100px;
+		width: 530px;
 	}
 
 	.highlight-area {
@@ -33,28 +33,35 @@
 
 	.highlight {
 		background-color: rgba($clickable-dark, .25);
-		position: absolute;		
+		opacity: 0;
+		transition: all 150ms;
+		position: absolute;
+
+		&.showing {
+			opacity: 1;
+			transition: all 150ms;
+		}
 	}
 
 	.purpose-highlight {
 		height: 92px;
-		left: 20px;
+		left: 30px;
+		right: 30px;
 		top: 182px;
-		width: 460px;
 	}
 
 	.audience-highlight-1 {
 		height: 19px;
-		right: 20px;
+		right: 52px;
 		top: 140px;
-		width: 167px;
+		width: 157px;
 	}
 
 	.audience-highlight-2 {
 		height: 19px;
-		left: 20px;
+		left: 30px;
 		top: 162px;
-		width: 94px;
+		width: 90px;
 	}
 
 	.body-copy-written {
@@ -65,6 +72,35 @@
 
 	.fixed-width {
 		display: inline-block;
-		width: 48px;
+		width: 44px;
+	}
+
+	.popup {
+		opacity: 0;
+		transition: all 150ms;
+		position: absolute;
+
+		&.showing {
+			opacity: 1;
+			transition: all 150ms;
+		}
+	}
+
+	.popup-1 {
+		left: 80px;
+		right: 22px;
+		top: 314px;
+	}
+
+	.popup-2 {
+		left: -54px;
+		right: 10px;
+		top: 220px;
+	}
+
+	.popup-3 {
+		left: 170px;
+		right: 20px;
+		top: -80px;
 	}
 }
