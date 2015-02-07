@@ -28,6 +28,8 @@
   left: 0;
   position: absolute;
   top: 304px; }
+.part-1 .what-is-composing .popup {
+  width: 400px; }
 .part-1 .what-is-composing .button {
   background-color: #abc16c;
   box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.5);
@@ -55,7 +57,7 @@
   padding: 32px 22px; }
   .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .popup {
     padding: 14px 24px 24px 24px;
-    width: 440px; }
+    width: 450px; }
   .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .content {
     width: 200px; }
   .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .interactive-area {
@@ -309,5 +311,4 @@
   border-top-color: #769b3e; }
 .part-1 .instructions {
   color: #769b3e; }
-
 /*# sourceMappingURL=part-1.css.map */
