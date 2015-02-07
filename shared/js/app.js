@@ -499,34 +499,34 @@ $(document).ready(function() {
 	/*
 	 * preload images
 	 */
-	function preload(arrayOfImages) {
-		$(arrayOfImages).each(function(){
-			$('<img/>')[0].src = this;
-		});
-	}
+	// function preload(arrayOfImages) {
+	// 	$(arrayOfImages).each(function(){
+	// 		$('<img/>')[0].src = this;
+	// 	});
+	// }
 
-	preload([
-		'../../home/assets/img/cover-colorful-swirls.jpg',
-		'../../writers-concerns/intro/assets/img/background-image.jpg',
-		'../../writers-process/intro/assets/img/background-image.jpg',
-		'../../part-1/intro/assets/img/background-image.jpg',
-		'../../part-2/intro/assets/img/background-image.jpg',
-		'../../part-3/intro/assets/img/background-image.jpg',
-		'../../part-4/intro/assets/img/background-image.jpg',
-		'../../part-5/intro/assets/img/background-image.jpg',
-		'../../part-6/intro/assets/img/background-image.jpg',
-		'../../part-7/intro/assets/img/background-image.jpg',
-		'../../part-8/intro/assets/img/background-image.jpg',
-		'../../part-9/intro/assets/img/background-image.jpg',
-		'../../part-10/intro/assets/img/background-image.jpg',
-		'../../part-11/intro/assets/img/background-image.jpg',
-		'../../search/assets/left-nav.png',
-		'../../search/assets/content.jpg',
-		'../../glossary/assets/left-nav.png',
-		'../../glossary/assets/content.png',
-		'../../you/assets/left-nav.png',
-		'../../you/assets/content.png'
-	]);
+	// preload([
+	// 	'../../home/assets/img/cover-colorful-swirls.jpg',
+	// 	'../../writers-concerns/intro/assets/img/background-image.jpg',
+	// 	'../../writers-process/intro/assets/img/background-image.jpg',
+	// 	'../../part-1/intro/assets/img/background-image.jpg',
+	// 	'../../part-2/intro/assets/img/background-image.jpg',
+	// 	'../../part-3/intro/assets/img/background-image.jpg',
+	// 	'../../part-4/intro/assets/img/background-image.jpg',
+	// 	'../../part-5/intro/assets/img/background-image.jpg',
+	// 	'../../part-6/intro/assets/img/background-image.jpg',
+	// 	'../../part-7/intro/assets/img/background-image.jpg',
+	// 	'../../part-8/intro/assets/img/background-image.jpg',
+	// 	'../../part-9/intro/assets/img/background-image.jpg',
+	// 	'../../part-10/intro/assets/img/background-image.jpg',
+	// 	'../../part-11/intro/assets/img/background-image.jpg',
+	// 	'../../search/assets/left-nav.png',
+	// 	'../../search/assets/content.jpg',
+	// 	'../../glossary/assets/left-nav.png',
+	// 	'../../glossary/assets/content.png',
+	// 	'../../you/assets/left-nav.png',
+	// 	'../../you/assets/content.png'
+	// ]);
 	/*
 	 * adds focus to left nav
 	 */

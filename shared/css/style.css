@@ -558,9 +558,10 @@ img {
     height: 100%;
     width: 100%; }
   .page-view .intro {
-    background-position: center;
+    background-image: url("../../shared/assets/img/intro-sprite.jpg");
+    background-position: center 0;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: 782px auto; }
 
 /*
  * A 'learn-try-view' is the main content area with vertical tabs on the left.
