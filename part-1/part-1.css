@@ -162,6 +162,17 @@
     left: 160px;
     position: absolute;
     top: 390px; }
+  .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .popup {
+    font-weight: 600;
+    padding-top: 60px;
+    position: absolute;
+    right: 40px;
+    top: 460px;
+    z-index: 3; }
+  .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .btn-reset {
+    right: 10px;
+    position: absolute;
+    top: 10px; }
 .part-1 .understanding-your-project-or-assignment {
   background-image: url("understanding-your-project-or-assignment/assets/img/background-image.jpg");
   background-position: right bottom;
