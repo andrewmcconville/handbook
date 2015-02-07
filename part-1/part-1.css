@@ -96,13 +96,72 @@
     position: absolute;
     top: 8px; }
 .part-1 .rhetoric-and-a-process-for-composing .try-it-1 {
-  background-image: url("rhetoric-and-a-process-for-composing/try-it/1/temp-content.jpg");
-  background-size: cover;
   height: 100%;
   width: 100%; }
   .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .instructions-container {
     padding: 36px 0 0 32px;
     width: 260px; }
+  .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items {
+    left: 60px;
+    position: absolute;
+    top: 200px;
+    z-index: 1; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-1 {
+      left: 72px;
+      top: 0; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-2 {
+      left: 8px;
+      top: 50px; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-3 {
+      left: 60px;
+      top: 100px; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-4 {
+      left: 0px;
+      top: 150px; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-5 {
+      left: 100px;
+      top: 200px; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-6 {
+      left: 44px;
+      top: 250px; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-7 {
+      left: 124px;
+      top: 300px; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-8 {
+      left: 24px;
+      top: 350px; }
+  .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable {
+    background-color: #abc16c;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+    cursor: move;
+    font-weight: 600;
+    height: 40px;
+    padding: 8px 24px;
+    position: absolute;
+    width: 266px; }
+  .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .drop-zone {
+    left: 430px;
+    position: absolute;
+    top: 80px;
+    z-index: 0; }
+  .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .drop-list-background {
+    left: 0;
+    position: absolute;
+    top: 0; }
+  .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .dotted-item {
+    border: 2px dashed #000;
+    height: 40px;
+    margin-bottom: 8px;
+    width: 266px; }
+  .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .drop-list {
+    left: 0;
+    position: absolute;
+    top: 0; }
+  .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .btn-done {
+    left: 160px;
+    position: absolute;
+    top: 390px; }
 .part-1 .understanding-your-project-or-assignment {
   background-image: url("understanding-your-project-or-assignment/assets/img/background-image.jpg");
   background-position: right bottom;
