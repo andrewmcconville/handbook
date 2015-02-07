@@ -1,5 +1,70 @@
 .learn-it-2 {
 	height: 100%;
-	padding: 40px;
+	padding: 64px 76px 40px 40px;
 	width: 100%;
+
+	.left {
+		position: absolute;
+		top: 90px;
+		width: 158px;
+	}
+
+	.radio-label {
+		display: block;
+		margin: 20px 0;
+	}
+
+	.right {
+		background-color: #f0f0f0;
+		bottom: 0;
+		padding: 32px;
+		position: absolute;
+		right: 0;
+		top: 90px;
+		width: 500px;
+	}
+
+	.highlight-area {
+		left: 0;
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+	}
+
+	.highlight {
+		background-color: rgba($clickable-dark, .25);
+		position: absolute;		
+	}
+
+	.purpose-highlight {
+		height: 92px;
+		left: 20px;
+		top: 182px;
+		width: 460px;
+	}
+
+	.audience-highlight-1 {
+		height: 19px;
+		right: 20px;
+		top: 140px;
+		width: 167px;
+	}
+
+	.audience-highlight-2 {
+		height: 19px;
+		left: 20px;
+		top: 162px;
+		width: 94px;
+	}
+
+	.body-copy-written {
+		margin-bottom: 0;
+		position: relative;
+		z-index: 1;
+	}
+
+	.fixed-width {
+		display: inline-block;
+		width: 48px;
+	}
 }

@@ -213,8 +213,53 @@
   width: 100%; }
 .part-1 .understanding-other-projects .learn-it-2 {
   height: 100%;
-  padding: 40px;
+  padding: 64px 76px 40px 40px;
   width: 100%; }
+  .part-1 .understanding-other-projects .learn-it-2 .left {
+    position: absolute;
+    top: 90px;
+    width: 158px; }
+  .part-1 .understanding-other-projects .learn-it-2 .radio-label {
+    display: block;
+    margin: 20px 0; }
+  .part-1 .understanding-other-projects .learn-it-2 .right {
+    background-color: #f0f0f0;
+    bottom: 0;
+    padding: 32px;
+    position: absolute;
+    right: 0;
+    top: 90px;
+    width: 500px; }
+  .part-1 .understanding-other-projects .learn-it-2 .highlight-area {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1; }
+  .part-1 .understanding-other-projects .learn-it-2 .highlight {
+    background-color: rgba(0, 184, 240, 0.25);
+    position: absolute; }
+  .part-1 .understanding-other-projects .learn-it-2 .purpose-highlight {
+    height: 92px;
+    left: 20px;
+    top: 182px;
+    width: 460px; }
+  .part-1 .understanding-other-projects .learn-it-2 .audience-highlight-1 {
+    height: 19px;
+    right: 20px;
+    top: 140px;
+    width: 167px; }
+  .part-1 .understanding-other-projects .learn-it-2 .audience-highlight-2 {
+    height: 19px;
+    left: 20px;
+    top: 162px;
+    width: 94px; }
+  .part-1 .understanding-other-projects .learn-it-2 .body-copy-written {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1; }
+  .part-1 .understanding-other-projects .learn-it-2 .fixed-width {
+    display: inline-block;
+    width: 48px; }
 .part-1 .nav-left {
   background-color: #769b3e;
   border-top-color: #769b3e; }

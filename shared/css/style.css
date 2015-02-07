@@ -36,6 +36,16 @@ a {
     .body-copy p:nth-child(1) {
       text-indent: 0; }
 
+.body-copy-written {
+  font-family: 'Shadows Into Light', serif;
+  font-size: 14px;
+  line-height: 23px;
+  margin-bottom: 16px; }
+  .body-copy-written p {
+    text-indent: 20px; }
+    .body-copy-written p:nth-child(1) {
+      text-indent: 0; }
+
 .instructions {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
@@ -73,21 +83,21 @@ button {
   text-transform: uppercase;
   text-shadow: 0 0 6px rgba(0, 184, 240, 0.25); }
 
-.checkbox {
+.radio {
   margin-left: -9999px;
   position: absolute; }
-  .checkbox:checked + .checkbox-label .filled {
+  .radio:checked + .radio-label .filled {
     opacity: 1;
     -webkit-transform: scale(1, 1);
         -ms-transform: scale(1, 1);
             transform: scale(1, 1); }
-  .checkbox + .checkbox-label {
+  .radio + .radio-label {
     background-position: 0 0;
     background-repeat: no-repeat;
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     height: 22px;
     line-height: 20px;
     overflow: hidden;
@@ -96,7 +106,7 @@ button {
     text-transform: uppercase;
     vertical-align: middle; }
 
-.checkbox-label .filled {
+.radio-label .filled {
   background-color: #00b8f0;
   border-radius: 100%;
   bottom: 0;
@@ -113,7 +123,7 @@ button {
           transition: all 150ms ease-out;
   width: 12px;
   z-index: 1; }
-.checkbox-label .empty {
+.radio-label .empty {
   background-color: #ddf2fd;
   border: 1px solid #00b8f0;
   border-radius: 100%;
@@ -126,7 +136,7 @@ button {
   top: 0;
   width: 20px;
   z-index: 0; }
-.checkbox-label .text {
+.radio-label .text {
   margin-top: 1px; }
 
 .select {

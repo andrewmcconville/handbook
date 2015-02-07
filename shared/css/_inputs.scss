@@ -1,9 +1,9 @@
-.checkbox {
+.radio {
 	margin-left: -9999px;
 	position: absolute;
 
 	&:checked {
-		& + .checkbox-label {
+		& + .radio-label {
 			.filled {
 				opacity: 1;
 				transform: scale(1, 1);
@@ -11,13 +11,13 @@
 		}
 	}
 
-	& + .checkbox-label {
+	& + .radio-label {
 		background-position: 0 0;
 		background-repeat: no-repeat;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 16px;
-		font-weight: 600;
+		font-weight: 700;
 		height: 22px;
 		line-height: 20px;
 		overflow: hidden;
@@ -29,7 +29,7 @@
 }
 
 
-.checkbox-label {
+.radio-label {
 	.filled {
 		background-color: $clickable-dark;
 		border-radius: 100%;
