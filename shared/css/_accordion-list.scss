@@ -1,0 +1,59 @@
+@import 'colors';
+
+.accordion-list{
+	.btn-expander {
+		padding: 0 10px 0 2px;
+
+		&.open .icon-triangle-container {
+			transform: rotate(90deg);
+			transition: all 300ms;
+		}
+	}
+
+	.icon-triangle-container {
+		display: inline-block;
+		position: relative;
+		top: 2px;
+		transform: rotate(0deg);
+		transition: all 300ms;
+	}
+
+	.icon-triangle {
+		fill: $part-1-dark;
+		height: 50px;
+		padding: 9px;
+		position: relative;
+		width: 34px;
+		z-index: 1;
+	}
+
+	.icon-triangle-shadow {
+		background-image: url(../assets/img/triangle-shadow.png);
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 34px 50px;
+		height: 50px;
+		position: absolute;
+		top: 0;
+		width: 34px;
+		z-index: 0;
+	}
+
+	.text {
+		font-size: 16px;
+		font-weight: 600;
+		position: relative;
+		top: -16px;
+	}
+
+	.description {
+		display: none;
+		overflow: hidden;
+		padding-left: 36px;
+
+		p {
+			font-size: 14px;
+			margin-bottom: 8px;
+		}
+	}
+}

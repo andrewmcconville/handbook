@@ -60,6 +60,7 @@ button {
   padding: 0; }
 
 .btn-primary {
+  background: -webkit-linear-gradient(top, #6ccff6 0%, #ffffff 100%);
   background: linear-gradient(to bottom, #6ccff6 0%, #ffffff 100%);
   border: 1px solid #00b8f0;
   border-radius: 8px;
@@ -77,7 +78,9 @@ button {
   position: absolute; }
   .checkbox:checked + .checkbox-label .filled {
     opacity: 1;
-    transform: scale(1, 1); }
+    -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+            transform: scale(1, 1); }
   .checkbox + .checkbox-label {
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -103,8 +106,11 @@ button {
   opacity: 0;
   position: absolute;
   top: 0;
-  transform: scale(0.75, 0.75);
-  transition: all 150ms ease-out;
+  -webkit-transform: scale(0.75, 0.75);
+      -ms-transform: scale(0.75, 0.75);
+          transform: scale(0.75, 0.75);
+  -webkit-transition: all 150ms ease-out;
+          transition: all 150ms ease-out;
   width: 12px;
   z-index: 1; }
 .checkbox-label .empty {
@@ -155,9 +161,11 @@ button {
       border-radius: 6px 6px 6px 6px;
       height: 38px;
       margin-bottom: -10px;
-      transition: all 250ms ease-out; }
+      -webkit-transition: all 250ms ease-out;
+              transition: all 250ms ease-out; }
       #app-header .tab.active a.tab-text, #app-header .tab.active-you a.tab-text {
-        transition: all 250ms ease-out; }
+        -webkit-transition: all 250ms ease-out;
+                transition: all 250ms ease-out; }
     #app-header .tab a {
       background-color: #fff;
       border-radius: 6px 6px 0 0;
@@ -171,12 +179,14 @@ button {
       overflow: hidden;
       text-align: center;
       width: 28px;
-      transition: all 250ms ease-out; }
+      -webkit-transition: all 250ms ease-out;
+              transition: all 250ms ease-out; }
       #app-header .tab a.tab-text {
         font-size: 13px;
         padding: 2px 6px 0 6px;
         width: auto;
-        transition: all 250ms ease-out; }
+        -webkit-transition: all 250ms ease-out;
+                transition: all 250ms ease-out; }
       #app-header .tab a.tab-c, #app-header .tab a.tab-p {
         color: #000; }
       #app-header .tab a.tab-part-1 {
@@ -225,77 +235,95 @@ button {
     position: absolute;
     right: 0;
     top: 38px;
-    transition: all 250ms ease-out; }
+    -webkit-transition: all 250ms ease-out;
+            transition: all 250ms ease-out; }
     #app-header .main-nav-hover.open {
       opacity: 1; }
     #app-header .main-nav-hover.tab-part-1 {
       background-color: #769b3e; }
       #app-header .main-nav-hover.tab-part-1 .full-description {
-        transform: translate3d(10px, 0, 0); }
+        -webkit-transform: translate3d(10px, 0, 0);
+                transform: translate3d(10px, 0, 0); }
     #app-header .main-nav-hover.tab-part-2 {
       background-color: #6e78a7; }
       #app-header .main-nav-hover.tab-part-2 .full-description {
-        transform: translate3d(46px, 0, 0); }
+        -webkit-transform: translate3d(46px, 0, 0);
+                transform: translate3d(46px, 0, 0); }
     #app-header .main-nav-hover.tab-part-3 {
       background-color: #9280a7; }
       #app-header .main-nav-hover.tab-part-3 .full-description {
-        transform: translate3d(82px, 0, 0); }
+        -webkit-transform: translate3d(82px, 0, 0);
+                transform: translate3d(82px, 0, 0); }
     #app-header .main-nav-hover.tab-part-4 {
       background-color: #717245; }
       #app-header .main-nav-hover.tab-part-4 .full-description {
-        transform: translate3d(118px, 0, 0); }
+        -webkit-transform: translate3d(118px, 0, 0);
+                transform: translate3d(118px, 0, 0); }
     #app-header .main-nav-hover.tab-part-5 {
       background-color: #9a226f; }
       #app-header .main-nav-hover.tab-part-5 .full-description {
-        transform: translate3d(154px, 0, 0); }
+        -webkit-transform: translate3d(154px, 0, 0);
+                transform: translate3d(154px, 0, 0); }
     #app-header .main-nav-hover.tab-part-6 {
       background-color: #a5732a; }
       #app-header .main-nav-hover.tab-part-6 .full-description {
-        transform: translate3d(190px, 0, 0); }
+        -webkit-transform: translate3d(190px, 0, 0);
+                transform: translate3d(190px, 0, 0); }
     #app-header .main-nav-hover.tab-part-7 {
       background-color: #499a89; }
       #app-header .main-nav-hover.tab-part-7 .full-description {
-        transform: translate3d(226px, 0, 0); }
+        -webkit-transform: translate3d(226px, 0, 0);
+                transform: translate3d(226px, 0, 0); }
     #app-header .main-nav-hover.tab-part-8 {
       background-color: #781b7b; }
       #app-header .main-nav-hover.tab-part-8 .full-description {
-        transform: translate3d(262px, 0, 0); }
+        -webkit-transform: translate3d(262px, 0, 0);
+                transform: translate3d(262px, 0, 0); }
     #app-header .main-nav-hover.tab-part-9 {
       background-color: #377b9b; }
       #app-header .main-nav-hover.tab-part-9 .full-description {
-        transform: translate3d(298px, 0, 0); }
+        -webkit-transform: translate3d(298px, 0, 0);
+                transform: translate3d(298px, 0, 0); }
     #app-header .main-nav-hover.tab-part-10 {
       background-color: #75639b; }
       #app-header .main-nav-hover.tab-part-10 .full-description {
-        transform: translate3d(334px, 0, 0); }
+        -webkit-transform: translate3d(334px, 0, 0);
+                transform: translate3d(334px, 0, 0); }
     #app-header .main-nav-hover.tab-part-11 {
       background-color: #993733; }
       #app-header .main-nav-hover.tab-part-11 .full-description {
-        transform: translate3d(370px, 0, 0); }
+        -webkit-transform: translate3d(370px, 0, 0);
+                transform: translate3d(370px, 0, 0); }
     #app-header .main-nav-hover.tab-c {
       background-color: #555; }
       #app-header .main-nav-hover.tab-c .full-description {
-        transform: translate3d(406px, 0, 0); }
+        -webkit-transform: translate3d(406px, 0, 0);
+                transform: translate3d(406px, 0, 0); }
     #app-header .main-nav-hover.tab-p {
       background-color: #555; }
       #app-header .main-nav-hover.tab-p .full-description {
-        transform: translate3d(442px, 0, 0); }
+        -webkit-transform: translate3d(442px, 0, 0);
+                transform: translate3d(442px, 0, 0); }
     #app-header .main-nav-hover.tab-search {
       background-color: #da8227; }
       #app-header .main-nav-hover.tab-search .full-description {
-        transform: translate3d(478px, 0, 0); }
+        -webkit-transform: translate3d(478px, 0, 0);
+                transform: translate3d(478px, 0, 0); }
     #app-header .main-nav-hover.tab-glossary {
       background-color: #ed1c24; }
       #app-header .main-nav-hover.tab-glossary .full-description {
-        transform: translate3d(550px, 0, 0); }
+        -webkit-transform: translate3d(550px, 0, 0);
+                transform: translate3d(550px, 0, 0); }
     #app-header .main-nav-hover.tab-you {
       background-color: #2e3092; }
       #app-header .main-nav-hover.tab-you .full-description {
-        transform: translate3d(636px, 0, 0); }
+        -webkit-transform: translate3d(636px, 0, 0);
+                transform: translate3d(636px, 0, 0); }
   #app-header .full-description {
     position: absolute;
     top: 8px;
-    transition: all 250ms ease-out; }
+    -webkit-transition: all 250ms ease-out;
+            transition: all 250ms ease-out; }
 
 .nav-left {
   background-color: #fff;
@@ -357,7 +385,9 @@ button {
     font-weight: bold;
     font-size: 14px;
     margin: 60px 0px auto 4px;
-    transform: rotate(90deg); }
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
     .learn-try-nav .rotated-nav-header.learn {
       margin-bottom: 30px; }
     .learn-try-nav .rotated-nav-header.try {
@@ -373,10 +403,12 @@ button {
     margin: 0 0 4px 4px;
     text-align: center;
     width: 28px;
-    transition: all 300ms; }
+    -webkit-transition: all 300ms;
+            transition: all 300ms; }
     .learn-try-nav .tab:hover {
       background-color: #fff !important;
-      transition: all 300ms; }
+      -webkit-transition: all 300ms;
+              transition: all 300ms; }
     .learn-try-nav .tab.active {
       background-color: #fff !important; }
 
@@ -384,46 +416,53 @@ button {
   padding: 32px 160px 32px 32px; }
   .what-will-you-learn .body-copy {
     margin-bottom: 24px; }
-  .what-will-you-learn .btn-expander {
-    padding: 0 10px 0 2px; }
-    .what-will-you-learn .btn-expander.open .icon-triangle-container {
-      transform: rotate(90deg);
-      transition: all 300ms; }
-  .what-will-you-learn .icon-triangle-container {
-    display: inline-block;
-    position: relative;
-    top: 2px;
-    transform: rotate(0deg);
-    transition: all 300ms; }
-  .what-will-you-learn .icon-triangle {
-    fill: #abc16c;
-    height: 50px;
-    padding: 9px;
-    position: relative;
-    width: 34px;
-    z-index: 1; }
-  .what-will-you-learn .icon-triangle-shadow {
-    background-image: url(../assets/img/triangle-shadow.png);
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 34px 50px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    width: 34px;
-    z-index: 0; }
-  .what-will-you-learn .text {
-    font-size: 16px;
-    font-weight: 600;
-    position: relative;
-    top: -16px; }
-  .what-will-you-learn .description {
-    display: none;
-    overflow: hidden;
-    padding-left: 36px; }
-    .what-will-you-learn .description p {
-      font-size: 14px;
-      margin-bottom: 8px; }
+
+.accordion-list .btn-expander {
+  padding: 0 10px 0 2px; }
+  .accordion-list .btn-expander.open .icon-triangle-container {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: all 300ms;
+            transition: all 300ms; }
+.accordion-list .icon-triangle-container {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 300ms;
+          transition: all 300ms; }
+.accordion-list .icon-triangle {
+  fill: #abc16c;
+  height: 50px;
+  padding: 9px;
+  position: relative;
+  width: 34px;
+  z-index: 1; }
+.accordion-list .icon-triangle-shadow {
+  background-image: url(../assets/img/triangle-shadow.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 34px 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  width: 34px;
+  z-index: 0; }
+.accordion-list .text {
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  top: -16px; }
+.accordion-list .description {
+  display: none;
+  overflow: hidden;
+  padding-left: 36px; }
+  .accordion-list .description p {
+    font-size: 14px;
+    margin-bottom: 8px; }
 
 .popup {
   background-color: #fff;
@@ -511,16 +550,19 @@ img {
   left: 0;
   right: 0;
   top: 38px;
-  transition: all 550ms;
+  -webkit-transition: all 550ms;
+          transition: all 550ms;
   z-index: 1; }
   .part-view.ng-enter .nav-left {
     opacity: 0; }
   .part-view.ng-enter .page-view {
-    transform: translate3d(100%, 0, 0); }
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0); }
   .part-view.ng-enter-active .nav-left {
     opacity: 1; }
   .part-view.ng-enter-active .page-view {
-    transform: translate3d(0, 0, 0); }
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
   .part-view.ng-leave {
     z-index: 0; }
     .part-view.ng-leave .nav-left {
@@ -545,12 +587,15 @@ img {
   left: 242px;
   right: 0;
   top: 0;
-  transition: all 500ms;
+  -webkit-transition: all 500ms;
+          transition: all 500ms;
   z-index: 1; }
   .page-view.ng-enter {
-    transform: translate3d(100%, 0, 0); }
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0); }
   .page-view.ng-enter-active {
-    transform: translate3d(0, 0, 0); }
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
   .page-view.ng-leave {
     z-index: 0; }
   .page-view.ng-leave-active {
@@ -574,7 +619,8 @@ img {
   position: absolute;
   right: 0;
   top: 0;
-  transition: all 200ms;
+  -webkit-transition: all 200ms;
+          transition: all 200ms;
   z-index: 1; }
   .learn-try-view.ng-enter {
     opacity: 0; }
