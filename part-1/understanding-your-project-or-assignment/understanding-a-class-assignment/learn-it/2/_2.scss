@@ -21,12 +21,19 @@
 		left: -40px;
 		right: 22px;
 		top: 104px;
+		z-index: 2;
 	}
 
 	.purpose-popup-2 {
 		left: -200px;
 		right: 520px;
 		top: 340px;
+	}
+
+	.btn-note {
+		bottom: 8px;
+		position: absolute;
+		right: 8px
 	}
 
 	.audience-highlight-1 {

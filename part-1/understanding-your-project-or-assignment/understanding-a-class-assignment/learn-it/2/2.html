@@ -4,19 +4,19 @@
 	<div class="interactive-paper">
 		<div class="left">
 			<p class="instructions">Click the buttons below to see how to look for purpose, context, and audience in an assignment.</p>
-			<input id="radio-1" type="radio" name="group" class="radio" ng-click="radioState = 1" />
+			<input id="radio-1" type="radio" name="group" class="radio" ng-click="togglePopups(1)" />
 			<label for="radio-1" class="radio-label" tabindex="1">
 				<div class="filled"></div>
 				<div class="empty"></div>
 				<div class="text">Purpose</div>
 			</label>
-			<input id="radio-2" type="radio" name="group" class="radio" ng-click="radioState = 2" />
+			<input id="radio-2" type="radio" name="group" class="radio" ng-click="togglePopups(2)" />
 			<label for="radio-2" class="radio-label" tabindex="2">
 				<div class="filled"></div>
 				<div class="empty"></div>
 				<div class="text">Audience</div>
 			</label>
-			<input id="radio-3" type="radio" name="group" class="radio" ng-click="radioState = 3" />
+			<input id="radio-3" type="radio" name="group" class="radio" ng-click="togglePopups(3)" />
 			<label for="radio-3" class="radio-label" tabindex="3">
 				<div class="filled"></div>
 				<div class="empty"></div>
@@ -71,8 +71,9 @@
 						</ul>
 						<p style="text-indent: 0;">Look also for any objectives, like those below:</p>
 					</div>
+					<button class="btn-primary btn-note" ng-click="noteIsShowing = true">Note</button>
 				</div>
-				<div class="popup purpose-popup-2" ng-class="{'showing': radioState == 1}">
+				<div class="popup purpose-popup-2" ng-class="{'showing': radioState == 1 && noteIsShowing == true}">
 					<p class="note-heading">Note!</p>
 					<div class="note-copy">
 						<p>What you see here are <span class="uppercase">the teacher's purposes</span>, which differs from what <span class="uppercase">your paper's purpose</span> will be as you develop your paper. You’ll see this development as you move through the other parts of this book.</p>

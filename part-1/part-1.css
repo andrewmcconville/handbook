@@ -209,11 +209,16 @@
   .part-1 .understanding-a-class-assignment .learn-it-2 .purpose-popup-1 {
     left: -40px;
     right: 22px;
-    top: 104px; }
+    top: 104px;
+    z-index: 2; }
   .part-1 .understanding-a-class-assignment .learn-it-2 .purpose-popup-2 {
     left: -200px;
     right: 520px;
     top: 340px; }
+  .part-1 .understanding-a-class-assignment .learn-it-2 .btn-note {
+    bottom: 8px;
+    position: absolute;
+    right: 8px; }
   .part-1 .understanding-a-class-assignment .learn-it-2 .audience-highlight-1 {
     height: 20px;
     left: 44px;

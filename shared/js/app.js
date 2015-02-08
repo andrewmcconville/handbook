@@ -304,7 +304,10 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					url: '/learn-it-2',
 					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/2/2.html',
 					controller: function($scope) {
-						$scope.radioState = 0;
+						$scope.togglePopups = function(i){							
+							$scope.radioState = i;
+							$scope.noteIsShowing = false;
+						};
 					}
 				})
 				.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.learn-it-3', {
