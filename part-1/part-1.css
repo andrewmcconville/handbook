@@ -271,9 +271,9 @@
     width: 44px; }
   .part-1 .understanding-other-projects .learn-it-2 .popup {
     opacity: 0;
-    -webkit-transform: scale(0.9, 0.9);
-        -ms-transform: scale(0.9, 0.9);
-            transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.95, 0.95);
+        -ms-transform: scale(0.95, 0.95);
+            transform: scale(0.95, 0.95);
     -webkit-transition: all 300ms ease-out;
             transition: all 300ms ease-out;
     position: absolute; }
