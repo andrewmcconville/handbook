@@ -3,9 +3,8 @@
   border: 1px solid #000;
   box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, .5);
   font-size: 14px;
-  padding: 16px 24px 44px 24px;
+  padding: 16px;
   position: relative;
-  width: 400px;
   z-index: 1;
 
   .button-close-popup {
@@ -22,5 +21,9 @@
     fill: #fff;
     height: 12px;
     width: 12px;
+  }
+
+  .body-copy {
+      margin-bottom: 0;
   }
 }

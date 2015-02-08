@@ -322,7 +322,8 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 				})
 				.state('part-1.understanding-your-project-or-assignment/understanding-other-projects.learn-it-2', {
 					url: '/learn-it-2',
-					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/learn-it/2/2.html'
+					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/learn-it/2/2.html',
+        			controller: 'understandingOtherProjectsLearn2'
 				})
 		/*
 		 * PART 2

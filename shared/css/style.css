@@ -36,6 +36,16 @@ a {
     .body-copy p:nth-child(1) {
       text-indent: 0; }
 
+.body-copy-written {
+  font-family: 'Shadows Into Light', serif;
+  font-size: 14px;
+  line-height: 23px;
+  margin-bottom: 16px; }
+  .body-copy-written p {
+    text-indent: 20px; }
+    .body-copy-written p:nth-child(1) {
+      text-indent: 0; }
+
 .instructions {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
@@ -73,21 +83,23 @@ button {
   text-transform: uppercase;
   text-shadow: 0 0 6px rgba(0, 184, 240, 0.25); }
 
-.checkbox {
+.radio {
   margin-left: -9999px;
   position: absolute; }
-  .checkbox:checked + .checkbox-label .filled {
+  .radio:checked + .radio-label .filled {
     opacity: 1;
     -webkit-transform: scale(1, 1);
         -ms-transform: scale(1, 1);
-            transform: scale(1, 1); }
-  .checkbox + .checkbox-label {
+            transform: scale(1, 1);
+    -webkit-transition: all 100ms ease-out;
+            transition: all 100ms ease-out; }
+  .radio + .radio-label {
     background-position: 0 0;
     background-repeat: no-repeat;
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     height: 22px;
     line-height: 20px;
     overflow: hidden;
@@ -96,7 +108,7 @@ button {
     text-transform: uppercase;
     vertical-align: middle; }
 
-.checkbox-label .filled {
+.radio-label .filled {
   background-color: #00b8f0;
   border-radius: 100%;
   bottom: 0;
@@ -109,11 +121,11 @@ button {
   -webkit-transform: scale(0.75, 0.75);
       -ms-transform: scale(0.75, 0.75);
           transform: scale(0.75, 0.75);
-  -webkit-transition: all 150ms ease-out;
-          transition: all 150ms ease-out;
+  -webkit-transition: all 100ms ease-out;
+          transition: all 100ms ease-out;
   width: 12px;
   z-index: 1; }
-.checkbox-label .empty {
+.radio-label .empty {
   background-color: #ddf2fd;
   border: 1px solid #00b8f0;
   border-radius: 100%;
@@ -126,7 +138,7 @@ button {
   top: 0;
   width: 20px;
   z-index: 0; }
-.checkbox-label .text {
+.radio-label .text {
   margin-top: 1px; }
 
 .select {
@@ -469,9 +481,8 @@ button {
   border: 1px solid #000;
   box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.5);
   font-size: 14px;
-  padding: 16px 24px 44px 24px;
+  padding: 16px;
   position: relative;
-  width: 400px;
   z-index: 1; }
   .popup .button-close-popup {
     background-color: #000;
@@ -485,6 +496,8 @@ button {
     fill: #fff;
     height: 12px;
     width: 12px; }
+  .popup .body-copy {
+    margin-bottom: 0; }
 
 body {
   background-color: #cbdde7;
