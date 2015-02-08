@@ -183,15 +183,14 @@
   background-size: 450px 425px;
   padding: 54px 330px 0 24px; }
   .part-1 .understanding-your-project-or-assignment .list {
-    font-weight: 600;
-    margin-top: 8px;
-    padding-left: 30px; }
-    .part-1 .understanding-your-project-or-assignment .list li {
-      list-style-type: circle;
-      margin-bottom: 8px; }
+    font-weight: 600; }
 .part-1 .understanding-a-class-assignment .learn-it-1 {
+  background-image: url("understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/1/assets/img/background-image.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   height: 100%;
-  padding: 40px;
+  padding: 92px 76px 40px 40px;
   width: 100%; }
 .part-1 .understanding-a-class-assignment .learn-it-2 {
   height: 100%;

@@ -295,7 +295,10 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			})
 				.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.learn-it-1', {
 					url: '/learn-it-1',
-					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/1/1.html'
+					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/1/1.html',
+					controller: function() {
+						accordionList();
+					}
 				})
 				.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.learn-it-2', {
 					url: '/learn-it-2',
