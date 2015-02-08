@@ -1,3 +1,71 @@
 <div class="learn-it-2">
-	Learn it 2
+	<h1 class="body-heading">Understanding a class assignment:<br> questions to ask about an assignment</h1>
+
+	<div class="interactive-paper">
+		<div class="left">
+			<p class="instructions">Click the buttons below to see how to look for purpose, context, and audience in an assignment.</p>
+			<input id="radio-1" type="radio" name="group" class="radio" ng-click="radioState = 1" />
+			<label for="radio-1" class="radio-label" tabindex="1">
+				<div class="filled"></div>
+				<div class="empty"></div>
+				<div class="text">Purpose</div>
+			</label>
+			<input id="radio-2" type="radio" name="group" class="radio" ng-click="radioState = 2" />
+			<label for="radio-2" class="radio-label" tabindex="2">
+				<div class="filled"></div>
+				<div class="empty"></div>
+				<div class="text">Audience</div>
+			</label>
+			<input id="radio-3" type="radio" name="group" class="radio" ng-click="radioState = 3" />
+			<label for="radio-3" class="radio-label" tabindex="3">
+				<div class="filled"></div>
+				<div class="empty"></div>
+				<div class="text">Context</div>
+			</label>
+		</div>
+
+		<div class="right">
+			<div class="highlight-area">
+				<div class="highlight purpose-highlight" ng-class="{'showing': radioState == 1}"></div>
+				<div class="highlight audience-highlight-1" ng-class="{'showing': radioState == 2}"></div>
+				<div class="highlight audience-highlight-2" ng-class="{'showing': radioState == 2}"></div>
+			</div>
+			<div class="body-copy-written">
+				<div><span class="fixed-width">To:</span> Terry Hayden</div>
+				<div><span class="fixed-width">From</span> Avery Johnson</div>
+				<div><span class="fixed-width">Date</span> September 22</div>
+				<div><span class="fixed-width">Subject:</span> A new project</div>
+				<div>
+					<p>As your first project for your internship, I want you to prepare a report on our in-office recycling program.</p>
+					<p>This report should be no more than 3 pages and should be directed to me, the office manager. I want to receive this report no later than September 29.</p>
+					<p>This report will help me make decisions about improving the program; producing this report will also help you get to know everyone in the office, how people here work together, and about our office values of efficiency and care for our resources.</p>
+					<p>I would like you to interview individually each of our six full-time office staff, to find out how each uses the recycling program. Do they find our system efficient and easy-to-use for recycling paper from the office’s printers? Do they have suggestions for how to improve the system so that less paper is thrown away rather than recycled?</p>
+					<p>In your report, please summarize your findings and make recommendations in line with the purposes I have described above.</p>
+				</div>
+			</div>
+			<div class="popups">
+				<div class="popup popup-1" ng-class="{'showing': radioState == 1}">
+					<p class="body-heading">Seeing purpose</p>
+					<div class="body-copy">
+						<p>In this memo, the writer has made clear the purposes of the report to be produced.</p>
+						<p>The purposes are multiple: The report is to help the office manager improve office recycling while at the same time helping the new intern learn how the office works.</p>
+					</div>
+				</div>
+				<div class="popup popup-2" ng-class="{'showing': radioState == 2}">
+					<p class="body-heading">Seeing audience</p>
+					<div class="body-copy">
+						<p>In this memo, the writer has made clear that the audience is the office manager, the memo’s writer.</p>
+						<p>If you received this memo, how might go go about learning more about the office manager’s expectations, beyond what is described in this memo?</p>
+						<p>If you received a memo like this and it had no description of the audience, how would you find out for whom you were to produce this report?</p>
+					</div>
+				</div>
+				<div class="popup popup-3" ng-class="{'showing': radioState == 3}">
+					<p class="body-heading">Seeing context</p>
+					<div class="body-copy">
+						<p>Obviously, the place of this assignment is this office. Notice in the memo, though, how the office is repeatedly described in terms of efficiency and quickness. Given that context — of the office’s concern about time — this new intern should probably think about the overall purposes of this project in terms of demonstrating a commitment to efficiency and quickness.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
