@@ -252,36 +252,38 @@
   height: 100%;
   padding: 64px 76px 40px 40px;
   width: 100%; }
+  .part-1 .understanding-other-projects .learn-it-2 .font-times {
+    line-height: 24px; }
+  .part-1 .understanding-other-projects .learn-it-2 .purpose-popup-1 {
+    left: 80px;
+    right: 22px;
+    top: 326px; }
   .part-1 .understanding-other-projects .learn-it-2 .purpose-highlight {
-    height: 92px;
-    left: 30px;
-    right: 30px;
-    top: 182px; }
+    height: 94px;
+    left: 20px;
+    right: 20px;
+    top: 194px; }
+  .part-1 .understanding-other-projects .learn-it-2 .audience-popup-2 {
+    left: -54px;
+    right: 10px;
+    top: 230px; }
   .part-1 .understanding-other-projects .learn-it-2 .audience-highlight-1 {
     height: 19px;
-    right: 52px;
-    top: 140px;
-    width: 157px; }
+    right: 44px;
+    top: 147px;
+    width: 152px; }
   .part-1 .understanding-other-projects .learn-it-2 .audience-highlight-2 {
     height: 19px;
-    left: 30px;
-    top: 162px;
-    width: 90px; }
+    left: 32px;
+    top: 171px;
+    width: 120px; }
+  .part-1 .understanding-other-projects .learn-it-2 .context-popup-3 {
+    left: 180px;
+    right: 14px;
+    top: -86px; }
   .part-1 .understanding-other-projects .learn-it-2 .fixed-width {
     display: inline-block;
     width: 44px; }
-  .part-1 .understanding-other-projects .learn-it-2 .popup-1 {
-    left: 80px;
-    right: 22px;
-    top: 314px; }
-  .part-1 .understanding-other-projects .learn-it-2 .popup-2 {
-    left: -54px;
-    right: 10px;
-    top: 220px; }
-  .part-1 .understanding-other-projects .learn-it-2 .popup-3 {
-    left: 170px;
-    right: 20px;
-    top: -80px; }
 .part-1 .nav-left {
   background-color: #769b3e;
   border-top-color: #769b3e; }
