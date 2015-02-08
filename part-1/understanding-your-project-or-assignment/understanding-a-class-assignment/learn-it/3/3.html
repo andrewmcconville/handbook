@@ -7,26 +7,22 @@
 				<p>Writing about an assignment can help you understand better what you need to do. Writing about an assignment can also help you find any questions you might have.</p>
 				<p>The writing to the left is from a student, in response to the assignment from tab 2.</p>
 			</div>
-			<input id="radio-1" type="radio" name="group" class="radio" ng-click="radioState = 1" />
-			<label for="radio-1" class="radio-label" tabindex="1" ng-click="radioState = 1">
+			<label for="radio-1" class="radio-label" tabindex="1" ng-click="radioState = 1" ng-class="{'checked': radioState == 1}">
 				<div class="filled"></div>
 				<div class="empty"></div>
 				<div class="text">Purpose</div>
 			</label>
-			<input id="radio-2" type="radio" name="group" class="radio" ng-click="radioState = 2" />
-			<label for="radio-2" class="radio-label" tabindex="2" ng-click="radioState = 2">
+			<label for="radio-2" class="radio-label" tabindex="2" ng-click="radioState = 2" ng-class="{'checked': radioState == 2}">
 				<div class="filled"></div>
 				<div class="empty"></div>
 				<div class="text">Audience</div>
 			</label>
-			<input id="radio-3" type="radio" name="group" class="radio" ng-click="radioState = 3" />
-			<label for="radio-3" class="radio-label" tabindex="3" ng-click="radioState = 3">
+			<label for="radio-3" class="radio-label" tabindex="3" ng-click="radioState = 3" ng-class="{'checked': radioState == 3}">
 				<div class="filled"></div>
 				<div class="empty"></div>
 				<div class="text">Context</div>
 			</label>
-			<input id="radio-4" type="radio" name="group" class="radio" ng-click="radioState = 4" />
-			<label for="radio-4" class="radio-label" tabindex="4" ng-click="radioState = 4">
+			<label for="radio-4" class="radio-label" tabindex="4" ng-click="radioState = 4" ng-class="{'checked': radioState == 4}">
 				<div class="filled"></div>
 				<div class="empty"></div>
 				<div class="text">Questions</div>

@@ -1,36 +1,20 @@
-.radio {
-	margin-left: -9999px;
-	position: absolute;
+.radio-label {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	padding-left: 24px;
+	position: relative;
+	text-transform: uppercase;
 
-	&:checked {
-		& + .radio-label {
-			.filled {
-				opacity: 1;
-				transform: scale(1, 1);
-				transition: all 100ms ease-out;
-			}
+	&.checked {
+		.filled {
+			opacity: 1;
+			transform: scale(1, 1);
+			transition: all 100ms ease-out;
 		}
 	}
 
-	& + .radio-label {
-		background-position: 0 0;
-		background-repeat: no-repeat;
-		cursor: pointer;
-		display: inline-block;
-		font-size: 16px;
-		font-weight: 700;
-		height: 22px;
-		line-height: 20px;
-		overflow: hidden;
-		padding-left: 24px;
-		position: relative;
-		text-transform: uppercase;
-		vertical-align: middle;
-	}
-}
-
-
-.radio-label {
 	.filled {
 		background-color: $clickable-dark;
 		border-radius: 100%;

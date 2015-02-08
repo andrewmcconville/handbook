@@ -5,20 +5,17 @@
 		<div class="left">
 			<p class="instructions">The the right is a memo received by the new intern in a small business office.</p>
 			<p class="instructions">Click the buttons below to see the purpose, context, and audience in this worksplace project.</p>
-			<input id="radio-1" type="radio" name="group" class="radio" ng-click="radioState = 1" />
-			<label for="radio-1" class="radio-label" tabindex="1" ng-click="radioState = 1">
+			<label class="radio-label" tabindex="1" ng-click="radioState = 1" ng-class="{'checked': radioState == 1}">
 				<div class="filled"></div>
 				<div class="empty"></div>
 				<div class="text">Purpose</div>
 			</label>
-			<input id="radio-2" type="radio" name="group" class="radio" ng-click="radioState = 2" />
-			<label for="radio-2" class="radio-label" tabindex="2" ng-click="radioState = 2">
+			<label class="radio-label" tabindex="2" ng-click="radioState = 2" ng-class="{'checked': radioState == 2}">
 				<div class="filled"></div>
 				<div class="empty"></div>
 				<div class="text">Audience</div>
 			</label>
-			<input id="radio-3" type="radio" name="group" class="radio" ng-click="radioState = 3" />
-			<label for="radio-3" class="radio-label" tabindex="3" ng-click="radioState = 3">
+			<label class="radio-label" tabindex="3" ng-click="radioState = 3" ng-class="{'checked': radioState == 3}">
 				<div class="filled"></div>
 				<div class="empty"></div>
 				<div class="text">Context</div>
