@@ -19,6 +19,13 @@ a {
   .part-heading .font-heavy {
     font-weight: 600; }
 
+.page-heading {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-transform: uppercase; }
+
 .body-heading {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
