@@ -2,4 +2,17 @@
 	height: 100%;
 	padding: 40px;
 	width: 100%;
+
+	.page-heading {
+		position: relative;
+		z-index: 1;
+	}
+
+	.right {
+		background-image: url('understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/3/assets/img/lined-paper.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 96px;
+		top: 30px;
+	}
 }

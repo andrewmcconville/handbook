@@ -241,6 +241,15 @@
   height: 100%;
   padding: 40px;
   width: 100%; }
+  .part-1 .understanding-a-class-assignment .learn-it-3 .page-heading {
+    position: relative;
+    z-index: 1; }
+  .part-1 .understanding-a-class-assignment .learn-it-3 .right {
+    background-image: url("understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/3/assets/img/lined-paper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 96px;
+    top: 30px; }
 .part-1 .understanding-a-class-assignment .try-it-1 {
   height: 100%;
   padding: 40px;
