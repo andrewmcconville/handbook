@@ -47,7 +47,27 @@ a {
 	p {
 		text-indent: 20px;
 
-		&:nth-child(1) {
+		&:nth-of-type(1) {
+			text-indent: 0;
+		}
+	}
+}
+
+.note-heading {
+	color: $clickable-dark;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.note-copy {
+	font-family: 'Lora', serif;
+	font-size: 12px;
+	line-height: 15px;
+
+	p {
+		text-indent: 20px;
+
+		&:nth-of-type(1) {
 			text-indent: 0;
 		}
 	}
@@ -62,7 +82,7 @@ a {
 	p {
 		text-indent: 20px;
 
-		&:nth-child(1) {
+		&:nth-of-type(1) {
 			text-indent: 0;
 		}
 	}
@@ -83,7 +103,7 @@ em {
 	font-style: italic;
 }
 
-.all-caps {
+.uppercase {
 	text-transform: uppercase;
 }
 

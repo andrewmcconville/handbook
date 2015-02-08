@@ -33,7 +33,21 @@ a {
   margin-bottom: 16px; }
   .body-copy p {
     text-indent: 20px; }
-    .body-copy p:nth-child(1) {
+    .body-copy p:nth-of-type(1) {
+      text-indent: 0; }
+
+.note-heading {
+  color: #00b8f0;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.note-copy {
+  font-family: 'Lora', serif;
+  font-size: 12px;
+  line-height: 15px; }
+  .note-copy p {
+    text-indent: 20px; }
+    .note-copy p:nth-of-type(1) {
       text-indent: 0; }
 
 .body-copy-written {
@@ -43,7 +57,7 @@ a {
   margin-bottom: 16px; }
   .body-copy-written p {
     text-indent: 20px; }
-    .body-copy-written p:nth-child(1) {
+    .body-copy-written p:nth-of-type(1) {
       text-indent: 0; }
 
 .instructions {
@@ -58,7 +72,7 @@ strong {
 em {
   font-style: italic; }
 
-.all-caps {
+.uppercase {
   text-transform: uppercase; }
 
 .list {
@@ -487,6 +501,20 @@ button {
     font-size: 14px;
     margin-bottom: 8px; }
 
+.interactive-paper section {
+  margin-top: 8px; }
+.interactive-paper h1,
+.interactive-paper h2 {
+  font-weight: 700;
+  text-transform: uppercase; }
+.interactive-paper h1 {
+  font-size: 21px; }
+.interactive-paper h2 {
+  font-size: 15px; }
+.interactive-paper .list {
+  margin-top: 0; }
+.interactive-paper li {
+  margin-bottom: 0; }
 .interactive-paper .left {
   position: absolute;
   top: 100px;

@@ -1,5 +1,31 @@
 .interactive-paper {
 
+	section {
+		margin-top: 8px
+	}
+
+	h1,
+	h2 {
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	h1 {
+		font-size: 21px
+	}
+
+	h2 {
+		font-size: 15px
+	}
+
+	.list {
+		margin-top: 0;
+	}
+
+	li {
+		margin-bottom: 0;
+	}
+
 	.left {
 		position: absolute;
 		top: 100px;
