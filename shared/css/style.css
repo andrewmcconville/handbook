@@ -114,22 +114,23 @@ button {
   text-transform: uppercase;
   text-shadow: 0 0 6px rgba(0, 184, 240, 0.25); }
 
-.radio-label {
+.radio-button {
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
   font-weight: 700;
-  padding-left: 24px;
+  margin: 0 0 4px 0;
+  padding: 8px 6px 8px 24px;
   position: relative;
   text-transform: uppercase; }
-  .radio-label.checked .filled {
+  .radio-button.checked .filled {
     opacity: 1;
     -webkit-transform: scale(1, 1);
         -ms-transform: scale(1, 1);
             transform: scale(1, 1);
     -webkit-transition: all 100ms ease-out;
             transition: all 100ms ease-out; }
-  .radio-label .filled {
+  .radio-button .filled {
     background-color: #00b8f0;
     border-radius: 100%;
     bottom: 0;
@@ -146,7 +147,7 @@ button {
             transition: all 100ms ease-out;
     width: 12px;
     z-index: 1; }
-  .radio-label .empty {
+  .radio-button .empty {
     background-color: #ddf2fd;
     border: 1px solid #00b8f0;
     border-radius: 100%;
@@ -159,7 +160,7 @@ button {
     top: 0;
     width: 20px;
     z-index: 0; }
-  .radio-label .text {
+  .radio-button .text {
     margin-top: 1px; }
 
 .select {
