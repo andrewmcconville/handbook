@@ -2,4 +2,64 @@
 	height: 100%;
 	padding: 40px;
 	width: 100%;
+
+	.purpose-highlight-1 {
+		height: 40px;
+		left: 220px;
+		right: 123px;
+		top: 24px;
+	}
+
+	.purpose-highlight-2 {
+		height: 196px;
+		left: 26px;
+		right: 30px;
+		top: 280px;
+	}
+
+	.purpose-popup-1 {
+		left: -40px;
+		right: 22px;
+		top: 104px;
+		z-index: 2;
+	}
+
+	.purpose-popup-2 {
+		left: -200px;
+		right: 520px;
+		top: 340px;
+	}
+
+	.btn-note {
+		bottom: 8px;
+		padding: 2px 16px;
+		position: absolute;
+		right: 8px
+	}
+
+	.audience-highlight-1 {
+		height: 20px;
+		left: 44px;
+		right: 172px;
+		top: 156px;
+	}
+
+	.audience-popup-1 {
+		left: -40px;
+		right: 100px;
+		top: 216px;
+	}
+
+	.context-highlight-1 {
+		height: 20px;
+		left: 44px;
+		right: 172px;
+		top: 156px;
+	}
+
+	.context-popup-1 {
+		left: 20px;
+		right: 80px;
+		top: 216px;
+	}
 }

@@ -1,3 +1,98 @@
 <div class="learn-it-2">
-	Learn it 2
+	<h1 class="page-heading">Understanding a class assignment:<br> questions to ask about an assignment</h1>
+
+	<div class="interactive-paper">
+		<div class="left">
+			<p class="instructions">Click the buttons below to see how to look for purpose, context, and audience in an assignment.</p>
+			<button class="radio-button" tabindex="1" ng-click="togglePopups(1)" ng-class="{'checked': radioState == 1}">
+				<div class="filled"></div>
+				<div class="empty"></div>
+				<div class="text">Purpose</div>
+			</button>
+			<button class="radio-button" tabindex="2" ng-click="togglePopups(2)" ng-class="{'checked': radioState == 2}">
+				<div class="filled"></div>
+				<div class="empty"></div>
+				<div class="text">Audience</div>
+			</button>
+			<button class="radio-button" tabindex="3" ng-click="togglePopups(3)" ng-class="{'checked': radioState == 3}">
+				<div class="filled"></div>
+				<div class="empty"></div>
+				<div class="text">Context</div>
+			</button>
+		</div>
+
+		<div class="right">
+			<div class="highlight-area">
+				<div class="highlight purpose-highlight-1" ng-class="{'showing': radioState == 1}"></div>
+				<div class="highlight purpose-highlight-2" ng-class="{'showing': radioState == 1}"></div>
+				<div class="highlight audience-highlight-1" ng-class="{'showing': radioState == 2}"></div>
+				<div class="highlight context-highlight-1" ng-class="{'showing': radioState == 3}"></div>
+			</div>
+
+			<div class="body-copy font-times">
+				<h1>Research paper assignment</h1>
+				<p>Over the term you will produce an argumentative research paper on a topic of interest to you.</p>
+				<p>We will discuss “argument” as we proceed, so that you will develop an understanding of the characteristics of—and work that goes into—argumentative writing.</p>
+				<section>
+					<h2>Details of the paper</h2>
+					<ul class="list">
+						<li>The audience for your writing is your classmates.</li>
+						<li>The paper will be 5–7 pages long.</li>
+						<li>You will cite at least six sources in your writing, four of which must be academic sources.</li>
+						<li>Based on your major, you will choose either MLA or APA style for your citations and Works Cited list or References list.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Objectives</h2>
+					<p>I ask you to do this work to help you:</p>
+					<ul class="list">
+						<li>learn how to find and use authoritative and relevant sources.</li>
+						<li>develop your critical thinking abilities through analyzing your sources’ arguments.</li>
+						<li>learn how to support and develop your ideas through engaging with your sources’ arguments.</li>
+						<li>learn scholarly conventions for writing.</li>
+					</ul>
+				</section>
+			</div>
+
+			<div class="popups">
+				<div class="popup purpose-popup-1" ng-class="{'showing': radioState == 1}">
+					<p class="body-heading">Seeing purpose</p>
+					<div class="body-copy">
+						<p>To understand what a teacher hopes you learn, look for these terms:</p>
+						<ul>
+							<li><strong>summarize:</strong> to describe as concisely as possible the main points of writing</li>
+							<li><strong>define:</strong> to explain a term or concept</li>
+							<li><strong>inform:</strong> to tell others about an issue, with supporting examples and data</li>
+							<li><strong>analyze:</strong> to break a process or object into its parts</li>
+							<li><strong>persuade/argue:</strong> to present your opinions on a topic using evidence, so that others might come to agreement with you</li>
+						</ul>
+						<p style="text-indent: 0;">Look also for any objectives, like those below:</p>
+					</div>
+					<button class="btn-primary btn-note" ng-click="noteIsShowing = true">Note</button>
+				</div>
+				<div class="popup purpose-popup-2" ng-class="{'showing': radioState == 1 && noteIsShowing == true}">
+					<p class="note-heading">Note!</p>
+					<div class="note-copy">
+						<p>What you see here are <span class="uppercase">the teacher's purposes</span>, which differs from what <span class="uppercase">your paper's purpose</span> will be as you develop your paper. You’ll see this development as you move through the other parts of this book.</p>
+					</div>
+				</div>
+				<div class="popup audience-popup-1" ng-class="{'showing': radioState == 2}">
+					<p class="body-heading">Seeing audience</p>
+					<div class="body-copy">
+						<p>Look in the assignment for a description of an audience; if you do not see a description, ask.</p>
+						<p>Note that, in an assignment, the audience description is often general; as you develop an assignment, you learn the thoughts, beliefs, feelings, and experiences that this general audience holds that matter to the specific purposes of <em>your</em> writing.</p>
+					</div>
+				</div>
+				<div class="popup context-popup-1" ng-class="{'showing': radioState == 3}">
+					<p class="body-heading">Seeing context</p>
+					<div class="body-copy" style="margin-bottom: 8px;">
+						<p>Look in the assignment for a description of context—but recognize that an audience description might imply an initial context, as in this assignment.</p>
+					</div>
+					<div class="body-copy">
+						<p>This assignment initially places your work within your classroom and school, at this moment. Your further development of your purpose and audience will help you fine-tune the context.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

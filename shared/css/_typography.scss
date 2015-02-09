@@ -30,6 +30,14 @@ a {
 	}
 }
 
+.page-heading {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 4px;
+	text-transform: uppercase;
+}
+
 .body-heading {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 15px;
@@ -47,22 +55,39 @@ a {
 	p {
 		text-indent: 20px;
 
-		&:nth-child(1) {
+		&:nth-of-type(1) {
 			text-indent: 0;
 		}
 	}
 }
 
-.body-copy-written {
+.font-hand {
 	font-family: 'Shadows Into Light', serif;
+	font-size: 19px;
+	line-height: 24px;
+}
+
+.font-times {
+	font-family: 'Times', serif;
 	font-size: 14px;
-	line-height: 23px;
-	margin-bottom: 16px;
+	line-height: 21px;
+}
+
+.note-heading {
+	color: $clickable-dark;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.note-copy {
+	font-family: 'Lora', serif;
+	font-size: 12px;
+	line-height: 15px;
 
 	p {
 		text-indent: 20px;
 
-		&:nth-child(1) {
+		&:nth-of-type(1) {
 			text-indent: 0;
 		}
 	}
@@ -79,6 +104,20 @@ strong {
 	font-weight: 600;
 }
 
-.all-caps {
+em {
+	font-style: italic;
+}
+
+.uppercase {
 	text-transform: uppercase;
+}
+
+.list {
+	margin-top: 8px;
+	padding-left: 30px;
+
+	li {
+		list-style-type: disc;
+		margin-bottom: 8px;
+	}
 }

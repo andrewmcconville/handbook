@@ -9,11 +9,12 @@
 //global components
 @import 'what-will-you-learn';
 @import 'accordion-list';
+@import 'interactive-paper';
 @import '../directives/popup/popup.scss';
 
 body {
 	background-color: #cbdde7;
-	-webkit-tap-highlight-color: rgba(203, 221, 231, 1);
+	//-webkit-tap-highlight-color: rgba(203, 221, 231, 1);
 }
 
 img {

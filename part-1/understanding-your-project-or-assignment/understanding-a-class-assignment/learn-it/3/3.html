@@ -1,3 +1,84 @@
 <div class="learn-it-3">
-	Learn it 3
+	<h1 class="page-heading">Understanding a class assignment:<br> writing about an assignment</h1>
+
+	<div class="interactive-paper">
+		<div class="left">
+			<div class="body-copy">
+				<p>Writing about an assignment can help you understand better what you need to do. Writing about an assignment can also help you find any questions you might have.</p>
+				<p>The writing to the left is from a student, in response to the assignment from tab 2.</p>
+			</div>
+			<button class="radio-button" tabindex="1" ng-click="radioState = 1" ng-class="{'checked': radioState == 1}">
+				<div class="filled"></div>
+				<div class="empty"></div>
+				<div class="text">Purpose</div>
+			</button>
+			<button class="radio-button" tabindex="2" ng-click="radioState = 2" ng-class="{'checked': radioState == 2}">
+				<div class="filled"></div>
+				<div class="empty"></div>
+				<div class="text">Audience</div>
+			</button>
+			<button class="radio-button" tabindex="3" ng-click="radioState = 3" ng-class="{'checked': radioState == 3}">
+				<div class="filled"></div>
+				<div class="empty"></div>
+				<div class="text">Context</div>
+			</button>
+			<button class="radio-button" tabindex="4" ng-click="radioState = 4" ng-class="{'checked': radioState == 4}">
+				<div class="filled"></div>
+				<div class="empty"></div>
+				<div class="text">Questions</div>
+			</button>
+		</div>
+
+		<div class="right">
+			<div class="highlight-area">
+				<div class="highlight purpose-highlight-1" ng-class="{'showing': radioState == 1}"></div>
+				<div class="highlight audience-highlight-1" ng-class="{'showing': radioState == 2}"></div>
+				<div class="highlight audience-highlight-2" ng-class="{'showing': radioState == 2}"></div>
+				<div class="highlight audience-highlight-3" ng-class="{'showing': radioState == 2}"></div>
+				<div class="highlight context-highlight-1" ng-class="{'showing': radioState == 3}"></div>
+				<div class="highlight questions-highlight-1" ng-class="{'showing': radioState == 4}"></div>
+				<div class="highlight questions-highlight-2" ng-class="{'showing': radioState == 4}"></div>
+				<div class="highlight questions-highlight-3" ng-class="{'showing': radioState == 4}"></div>
+				<div class="highlight questions-highlight-4" ng-class="{'showing': radioState == 4}"></div>
+				<div class="highlight questions-highlight-5" ng-class="{'showing': radioState == 4}"></div>
+				<div class="highlight questions-highlight-6" ng-class="{'showing': radioState == 4}"></div>
+				<div class="highlight questions-highlight-7" ng-class="{'showing': radioState == 4}"></div>
+			</div>
+
+			<div class="body-copy font-hand">
+				<p>The assignment says I am to write an argumentative<div></div> research paper on a topic of my choice, with the class as my audience. I’ve written research papers before, but I don’t know what “argumentative” means with a research paper. I’ve got to pay attention to how the teacher means “argument.” (And how can I start if I don’t know what it means? I think I need to go talk to her.)</p>
+				<p>But “argument” sounds like the overall purpose for the teacher, to show that I know how to make research be an argument. (I’m also not sure what counts as evidence; I’ll have to ask.)</p>
+				<p>And I don’t really know the people in class yet, but they seem to be just like everyone else I know on this campus, so I can ask my friends to help me think about this paper.</p>
+				<p>The context? Well, it’s this writing class—so I guess that means I also have to be careful about how I write.</p>
+				<p>A topic? Is there any way to write about how awful it is when everyone in my family talks about politics, like at dinner last night? Talk about argument!!! It’s awful—and Jenna was saying it’s just like that at her house.</p>
+			</div>
+
+			<div class="popups">
+				<div class="popup purpose-popup-1" ng-class="{'showing': radioState == 1}">
+					<p class="body-heading">Understanding the purpose of an assignment</p>
+					<div class="body-copy">
+						<p>When you write about an assignment, be sure to explain to yourself what you understand the purpose to be. For this writer, writing about the purpose helps her see what she doesn’t understand — and so helps her see what she needs to ask her teacher.</p>
+					</div>
+				</div>
+				<div class="popup audience-popup-1" ng-class="{'showing': radioState == 2}">
+					<p class="body-heading">Understanding the audience for an assignment</p>
+					<div class="body-copy">
+						<p>Say as much as you can about your audience, even if you don’t know much at this beginning stage. By laying this out, you prepare yourself to think in more useful detail later.</p>
+					</div>
+				</div>
+				<div class="popup context-popup-1" ng-class="{'showing': radioState == 3}">
+					<p class="body-heading">Understanding the context for an assignment</p>
+					<div class="body-copy" style="margin-bottom: 8px;">
+						<p>As with its audience, an assignment might not give you much to go on for thinking about context — but just making yourself write about what you know now prepares you to think more carefully as you develop your writing.</p>
+					</div>
+				</div>
+				<div class="popup questions-popup-1" ng-class="{'showing': radioState == 4}">
+					<p class="body-heading">Understanding an assignment: asking questions</p>
+					<div class="body-copy">
+						<p>Writing about an assignment helps you understand what you don’t understand or where you might be concerned — and so writing about an assignment helps you develop questions to ask a teacher or to shape your research as you develop your writing.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

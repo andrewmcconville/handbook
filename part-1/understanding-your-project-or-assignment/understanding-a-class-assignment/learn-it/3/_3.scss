@@ -2,4 +2,125 @@
 	height: 100%;
 	padding: 40px;
 	width: 100%;
+
+	.page-heading {
+		position: relative;
+		z-index: 1;
+	}
+
+	.right {
+		background-image: url('understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/3/assets/img/lined-paper.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 94px 40px 40px 40px;
+		top: 30px;
+	}
+
+	.purpose-highlight-1 {
+		height: 98px;
+		left: 20px;
+		right: 40px;
+		top: 166px;
+	}
+
+	.purpose-popup-1 {
+		left: 150px;
+		right: 90px;
+		top: 342px;
+	}
+
+	.audience-highlight-1 {
+		height: 24px;
+		left: 334px;
+		right: 30px;
+		top: 24px;
+	}
+
+	.audience-highlight-2 {
+		height: 24px;
+		left: 20px;
+		right: 426px;
+		top: 48px;
+	}
+
+	.audience-highlight-3 {
+		height: 72px;
+		left: 20px;
+		right: 30px;
+		top: 264px;
+	}
+
+	.audience-popup-1 {
+		left: 200px;
+		right: 30px;
+		top: 188px
+	}
+
+	.context-highlight-1 {
+		height: 48px;
+		left: 20px;
+		right: 30px;
+		top: 336px;
+	}
+
+	.context-popup-1 {
+		left: 180px;
+		right: 16px;
+		top: 252px;
+	}
+
+	.questions-highlight-1 {
+		height: 24px;
+		left: 20px;
+		right: 30px;
+		top: 120px;
+	}
+
+	.questions-highlight-2 {
+		height: 24px;
+		left: 20px;
+		right: 314px;
+		top: 144px;
+	}
+
+	.questions-highlight-3 {
+		height: 24px;
+		left: 110px;
+		right: 30px;
+		top: 216px;
+	}
+
+	.questions-highlight-4 {
+		height: 24px;
+		left: 20px;
+		right: 434px;
+		top: 240px;
+	}
+
+	.questions-highlight-5 {
+		height: 24px;
+		left: 40px;
+		right: 30px;
+		top: 384px;
+	}
+
+	.questions-highlight-6 {
+		height: 24px;
+		left: 20px;
+		right: 30px;
+		top: 408px;
+	}
+
+	.questions-highlight-7 {
+		height: 24px;
+		left: 20px;
+		right: 412px;
+		top: 432px;
+	}
+
+	.questions-popup-1 {
+		left: 160px;
+		right: 24px;
+		top: 42px;
+	}
 }

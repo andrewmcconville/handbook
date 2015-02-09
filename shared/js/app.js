@@ -295,11 +295,20 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			})
 				.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.learn-it-1', {
 					url: '/learn-it-1',
-					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/1/1.html'
+					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/1/1.html',
+					controller: function() {
+						accordionList();
+					}
 				})
 				.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.learn-it-2', {
 					url: '/learn-it-2',
-					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/2/2.html'
+					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/2/2.html',
+					controller: function($scope) {
+						$scope.togglePopups = function(i){
+							$scope.radioState = i;
+							$scope.noteIsShowing = false;
+						};
+					}
 				})
 				.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.learn-it-3', {
 					url: '/learn-it-3',
@@ -323,7 +332,9 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 				.state('part-1.understanding-your-project-or-assignment/understanding-other-projects.learn-it-2', {
 					url: '/learn-it-2',
 					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/learn-it/2/2.html',
-        			controller: 'understandingOtherProjectsLearn2'
+        			controller: function($scope) {
+						$scope.radioState = 0;
+					}
 				})
 		/*
 		 * PART 2
