@@ -52,6 +52,18 @@ a {
   font-family: 'Times', serif;
   font-size: 14px;
   line-height: 21px; }
+  .font-times h1,
+  .font-times h2 {
+    font-weight: 700;
+    text-transform: uppercase; }
+  .font-times h1 {
+    font-size: 21px; }
+  .font-times h2 {
+    font-size: 15px; }
+
+.meta-copy {
+  line-height: 18px;
+  margin-bottom: 18px; }
 
 .note-heading {
   color: #00b8f0;
@@ -166,7 +178,7 @@ button {
 .select {
   background-color: #ddf2fd;
   border: 1px solid #00b8f0;
-  height: 40px;
+  height: 48px;
   padding: 8px;
   width: 200px; }
 
@@ -501,14 +513,6 @@ button {
 
 .interactive-paper section {
   margin-top: 12px; }
-.interactive-paper h1,
-.interactive-paper h2 {
-  font-weight: 700;
-  text-transform: uppercase; }
-.interactive-paper h1 {
-  font-size: 21px; }
-.interactive-paper h2 {
-  font-size: 15px; }
 .interactive-paper .list {
   margin-top: 0; }
 .interactive-paper li {
