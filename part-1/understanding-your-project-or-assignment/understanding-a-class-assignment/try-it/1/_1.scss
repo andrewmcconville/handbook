@@ -2,4 +2,32 @@
 	height: 100%;
 	padding: 40px;
 	width: 100%;
+
+	.left {
+		left: 0;
+		padding: 40px;
+		position: absolute;
+		top: 40px;
+		width: 390px;
+	}
+
+	.select {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	.btn-primary {
+		display: block;
+		margin-top: 4px;
+	}
+
+	.right {
+		background-color: #f0f0f0;
+		bottom: 0;
+		padding: 24px 32px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 360px;
+	}
 }
