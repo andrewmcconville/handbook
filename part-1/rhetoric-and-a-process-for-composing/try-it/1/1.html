@@ -4,7 +4,7 @@
 		<p class="instructions">Click “DONE” when you are satisfied with your response.</p>
 	</div>
 
-	<ul ui-sortable="{connectWith: '.item-container'}" class="draggable-items item-container" ng-model="leftList">
+	<ul ui-sortable="sortableOptions" class="draggable-items item-container" ng-model="leftList">
 		<li ng-repeat="item in leftList" ng-class="item.class" ng-bind="item.title"></li>
 	</ul>
 
@@ -19,8 +19,8 @@
 			<li class="dotted-item"></li>
 			<li class="dotted-item"></li>
 		</ul>
-		<ul ui-sortable="{connectWith: '.item-container'}" class="drop-list item-container" ng-model="rightList">
-			<li ng-repeat="item in rightList" ng-class="item.class" ng-bind="item.title"></li>
+		<ul ui-sortable="sortableOptions" class="drop-list item-container" ng-model="drop">
+			<li ng-repeat="item in drop" ng-class="item.class" ng-bind="item.title"></li>
 		</ul>
 
 		<button class="btn-primary btn-done">Done</button>

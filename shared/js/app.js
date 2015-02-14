@@ -296,18 +296,30 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 						{title:'Getting started', class:'draggable drag-8'}
 					];
 
-					$scope.rightList = [
-						{title:'ONE', class:'draggable drag-1'},
-						{title:'TWO', class:'draggable drag-2'}
-					];
+					$scope.drop = [];
 
-					$scope.$watch('leftList', function(vals) {
-						console.log(vals);
-					});
+					$scope.sortableOptions = {
+						connectWith: '.item-container'
+						// receive: function(e, ui) {
+						// 	console.log(e.target.id);
+						// 	console.log(this.children.length);
+						// 	console.log(this);
+						// 	console.log(ui);
+						// 	console.log($scope);
 
-					$scope.$watch('rightList', function(vals) {
-						console.log(vals);
-					});
+						// 	if(this.attr('ng-model') == 'leftList') {
+						// 		console.log(this);
+						// 	}
+
+						// 	if (e.target.id != 'drag-zone' && this.children.length > 0) {
+						// 		ui.item.sortable.cancel();
+						// 	}
+
+						// 	if ($scope.$this.children('li').length > 1 && $scope.$this.attr('class') != "draggable-items") {
+						// 		ui.item.sortable.cancel();
+						// 	}
+						// }
+					};
 				}
 			})
 		.state('part-1.understanding-your-project-or-assignment', {
