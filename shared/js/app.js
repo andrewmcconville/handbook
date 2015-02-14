@@ -285,16 +285,21 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 				url: '/try-it-1',
 				templateUrl: 'part-1/rhetoric-and-a-process-for-composing/try-it/1/1.html',
 				controller: function($scope) {
-					$scope.leftList = [{title:'Asking questions', class:'draggable drag-1'},
+					$scope.leftList = [
+						{title:'Asking questions', class:'draggable drag-1'},
 						{title:'Drafting a paper', class:'draggable drag-2'},
 						{title:'Revising', class:'draggable drag-3'},
 						{title:'Understanding your project', class:'draggable drag-4'},
 						{title:'Shaping your project for others', class:'draggable drag-5'},
 						{title:'Polishing', class:'draggable drag-6'},
 						{title:'Getting feedback', class:'draggable drag-7'},
-						{title:'Getting started', class:'draggable drag-8'}];
+						{title:'Getting started', class:'draggable drag-8'}
+					];
 
-					$scope.rightList = [];
+					$scope.rightList = [
+						{title:'ONE', class:'draggable drag-1'},
+						{title:'TWO', class:'draggable drag-2'}
+					];
 
 					$scope.$watch('leftList', function(vals) {
 						console.log(vals);
@@ -303,17 +308,6 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					$scope.$watch('rightList', function(vals) {
 						console.log(vals);
 					});
-
-					function createOptions () {
-						var options = {
-							placeholder: 'swag',
-							connectWith: 'item-container',
-							sort: function() {
-								console.log("lolk");
-							}
-						};
-						return options;
-					}
 				}
 			})
 		.state('part-1.understanding-your-project-or-assignment', {
