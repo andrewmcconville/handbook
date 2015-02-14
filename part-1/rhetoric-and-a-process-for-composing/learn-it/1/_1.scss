@@ -6,8 +6,10 @@
 		width: 450px;
 	}
 
-	.content {
+	.content-left {
+		position: relative;
 		width: 200px;
+		z-index: 1;
 	}
 
 	.interactive-area {
@@ -54,10 +56,11 @@
 	}
 
 	.img-overlay {
-		height: 568px;
-		left: 208px;
+		height: 570px;
+		left: 190px;
 		pointer-events: none;
 		position: absolute;
-		top: 8px;
+		top: 0;
+		z-index: 0;
 	}
 }

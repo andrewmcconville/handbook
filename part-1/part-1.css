@@ -58,8 +58,10 @@
   .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .popup {
     padding: 14px 24px 24px 24px;
     width: 450px; }
-  .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .content {
-    width: 200px; }
+  .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .content-left {
+    position: relative;
+    width: 200px;
+    z-index: 1; }
   .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .interactive-area {
     left: 290px;
     position: absolute;
@@ -93,11 +95,12 @@
       .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .interaction .content p {
         padding: 12px 0 0 4px; }
   .part-1 .rhetoric-and-a-process-for-composing .learn-it-1 .img-overlay {
-    height: 568px;
-    left: 208px;
+    height: 570px;
+    left: 190px;
     pointer-events: none;
     position: absolute;
-    top: 8px; }
+    top: 0;
+    z-index: 0; }
 .part-1 .rhetoric-and-a-process-for-composing .try-it-1 {
   height: 100%;
   width: 100%; }
@@ -416,5 +419,4 @@
   border-top-color: #769b3e; }
 .part-1 .instructions {
   color: #769b3e; }
-
 /*# sourceMappingURL=part-1.css.map */
