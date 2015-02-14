@@ -8,49 +8,15 @@
 	}
 
 	.draggable-items {
+		bottom: 0;
 		left: 60px;
 		position: absolute;
 		top: 200px;
+		width: 366px;
 		z-index: 1;
 
-		.drag-1 {
-			left: 72px;
-			top: 0;
-		}
-
-		.drag-2 {
-			left: 8px;
-			top: 50px;
-		}
-
-		.drag-3 {
-			left: 60px;
-			top: 100px;
-		}
-
-		.drag-4 {
-			left: 0px;
-			top: 150px;
-		}
-
-		.drag-5 {
-			left: 100px;
-			top: 200px;
-		}
-
-		.drag-6 {
-			left: 44px;
-			top: 250px;
-		}
-
-		.drag-7 {
-			left: 124px;
-			top: 300px;
-		}
-
-		.drag-8 {
-			left: 24px;
-			top: 350px;
+		.draggable {
+			position: absolute;
 		}
 	}
 
@@ -61,9 +27,49 @@
 		cursor: move;
 		font-weight: 600;
 		height: 40px;
+		margin-bottom: 8px;
 		padding: 8px 24px;
-		position: absolute;
 		width: 266px;
+
+		&.drag-1 {
+			left: 72px;
+			top: 0;
+		}
+
+		&.drag-2 {
+			left: 8px;
+			top: 50px;
+		}
+
+		&.drag-3 {
+			left: 60px;
+			top: 100px;
+		}
+
+		&.drag-4 {
+			left: 0px;
+			top: 150px;
+		}
+
+		&.drag-5 {
+			left: 100px;
+			top: 200px;
+		}
+
+		&.drag-6 {
+			left: 44px;
+			top: 250px;
+		}
+
+		&.drag-7 {
+			left: 124px;
+			top: 300px;
+		}
+
+		&.drag-8 {
+			left: 24px;
+			top: 350px;
+		}
 	}
 
 	.drop-zone {
@@ -87,9 +93,11 @@
 	}
 
 	.drop-list {
+		height: 376px;
 		left: 0;
 		position: absolute;
 		top: 0;
+		width: 266px;
 	}
 
 	.btn-done {
