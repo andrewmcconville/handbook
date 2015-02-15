@@ -353,7 +353,13 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 				})
 				.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.try-it-1', {
 					url: '/try-it-1',
-					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/try-it/1/1.html'
+					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/try-it/1/1.html',
+					controller: function($scope) {
+						$scope.trackOne = [
+							{title:'1', class:'draggable drag-1'},
+							{title:'2', class:'draggable drag-2'}
+						];
+					}
 				})
 			.state('part-1.understanding-your-project-or-assignment/understanding-other-projects', {
 				url: '/understanding-your-project-or-assignment/understanding-other-projects',
