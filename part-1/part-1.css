@@ -108,34 +108,14 @@
     padding: 32px 0 0 22px;
     width: 260px; }
   .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items {
+    bottom: 0;
     left: 60px;
     position: absolute;
     top: 200px;
+    width: 366px;
     z-index: 1; }
-    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-1 {
-      left: 72px;
-      top: 0; }
-    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-2 {
-      left: 8px;
-      top: 50px; }
-    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-3 {
-      left: 60px;
-      top: 100px; }
-    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-4 {
-      left: 0px;
-      top: 150px; }
-    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-5 {
-      left: 100px;
-      top: 200px; }
-    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-6 {
-      left: 44px;
-      top: 250px; }
-    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-7 {
-      left: 124px;
-      top: 300px; }
-    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .drag-8 {
-      left: 24px;
-      top: 350px; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable-items .draggable {
+      position: absolute; }
   .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable {
     background-color: #abc16c;
     border: 1px solid #000;
@@ -143,9 +123,33 @@
     cursor: move;
     font-weight: 600;
     height: 40px;
+    margin-bottom: 8px;
     padding: 8px 24px;
-    position: absolute;
     width: 266px; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable.drag-1 {
+      left: 72px;
+      top: 0; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable.drag-2 {
+      left: 8px;
+      top: 50px; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable.drag-3 {
+      left: 60px;
+      top: 100px; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable.drag-4 {
+      left: 0px;
+      top: 150px; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable.drag-5 {
+      left: 100px;
+      top: 200px; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable.drag-6 {
+      left: 44px;
+      top: 250px; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable.drag-7 {
+      left: 124px;
+      top: 300px; }
+    .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .draggable.drag-8 {
+      left: 24px;
+      top: 350px; }
   .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .drop-zone {
     left: 430px;
     position: absolute;
@@ -161,9 +165,11 @@
     margin-bottom: 8px;
     width: 266px; }
   .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .drop-list {
+    height: 376px;
     left: 0;
     position: absolute;
-    top: 0; }
+    top: 0;
+    width: 266px; }
   .part-1 .rhetoric-and-a-process-for-composing .try-it-1 .btn-done {
     left: 160px;
     position: absolute;
@@ -426,5 +432,4 @@
   border-top-color: #769b3e; }
 .part-1 .instructions {
   color: #769b3e; }
-
 /*# sourceMappingURL=part-1.css.map */

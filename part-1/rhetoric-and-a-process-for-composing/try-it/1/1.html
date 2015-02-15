@@ -4,15 +4,8 @@
 		<p class="instructions">Click “DONE” when you are satisfied with your response.</p>
 	</div>
 
-	<ul class="draggable-items">
-		<li class="draggable drag-1">Asking questions</li>
-		<li class="draggable drag-2">Drafting a paper</li>
-		<li class="draggable drag-3">Revising</li>
-		<li class="draggable drag-4">Understanding your project</li>
-		<li class="draggable drag-5">Shaping your project for others</li>
-		<li class="draggable drag-6">Polishing</li>
-		<li class="draggable drag-7">Getting feedback</li>
-		<li class="draggable drag-8">Getting started</li>
+	<ul ui-sortable="sortableOptions" class="draggable-items item-container" ng-model="leftList">
+		<li ng-repeat="item in leftList" ng-class="item.class" ng-bind="item.title"></li>
 	</ul>
 
 	<div class="drop-zone">
@@ -26,13 +19,14 @@
 			<li class="dotted-item"></li>
 			<li class="dotted-item"></li>
 		</ul>
-		<ul class="drop-list">
+		<ul ui-sortable="sortableOptions" class="drop-list item-container" ng-model="drop">
+			<li ng-repeat="item in drop" ng-class="item.class" ng-bind="item.title"></li>
 		</ul>
 
 		<button class="btn-primary btn-done">Done</button>
 	</div>
 
-	<div class="popup">
+<!-- 	<div class="popup">
 		<button class="btn-primary btn-reset">Reset</button>
 		No, you've not gotten the order we discuss in this bool.
 		<br>
@@ -42,5 +36,5 @@
 	<div class="popup">
 		<button class="btn-primary btn-reset">Reset</button>
 		Yes, you've placed the parts of the composing process into the order we discuss in this book.
-	</div>
+	</div> -->
 </div>

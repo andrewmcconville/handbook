@@ -1,4 +1,4 @@
-var app = angular.module('handbook', ['ui.router', 'ngAnimate']);
+var app = angular.module('handbook', ['ui.router', 'ngAnimate', 'ui.sortable']);
 
 /*
  * Directives
@@ -283,7 +283,44 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			})
 			.state('part-1.rhetoric-and-a-process-for-composing.try-it-1', {
 				url: '/try-it-1',
-				templateUrl: 'part-1/rhetoric-and-a-process-for-composing/try-it/1/1.html'
+				templateUrl: 'part-1/rhetoric-and-a-process-for-composing/try-it/1/1.html',
+				controller: function($scope) {
+					$scope.leftList = [
+						{title:'Asking questions', class:'draggable drag-1'},
+						{title:'Drafting a paper', class:'draggable drag-2'},
+						{title:'Revising', class:'draggable drag-3'},
+						{title:'Understanding your project', class:'draggable drag-4'},
+						{title:'Shaping your project for others', class:'draggable drag-5'},
+						{title:'Polishing', class:'draggable drag-6'},
+						{title:'Getting feedback', class:'draggable drag-7'},
+						{title:'Getting started', class:'draggable drag-8'}
+					];
+
+					$scope.drop = [];
+
+					$scope.sortableOptions = {
+						connectWith: '.item-container'
+						// receive: function(e, ui) {
+						// 	console.log(e.target.id);
+						// 	console.log(this.children.length);
+						// 	console.log(this);
+						// 	console.log(ui);
+						// 	console.log($scope);
+
+						// 	if(this.attr('ng-model') == 'leftList') {
+						// 		console.log(this);
+						// 	}
+
+						// 	if (e.target.id != 'drag-zone' && this.children.length > 0) {
+						// 		ui.item.sortable.cancel();
+						// 	}
+
+						// 	if ($scope.$this.children('li').length > 1 && $scope.$this.attr('class') != "draggable-items") {
+						// 		ui.item.sortable.cancel();
+						// 	}
+						// }
+					};
+				}
 			})
 		.state('part-1.understanding-your-project-or-assignment', {
 			url: '/understanding-your-project-or-assignment',
