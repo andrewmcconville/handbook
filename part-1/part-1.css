@@ -339,13 +339,20 @@
     padding: 40px;
     position: absolute;
     top: 40px;
-    width: 390px; }
+    width: 300px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .select {
     margin-bottom: 20px;
     width: 100%; }
   .part-1 .understanding-a-class-assignment .try-it-1 .btn-primary {
     display: block;
     margin-top: 4px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .track-1 {
+    background-color: pink;
+    bottom: 0;
+    left: 360px;
+    position: absolute;
+    top: 0;
+    width: 30px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .right {
     background-color: #f0f0f0;
     bottom: 0;
@@ -419,4 +426,5 @@
   border-top-color: #769b3e; }
 .part-1 .instructions {
   color: #769b3e; }
+
 /*# sourceMappingURL=part-1.css.map */

@@ -8,7 +8,7 @@
 		padding: 40px;
 		position: absolute;
 		top: 40px;
-		width: 390px;
+		width: 300px;
 	}
 
 	.select {
@@ -19,6 +19,15 @@
 	.btn-primary {
 		display: block;
 		margin-top: 4px;
+	}
+
+	.track-1 {
+		background-color: pink;
+		bottom: 0;
+		left: 360px;
+		position: absolute;
+		top: 0;
+		width: 30px;
 	}
 
 	.right {
