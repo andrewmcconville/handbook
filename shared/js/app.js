@@ -336,7 +336,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					url: '/try-it-1',
 					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/try-it/1/1.html',
 					controller: function($scope) {
-						$scope.answer = 0;
+						$scope.answer1 = 0;
 						$scope.track1 = {};
 						$scope.track1.drop0 = [{title:'PURPOSE', class:'draggable'}];
 						$scope.track1.drop1 = [];
@@ -355,11 +355,15 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 							stop: function() {
 								for(var prop in $scope.track1) {
 									if($scope.track1[prop].length > 0) {
-										$scope.answer = prop[4];
-										console.log($scope.answer);
+										$scope.answer1 = prop[4];
+										console.log($scope.answer1);
 									}
 								}
 							}
+						}
+
+						$scope.getAnswer = function() {
+							alert($scope.answer1);
 						}
 					}
 				})
