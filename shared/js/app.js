@@ -336,15 +336,23 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					url: '/try-it-1',
 					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/try-it/1/1.html',
 					controller: function($scope) {
-						$scope.t1d1 = [
-							{title:'1', class:'draggable'}
+						$scope.t1d0 = [
+							{title:'PURPOSE', class:'draggable'}
 						];
 
+						$scope.t1d1 = [];
 						$scope.t1d2 = [];
+						$scope.t1d3 = [];
+						$scope.t1d4 = [];
+						$scope.t1d5 = [];
+						$scope.t1d6 = [];
+						$scope.t1d7 = [];
 
 						$scope.sortableOptions = {
 							connectWith: '.track-1',
-							axis: 'y'
+							axis: 'y',
+							revert: 150,
+							tolerance: 'pointer'
 						}
 					}
 				})

@@ -33,31 +33,56 @@
 		left: 360px;
 	}
 
-	.drop-1 {
-		height: 70px;
+	.drop-0 {
+		height: 80px;
 		top: 26px;
+		.draggable { top: 35px; }
+	}
 
-		.draggable {
-			top: 35px;
-		}
+	.drop-1 {
+		height: 64px;
+		top: 106px;
 	}
 
 	.drop-2 {
-		height: 56px;
-		top: 96px;	
+		height: 42px;
+		top: 170px;
+	}
 
-		.draggable {
-			top: 28px;
-		}
+	.drop-3 {
+		height: 62px;
+		top: 212px;
+	}
+
+	.drop-4 {
+		height: 128px;
+		top: 274px;
+	}
+
+	.drop-5 {
+		height: 62px;
+		top: 402px;
+	}
+
+	.drop-6 {
+		height: 84px;
+		top: 464px;
+	}
+
+	.drop-7 {
+		height: 82px;
+		top: 548px;
 	}
 
 	.draggable {
 		background-color: aqua;
+		border-top-right-radius: 50%;
+		border-bottom-right-radius: 50%;
 		cursor: move;
 		height: 20px;
 		left: -40px;
-		margin-top: -10px;
 		position: relative;
+		top: 10px;
 		width: 100px;
 	}
 
