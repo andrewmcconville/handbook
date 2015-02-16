@@ -21,15 +21,44 @@
 		margin-top: 4px;
 	}
 
-	.track-1 {
+	.track {
 		background-color: pink;
-		bottom: 0;
-		left: 360px;
+		border: 1px solid purple;
 		position: absolute;
-		top: 0;
 		width: 30px;
+		z-index: 1;		
+	}
 
-		
+	.track-1 {
+		left: 360px;
+	}
+
+	.drop-1 {
+		height: 70px;
+		top: 26px;
+
+		.draggable {
+			top: 35px;
+		}
+	}
+
+	.drop-2 {
+		height: 56px;
+		top: 96px;	
+
+		.draggable {
+			top: 28px;
+		}
+	}
+
+	.draggable {
+		background-color: aqua;
+		cursor: move;
+		height: 20px;
+		left: -40px;
+		margin-top: -10px;
+		position: relative;
+		width: 100px;
 	}
 
 	.right {

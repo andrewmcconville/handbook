@@ -300,25 +300,6 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 
 					$scope.sortableOptions = {
 						connectWith: '.item-container'
-						// receive: function(e, ui) {
-						// 	console.log(e.target.id);
-						// 	console.log(this.children.length);
-						// 	console.log(this);
-						// 	console.log(ui);
-						// 	console.log($scope);
-
-						// 	if(this.attr('ng-model') == 'leftList') {
-						// 		console.log(this);
-						// 	}
-
-						// 	if (e.target.id != 'drag-zone' && this.children.length > 0) {
-						// 		ui.item.sortable.cancel();
-						// 	}
-
-						// 	if ($scope.$this.children('li').length > 1 && $scope.$this.attr('class') != "draggable-items") {
-						// 		ui.item.sortable.cancel();
-						// 	}
-						// }
 					};
 				}
 			})
@@ -355,10 +336,16 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					url: '/try-it-1',
 					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/try-it/1/1.html',
 					controller: function($scope) {
-						$scope.trackOne = [
-							{title:'1', class:'draggable drag-1'},
-							{title:'2', class:'draggable drag-2'}
+						$scope.t1d1 = [
+							{title:'1', class:'draggable'}
 						];
+
+						$scope.t1d2 = [];
+
+						$scope.sortableOptions = {
+							connectWith: '.track-1',
+							axis: 'y'
+						}
 					}
 				})
 			.state('part-1.understanding-your-project-or-assignment/understanding-other-projects', {

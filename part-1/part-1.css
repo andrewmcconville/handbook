@@ -352,13 +352,32 @@
   .part-1 .understanding-a-class-assignment .try-it-1 .btn-primary {
     display: block;
     margin-top: 4px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .track-1 {
+  .part-1 .understanding-a-class-assignment .try-it-1 .track {
     background-color: pink;
-    bottom: 0;
-    left: 360px;
+    border: 1px solid purple;
     position: absolute;
-    top: 0;
-    width: 30px; }
+    width: 30px;
+    z-index: 1; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .track-1 {
+    left: 360px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .drop-1 {
+    height: 70px;
+    top: 26px; }
+    .part-1 .understanding-a-class-assignment .try-it-1 .drop-1 .draggable {
+      top: 35px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .drop-2 {
+    height: 56px;
+    top: 96px; }
+    .part-1 .understanding-a-class-assignment .try-it-1 .drop-2 .draggable {
+      top: 28px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .draggable {
+    background-color: aqua;
+    cursor: move;
+    height: 20px;
+    left: -40px;
+    margin-top: -10px;
+    position: relative;
+    width: 100px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .right {
     background-color: #f0f0f0;
     bottom: 0;

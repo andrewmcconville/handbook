@@ -8,8 +8,12 @@
 		<button class="btn-primary">Done</button>
 	</div>
 
-	<ul class="track-1" ng-model="trackOne">
-		<li ng-repeat="item in trackOne" ng-class="item.class" ng-bind="item.title"></li>
+	<ul ui-sortable="sortableOptions" class="track track-1 drop-1" ng-model="t1d1">
+		<li ng-repeat="item in t1d1" ng-class="item.class" ng-bind="item.title"></li>
+	</ul>
+
+	<ul ui-sortable="sortableOptions" class="track track-1 drop-2" ng-model="t1d2">
+		<li ng-repeat="item in t1d2" ng-class="item.class" ng-bind="item.title"></li>
 	</ul>
  
 	<div class="right">
