@@ -299,7 +299,8 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					$scope.drop = [];
 
 					$scope.sortableOptions = {
-						connectWith: '.item-container'
+						connectWith: '.item-container',
+						revert: 300
 					};
 				}
 			})
