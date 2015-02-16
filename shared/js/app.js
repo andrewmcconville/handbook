@@ -336,23 +336,30 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					url: '/try-it-1',
 					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/try-it/1/1.html',
 					controller: function($scope) {
-						$scope.t1d0 = [
-							{title:'PURPOSE', class:'draggable'}
-						];
-
-						$scope.t1d1 = [];
-						$scope.t1d2 = [];
-						$scope.t1d3 = [];
-						$scope.t1d4 = [];
-						$scope.t1d5 = [];
-						$scope.t1d6 = [];
-						$scope.t1d7 = [];
+						$scope.answer = 0;
+						$scope.track1 = {};
+						$scope.track1.drop0 = [{title:'PURPOSE', class:'draggable'}];
+						$scope.track1.drop1 = [];
+						$scope.track1.drop2 = [];
+						$scope.track1.drop3 = [];
+						$scope.track1.drop4 = [];
+						$scope.track1.drop5 = [];
+						$scope.track1.drop6 = [];
+						$scope.track1.drop7 = [];
 
 						$scope.sortableOptions = {
 							connectWith: '.track-1',
 							axis: 'y',
 							revert: 150,
-							tolerance: 'pointer'
+							tolerance: 'pointer',
+							stop: function() {
+								for(var prop in $scope.track1) {
+									if($scope.track1[prop].length > 0) {
+										$scope.answer = prop[4];
+										console.log($scope.answer);
+									}
+								}
+							}
 						}
 					}
 				})
