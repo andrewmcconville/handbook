@@ -6,6 +6,52 @@
 		<p class="instructions">Read the assignment&mdash;then slide the "PURPOSE" arrows to the paragraphs where the assignment's two purposes are described.</p>
 
 		<button class="btn-primary" ng-click="getAnswer()">Done</button>
+		<div class="popup-container">
+			<div class="popup" ng-show="popup == 1">
+				<button class="button-close-popup" ng-click="popup = 0">
+					<svg class="icon-x">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="shared/assets/img/icon-sprite.svg#icon-x"></use>
+					</svg>
+				</button>
+				<div class="body-copy">
+					<p>Yes, you’ve identified the two different purposes the teacher has for this assignment. </p>
+				</div>
+			</div>
+			<div class="popup" ng-show="popup == 2">
+				<button class="button-close-popup" ng-click="popup = 0">
+					<svg class="icon-x">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="shared/assets/img/icon-sprite.svg#icon-x"></use>
+					</svg>
+				</button>
+				<div class="body-copy">
+					<p>Ooops! You’ve identified one of the teacher’s purposes (that the assignment will help you prepare to discuss the chapter in class).</p>
+					<p>You still need to find the second purpose.</p>
+				</div>
+			</div>
+			<div class="popup" ng-show="popup == 3">
+				<button class="button-close-popup" ng-click="popup = 0">
+					<svg class="icon-x">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="shared/assets/img/icon-sprite.svg#icon-x"></use>
+					</svg>
+				</button>
+				<div class="body-copy">
+					<p>Ooops! You’ve identified one of the teacher’s purposes (that you are to learn how to summarize without bringining in your own opinions).</p>
+					<p>You still need to find the second purpose.</p>
+				</div>
+			</div>
+			<div class="popup" ng-show="popup == 4">
+				<button class="button-close-popup" ng-click="popup = 0">
+					<svg class="icon-x">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="shared/assets/img/icon-sprite.svg#icon-x"></use>
+					</svg>
+				</button>
+				<div class="body-copy">
+					<p>Sorry. Read again carefully to identify the teacher’s purpose.</p>
+					<p>Remember to look for terms like <em>summarize</em>, <em>define</em>, <em>inform</em>, <em>analyze</em>, <em>persuade</em>, or <em>argue</em>.</p>
+					<p>Also look for other places where the teacher describes what the assignment helps a student prepare to do.</p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<ul class="arrows">

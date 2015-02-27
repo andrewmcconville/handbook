@@ -337,6 +337,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					url: '/try-it-1',
 					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/try-it/1/1.html',
 					controller: function($scope) {
+						$scope.popup = 0;
 						$scope.answers = []
 
 						$scope.answers[0] = {};
@@ -366,7 +367,6 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 										} else {
 											$scope.answers[0].isCorrect = false;
 										}
-										console.log($scope.answers[0].isCorrect);
 									}
 								}
 							}
@@ -390,6 +390,10 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 							axis: 'y',
 							revert: 150,
 							tolerance: 'pointer',
+							update : function(e, ui) {
+								console.log(ui.item);
+								ui.item.sortable.cancel();
+							},
 							stop: function() {
 								for(var prop in $scope.track1) {
 									if($scope.track2[prop].length > 0) {
@@ -399,7 +403,6 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 										} else {
 											$scope.answers[1].isCorrect = false;
 										}
-										console.log($scope.answers[1].isCorrect);
 									}
 								}
 							}
@@ -407,23 +410,28 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 
 						$scope.getAnswer = function() {
 							if($scope.answers[0].isCorrect && $scope.answers[1].isCorrect) {
-								alert('both correct');
+								$scope.popup = 1;
 							} else if($scope.answers[0].isCorrect && !$scope.answers[1].isCorrect) {
 								if($scope.answers[0].value == 3) {
-									alert('1 correct (' + $scope.answers[0].value + '), 2 incorrect');
+									$scope.popup = 2;
+									//alert('1 correct (' + $scope.answers[0].value + '), 2 incorrect');
 								}
 								if($scope.answers[0].value == 4) {
-									alert('1 correct (' + $scope.answers[0].value +'), 2 incorrect');
+									$scope.popup = 3;
+									//alert('1 correct (' + $scope.answers[0].value +'), 2 incorrect');
 								}								
 							} else if(!$scope.answers[0].isCorrect && $scope.answers[1].isCorrect) {
 								if($scope.answers[1].value == 3) {
-									alert('1 incorrect, 2 correct (' + $scope.answers[1].value + ')');
+									$scope.popup = 2;
+									//alert('1 incorrect, 2 correct (' + $scope.answers[1].value + ')');
 								}
 								if($scope.answers[1].value == 4) {
-									alert('1 incorrect, 2 correct (' + $scope.answers[1].value + ')');
+									$scope.popup = 3;
+									//alert('1 incorrect, 2 correct (' + $scope.answers[1].value + ')');
 								}
 							} else {
-								alert('both incorrect');
+								$scope.popup = 4;
+								//alert('both incorrect');
 							}
 						}
 					}

@@ -346,12 +346,10 @@
     position: absolute;
     top: 40px;
     width: 300px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .select {
-    margin-bottom: 20px;
-    width: 100%; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .btn-primary {
-    display: block;
-    margin-top: 4px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .popup-container {
+    left: 30px;
+    position: absolute;
+    top: 180px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .arrows {
     background-color: #e8e8e8;
     border-left: 2px solid #cbc2a6; }
