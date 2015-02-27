@@ -1,34 +1,138 @@
 <div class="try-it-1">
 	<div class="left">
-		<p class="instructions">To the right is a class assignment. Read it, then click the blue buttons below to select answers to the questions.</p>
-		
-		<p>This assignment’s purpose is …</p>
-		<select class="select">
-			<option>?</option>
-			<option value="">To prepare students to discuss the chapter</option>
-			<option value="">To help students learn to do summary by reading generously and withholding personal response</option>
-			<option value="">To prepare students to discuss the chapter and help them learn to do summary by reading generously and withholding personal response</option>
-		</select>	
+		<p class="body-heading">Understanding a class assignment:</p>
+		<p class="uppercase" style="font-size: 24px; font-weight: 700; margin: -4px 0 16px 0;">Purpose</p>
+		<p class="instructions">To the right is a class assignment.</p>
+		<p class="instructions">Read the assignment&mdash;then slide the "PURPOSE" arrows to the paragraphs where the assignment's two purposes are described.</p>
 
-		<p>This assignment’s audience is …</p>
-		<select class="select">
-			<option value="">?</option>
-			<option value="">An academic reader</option>
-			<option value="">The classmates</option>
-			<option value="">The teacher (as a reader who expects formal academic prose)</option>
-		</select>
-
-		<p>This assignment’s context is …</p>
-		<select class="select">
-			<option value="">?</option>
-			<option value="">Your school's library</option>
-			<option value="">The coffeeshop where you write for school</option>
-			<option value="">The classroom and academic contexts more generally</option>
-		</select>
-
-		<button class="btn-primary">Done</button>
+		<button class="btn-primary" ng-click="getAnswer()">Done</button>
+		<div class="popup-container">
+			<div class="popup" ng-show="popup == 1">
+				<button class="button-close-popup" ng-click="popup = 0">
+					<svg class="icon-x">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="shared/assets/img/icon-sprite.svg#icon-x"></use>
+					</svg>
+				</button>
+				<div class="body-copy">
+					<p>Yes, you’ve identified the two different purposes the teacher has for this assignment. </p>
+				</div>
+			</div>
+			<div class="popup" ng-show="popup == 2">
+				<button class="button-close-popup" ng-click="popup = 0">
+					<svg class="icon-x">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="shared/assets/img/icon-sprite.svg#icon-x"></use>
+					</svg>
+				</button>
+				<div class="body-copy">
+					<p>Ooops! You’ve identified one of the teacher’s purposes (that the assignment will help you prepare to discuss the chapter in class).</p>
+					<p>You still need to find the second purpose.</p>
+				</div>
+			</div>
+			<div class="popup" ng-show="popup == 3">
+				<button class="button-close-popup" ng-click="popup = 0">
+					<svg class="icon-x">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="shared/assets/img/icon-sprite.svg#icon-x"></use>
+					</svg>
+				</button>
+				<div class="body-copy">
+					<p>Ooops! You’ve identified one of the teacher’s purposes (that you are to learn how to summarize without bringining in your own opinions).</p>
+					<p>You still need to find the second purpose.</p>
+				</div>
+			</div>
+			<div class="popup" ng-show="popup == 4">
+				<button class="button-close-popup" ng-click="popup = 0">
+					<svg class="icon-x">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="shared/assets/img/icon-sprite.svg#icon-x"></use>
+					</svg>
+				</button>
+				<div class="body-copy">
+					<p>Sorry. Read again carefully to identify the teacher’s purpose.</p>
+					<p>Remember to look for terms like <em>summarize</em>, <em>define</em>, <em>inform</em>, <em>analyze</em>, <em>persuade</em>, or <em>argue</em>.</p>
+					<p>Also look for other places where the teacher describes what the assignment helps a student prepare to do.</p>
+				</div>
+			</div>
+		</div>
 	</div>
 
+	<ul class="arrows">
+		<li class="drop-area drop-area-1"><img class="arrow" src="../../../../../shared/assets/img/dotted-arrow.png" height="12px" width="64px"></li>
+		<li class="drop-area drop-area-2"><img class="arrow" src="../../../../../shared/assets/img/dotted-arrow.png" height="12px" width="64px"></li>
+		<li class="drop-area drop-area-3"><img class="arrow" src="../../../../../shared/assets/img/dotted-arrow.png" height="12px" width="64px"></li>
+		<li class="drop-area drop-area-4"><img class="arrow" src="../../../../../shared/assets/img/dotted-arrow.png" height="12px" width="64px"></li>
+		<li class="drop-area drop-area-5"><img class="arrow" src="../../../../../shared/assets/img/dotted-arrow.png" height="12px" width="64px"></li>
+		<li class="drop-area drop-area-6"><img class="arrow" src="../../../../../shared/assets/img/dotted-arrow.png" height="12px" width="64px"></li>
+		<li class="drop-area drop-area-7"><img class="arrow" src="../../../../../shared/assets/img/dotted-arrow.png" height="12px" width="64px"></li>
+	</ul>
+
+	<div class="tracks">
+		<ul class="track-1">
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-0" ng-model="track1.drop0">
+				<div ng-repeat="item in track1.drop0" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-1" ng-model="track1.drop1">
+				<div ng-repeat="item in track1.drop1" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-2" ng-model="track1.drop2">
+				<div ng-repeat="item in track1.drop2" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-3" ng-model="track1.drop3">
+				<div ng-repeat="item in track1.drop3" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-4" ng-model="track1.drop4">
+				<div ng-repeat="item in track1.drop4" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-5" ng-model="track1.drop5">
+				<div ng-repeat="item in track1.drop5" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-6" ng-model="track1.drop6">
+				<div ng-repeat="item in track1.drop6" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-7" ng-model="track1.drop7">
+				<div ng-repeat="item in track1.drop7" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+		</ul>
+		<ul class="track-2">
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-0" ng-model="track2.drop0">
+				<div ng-repeat="item in track2.drop0" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-1" ng-model="track2.drop1">
+				<div ng-repeat="item in track2.drop1" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-2" ng-model="track2.drop2">
+				<div ng-repeat="item in track2.drop2" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-3" ng-model="track2.drop3">
+				<div ng-repeat="item in track2.drop3" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-4" ng-model="track2.drop4">
+				<div ng-repeat="item in track2.drop4" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-5" ng-model="track2.drop5">
+				<div ng-repeat="item in track2.drop5" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-6" ng-model="track2.drop6">
+				<div ng-repeat="item in track2.drop6" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-7" ng-model="track2.drop7">
+				<div ng-repeat="item in track2.drop7" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+		</ul>
+	</div>
+ 
 	<div class="right">
 		<header class="meta-copy font-times">
 			<p>English 102 Writing for Academic Contexts</p>
@@ -38,7 +142,8 @@
 		<div class="body-copy font-times">
 			<h1>Writting a summary</h1>
 			<p>For next class, I’ve asked you to read the next chapter, titled “Polaroids,” from Anne Lamott’s book, Bird by Bird.</p>
-			<p>In addition to reading the chapter, I also want you to write a 250-500 word summary of the chapter. Writing this summary will help you prepare to discuss the chapter in class by helping you focus on what you think is most important in the chapter.</p>
+			<p>In addition to reading the chapter, I also want you to write a 250-500 word summary of the chapter.</p>
+			<p>Writing this summary will help you prepare to discuss the chapter in class by helping you focus on what you think is most important in the chapter.</p>
 			<p>With this assignment, I want you to pay attention to how to summarize without bringing in your own opinions. In other words, I want you to learn to read generously, to pay attention to a writer’s ideas and to try to get a sense of the whole before you pull in your own personal responses.</p>
 			<p>In class, when we discuss the chapter and what you all think Lamott is trying to achieve, you will have plenty of time to bring in your opinions.</p>
 			<p>Write the summary for a reader like me, your teacher, who expects formal academic prose, and format your writing with an MLA header (as we’ve discussed in class).</p>
