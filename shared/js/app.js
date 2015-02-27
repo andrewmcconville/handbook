@@ -358,6 +358,11 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 							axis: 'y',
 							revert: 150,
 							tolerance: 'pointer',
+							update : function(e, ui) {
+								if(ui.item.sortable.droptarget.hasClass('drop-area-' + $scope.answers[1].value)) {
+									ui.item.sortable.cancel();
+								}
+							},
 							stop: function() {
 								for(var prop in $scope.track1) {
 									if($scope.track1[prop].length > 0) {
@@ -391,8 +396,9 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 							revert: 150,
 							tolerance: 'pointer',
 							update : function(e, ui) {
-								console.log(ui.item);
-								ui.item.sortable.cancel();
+								if(ui.item.sortable.droptarget.hasClass('drop-area-' + $scope.answers[0].value)) {
+									ui.item.sortable.cancel();
+								}
 							},
 							stop: function() {
 								for(var prop in $scope.track1) {
