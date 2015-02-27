@@ -285,20 +285,25 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 				url: '/try-it-1',
 				templateUrl: 'part-1/rhetoric-and-a-process-for-composing/try-it/1/1.html',
 				controller: function($scope) {
-					$scope.popup = 0;
 
-					$scope.leftList = [
-						{title:'Asking questions', class:'draggable drag-1'},
-						{title:'Drafting a paper', class:'draggable drag-2'},
-						{title:'Revising', class:'draggable drag-3'},
-						{title:'Understanding your project', class:'draggable drag-4'},
-						{title:'Shaping your project for others', class:'draggable drag-5'},
-						{title:'Polishing', class:'draggable drag-6'},
-						{title:'Getting feedback', class:'draggable drag-7'},
-						{title:'Getting started', class:'draggable drag-8'}
-					];
+					$scope.reset = function() {
+						$scope.popup = 0;
+						
+						$scope.leftList = [
+							{title:'Asking questions', class:'draggable drag-1'},
+							{title:'Drafting a paper', class:'draggable drag-2'},
+							{title:'Revising', class:'draggable drag-3'},
+							{title:'Understanding your project', class:'draggable drag-4'},
+							{title:'Shaping your project for others', class:'draggable drag-5'},
+							{title:'Polishing', class:'draggable drag-6'},
+							{title:'Getting feedback', class:'draggable drag-7'},
+							{title:'Getting started', class:'draggable drag-8'}
+						];
 
-					$scope.drop = [];
+						$scope.drop = [];
+					}
+
+					$scope.reset();
 
 					$scope.sortableOptions = {
 						connectWith: '.item-container',
