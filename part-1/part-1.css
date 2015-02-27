@@ -362,6 +362,7 @@
   .part-1 .understanding-a-class-assignment .try-it-1 .tracks {
     height: 100%;
     left: 340px;
+    padding-left: 2px;
     position: absolute;
     top: 0;
     width: 64px;
@@ -371,7 +372,7 @@
     border-right: 2px solid #fff;
     float: left;
     height: 100%;
-    width: 18px; }
+    width: 16px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .drop-area {
     position: absolute;
     width: 16px; }
@@ -404,22 +405,25 @@
     height: 82px;
     top: 548px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .draggable {
-    background-color: aqua;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     cursor: move;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
-    height: 20px;
+    height: 36px;
+    padding: 10px;
     position: relative;
     text-transform: uppercase;
-    top: 10px;
-    width: 88px;
+    top: 0;
+    width: 95px;
     z-index: 1; }
   .part-1 .understanding-a-class-assignment .try-it-1 .draggable-1 {
-    left: -24px; }
+    background-image: url(../shared/assets/img/arrow-slider-1.png);
+    left: -26px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .draggable-2 {
+    background-image: url(../shared/assets/img/arrow-slider-2.png);
     left: -42px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .right {
     background-color: #e8e8e8;
