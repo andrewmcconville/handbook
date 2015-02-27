@@ -23,18 +23,18 @@
 			<li ng-repeat="item in drop" ng-class="item.class" ng-bind="item.title"></li>
 		</ul>
 
-		<button class="btn-primary btn-done">Done</button>
+		<button class="btn-primary btn-done" ng-click="getAnswer()">Done</button>
 	</div>
 
-<!-- 	<div class="popup">
-		<button class="btn-primary btn-reset">Reset</button>
-		No, you've not gotten the order we discuss in this bool.
+	<div class="popup" ng-show="popup == 1">
+		<button class="btn-primary btn-reset" ng-click="reset()">Reset</button>
+		Yes, you've placed the parts of the composing process into the order we discuss in this book.
+	</div>
+
+	<div class="popup" ng-show="popup == 2">
+		<button class="btn-primary btn-reset" ng-click="reset()">Reset</button>
+		No, you've not gotten the order we discuss in this book.
 		<br>
 		Click "REST" to try again.
 	</div>
-
-	<div class="popup">
-		<button class="btn-primary btn-reset">Reset</button>
-		Yes, you've placed the parts of the composing process into the order we discuss in this book.
-	</div> -->
 </div>
