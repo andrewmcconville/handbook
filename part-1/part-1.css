@@ -353,11 +353,12 @@
     display: block;
     margin-top: 4px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .arrows {
-    background-color: #e8e8e8; }
+    background-color: #e8e8e8;
+    border-left: 2px solid #cbc2a6; }
   .part-1 .understanding-a-class-assignment .try-it-1 .arrows,
   .part-1 .understanding-a-class-assignment .try-it-1 .tracks {
     height: 100%;
-    left: 350px;
+    left: 340px;
     position: absolute;
     top: 0;
     width: 64px;
@@ -370,16 +371,16 @@
     border-right: 2px solid #fff;
     float: left;
     height: 100%;
-    width: 16px; }
+    width: 18px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .drop-area {
     position: absolute;
     width: 16px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-0 {
     height: 80px;
     top: 26px; }
-    .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-0 .arrow {
-      top: 39px; }
-    .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-0 .draggable {
+    .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-0 .draggable-1 {
+      top: 0px; }
+    .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-0 .draggable-2 {
       top: 35px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-1 {
     height: 64px;
@@ -411,11 +412,20 @@
     font-size: 14px;
     font-weight: 600;
     height: 20px;
-    left: -40px;
     position: relative;
     text-transform: uppercase;
     top: 10px;
-    width: 64px; }
+    width: 88px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .draggable::-moz-selection,
+  .part-1 .understanding-a-class-assignment .try-it-1 .draggable::-moz-selection {
+    background: transparent; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .draggable::selection,
+  .part-1 .understanding-a-class-assignment .try-it-1 .draggable::-moz-selection {
+    background: transparent; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .draggable-1 {
+    left: -24px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .draggable-2 {
+    left: -42px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .right {
     background-color: #e8e8e8;
     bottom: 0;

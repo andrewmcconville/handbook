@@ -22,13 +22,14 @@
 	}
 
 	.arrows {
-		background-color: #e8e8e8;		
+		background-color: #e8e8e8;	
+		border-left: 2px solid #cbc2a6;		
 	}
 
 	.arrows,
 	.tracks {
 		height: 100%;
-		left: 350px;
+		left: 340px;
 		position: absolute;
 		top: 0;
 		width: 64px;
@@ -45,7 +46,7 @@
 		border-right: 2px solid #fff;
 		float: left;
 		height: 100%;
-		width: 16px;
+		width: 18px;
 	}
 
 	.drop-area {
@@ -56,8 +57,8 @@
 	.drop-area-0 {
 		height: 80px;
 		top: 26px;
-		.arrow { top: 39px; }
-		.draggable { top: 35px;}
+		.draggable-1 { top: 0px; }
+		.draggable-2 { top: 35px; }
 	}
 
 	.drop-area-1 {
@@ -104,12 +105,19 @@
 		font-size: 14px;
 		font-weight: 600;
 		height: 20px;
-		left: -40px;
 		position: relative;
 		text-transform: uppercase;
 		top: 10px;
-		width: 64px;
+		width: 88px;
 	}
+
+	.draggable::selection,
+	.draggable::-moz-selection {
+	  background: transparent;
+	}
+
+	.draggable-1 { left: -24px; }
+	.draggable-2 { left: -42px; }
 
 	.right {
 		background-color: #e8e8e8;

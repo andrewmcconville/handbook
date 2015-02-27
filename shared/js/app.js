@@ -339,7 +339,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					controller: function($scope) {
 						$scope.answer1 = 0;
 						$scope.track1 = {};
-						$scope.track1.drop0 = [{title:'purpose1', class:'draggable'}];
+						$scope.track1.drop0 = [{title:'purpose1', class:'draggable draggable-1'}];
 						$scope.track1.drop1 = [];
 						$scope.track1.drop2 = [];
 						$scope.track1.drop3 = [];
@@ -365,7 +365,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 
 						$scope.answer2 = 0;
 						$scope.track2 = {};
-						$scope.track2.drop0 = [{title:'purpose2', class:'draggable'}];
+						$scope.track2.drop0 = [{title:'purpose2', class:'draggable draggable-2'}];
 						$scope.track2.drop1 = [];
 						$scope.track2.drop2 = [];
 						$scope.track2.drop3 = [];
@@ -390,7 +390,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 						}
 
 						$scope.getAnswer = function() {
-							alert($scope.answer1);
+							alert($scope.answer1 + ' and ' + $scope.answer2);
 						}
 					}
 				})
