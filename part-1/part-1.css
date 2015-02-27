@@ -345,15 +345,86 @@
     padding: 40px;
     position: absolute;
     top: 40px;
-    width: 390px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .select {
-    margin-bottom: 20px;
-    width: 100%; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .btn-primary {
-    display: block;
-    margin-top: 4px; }
+    width: 300px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .popup-container {
+    left: 30px;
+    position: absolute;
+    top: 180px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .arrows {
+    background-color: #e8e8e8;
+    border-left: 2px solid #cbc2a6; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .arrow {
+    position: relative;
+    top: 14px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .arrows,
+  .part-1 .understanding-a-class-assignment .try-it-1 .tracks {
+    height: 100%;
+    left: 340px;
+    padding-left: 2px;
+    position: absolute;
+    top: 0;
+    width: 64px;
+    z-index: 1; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .track-1,
+  .part-1 .understanding-a-class-assignment .try-it-1 .track-2 {
+    border-right: 2px solid #fff;
+    float: left;
+    height: 100%;
+    width: 16px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area {
+    position: absolute;
+    width: 16px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-0 {
+    height: 80px;
+    top: 26px; }
+    .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-0 .draggable-1 {
+      top: 0px; }
+    .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-0 .draggable-2 {
+      top: 35px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-1 {
+    height: 64px;
+    top: 106px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-2 {
+    height: 42px;
+    top: 170px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-3 {
+    height: 62px;
+    top: 212px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-4 {
+    height: 128px;
+    top: 274px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-5 {
+    height: 62px;
+    top: 402px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-6 {
+    height: 84px;
+    top: 464px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-7 {
+    height: 82px;
+    top: 548px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .draggable {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    cursor: move;
+    font-size: 12px;
+    font-weight: 600;
+    height: 36px;
+    padding: 10px 0 0 14px;
+    position: relative;
+    text-transform: uppercase;
+    top: 1px;
+    width: 95px;
+    z-index: 1; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .draggable-1 {
+    background-image: url(../shared/assets/img/arrow-slider-1.png);
+    left: -26px; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .draggable-2 {
+    background-image: url(../shared/assets/img/arrow-slider-2.png);
+    left: -42px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .right {
-    background-color: #f0f0f0;
+    background-color: #e8e8e8;
     bottom: 0;
     padding: 24px 32px;
     position: absolute;
@@ -425,4 +496,5 @@
   border-top-color: #769b3e; }
 .part-1 .instructions {
   color: #769b3e; }
+
 /*# sourceMappingURL=part-1.css.map */
