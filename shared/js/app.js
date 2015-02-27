@@ -343,7 +343,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 						$scope.answers[0].value = 0;
 						$scope.answers[0].isCorrect = false;
 						$scope.track1 = {};
-						$scope.track1.drop0 = [{title:'purpose 1', class:'draggable draggable-1'}];
+						$scope.track1.drop0 = [{title:'purpose', class:'draggable draggable-1'}];
 						$scope.track1.drop1 = [];
 						$scope.track1.drop2 = [];
 						$scope.track1.drop3 = [];
@@ -376,7 +376,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 						$scope.answers[1].value = 0;
 						$scope.answers[1].isCorrect = false;
 						$scope.track2 = {};
-						$scope.track2.drop0 = [{title:'purpose 2', class:'draggable draggable-2'}];
+						$scope.track2.drop0 = [{title:'purpose', class:'draggable draggable-2'}];
 						$scope.track2.drop1 = [];
 						$scope.track2.drop2 = [];
 						$scope.track2.drop3 = [];
