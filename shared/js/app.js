@@ -337,7 +337,11 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					url: '/try-it-1',
 					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/try-it/1/1.html',
 					controller: function($scope) {
-						$scope.answer1 = 0;
+						$scope.answers = []
+
+						$scope.answers[0] = {};
+						$scope.answers[0].value = 0;
+						$scope.answers[0].isCorrect = false;
 						$scope.track1 = {};
 						$scope.track1.drop0 = [{title:'purpose1', class:'draggable draggable-1'}];
 						$scope.track1.drop1 = [];
@@ -356,14 +360,21 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 							stop: function() {
 								for(var prop in $scope.track1) {
 									if($scope.track1[prop].length > 0) {
-										$scope.answer1 = prop[4];
-										console.log($scope.answer1);
+										$scope.answers[0].value = prop[4];
+										if($scope.answers[0].value == 3 || $scope.answers[0].value == 4 ) {
+											$scope.answers[0].isCorrect = true;
+										} else {
+											$scope.answers[0].isCorrect = false;
+										}
+										console.log($scope.answers[0].isCorrect);
 									}
 								}
 							}
 						}
 
-						$scope.answer2 = 0;
+						$scope.answers[1] = {};
+						$scope.answers[1].value = 0;
+						$scope.answers[1].isCorrect = false;
 						$scope.track2 = {};
 						$scope.track2.drop0 = [{title:'purpose2', class:'draggable draggable-2'}];
 						$scope.track2.drop1 = [];
@@ -380,17 +391,30 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 							revert: 150,
 							tolerance: 'pointer',
 							stop: function() {
-								for(var prop in $scope.track2) {
+								for(var prop in $scope.track1) {
 									if($scope.track2[prop].length > 0) {
-										$scope.answer2 = prop[4];
-										console.log($scope.answer2);
+										$scope.answers[1].value = prop[4];
+										if($scope.answers[1].value == 3 || $scope.answers[1].value == 4 ) {
+											$scope.answers[1].isCorrect = true;
+										} else {
+											$scope.answers[1].isCorrect = false;
+										}
+										console.log($scope.answers[1].isCorrect);
 									}
 								}
 							}
 						}
 
 						$scope.getAnswer = function() {
-							alert($scope.answer1 + ' and ' + $scope.answer2);
+							if($scope.answers[0].isCorrect && $scope.answers[1].isCorrect) {
+								alert('both correct');
+							} else if($scope.answers[0].isCorrect && !$scope.answers[1].isCorrect) {
+								alert('1 correct, 2 incorrect');
+							} else if(!$scope.answers[0].isCorrect && $scope.answers[1].isCorrect) {
+								alert('1 incorrect, 2 correct');
+							} else {
+								alert('both incorrect');
+							}
 						}
 					}
 				})

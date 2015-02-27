@@ -26,6 +26,11 @@
 		border-left: 2px solid #cbc2a6;		
 	}
 
+	.arrow {
+		position: relative;
+		top: 14px;
+	}
+
 	.arrows,
 	.tracks {
 		height: 100%;
@@ -34,11 +39,6 @@
 		top: 0;
 		width: 64px;
 		z-index: 1;
-	}
-
-	.arrow {
-		position: relative;
-		top: 14px;
 	}
 
 	.track-1,
@@ -109,11 +109,7 @@
 		text-transform: uppercase;
 		top: 10px;
 		width: 88px;
-	}
-
-	.draggable::selection,
-	.draggable::-moz-selection {
-	  background: transparent;
+		z-index: 1;
 	}
 
 	.draggable-1 { left: -24px; }

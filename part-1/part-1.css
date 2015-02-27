@@ -355,6 +355,9 @@
   .part-1 .understanding-a-class-assignment .try-it-1 .arrows {
     background-color: #e8e8e8;
     border-left: 2px solid #cbc2a6; }
+  .part-1 .understanding-a-class-assignment .try-it-1 .arrow {
+    position: relative;
+    top: 14px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .arrows,
   .part-1 .understanding-a-class-assignment .try-it-1 .tracks {
     height: 100%;
@@ -363,9 +366,6 @@
     top: 0;
     width: 64px;
     z-index: 1; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .arrow {
-    position: relative;
-    top: 14px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .track-1,
   .part-1 .understanding-a-class-assignment .try-it-1 .track-2 {
     border-right: 2px solid #fff;
@@ -415,13 +415,8 @@
     position: relative;
     text-transform: uppercase;
     top: 10px;
-    width: 88px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .draggable::-moz-selection,
-  .part-1 .understanding-a-class-assignment .try-it-1 .draggable::-moz-selection {
-    background: transparent; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .draggable::selection,
-  .part-1 .understanding-a-class-assignment .try-it-1 .draggable::-moz-selection {
-    background: transparent; }
+    width: 88px;
+    z-index: 1; }
   .part-1 .understanding-a-class-assignment .try-it-1 .draggable-1 {
     left: -24px; }
   .part-1 .understanding-a-class-assignment .try-it-1 .draggable-2 {
