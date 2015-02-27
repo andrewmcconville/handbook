@@ -21,55 +21,76 @@
 		margin-top: 4px;
 	}
 
-	.track {
-		background-color: pink;
-		border: 1px solid purple;
+	.arrows {
+		background-color: #e8e8e8;		
+	}
+
+	.arrows,
+	.tracks {
+		height: 100%;
+		left: 350px;
 		position: absolute;
-		width: 30px;
-		z-index: 1;		
+		top: 0;
+		width: 64px;
+		z-index: 1;
 	}
 
-	.track-1 {
-		left: 360px;
+	.arrow {
+		position: relative;
+		top: 14px;
 	}
 
-	.drop-0 {
+	.track-1,
+	.track-2 {
+		border-right: 2px solid #fff;
+		float: left;
+		height: 100%;
+		width: 16px;
+	}
+
+	.drop-area {
+		position: absolute;
+		width: 16px;	
+	}
+
+	.drop-area-0 {
 		height: 80px;
 		top: 26px;
-		.draggable { top: 35px; }
+		.arrow { top: 39px; }
+		.draggable { top: 35px;}
 	}
 
-	.drop-1 {
+	.drop-area-1 {
 		height: 64px;
 		top: 106px;
 	}
 
-	.drop-2 {
+	.drop-area-2 {
 		height: 42px;
 		top: 170px;
 	}
 
-	.drop-3 {
+	.drop-area-3 {
 		height: 62px;
 		top: 212px;
 	}
 
-	.drop-4 {
+	.drop-area-4 {
 		height: 128px;
 		top: 274px;
 	}
 
-	.drop-5 {
+	.drop-area-5 {
 		height: 62px;
 		top: 402px;
 	}
 
-	.drop-6 {
+	.drop-area-6 {
 		height: 84px;
 		top: 464px;
 	}
 
-	.drop-7 {
+	.drop-area-7 {
 		height: 82px;
 		top: 548px;
 	}
@@ -78,16 +99,20 @@
 		background-color: aqua;
 		border-top-right-radius: 50%;
 		border-bottom-right-radius: 50%;
+		color: #fff;
 		cursor: move;
+		font-size: 14px;
+		font-weight: 600;
 		height: 20px;
 		left: -40px;
 		position: relative;
+		text-transform: uppercase;
 		top: 10px;
-		width: 100px;
+		width: 64px;
 	}
 
 	.right {
-		background-color: #f0f0f0;
+		background-color: #e8e8e8;
 		bottom: 0;
 		padding: 24px 32px;
 		position: absolute;

@@ -339,7 +339,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 					controller: function($scope) {
 						$scope.answer1 = 0;
 						$scope.track1 = {};
-						$scope.track1.drop0 = [{title:'PURPOSE', class:'draggable'}];
+						$scope.track1.drop0 = [{title:'purpose1', class:'draggable'}];
 						$scope.track1.drop1 = [];
 						$scope.track1.drop2 = [];
 						$scope.track1.drop3 = [];
@@ -348,8 +348,8 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 						$scope.track1.drop6 = [];
 						$scope.track1.drop7 = [];
 
-						$scope.sortableOptions = {
-							connectWith: '.track-1',
+						$scope.sortableOptions1 = {
+							connectWith: '.track-1-drop-area',
 							axis: 'y',
 							revert: 150,
 							tolerance: 'pointer',
@@ -358,6 +358,32 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 									if($scope.track1[prop].length > 0) {
 										$scope.answer1 = prop[4];
 										console.log($scope.answer1);
+									}
+								}
+							}
+						}
+
+						$scope.answer2 = 0;
+						$scope.track2 = {};
+						$scope.track2.drop0 = [{title:'purpose2', class:'draggable'}];
+						$scope.track2.drop1 = [];
+						$scope.track2.drop2 = [];
+						$scope.track2.drop3 = [];
+						$scope.track2.drop4 = [];
+						$scope.track2.drop5 = [];
+						$scope.track2.drop6 = [];
+						$scope.track2.drop7 = [];
+
+						$scope.sortableOptions2 = {
+							connectWith: '.track-2-drop-area',
+							axis: 'y',
+							revert: 150,
+							tolerance: 'pointer',
+							stop: function() {
+								for(var prop in $scope.track2) {
+									if($scope.track2[prop].length > 0) {
+										$scope.answer2 = prop[4];
+										console.log($scope.answer2);
 									}
 								}
 							}

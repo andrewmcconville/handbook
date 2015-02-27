@@ -8,37 +8,84 @@
 		<button class="btn-primary" ng-click="getAnswer()">Done</button>
 	</div>
 
-	<ul ui-sortable="sortableOptions" class="track track-1 drop-0" ng-model="track1.drop0">
-		<li ng-repeat="item in track1.drop0" ng-class="item.class" ng-bind="item.title"></li>
+	<ul class="arrows">
+		<li class="drop-area drop-area-1"><img class="arrow" src="../../../../../shared/assets/img/dotted-arrow.png" height="12px" width="64px"></li>
+		<li class="drop-area drop-area-2"><img class="arrow" src="../../../../../shared/assets/img/dotted-arrow.png" height="12px" width="64px"></li>
+		<li class="drop-area drop-area-3"><img class="arrow" src="../../../../../shared/assets/img/dotted-arrow.png" height="12px" width="64px"></li>
+		<li class="drop-area drop-area-4"><img class="arrow" src="../../../../../shared/assets/img/dotted-arrow.png" height="12px" width="64px"></li>
+		<li class="drop-area drop-area-5"><img class="arrow" src="../../../../../shared/assets/img/dotted-arrow.png" height="12px" width="64px"></li>
+		<li class="drop-area drop-area-6"><img class="arrow" src="../../../../../shared/assets/img/dotted-arrow.png" height="12px" width="64px"></li>
+		<li class="drop-area drop-area-7"><img class="arrow" src="../../../../../shared/assets/img/dotted-arrow.png" height="12px" width="64px"></li>
 	</ul>
 
-	<ul ui-sortable="sortableOptions" class="track track-1 drop-1" ng-model="track1.drop1">
-		<li ng-repeat="item in track1.drop1" ng-class="item.class" ng-bind="item.title"></li>
-	</ul>
+	<div class="tracks">
+		<ul class="track-1">
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-0" ng-model="track1.drop0">
+				<div ng-repeat="item in track1.drop0" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
 
-	<ul ui-sortable="sortableOptions" class="track track-1 drop-2" ng-model="track1.drop2">
-		<li ng-repeat="item in track1.drop2" ng-class="item.class" ng-bind="item.title"></li>
-	</ul>
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-1" ng-model="track1.drop1">
+				<div ng-repeat="item in track1.drop1" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
 
-	<ul ui-sortable="sortableOptions" class="track track-1 drop-3" ng-model="track1.drop3">
-		<li ng-repeat="item in track1.drop3" ng-class="item.class" ng-bind="item.title"></li>
-	</ul>
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-2" ng-model="track1.drop2">
+				<div ng-repeat="item in track1.drop2" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
 
-	<ul ui-sortable="sortableOptions" class="track track-1 drop-4" ng-model="track1.drop4">
-		<li ng-repeat="item in track1.drop4" ng-class="item.class" ng-bind="item.title"></li>
-	</ul>
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-3" ng-model="track1.drop3">
+				<div ng-repeat="item in track1.drop3" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
 
-	<ul ui-sortable="sortableOptions" class="track track-1 drop-5" ng-model="track1.drop5">
-		<li ng-repeat="item in track1.drop5" ng-class="item.class" ng-bind="item.title"></li>
-	</ul>
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-4" ng-model="track1.drop4">
+				<div ng-repeat="item in track1.drop4" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
 
-	<ul ui-sortable="sortableOptions" class="track track-1 drop-6" ng-model="track1.drop6">
-		<li ng-repeat="item in track1.drop6" ng-class="item.class" ng-bind="item.title"></li>
-	</ul>
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-5" ng-model="track1.drop5">
+				<div ng-repeat="item in track1.drop5" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
 
-	<ul ui-sortable="sortableOptions" class="track track-1 drop-7" ng-model="track1.drop7">
-		<li ng-repeat="item in track1.drop7" ng-class="item.class" ng-bind="item.title"></li>
-	</ul>
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-6" ng-model="track1.drop6">
+				<div ng-repeat="item in track1.drop6" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions1" class="track-1-drop-area drop-area drop-area-7" ng-model="track1.drop7">
+				<div ng-repeat="item in track1.drop7" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+		</ul>
+		<ul class="track-2">
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-0" ng-model="track2.drop0">
+				<div ng-repeat="item in track2.drop0" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-1" ng-model="track2.drop1">
+				<div ng-repeat="item in track2.drop1" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-2" ng-model="track2.drop2">
+				<div ng-repeat="item in track2.drop2" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-3" ng-model="track2.drop3">
+				<div ng-repeat="item in track2.drop3" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-4" ng-model="track2.drop4">
+				<div ng-repeat="item in track2.drop4" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-5" ng-model="track2.drop5">
+				<div ng-repeat="item in track2.drop5" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-6" ng-model="track2.drop6">
+				<div ng-repeat="item in track2.drop6" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+
+			<li ui-sortable="sortableOptions2" class="track-2-drop-area drop-area drop-area-7" ng-model="track2.drop7">
+				<div ng-repeat="item in track2.drop7" ng-class="item.class" ng-bind="item.title"></div>
+			</li>
+		</ul>
+	</div>
  
 	<div class="right">
 		<header class="meta-copy font-times">
