@@ -78,38 +78,7 @@ app.directive('rhetoricLearnIt', function() {
 });
 
 app.run([
-	"$rootScope", "$state", "$stateParams", "$templateCache", "$http", function($rootScope, $state, $stateParams, $templateCache, $http) {
-
-		// $templateCache.put("home/home.html", $http({method: 'GET', url: 'home/home.html', cache: true}));
-		// $templateCache.put("writers-concerns/writers-concerns.html", $http({method: 'GET', url: 'writers-concerns/writers-concerns.html', cache: true}));
-		// $templateCache.put("writers-concerns/intro/intro.html", $http({method: 'GET', url: 'writers-concerns/intro/intro.html', cache: true}));
-		// $templateCache.put("writers-process/writers-process.html", $http({method: 'GET', url: 'writers-process/writers-process.html', cache: true}));
-		// $templateCache.put("writers-process/intro/intro.html", $http({method: 'GET', url: 'writers-process/intro/intro.html', cache: true}));
-		// $templateCache.put("writers-process/writers-process.html", $http({method: 'GET', url: 'writers-process/writers-process.html', cache: true}));
-		// $templateCache.put("writers-process/intro/intro.html", $http({method: 'GET', url: 'writers-process/intro/intro.html', cache: true}));
-		// $templateCache.put("part-1/part-1.html", $http({method: 'GET', url: 'part-1/part-1.html', cache: true}));
-		// $templateCache.put("part-1/intro/intro.html", $http({method: 'GET', url: 'part-1/intro/intro.html', cache: true}));
-		// $templateCache.put("part-2/part-2.html", $http({method: 'GET', url: 'part-2/part-2.html', cache: true}));
-		// $templateCache.put("part-2/intro/intro.html", $http({method: 'GET', url: 'part-2/intro/intro.html', cache: true}));
-		// $templateCache.put("part-3/part-3.html", $http({method: 'GET', url: 'part-3/part-3.html', cache: true}));
-		// $templateCache.put("part-3/intro/intro.html", $http({method: 'GET', url: 'part-3/intro/intro.html', cache: true}));
-		// $templateCache.put("part-4/part-4.html", $http({method: 'GET', url: 'part-4/part-4.html', cache: true}));
-		// $templateCache.put("part-4/intro/intro.html", $http({method: 'GET', url: 'part-4/intro/intro.html', cache: true}));
-		// $templateCache.put("part-5/part-5.html", $http({method: 'GET', url: 'part-5/part-5.html', cache: true}));
-		// $templateCache.put("part-5/intro/intro.html", $http({method: 'GET', url: 'part-5/intro/intro.html', cache: true}));
-		// $templateCache.put("part-6/part-6.html", $http({method: 'GET', url: 'part-6/part-6.html', cache: true}));
-		// $templateCache.put("part-6/intro/intro.html", $http({method: 'GET', url: 'part-6/intro/intro.html', cache: true}));
-		// $templateCache.put("part-7/part-7.html", $http({method: 'GET', url: 'part-7/part-7.html', cache: true}));
-		// $templateCache.put("part-7/intro/intro.html", $http({method: 'GET', url: 'part-7/intro/intro.html', cache: true}));
-		// $templateCache.put("part-8/part-8.html", $http({method: 'GET', url: 'part-8/part-8.html', cache: true}));
-		// $templateCache.put("part-8/intro/intro.html", $http({method: 'GET', url: 'part-8/intro/intro.html', cache: true}));
-		// $templateCache.put("part-9/part-9.html", $http({method: 'GET', url: 'part-9/part-9.html', cache: true}));
-		// $templateCache.put("part-9/intro/intro.html", $http({method: 'GET', url: 'part-9/intro/intro.html', cache: true}));
-		// $templateCache.put("part-10/part-10.html", $http({method: 'GET', url: 'part-10/part-10.html', cache: true}));
-		// $templateCache.put("part-10/intro/intro.html", $http({method: 'GET', url: 'part-10/intro/intro.html', cache: true}));
-		// $templateCache.put("part-11/part-11.html", $http({method: 'GET', url: 'part-11/part-11.html', cache: true}));
-		// $templateCache.put("part-11/intro/intro.html", $http({method: 'GET', url: 'part-11/intro/intro.html', cache: true}));
-
+	"$rootScope", "$state", "$stateParams", function($rootScope, $state, $stateParams) {
 		$rootScope.$state = $state;
 		return $rootScope.$stateParams = $stateParams;
 	}
@@ -134,6 +103,9 @@ var fakeNav = function() {
     });
 };
 
+/*
+ * open and close what will you learn triangles
+ */
 var accordionList = function() {
 	$('.accordion-list .btn-expander').on('click touch', function(){
 		if($(this).parent().next('.description').is(':visible')){
@@ -623,6 +595,31 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/intro',
 			templateUrl: 'part-11/intro/intro.html'
 		})
+		.state('part-11.what-will-you-learn', {
+			url: '/what-will-you-learn',
+			templateUrl: 'part-11/what-will-you-learn/what-will-you-learn.html',
+			controller: function($scope) {
+				accordionList();
+			}
+		})
+		.state('part-11.punctuation', {
+			url: '/punctuation',
+			templateUrl: 'part-11/punctuation/punctuation.html',
+			controller: function($scope) {
+			}
+		})
+		.state('part-11.punctuation/commas', {
+			url: '/punctuation/commas',
+			templateUrl: 'part-11/punctuation/commas/commas.html',
+			controller: function($scope) {
+			}
+		})
+		.state('part-11.punctuation/commas/to-separate-words-in-lists', {
+			url: '/punctuation/commas/to-separate-words-in-lists',
+			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/to-separate-words-in-lists.html',
+			controller: function($scope) {
+			}
+		})
 		/*
 		 * SEARCH
 		 */
@@ -662,37 +659,6 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
  * jQuery!
  */
 $(document).ready(function() {
-	/*
-	 * preload images
-	 */
-	// function preload(arrayOfImages) {
-	// 	$(arrayOfImages).each(function(){
-	// 		$('<img/>')[0].src = this;
-	// 	});
-	// }
-
-	// preload([
-	// 	'../../home/assets/img/cover-colorful-swirls.jpg',
-	// 	'../../writers-concerns/intro/assets/img/background-image.jpg',
-	// 	'../../writers-process/intro/assets/img/background-image.jpg',
-	// 	'../../part-1/intro/assets/img/background-image.jpg',
-	// 	'../../part-2/intro/assets/img/background-image.jpg',
-	// 	'../../part-3/intro/assets/img/background-image.jpg',
-	// 	'../../part-4/intro/assets/img/background-image.jpg',
-	// 	'../../part-5/intro/assets/img/background-image.jpg',
-	// 	'../../part-6/intro/assets/img/background-image.jpg',
-	// 	'../../part-7/intro/assets/img/background-image.jpg',
-	// 	'../../part-8/intro/assets/img/background-image.jpg',
-	// 	'../../part-9/intro/assets/img/background-image.jpg',
-	// 	'../../part-10/intro/assets/img/background-image.jpg',
-	// 	'../../part-11/intro/assets/img/background-image.jpg',
-	// 	'../../search/assets/left-nav.png',
-	// 	'../../search/assets/content.jpg',
-	// 	'../../glossary/assets/left-nav.png',
-	// 	'../../glossary/assets/content.png',
-	// 	'../../you/assets/left-nav.png',
-	// 	'../../you/assets/content.png'
-	// ]);
 	/*
 	 * adds focus to left nav
 	 */
