@@ -31,7 +31,7 @@
             <span class="logo-home-link">
                 <img class="logo" src="shared/assets/img/pearson_logo.png" />
             </span>
-            <ul class="main-nav">
+            <ul class="main-nav" ng-click="focusLeftNav()">
                 <li class="tab" ui-sref-active="active" ng-class="{'active-you': $state.includes('you')}"><a class="tab-part-1" ui-sref="part-1" tabindex="2" data-title="Part 1: A Process for Composing">1</a></li>
                 <li class="tab" ui-sref-active="active" ng-class="{'active-you': $state.includes('you')}"><a class="tab-part-2" ui-sref="part-2" tabindex="3" data-title="Part 2: Finding Ideas">2</a></li>
                 <li class="tab" ui-sref-active="active" ng-class="{'active-you': $state.includes('you')}"><a class="tab-part-3" ui-sref="part-3" tabindex="4" data-title="Part 3: Evaluating and Tracking Sources Ethically">3</a></li>
@@ -49,7 +49,7 @@
                 <li class="tab" ui-sref-active="active"><a class="tab-text tab-glossary" ui-sref="glossary" tabindex="16" data-title="Browse vocabulary">Glossary</a></li>
                 <li class="tab tab-you-wrapper" ui-sref-active="active"><a class="tab-text top-you tab-you" ui-sref="you" tabindex="17" data-title="View your progress">{{username || 'You'}}</a></li>
             </ul>
-            <div class="main-nav-hover">
+            <div class="main-nav-hover" main-nav-hover>
                 <div class="full-description"></div>
             </div>
         </header>

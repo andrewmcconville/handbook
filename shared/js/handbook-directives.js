@@ -51,6 +51,36 @@
 		};
 	});
 
+	/*
+	 * main nav hover states
+	 */
+	app.directive('mainNavHover', function() {
+		return {
+			restrict: 'A',
+			controller: ['$scope', function($scope) {
+				$('.main-nav').on({
+					mouseenter: function(){
+						$('.main-nav-hover').addClass('open');
+					},
+					mouseleave: function(){
+						$('.main-nav-hover').removeClass('open');
+					}
+				});
+
+				$('.main-nav .tab').on({
+					mouseenter: function(){
+						$('.main-nav-hover').addClass($('a', this).attr('class'));
+						$('.main-nav-hover .full-description').text($('a', this).attr('data-title'));
+					},
+					mouseleave: function(){
+						$('.main-nav-hover').removeClass($('a', this).attr('class'));
+						$('.main-nav-hover .full-description').text('');
+					}
+				});
+			}]
+		};
+	});
+
 	app.directive('popupContainer', function() {
 		return {
 			restrict: 'A',
