@@ -4,6 +4,29 @@
 (function(){
 	var app = angular.module('handbook-directives', []);
 
+	/*
+	 * open and close what will you learn triangles
+	 */
+	app.directive('accordionList', function() {
+		return {
+			restrict: 'A',
+			controller: ['$scope', function($scope) {
+				$('.accordion-list .btn-expander').on('click touch', function(){
+					if($(this).parent().next('.description').is(':visible')){
+						$(this).removeClass('open');
+						$(this).parent().next('.description').slideUp();
+					} else {
+						$('.accordion-list .btn-expander').removeClass('open');
+						$('.accordion-list .description').slideUp();
+
+						$(this).addClass('open');
+						$(this).parent().next('.description').slideDown();
+					}
+				});
+			}]
+		};
+	});
+
 	app.directive('popupContainer', function() {
 		return {
 			restrict: 'A',
