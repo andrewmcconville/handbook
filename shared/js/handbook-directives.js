@@ -27,6 +27,30 @@
 		};
 	});
 
+	/*
+	 * open and close nav that has no pages
+	 */
+	app.directive('fakeNav', function() {
+		return {
+			restrict: 'A',
+			controller: ['$scope', function($scope) {
+				$('.nav > li').on('click touch', function(){
+					$(this).siblings().removeClass('active');
+					$(this).addClass('active');
+					$(this).siblings().find('.sub-nav').slideUp();
+					$(this).children('.sub-nav').slideDown();
+			    });
+
+				$('.nav > li > .sub-nav > li').on('click touch', function(){
+					$(this).siblings().removeClass('active');
+					$(this).addClass('active');
+					$(this).siblings().find('.sub-nav').slideUp();
+					$(this).children('.sub-nav').slideDown();
+			    });
+			}]
+		};
+	});
+
 	app.directive('popupContainer', function() {
 		return {
 			restrict: 'A',

@@ -7,25 +7,6 @@ app.run([
 	}
 ]);
 
-/*
- * open and close nav that has no pages
- */
-var fakeNav = function() {
-	$('.nav > li').on('click touch', function(){
-		$(this).siblings().removeClass('active');
-		$(this).addClass('active');
-		$(this).siblings().find('.sub-nav').slideUp();
-		$(this).children('.sub-nav').slideDown();
-    });
-
-	$('.nav > li > .sub-nav > li').on('click touch', function(){
-		$(this).siblings().removeClass('active');
-		$(this).addClass('active');
-		$(this).siblings().find('.sub-nav').slideUp();
-		$(this).children('.sub-nav').slideDown();
-    });
-};
-
 app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
 	$urlRouterProvider.otherwise('/');
 
@@ -67,10 +48,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('writers-concerns', {
 			url: '/writers-concerns',
-			templateUrl: 'writers-concerns/writers-concerns.html',
-        	controller: function() {
-        		fakeNav();
-        	}
+			templateUrl: 'writers-concerns/writers-concerns.html'
 		})
 		.state('writers-concerns.intro', {
 			url: '/intro',
@@ -81,10 +59,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('writers-process', {
 			url: '/writers-process',
-			templateUrl: 'writers-process/writers-process.html',
-        	controller: function() {
-        		fakeNav();
-        	}
+			templateUrl: 'writers-process/writers-process.html'
 		})
 		.state('writers-process.intro', {
 			url: '/intro',
@@ -356,10 +331,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('part-2', {
 			url: '/part-2',
-			templateUrl: 'part-2/part-2.html',
-        	controller: function() {
-        		fakeNav();
-        	}
+			templateUrl: 'part-2/part-2.html'
 		})
 		.state('part-2.intro', {
 			url: '/intro',
@@ -370,10 +342,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('part-3', {
 			url: '/part-3',
-			templateUrl: 'part-3/part-3.html',
-        	controller: function() {
-        		fakeNav();
-        	}
+			templateUrl: 'part-3/part-3.html'
 		})
 		.state('part-3.intro', {
 			url: '/intro',
@@ -384,10 +353,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('part-4', {
 			url: '/part-4',
-			templateUrl: 'part-4/part-4.html',
-        	controller: function() {
-        		fakeNav();
-        	}
+			templateUrl: 'part-4/part-4.html'
 		})
 		.state('part-4.intro', {
 			url: '/intro',
@@ -398,10 +364,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('part-5', {
 			url: '/part-5',
-			templateUrl: 'part-5/part-5.html',
-        	controller: function() {
-        		fakeNav();
-        	}
+			templateUrl: 'part-5/part-5.html'
 		})
 		.state('part-5.intro', {
 			url: '/intro',
@@ -412,10 +375,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('part-6', {
 			url: '/part-6',
-			templateUrl: 'part-6/part-6.html',
-        	controller: function() {
-        		fakeNav();
-        	}
+			templateUrl: 'part-6/part-6.html'
 		})
 		.state('part-6.intro', {
 			url: '/intro',
@@ -426,10 +386,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('part-7', {
 			url: '/part-7',
-			templateUrl: 'part-7/part-7.html',
-        	controller: function() {
-        		fakeNav();
-        	}
+			templateUrl: 'part-7/part-7.html'
 		})
 		.state('part-7.intro', {
 			url: '/intro',
@@ -440,10 +397,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('part-8', {
 			url: '/part-8',
-			templateUrl: 'part-8/part-8.html',
-        	controller: function() {
-        		fakeNav();
-        	}
+			templateUrl: 'part-8/part-8.html'
 		})
 		.state('part-8.intro', {
 			url: '/intro',
@@ -454,10 +408,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('part-9', {
 			url: '/part-9',
-			templateUrl: 'part-9/part-9.html',
-        	controller: function() {
-        		fakeNav();
-        	}
+			templateUrl: 'part-9/part-9.html'
 		})
 		.state('part-9.intro', {
 			url: '/intro',
@@ -468,10 +419,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('part-10', {
 			url: '/part-10',
-			templateUrl: 'part-10/part-10.html',
-        	controller: function() {
-        		fakeNav();
-        	}
+			templateUrl: 'part-10/part-10.html'
 		})
 		.state('part-10.intro', {
 			url: '/intro',
@@ -482,10 +430,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('part-11', {
 			url: '/part-11',
-			templateUrl: 'part-11/part-11.html',
-        	controller: function() {
-        		fakeNav();
-        	}
+			templateUrl: 'part-11/part-11.html'
 		})
 		.state('part-11.intro', {
 			url: '/intro',
