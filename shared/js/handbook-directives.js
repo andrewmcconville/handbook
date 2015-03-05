@@ -1,31 +1,28 @@
-/*
- * Directives
- */
 (function(){
 	var app = angular.module('handbook-directives', []);
 
-	/*
-	 * open and close what will you learn triangles
+	/* 
+	 * open and closes part-1 menu
 	 */
-	app.directive('accordionList', function() {
+	app.directive('navLeft', function(){
 		return {
 			restrict: 'A',
-			controller: ['$scope', function($scope) {
-				$('.accordion-list .btn-expander').on('click touch', function(){
-					if($(this).parent().next('.description').is(':visible')){
-						$(this).removeClass('open');
-						$(this).parent().next('.description').slideUp();
-					} else {
-						$('.accordion-list .btn-expander').removeClass('open');
-						$('.accordion-list .description').slideUp();
+			controller: ['$scope', '$state', function($scope, $state){
+        		$scope.$on('$stateChangeSuccess', function(){
+					setTimeout(function(){
+						$('.active').parents('li').addClass('active');
+						$('.nav-left .active').children('.sub-nav').slideDown();
 
-						$(this).addClass('open');
-						$(this).parent().next('.description').slideDown();
-					}
+						$('.nav-left li').on('click touch', function(){
+						    $(this).siblings().find('.sub-nav').slideUp();
+						    $(this).children('.sub-nav').slideDown();
+						});
+					}, 0);
 				});
 			}]
 		};
 	});
+
 
 	/*
 	 * open and close nav that has no pages
@@ -33,7 +30,7 @@
 	app.directive('fakeNav', function() {
 		return {
 			restrict: 'A',
-			controller: ['$scope', function($scope) {
+			controller: function(){
 				$('.nav > li').on('click touch', function(){
 					$(this).siblings().removeClass('active');
 					$(this).addClass('active');
@@ -47,9 +44,34 @@
 					$(this).siblings().find('.sub-nav').slideUp();
 					$(this).children('.sub-nav').slideDown();
 			    });
-			}]
+			}
 		};
 	});
+
+
+	/*
+	 * open and close what will you learn triangles
+	 */
+	app.directive('accordionList', function() {
+		return {
+			restrict: 'A',
+			controller: function() {
+				$('.accordion-list .btn-expander').on('click touch', function(){
+					if($(this).parent().next('.description').is(':visible')){
+						$(this).removeClass('open');
+						$(this).parent().next('.description').slideUp();
+					} else {
+						$('.accordion-list .btn-expander').removeClass('open');
+						$('.accordion-list .description').slideUp();
+
+						$(this).addClass('open');
+						$(this).parent().next('.description').slideDown();
+					}
+				});
+			}
+		};
+	});
+
 
 	/*
 	 * main nav hover states
@@ -57,7 +79,7 @@
 	app.directive('mainNavHover', function() {
 		return {
 			restrict: 'A',
-			controller: ['$scope', function($scope) {
+			controller: function() {
 				$('.main-nav').on({
 					mouseenter: function(){
 						$('.main-nav-hover').addClass('open');
@@ -77,7 +99,7 @@
 						$('.main-nav-hover .full-description').text('');
 					}
 				});
-			}]
+			}
 		};
 	});
 

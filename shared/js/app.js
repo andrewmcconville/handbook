@@ -70,21 +70,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		 */
 		.state('part-1', {
 			url: '/part-1',
-			templateUrl: 'part-1/part-1.html',
-        	controller: function($scope, $state) {
-        		$scope.$on('$stateChangeSuccess', function(event){
-					setTimeout(function(){
-        				//open and closes part-1 menu
-						$('.active').parents('li').addClass('active');
-					    $('.nav-left .active').children('.sub-nav').slideDown();
-
-					    $('.nav-left li').on('click', function(){
-					        $(this).siblings().find('.sub-nav').slideUp();
-					        $(this).children('.sub-nav').slideDown();
-					    });
-					}, 0);
-				});
-        	}
+			templateUrl: 'part-1/part-1.html'
 		})
 		.state('part-1.intro', {
 			url: '/intro',
