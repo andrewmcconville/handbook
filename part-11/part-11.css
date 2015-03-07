@@ -81,6 +81,10 @@
     line-height: 12px;
     padding-left: 16px;
     width: 180px; }
+.part-11 .learn-try-nav {
+  background-color: #f2716c; }
+  .part-11 .learn-try-nav .tab {
+    background-color: #f9bcbb; }
 .part-11 .page-view {
   border-top-color: #993733; }
 .part-11 .instructions {
