@@ -64,6 +64,23 @@
     background-color: #f9bcbb; }
   .part-11 .nav-left .sub-nav li a:hover {
     background-color: #f9bcbb; }
+  .part-11 .nav-left .sub-nav .ol-style {
+    padding: 2px 16px 2px 40px;
+    position: relative; }
+  .part-11 .nav-left .sub-nav .number {
+    bottom: 0;
+    font-size: 17px;
+    height: 12px;
+    line-height: 11px;
+    margin: auto;
+    position: absolute;
+    top: 0; }
+  .part-11 .nav-left .sub-nav .text {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 16px;
+    width: 180px; }
 .part-11 .page-view {
   border-top-color: #993733; }
 .part-11 .instructions {

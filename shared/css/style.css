@@ -616,6 +616,14 @@ body {
 img {
   display: block; }
 
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
 .config-prompt-overlay {
   background-color: rgba(203, 221, 231, 0.875);
   bottom: 0;
