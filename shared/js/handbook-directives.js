@@ -1,25 +1,23 @@
 (function(){
 	var app = angular.module('handbook-directives', []);
 
+
 	/* 
-	 * open and closes part-1 menu
+	 * open and closes menu
 	 */
 	app.directive('navLeft', function(){
 		return {
 			restrict: 'A',
-			controller: ['$scope', '$state', function($scope, $state){
-        		$scope.$on('$stateChangeSuccess', function(){
-					setTimeout(function(){
-						$('.active').parents('li').addClass('active');
-						$('.nav-left .active').children('.sub-nav').slideDown();
+			link: function(scope, element){
+        		scope.$on('$stateChangeSuccess', function(){
+					$(element).find('.active').parents('li').addClass('active');
+					$(element).find('.active').children('.sub-nav').slideDown();
 
-						$('.nav-left li').on('click touch', function(){
-						    $(this).siblings().find('.sub-nav').slideUp();
-						    $(this).children('.sub-nav').slideDown();
-						});
-					}, 0);
+					$(element).on('click touch', 'li', function(){
+					    $(this).siblings().find('.sub-nav').slideUp();
+					});
 				});
-			}]
+			}
 		};
 	});
 
@@ -27,18 +25,18 @@
 	/*
 	 * open and close nav that has no pages
 	 */
-	app.directive('fakeNav', function() {
+	app.directive('fakeNav', function(){
 		return {
 			restrict: 'A',
-			controller: function(){
-				$('.nav > li').on('click touch', function(){
+			link: function(scope, element){
+				$(element).find('.nav > li').on('click touch', function(){
 					$(this).siblings().removeClass('active');
 					$(this).addClass('active');
 					$(this).siblings().find('.sub-nav').slideUp();
 					$(this).children('.sub-nav').slideDown();
 			    });
 
-				$('.nav > li > .sub-nav > li').on('click touch', function(){
+				$(element).find('.nav > li > .sub-nav > li').on('click touch', function(){
 					$(this).siblings().removeClass('active');
 					$(this).addClass('active');
 					$(this).siblings().find('.sub-nav').slideUp();
@@ -52,11 +50,11 @@
 	/*
 	 * open and close what will you learn triangles
 	 */
-	app.directive('accordionList', function() {
+	app.directive('accordionList', function(){
 		return {
 			restrict: 'A',
-			controller: function() {
-				$('.accordion-list .btn-expander').on('click touch', function(){
+			link: function(scope, element){
+				$(element).find('.btn-expander').on('click touch', function(){
 					if($(this).parent().next('.description').is(':visible')){
 						$(this).removeClass('open');
 						$(this).parent().next('.description').slideUp();
