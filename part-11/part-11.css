@@ -1,5 +1,39 @@
-.part-11 .intro {
+.part-11 .part-intro {
   background-position: center -6930px; }
+.part-11 .punctuation {
+  background-image: url("punctuation/assets/img/background-image.jpg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 420px 630px; }
+  .part-11 .punctuation .right {
+    left: 360px;
+    position: absolute;
+    top: 60px;
+    width: 390px; }
+.part-11 .commas .top {
+  background-color: #993733;
+  height: 100px;
+  padding: 52px 0 0 24px;
+  width: 782px; }
+.part-11 .commas .text {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px; }
+.part-11 .commas .comma {
+  font-size: 48px; }
+.part-11 .commas .columns {
+  background: #f9bcbb;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9bcbb), color-stop(99%, #ffffff));
+  background: -webkit-linear-gradient(top, #f9bcbb 0%, #ffffff 99%);
+  background: linear-gradient(to bottom, #f9bcbb 0%, #ffffff 99%);
+  height: 530px;
+  padding: 0 30px; }
+.part-11 .commas .column {
+  float: left;
+  width: 180px; }
+.part-11 .commas .number {
+  font-size: 60px; }
 .part-11 .nav-left {
   border-top-color: #993733; }
   .part-11 .nav-left .nav-heading {

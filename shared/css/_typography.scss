@@ -47,6 +47,14 @@ a {
 	text-transform: uppercase;
 }
 
+.body-heading-big {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+	margin-bottom: 8px;
+}
+
 .body-copy {
 	font-family: 'Lora', serif;
 	font-size: 13px;
@@ -59,6 +67,12 @@ a {
 		&:nth-of-type(1) {
 			text-indent: 0;
 		}
+	}
+
+	blockquote {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 14px;
+		margin: 8px 0 8px 24px;
 	}
 }
 
