@@ -2,19 +2,18 @@
 	.top {
 		background-color: $part-11-darker;
 		height: 100px;
-		padding: 52px 0 0 24px; 
+		padding: 48px 0 0 24px; 
 		width: 782px;
 	}
 
 	.text {
 		color: #fff;
-		font-size: 32px;
-		font-weight: 600;
+		font-size: 36px;
 		line-height: 32px;
 	}
 
 	.comma {
-		font-size: 48px;
+		font-size: 52px;
 	}
 
 	.columns {
@@ -26,15 +25,42 @@
 		background: -ms-linear-gradient(top,  $part-11-lighter 0%,#ffffff 99%);
 		background: linear-gradient(to bottom,  $part-11-lighter 0%,#ffffff 99%);
 		height: 530px;
-		padding: 0 30px;
+		padding: 20px 30px 0 30px;
 	}
 
 	.column {
 		float: left;
+		padding: 8px;
 		width: 180px;
 	}
 
 	.number {
 		font-size: 60px;
+		font-weight: 300;
+		line-height: 60px;
+		margin-bottom: -4px;
+	}
+
+	.intro {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 20px;
+	}
+
+	.for-example {
+		font-family: 'Lora', serif;
+		font-size: 14px;
+		margin-bottom: 16px;
+	}
+
+	.copy {
+		font-size: 14px;
+		margin-bottom: 16px;
+	}
+
+	.instructions {
+		bottom: 20px;
+		left: 40px;
+		position: absolute;
 	}
 }
