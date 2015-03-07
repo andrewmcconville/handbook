@@ -726,7 +726,7 @@ img {
   .page-view .page-view-inner {
     height: 100%;
     width: 100%; }
-  .page-view .intro {
+  .page-view .part-intro {
     background-image: url("../../shared/assets/img/intro-sprite.jpg");
     background-position: center 0;
     background-repeat: no-repeat;

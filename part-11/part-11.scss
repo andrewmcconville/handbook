@@ -3,6 +3,7 @@
 .part-11 {
 	@import 'intro/intro.scss';
 	@import 'punctuation/punctuation.scss';
+	@import 'punctuation/commas/commas.scss';
 	
 	.nav-left {
 		border-top-color: $part-11-darker;

@@ -1,0 +1,40 @@
+.commas {
+	.top {
+		background-color: $part-11-darker;
+		height: 100px;
+		padding: 52px 0 0 24px; 
+		width: 782px;
+	}
+
+	.text {
+		color: #fff;
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 32px;
+	}
+
+	.comma {
+		font-size: 48px;
+	}
+
+	.columns {
+		background: $part-11-lighter;
+		background: -moz-linear-gradient(top,  $part-11-lighter 0%, #ffffff 99%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$part-11-lighter), color-stop(99%,#ffffff));
+		background: -webkit-linear-gradient(top,  $part-11-lighter 0%,#ffffff 99%);
+		background: -o-linear-gradient(top,  $part-11-lighter 0%,#ffffff 99%);
+		background: -ms-linear-gradient(top,  $part-11-lighter 0%,#ffffff 99%);
+		background: linear-gradient(to bottom,  $part-11-lighter 0%,#ffffff 99%);
+		height: 530px;
+		padding: 0 30px;
+	}
+
+	.column {
+		float: left;
+		width: 180px;
+	}
+
+	.number {
+		font-size: 60px;
+	}
+}
