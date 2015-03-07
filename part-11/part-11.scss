@@ -30,6 +30,29 @@
 			li a:hover {
 				background-color: $part-11-lighter;
 			}
+
+			.ol-style{
+				padding: 2px 16px 2px 40px;
+				position: relative;
+			}
+
+			.number {
+				bottom: 0;
+				font-size: 17px;
+				height: 12px;
+				line-height: 11px;
+				margin: auto;
+				position: absolute;
+				top: 0;
+			}
+
+			.text {
+				display: inline-block;
+				font-size: 12px;
+				line-height: 12px;
+				padding-left: 16px;
+				width: 180px;
+			}
 		}
 	}
 
