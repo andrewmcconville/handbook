@@ -1,5 +1,10 @@
 angular
 	.module('handbook')
+
+
+	/*
+	 * All pages
+	 */
 	.controller('homeCtrl', ['$scope', function($scope) {
 		$('.input-name').focus();
 		$scope.hasUsername = false;
@@ -15,7 +20,14 @@ angular
 			$(this).addClass('active');
 		});
 	}])
-	.controller('part1RhetoricAndAProcessForComposingTry1', ['$scope', function($scope) {
+
+
+	/*
+	 * Part 1
+	 * Rhetoric and a process for composing
+	 * Try It 1
+	 */
+	.controller('part1RhetoricAndAProcessForComposingTryIt1', ['$scope', function($scope) {
 		$scope.reset = function() {
 			$scope.popup = 0;
 			
@@ -55,4 +67,142 @@ angular
 				$scope.popup = 2;							
 			}
 		}
+	}])
+
+
+	/*
+	 * Part 1
+	 * Understanding your project or assignment
+	 * Understanding a class assignment
+	 * Learn It 2
+	 */
+	.controller('part1UnderstandingYourProjectOrAssignmentUnderstandingAClassAssignmentLearnIt2', ['$scope', function($scope) {
+		$scope.togglePopups = function(i){
+			$scope.radioState = i;
+			$scope.noteIsShowing = false;
+		};
+	}])
+
+
+	/*
+	 * Part 1
+	 * Understanding your project or assignment
+	 * Understanding a class assignment
+	 * Try It 1
+	 */
+	.controller('part1UnderstandingYourProjectOrAssignmentUnderstandingAClassAssignmentTryIt1', ['$scope', function($scope) {
+		$scope.popup = 0;
+		$scope.answers = []
+
+		$scope.answers[0] = {};
+		$scope.answers[0].value = 0;
+		$scope.answers[0].isCorrect = false;
+		$scope.track1 = {};
+		$scope.track1.drop0 = [{title:'purpose', class:'draggable draggable-1'}];
+		$scope.track1.drop1 = [];
+		$scope.track1.drop2 = [];
+		$scope.track1.drop3 = [];
+		$scope.track1.drop4 = [];
+		$scope.track1.drop5 = [];
+		$scope.track1.drop6 = [];
+		$scope.track1.drop7 = [];
+
+		$scope.sortableOptions1 = {
+			connectWith: '.track-1-drop-area',
+			axis: 'y',
+			revert: 150,
+			tolerance: 'pointer',
+			update : function(e, ui) {
+				if(ui.item.sortable.droptarget.hasClass('drop-area-' + $scope.answers[1].value)) {
+					ui.item.sortable.cancel();
+				}
+			},
+			stop: function() {
+				for(var prop in $scope.track1) {
+					if($scope.track1[prop].length > 0) {
+						$scope.answers[0].value = prop[4];
+						if($scope.answers[0].value == 3 || $scope.answers[0].value == 4 ) {
+							$scope.answers[0].isCorrect = true;
+						} else {
+							$scope.answers[0].isCorrect = false;
+						}
+					}
+				}
+			}
+		}
+
+		$scope.answers[1] = {};
+		$scope.answers[1].value = 0;
+		$scope.answers[1].isCorrect = false;
+		$scope.track2 = {};
+		$scope.track2.drop0 = [{title:'purpose', class:'draggable draggable-2'}];
+		$scope.track2.drop1 = [];
+		$scope.track2.drop2 = [];
+		$scope.track2.drop3 = [];
+		$scope.track2.drop4 = [];
+		$scope.track2.drop5 = [];
+		$scope.track2.drop6 = [];
+		$scope.track2.drop7 = [];
+
+		$scope.sortableOptions2 = {
+			connectWith: '.track-2-drop-area',
+			axis: 'y',
+			revert: 150,
+			tolerance: 'pointer',
+			update : function(e, ui) {
+				if(ui.item.sortable.droptarget.hasClass('drop-area-' + $scope.answers[0].value)) {
+					ui.item.sortable.cancel();
+				}
+			},
+			stop: function() {
+				for(var prop in $scope.track1) {
+					if($scope.track2[prop].length > 0) {
+						$scope.answers[1].value = prop[4];
+						if($scope.answers[1].value == 3 || $scope.answers[1].value == 4 ) {
+							$scope.answers[1].isCorrect = true;
+						} else {
+							$scope.answers[1].isCorrect = false;
+						}
+					}
+				}
+			}
+		}
+
+		$scope.getAnswer = function() {
+			if($scope.answers[0].isCorrect && $scope.answers[1].isCorrect) {
+				$scope.popup = 1;
+			} else if($scope.answers[0].isCorrect && !$scope.answers[1].isCorrect) {
+				if($scope.answers[0].value == 3) {
+					$scope.popup = 2;
+					//alert('1 correct (' + $scope.answers[0].value + '), 2 incorrect');
+				}
+				if($scope.answers[0].value == 4) {
+					$scope.popup = 3;
+					//alert('1 correct (' + $scope.answers[0].value +'), 2 incorrect');
+				}								
+			} else if(!$scope.answers[0].isCorrect && $scope.answers[1].isCorrect) {
+				if($scope.answers[1].value == 3) {
+					$scope.popup = 2;
+					//alert('1 incorrect, 2 correct (' + $scope.answers[1].value + ')');
+				}
+				if($scope.answers[1].value == 4) {
+					$scope.popup = 3;
+					//alert('1 incorrect, 2 correct (' + $scope.answers[1].value + ')');
+				}
+			} else {
+				$scope.popup = 4;
+				//alert('both incorrect');
+			}
+		}		
+	}])
+
+
+	/*
+	 * Part 1
+	 * Understanding your project or assignment
+	 * Understanding other projects
+	 * Learn It 2
+	 */
+	.controller('part1UnderstandingYourProjectOrAssignmentUnderstandingOtherProjectsLearnIt2', ['$scope', function($scope) {
+		$scope.radioState = 0;
 	}]);
