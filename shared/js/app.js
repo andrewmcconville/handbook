@@ -88,189 +88,78 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/what-is-rhetoric',
 			templateUrl: 'part-1/what-is-rhetoric/what-is-rhetoric.html'
 		})
-			.state('part-1.what-is-rhetoric/audience', {
-				url: '/what-is-rhetoric/audience',
-				templateUrl: 'part-1/what-is-rhetoric/audience/audience.html'
-			})
-			.state('part-1.what-is-rhetoric/purpose', {
-				url: '/what-is-rhetoric/purpose',
-				templateUrl: 'part-1/what-is-rhetoric/purpose/purpose.html'
-			})
-			.state('part-1.what-is-rhetoric/context', {
-				url: '/what-is-rhetoric/context',
-				templateUrl: 'part-1/what-is-rhetoric/context/context.html'
-			})
-			.state('part-1.what-is-rhetoric/strategies', {
-				url: '/what-is-rhetoric/strategies',
-				templateUrl: 'part-1/what-is-rhetoric/strategies/strategies.html'
-			})
-			.state('part-1.what-is-rhetoric/how-the-parts-work-together', {
-				url: '/what-is-rhetoric/how-the-parts-work-together',
-				templateUrl: 'part-1/what-is-rhetoric/how-the-parts-work-together/how-the-parts-work-together.html'
-			})
+		.state('part-1.what-is-rhetoric/audience', {
+			url: '/what-is-rhetoric/audience',
+			templateUrl: 'part-1/what-is-rhetoric/audience/audience.html'
+		})
+		.state('part-1.what-is-rhetoric/purpose', {
+			url: '/what-is-rhetoric/purpose',
+			templateUrl: 'part-1/what-is-rhetoric/purpose/purpose.html'
+		})
+		.state('part-1.what-is-rhetoric/context', {
+			url: '/what-is-rhetoric/context',
+			templateUrl: 'part-1/what-is-rhetoric/context/context.html'
+		})
+		.state('part-1.what-is-rhetoric/strategies', {
+			url: '/what-is-rhetoric/strategies',
+			templateUrl: 'part-1/what-is-rhetoric/strategies/strategies.html'
+		})
+		.state('part-1.what-is-rhetoric/how-the-parts-work-together', {
+			url: '/what-is-rhetoric/how-the-parts-work-together',
+			templateUrl: 'part-1/what-is-rhetoric/how-the-parts-work-together/how-the-parts-work-together.html'
+		})
 		.state('part-1.rhetoric-and-a-process-for-composing', {
 			url: '/rhetoric-and-a-process-for-composing',
 			templateUrl: 'part-1/rhetoric-and-a-process-for-composing/rhetoric-and-a-process-for-composing.html'
 		})
-			.state('part-1.rhetoric-and-a-process-for-composing.learn-it-1', {
-				url: '/learn-it-1',
-				templateUrl: 'part-1/rhetoric-and-a-process-for-composing/learn-it/1/1.html'
-			})
-			.state('part-1.rhetoric-and-a-process-for-composing.try-it-1', {
-				url: '/try-it-1',
-				templateUrl: 'part-1/rhetoric-and-a-process-for-composing/try-it/1/1.html',
-				controller: 'part1RhetoricAndAProcessForComposingTry1'
-			})
+		.state('part-1.rhetoric-and-a-process-for-composing.learn-it-1', {
+			url: '/learn-it-1',
+			templateUrl: 'part-1/rhetoric-and-a-process-for-composing/learn-it/1/1.html'
+		})
+		.state('part-1.rhetoric-and-a-process-for-composing.try-it-1', {
+			url: '/try-it-1',
+			templateUrl: 'part-1/rhetoric-and-a-process-for-composing/try-it/1/1.html',
+			controller: 'part1RhetoricAndAProcessForComposingTryIt1'
+		})
 		.state('part-1.understanding-your-project-or-assignment', {
 			url: '/understanding-your-project-or-assignment',
 			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-your-project-or-assignment.html'
 		})
-			.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment', {
-				url: '/understanding-your-project-or-assignment/understanding-a-class-assignment',
-				templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/understanding-a-class-assignment.html'
-			})
-				.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.learn-it-1', {
-					url: '/learn-it-1',
-					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/1/1.html'
-				})
-				.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.learn-it-2', {
-					url: '/learn-it-2',
-					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/2/2.html',
-					controller: function($scope) {
-						$scope.togglePopups = function(i){
-							$scope.radioState = i;
-							$scope.noteIsShowing = false;
-						};
-					}
-				})
-				.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.learn-it-3', {
-					url: '/learn-it-3',
-					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/3/3.html'
-				})
-				.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.try-it-1', {
-					url: '/try-it-1',
-					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/try-it/1/1.html',
-					controller: function($scope) {
-						$scope.popup = 0;
-						$scope.answers = []
-
-						$scope.answers[0] = {};
-						$scope.answers[0].value = 0;
-						$scope.answers[0].isCorrect = false;
-						$scope.track1 = {};
-						$scope.track1.drop0 = [{title:'purpose', class:'draggable draggable-1'}];
-						$scope.track1.drop1 = [];
-						$scope.track1.drop2 = [];
-						$scope.track1.drop3 = [];
-						$scope.track1.drop4 = [];
-						$scope.track1.drop5 = [];
-						$scope.track1.drop6 = [];
-						$scope.track1.drop7 = [];
-
-						$scope.sortableOptions1 = {
-							connectWith: '.track-1-drop-area',
-							axis: 'y',
-							revert: 150,
-							tolerance: 'pointer',
-							update : function(e, ui) {
-								if(ui.item.sortable.droptarget.hasClass('drop-area-' + $scope.answers[1].value)) {
-									ui.item.sortable.cancel();
-								}
-							},
-							stop: function() {
-								for(var prop in $scope.track1) {
-									if($scope.track1[prop].length > 0) {
-										$scope.answers[0].value = prop[4];
-										if($scope.answers[0].value == 3 || $scope.answers[0].value == 4 ) {
-											$scope.answers[0].isCorrect = true;
-										} else {
-											$scope.answers[0].isCorrect = false;
-										}
-									}
-								}
-							}
-						}
-
-						$scope.answers[1] = {};
-						$scope.answers[1].value = 0;
-						$scope.answers[1].isCorrect = false;
-						$scope.track2 = {};
-						$scope.track2.drop0 = [{title:'purpose', class:'draggable draggable-2'}];
-						$scope.track2.drop1 = [];
-						$scope.track2.drop2 = [];
-						$scope.track2.drop3 = [];
-						$scope.track2.drop4 = [];
-						$scope.track2.drop5 = [];
-						$scope.track2.drop6 = [];
-						$scope.track2.drop7 = [];
-
-						$scope.sortableOptions2 = {
-							connectWith: '.track-2-drop-area',
-							axis: 'y',
-							revert: 150,
-							tolerance: 'pointer',
-							update : function(e, ui) {
-								if(ui.item.sortable.droptarget.hasClass('drop-area-' + $scope.answers[0].value)) {
-									ui.item.sortable.cancel();
-								}
-							},
-							stop: function() {
-								for(var prop in $scope.track1) {
-									if($scope.track2[prop].length > 0) {
-										$scope.answers[1].value = prop[4];
-										if($scope.answers[1].value == 3 || $scope.answers[1].value == 4 ) {
-											$scope.answers[1].isCorrect = true;
-										} else {
-											$scope.answers[1].isCorrect = false;
-										}
-									}
-								}
-							}
-						}
-
-						$scope.getAnswer = function() {
-							if($scope.answers[0].isCorrect && $scope.answers[1].isCorrect) {
-								$scope.popup = 1;
-							} else if($scope.answers[0].isCorrect && !$scope.answers[1].isCorrect) {
-								if($scope.answers[0].value == 3) {
-									$scope.popup = 2;
-									//alert('1 correct (' + $scope.answers[0].value + '), 2 incorrect');
-								}
-								if($scope.answers[0].value == 4) {
-									$scope.popup = 3;
-									//alert('1 correct (' + $scope.answers[0].value +'), 2 incorrect');
-								}								
-							} else if(!$scope.answers[0].isCorrect && $scope.answers[1].isCorrect) {
-								if($scope.answers[1].value == 3) {
-									$scope.popup = 2;
-									//alert('1 incorrect, 2 correct (' + $scope.answers[1].value + ')');
-								}
-								if($scope.answers[1].value == 4) {
-									$scope.popup = 3;
-									//alert('1 incorrect, 2 correct (' + $scope.answers[1].value + ')');
-								}
-							} else {
-								$scope.popup = 4;
-								//alert('both incorrect');
-							}
-						}
-					}
-				})
-			.state('part-1.understanding-your-project-or-assignment/understanding-other-projects', {
-				url: '/understanding-your-project-or-assignment/understanding-other-projects',
-				templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/understanding-other-projects.html'
-			})
-				.state('part-1.understanding-your-project-or-assignment/understanding-other-projects.learn-it-1', {
-					url: '/learn-it-1',
-					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/learn-it/1/1.html'
-				})
-				.state('part-1.understanding-your-project-or-assignment/understanding-other-projects.learn-it-2', {
-					url: '/learn-it-2',
-					templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/learn-it/2/2.html',
-        			controller: function($scope) {
-						$scope.radioState = 0;
-					}
-				})
+		.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment', {
+			url: '/understanding-your-project-or-assignment/understanding-a-class-assignment',
+			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/understanding-a-class-assignment.html'
+		})
+		.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.learn-it-1', {
+			url: '/learn-it-1',
+			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/1/1.html'
+		})
+		.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.learn-it-2', {
+			url: '/learn-it-2',
+			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/2/2.html',
+			controller: 'part1UnderstandingYourProjectOrAssignmentUnderstandingAClassAssignmentLearnIt2'
+		})
+		.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.learn-it-3', {
+			url: '/learn-it-3',
+			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/learn-it/3/3.html'
+		})
+		.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.try-it-1', {
+			url: '/try-it-1',
+			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/try-it/1/1.html',
+			controller: 'part1UnderstandingYourProjectOrAssignmentUnderstandingAClassAssignmentTryIt1'
+		})
+		.state('part-1.understanding-your-project-or-assignment/understanding-other-projects', {
+			url: '/understanding-your-project-or-assignment/understanding-other-projects',
+			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/understanding-other-projects.html'
+		})
+		.state('part-1.understanding-your-project-or-assignment/understanding-other-projects.learn-it-1', {
+			url: '/learn-it-1',
+			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/learn-it/1/1.html'
+		})
+		.state('part-1.understanding-your-project-or-assignment/understanding-other-projects.learn-it-2', {
+			url: '/learn-it-2',
+			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/learn-it/2/2.html',
+			controller: 'part1UnderstandingYourProjectOrAssignmentUnderstandingOtherProjectsLearnIt2'
+		})
 		/*
 		 * PART 2
 		 */
@@ -387,21 +276,15 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		})
 		.state('part-11.punctuation', {
 			url: '/punctuation',
-			templateUrl: 'part-11/punctuation/punctuation.html',
-			controller: function($scope) {
-			}
+			templateUrl: 'part-11/punctuation/punctuation.html'
 		})
 		.state('part-11.punctuation/commas', {
 			url: '/punctuation/commas',
-			templateUrl: 'part-11/punctuation/commas/commas.html',
-			controller: function($scope) {
-			}
+			templateUrl: 'part-11/punctuation/commas/commas.html'
 		})
 		.state('part-11.punctuation/commas/to-separate-words-in-lists', {
 			url: '/punctuation/commas/to-separate-words-in-lists',
-			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/to-separate-words-in-lists.html',
-			controller: function($scope) {
-			}
+			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/to-separate-words-in-lists.html'
 		})
 		/*
 		 * SEARCH
