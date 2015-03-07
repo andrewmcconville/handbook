@@ -30,6 +30,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 	$urlRouterProvider.when('/part-9', '/part-9/intro');
 	$urlRouterProvider.when('/part-10', '/part-10/intro');
 	$urlRouterProvider.when('/part-11', '/part-11/intro');
+	$urlRouterProvider.when('/part-11/punctuation/commas/to-separate-words-in-lists', '/part-11/punctuation/commas/to-separate-words-in-lists/learn-it-1');
 	$urlRouterProvider.when('/search', '/search/intro');
 	$urlRouterProvider.when('/glossary', '/glossary/intro');
 	$urlRouterProvider.when('/you', '/you/intro');
@@ -285,6 +286,46 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		.state('part-11.punctuation/commas/to-separate-words-in-lists', {
 			url: '/punctuation/commas/to-separate-words-in-lists',
 			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/to-separate-words-in-lists.html'
+		})
+		.state('part-11.punctuation/commas/to-separate-words-in-lists.learn-it-1', {
+			url: '/learn-it-1',
+			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/learn-it/1/1.html'
+		})
+		.state('part-11.punctuation/commas/to-separate-words-in-lists.learn-it-2', {
+			url: '/learn-it-2',
+			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/learn-it/2/2.html'
+		})
+		.state('part-11.punctuation/commas/to-separate-words-in-lists.learn-it-3', {
+			url: '/learn-it-3',
+			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/learn-it/3/3.html'
+		})
+		.state('part-11.punctuation/commas/to-separate-words-in-lists.learn-it-4', {
+			url: '/learn-it-4',
+			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/learn-it/4/4.html'
+		})
+		.state('part-11.punctuation/commas/to-separate-words-in-lists.learn-it-5', {
+			url: '/learn-it-5',
+			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/learn-it/5/5.html'
+		})
+		.state('part-11.punctuation/commas/to-separate-words-in-lists.try-it-1', {
+			url: '/try-it-1',
+			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/try-it/1/1.html'
+		})
+		.state('part-11.punctuation/commas/to-separate-words-in-lists.try-it-2', {
+			url: '/try-it-2',
+			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/try-it/2/2.html'
+		})
+		.state('part-11.punctuation/commas/to-separate-words-in-lists.try-it-3', {
+			url: '/try-it-3',
+			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/try-it/3/3.html'
+		})
+		.state('part-11.punctuation/commas/to-separate-words-in-lists.try-it-4', {
+			url: '/try-it-4',
+			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/try-it/4/4.html'
+		})
+		.state('part-11.punctuation/commas/to-separate-words-in-lists.try-it-5', {
+			url: '/try-it-5',
+			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/try-it/5/5.html'
 		})
 		/*
 		 * SEARCH
