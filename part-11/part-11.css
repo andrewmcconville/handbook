@@ -52,6 +52,37 @@
   bottom: 20px;
   left: 40px;
   position: absolute; }
+.part-11 .to-separate-words-in-lists .heading {
+  font-size: 32px;
+  line-height: 28px;
+  padding: 24px 0 0 40px; }
+.part-11 .to-separate-words-in-lists .light {
+  font-weight: 300; }
+.part-11 .to-separate-words-in-lists .bold {
+  font-weight: 700; }
+.part-11 .to-separate-words-in-lists .learn-it-1 .content,
+.part-11 .to-separate-words-in-lists .learn-it-2 .content,
+.part-11 .to-separate-words-in-lists .learn-it-3 .content,
+.part-11 .to-separate-words-in-lists .learn-it-4 .content,
+.part-11 .to-separate-words-in-lists .learn-it-5 .content {
+  background-color: #efeadc;
+  height: 530px;
+  left: 40px;
+  position: absolute;
+  top: 100px;
+  width: 710px; }
+.part-11 .to-separate-words-in-lists .learn-it-1 .the-pattern,
+.part-11 .to-separate-words-in-lists .learn-it-2 .the-pattern,
+.part-11 .to-separate-words-in-lists .learn-it-3 .the-pattern,
+.part-11 .to-separate-words-in-lists .learn-it-4 .the-pattern,
+.part-11 .to-separate-words-in-lists .learn-it-5 .the-pattern {
+  background-color: #be1e2d;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  padding: 6px 10px 6px 8px; }
 .part-11 .nav-left {
   border-top-color: #993733; }
   .part-11 .nav-left .nav-heading {
