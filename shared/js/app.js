@@ -148,6 +148,16 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/try-it/1/1.html',
 			controller: 'part1UnderstandingYourProjectOrAssignmentUnderstandingAClassAssignmentTryIt1'
 		})
+		.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.try-it-2', {
+			url: '/try-it-2',
+			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/try-it/2/2.html',
+			controller: 'part1UnderstandingYourProjectOrAssignmentUnderstandingAClassAssignmentTryIt2'
+		})
+		.state('part-1.understanding-your-project-or-assignment/understanding-a-class-assignment.try-it-3', {
+			url: '/try-it-3',
+			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-a-class-assignment/try-it/3/3.html',
+			controller: 'part1UnderstandingYourProjectOrAssignmentUnderstandingAClassAssignmentTryIt3'
+		})
 		.state('part-1.understanding-your-project-or-assignment/understanding-other-projects', {
 			url: '/understanding-your-project-or-assignment/understanding-other-projects',
 			templateUrl: 'part-1/understanding-your-project-or-assignment/understanding-other-projects/understanding-other-projects.html'
