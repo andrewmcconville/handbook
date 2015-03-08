@@ -13,6 +13,101 @@
 		font-weight: 700;
 	}
 
+	.intro {
+		font-family: 'Lora', serif;
+		width: 320px;
+
+		span { display: block; }
+	}
+
+	.column-left { float: left; }
+	.column-right { float: right; }
+
+	.big-italic {
+		font-size: 30px;
+		font-style: italic;
+		line-height: 24px;
+
+		&:nth-last-child(1) {
+			padding-bottom: 40px;
+			padding-top: 16px;
+		}
+	}
+
+	.small-normal {
+		line-height: 16px;
+		padding-top: 4px;
+	}
+
+	.interaction {
+		clear: both;
+		font-size: 20px;
+		margin-bottom: 16px;
+		position: relative;
+	}
+
+	.arrow {
+		border-radius: 50%;
+		cursor: pointer;
+		height: 40px;
+		left: 280px;
+		position: absolute;
+		top: 8px;
+		width: 40px;
+	}
+
+	.icon-arrow {
+		height: 40px;
+		width: 28px;
+
+		&.showing {
+			transform: rotate(180deg);
+		}
+	}
+
+	.example {
+		line-height: 25px;
+	}
+
+	.example-left {
+		float: left;
+		padding-right: 80px;
+		width: 320px;
+	}
+
+	.example-right {
+		float: right;
+		opacity: 0;
+		width: 320px;
+
+		&.showing {
+			opacity: 1;
+			transition: opacity 1000ms;
+
+			.comma {
+				opacity: 1;
+				transform: translate3d(0, 0, 0);
+
+				&:nth-of-type(1) { transition: all 1000ms 1000ms; }
+				&:nth-of-type(2) { transition: all 1000ms 1500ms; }
+				&:nth-of-type(3) { transition: all 1000ms 2000ms; }
+				&:nth-of-type(4) { transition: all 1000ms 2500ms; }
+				&:nth-of-type(5) { transition: all 1000ms 3000ms; }
+				&:nth-of-type(6) { transition: all 1000ms 3500ms; }
+				&:nth-of-type(7) { transition: all 1000ms 4000ms; }
+			}
+		}
+	}
+
+	.comma {
+		display: inline-block;
+		font-size: 36px;
+		line-height: 25px;
+		opacity: 0;
+		transform: translate3d(0, 6px, 0);
+		width: 12px;
+	}
+
 	.learn-it-1,
 	.learn-it-2,
 	.learn-it-3,
@@ -22,6 +117,7 @@
 			background-color: #efeadc;
 			height: 530px;
 			left: 40px;
+			padding: 48px 24px 0 24px;
 			position: absolute;
 			top: 100px;
 			width: 710px;
@@ -30,11 +126,22 @@
 		.the-pattern {
 			background-color: #be1e2d;
 			color: #fff;
-			display: inline-block;
 			font-size: 20px;
 			font-weight: 600;
+			left: 0;
 			letter-spacing: .5px;
 			padding: 6px 10px 6px 8px;
+			position: absolute;
+			top: 0;
+		}
+
+		.btn-primary {
+			bottom: 24px;
+			margin: auto;
+			left: 0;
+			position: absolute;
+			right: 0;
+			width: 118px;
 		}
 	}
 }

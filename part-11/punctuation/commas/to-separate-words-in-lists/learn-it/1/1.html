@@ -6,5 +6,56 @@
 
 	<div class="content">
 		<div class="the-pattern uppercase">The Pattern</div>
+
+		<p class="intro column-left">
+			<span class="big-italic">Only two </span>
+			<span class="small-normal">nouns, verbs, adverbs, adjectives, phrases, or clauses in a sentence?</span>
+			<span class="big-italic">No commas.</span>
+		</p>
+		<p class="intro column-right">
+			<span class="big-italic">Three or more  </span>
+			<span class="small-normal">nouns, verbs, adverbs, adjectives, phrases, or clauses in a sentence?</span>
+			<span class="big-italic">Commas!</span>
+		</p>
+
+		<div class="interaction cf">
+			<p class="example example-left">I like sandwiches with ham and cheese.</p>
+			<div class="arrow" ng-click="show1 = true">
+				<svg class="icon-arrow" ng-class="{showing: show1}">
+					<use xlink:href="shared/assets/img/icon-sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+			<p class="example example-right" ng-class="{showing: show1}">I like sandwiches with ham<span class="comma">,</span> cheese<span class="comma">,</span> and pickles.</p>
+		</div>
+
+		<div class="interaction cf">
+			<p class="example example-left">Infants eat and sleep. </p>
+			<div class="arrow" ng-click="show2 = true">
+				<svg class="icon-arrow" ng-class="{showing: show2}">
+					<use xlink:href="shared/assets/img/icon-sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+			<p class="example example-right" ng-class="{showing: show2}">Infants eat<span class="comma">,</span> sleep<span class="comma">,</span> and fill their diapers.</p>
+		</div>
+
+		<div class="interaction cf">
+			<p class="example example-left">Plain and simple language is often effective.</p>
+			<div class="arrow" ng-click="show3 = true">
+				<svg class="icon-arrow" ng-class="{showing: show3}">
+					<use xlink:href="shared/assets/img/icon-sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+			<p class="example example-right" ng-class="{showing: show3}">Plain<span class="comma">,</span> simple<span class="comma">,</span> short<span class="comma">,</span> and quick language is often effective.</p>
+		</div>
+
+		<div class="interaction cf">
+			<p class="example example-left">She walks softly and quietly.</p>
+			<div class="arrow" ng-click="show4 = true">
+				<svg class="icon-arrow" ng-class="{showing: show4}">
+					<use xlink:href="shared/assets/img/icon-sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+			<p class="example example-right" ng-class="{showing: show4}">She walks softly<span class="comma">,</span> quietly<span class="comma">,</span> and wickedly.</p>
+		</div>
 	</div>
 </div>

@@ -6,5 +6,36 @@
 
 	<div class="content">
 		<div class="the-pattern uppercase">The Pattern</div>
+
+		<p class="intro column-left">
+			<span class="big-italic">Only two phrases or clauses?</span>
+			<span class="big-italic">No commas.</span>
+		</p>
+		<p class="intro column-right">
+			<span class="big-italic">Three or more phrases or clauses?</span>
+			<span class="big-italic">Commas!</span>
+		</p>
+
+		<div class="interaction cf">
+			<p class="example example-left">Gilligan’s research emphasizes relationships over rules and connection over isolation.</p>
+			<div class="arrow" ng-click="show1 = true">
+				<svg class="icon-arrow" ng-class="{showing: show1}">
+					<use xlink:href="shared/assets/img/icon-sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+			<p class="example example-right" ng-class="{showing: show1}">Gilligan’s research emphasizes relationships over rules<span class="comma">,</span> connection over isolation<span class="comma">,</span> caring over violence<span class="comma">,</span> and a web of relationships over hierarchy.</p>
+		</div>
+
+		<div class="interaction cf">
+			<p class="example example-left">When our desires are left unchecked they lead to broken relationships and forest fires.</p>
+			<div class="arrow" ng-click="show2 = true">
+				<svg class="icon-arrow" ng-class="{showing: show2}">
+					<use xlink:href="shared/assets/img/icon-sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+			<p class="example example-right" ng-class="{showing: show2}">When our desires are left unchecked they lead to broken relationships<span class="comma">,</span> prison time<span class="comma">,</span> and forest fires.</p>
+		</div>
+
+		<button class="btn-primary">but...!</button>
 	</div>
 </div>

@@ -60,6 +60,92 @@
   font-weight: 300; }
 .part-11 .to-separate-words-in-lists .bold {
   font-weight: 700; }
+.part-11 .to-separate-words-in-lists .intro {
+  font-family: 'Lora', serif;
+  width: 320px; }
+  .part-11 .to-separate-words-in-lists .intro span {
+    display: block; }
+.part-11 .to-separate-words-in-lists .column-left {
+  float: left; }
+.part-11 .to-separate-words-in-lists .column-right {
+  float: right; }
+.part-11 .to-separate-words-in-lists .big-italic {
+  font-size: 30px;
+  font-style: italic;
+  line-height: 24px; }
+  .part-11 .to-separate-words-in-lists .big-italic:nth-last-child(1) {
+    padding-bottom: 40px;
+    padding-top: 16px; }
+.part-11 .to-separate-words-in-lists .small-normal {
+  line-height: 16px;
+  padding-top: 4px; }
+.part-11 .to-separate-words-in-lists .interaction {
+  clear: both;
+  font-size: 20px;
+  margin-bottom: 16px;
+  position: relative; }
+.part-11 .to-separate-words-in-lists .arrow {
+  border-radius: 50%;
+  cursor: pointer;
+  height: 40px;
+  left: 280px;
+  position: absolute;
+  top: 8px;
+  width: 40px; }
+.part-11 .to-separate-words-in-lists .icon-arrow {
+  height: 40px;
+  width: 28px; }
+  .part-11 .to-separate-words-in-lists .icon-arrow.showing {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+.part-11 .to-separate-words-in-lists .example {
+  line-height: 25px; }
+.part-11 .to-separate-words-in-lists .example-left {
+  float: left;
+  padding-right: 80px;
+  width: 320px; }
+.part-11 .to-separate-words-in-lists .example-right {
+  float: right;
+  opacity: 0;
+  width: 320px; }
+  .part-11 .to-separate-words-in-lists .example-right.showing {
+    opacity: 1;
+    -webkit-transition: opacity 1000ms;
+            transition: opacity 1000ms; }
+    .part-11 .to-separate-words-in-lists .example-right.showing .comma {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
+      .part-11 .to-separate-words-in-lists .example-right.showing .comma:nth-of-type(1) {
+        -webkit-transition: all 1000ms 1000ms;
+                transition: all 1000ms 1000ms; }
+      .part-11 .to-separate-words-in-lists .example-right.showing .comma:nth-of-type(2) {
+        -webkit-transition: all 1000ms 1500ms;
+                transition: all 1000ms 1500ms; }
+      .part-11 .to-separate-words-in-lists .example-right.showing .comma:nth-of-type(3) {
+        -webkit-transition: all 1000ms 2000ms;
+                transition: all 1000ms 2000ms; }
+      .part-11 .to-separate-words-in-lists .example-right.showing .comma:nth-of-type(4) {
+        -webkit-transition: all 1000ms 2500ms;
+                transition: all 1000ms 2500ms; }
+      .part-11 .to-separate-words-in-lists .example-right.showing .comma:nth-of-type(5) {
+        -webkit-transition: all 1000ms 3000ms;
+                transition: all 1000ms 3000ms; }
+      .part-11 .to-separate-words-in-lists .example-right.showing .comma:nth-of-type(6) {
+        -webkit-transition: all 1000ms 3500ms;
+                transition: all 1000ms 3500ms; }
+      .part-11 .to-separate-words-in-lists .example-right.showing .comma:nth-of-type(7) {
+        -webkit-transition: all 1000ms 4000ms;
+                transition: all 1000ms 4000ms; }
+.part-11 .to-separate-words-in-lists .comma {
+  display: inline-block;
+  font-size: 36px;
+  line-height: 25px;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 6px, 0);
+          transform: translate3d(0, 6px, 0);
+  width: 12px; }
 .part-11 .to-separate-words-in-lists .learn-it-1 .content,
 .part-11 .to-separate-words-in-lists .learn-it-2 .content,
 .part-11 .to-separate-words-in-lists .learn-it-3 .content,
@@ -68,6 +154,7 @@
   background-color: #efeadc;
   height: 530px;
   left: 40px;
+  padding: 48px 24px 0 24px;
   position: absolute;
   top: 100px;
   width: 710px; }
@@ -78,11 +165,24 @@
 .part-11 .to-separate-words-in-lists .learn-it-5 .the-pattern {
   background-color: #be1e2d;
   color: #fff;
-  display: inline-block;
   font-size: 20px;
   font-weight: 600;
+  left: 0;
   letter-spacing: .5px;
-  padding: 6px 10px 6px 8px; }
+  padding: 6px 10px 6px 8px;
+  position: absolute;
+  top: 0; }
+.part-11 .to-separate-words-in-lists .learn-it-1 .btn-primary,
+.part-11 .to-separate-words-in-lists .learn-it-2 .btn-primary,
+.part-11 .to-separate-words-in-lists .learn-it-3 .btn-primary,
+.part-11 .to-separate-words-in-lists .learn-it-4 .btn-primary,
+.part-11 .to-separate-words-in-lists .learn-it-5 .btn-primary {
+  bottom: 24px;
+  margin: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 118px; }
 .part-11 .nav-left {
   border-top-color: #993733; }
   .part-11 .nav-left .nav-heading {
