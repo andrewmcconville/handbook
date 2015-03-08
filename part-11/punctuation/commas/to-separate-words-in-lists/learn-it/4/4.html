@@ -37,7 +37,7 @@
 		</div>
 
 		<button class="btn-primary" ng-click="popupOpen = true">but...!</button>
-		<div class="popup" ng-show="popupOpen">
+		<div class="popup" ng-show="popupOpen" ng-class="{active: popupOpen}">
 			<button class="button-close-popup" ng-click="popupOpen = false">
 				<svg class="icon-x">
 					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="shared/assets/img/icon-sprite.svg#icon-x"></use>
