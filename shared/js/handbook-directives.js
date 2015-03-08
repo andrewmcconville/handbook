@@ -9,12 +9,12 @@
 		return {
 			restrict: 'A',
 			link: function(scope, element){
-        		scope.$on('$stateChangeSuccess', function(){
+				scope.$on('$stateChangeSuccess', function(){
 					$(element).find('.active').parents('li').addClass('active');
 					$(element).find('.active').children('.sub-nav').slideDown();
 
 					$(element).on('click touch', 'li', function(){
-					    $(this).siblings().find('.sub-nav').slideUp();
+						$(this).siblings().find('.sub-nav').slideUp();
 					});
 				});
 			}
