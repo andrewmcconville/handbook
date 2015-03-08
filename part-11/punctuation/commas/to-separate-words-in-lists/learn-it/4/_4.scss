@@ -2,9 +2,16 @@
 	.popup {
 		height: 460px;
 		left: 20px;
+		opacity: 0;
 		position: absolute;
 		top: 50px;
+		transition: opacity 150ms;
 		width: 670px;
+
+		&.active {
+			opacity: 1;
+			transition: opacity 300ms;
+		}
 	}
 
 	.text-small {
