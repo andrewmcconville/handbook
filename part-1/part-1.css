@@ -336,28 +336,28 @@
     left: 160px;
     right: 24px;
     top: 42px; }
-.part-1 .understanding-a-class-assignment .try-it-1 {
+.part-1 .understanding-a-class-assignment .try-it-all {
   height: 100%;
   padding: 40px;
   width: 100%; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .left {
+  .part-1 .understanding-a-class-assignment .try-it-all .left {
     left: 0;
     padding: 40px;
     position: absolute;
     top: 40px;
     width: 300px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .popup-container {
+  .part-1 .understanding-a-class-assignment .try-it-all .popup-container {
     left: 30px;
     position: absolute;
-    top: 180px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .arrows {
+    top: 260px; }
+  .part-1 .understanding-a-class-assignment .try-it-all .arrows {
     background-color: #e8e8e8;
     border-left: 2px solid #cbc2a6; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .arrow {
+  .part-1 .understanding-a-class-assignment .try-it-all .arrow {
     position: relative;
     top: 14px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .arrows,
-  .part-1 .understanding-a-class-assignment .try-it-1 .tracks {
+  .part-1 .understanding-a-class-assignment .try-it-all .arrows,
+  .part-1 .understanding-a-class-assignment .try-it-all .tracks {
     height: 100%;
     left: 340px;
     padding-left: 2px;
@@ -365,44 +365,44 @@
     top: 0;
     width: 64px;
     z-index: 1; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .track-1,
-  .part-1 .understanding-a-class-assignment .try-it-1 .track-2 {
+  .part-1 .understanding-a-class-assignment .try-it-all .track-1,
+  .part-1 .understanding-a-class-assignment .try-it-all .track-2 {
     border-right: 2px solid #fff;
     float: left;
     height: 100%;
     width: 16px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area {
+  .part-1 .understanding-a-class-assignment .try-it-all .drop-area {
     position: absolute;
     width: 16px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-0 {
+  .part-1 .understanding-a-class-assignment .try-it-all .drop-area-0 {
     height: 80px;
     top: 26px; }
-    .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-0 .draggable-1 {
+    .part-1 .understanding-a-class-assignment .try-it-all .drop-area-0 .draggable-1 {
       top: 0px; }
-    .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-0 .draggable-2 {
+    .part-1 .understanding-a-class-assignment .try-it-all .drop-area-0 .draggable-2 {
       top: 35px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-1 {
+  .part-1 .understanding-a-class-assignment .try-it-all .drop-area-1 {
     height: 64px;
     top: 106px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-2 {
+  .part-1 .understanding-a-class-assignment .try-it-all .drop-area-2 {
     height: 42px;
     top: 170px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-3 {
+  .part-1 .understanding-a-class-assignment .try-it-all .drop-area-3 {
     height: 62px;
     top: 212px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-4 {
+  .part-1 .understanding-a-class-assignment .try-it-all .drop-area-4 {
     height: 128px;
     top: 274px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-5 {
+  .part-1 .understanding-a-class-assignment .try-it-all .drop-area-5 {
     height: 62px;
     top: 402px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-6 {
+  .part-1 .understanding-a-class-assignment .try-it-all .drop-area-6 {
     height: 84px;
     top: 464px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .drop-area-7 {
+  .part-1 .understanding-a-class-assignment .try-it-all .drop-area-7 {
     height: 82px;
     top: 548px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .draggable {
+  .part-1 .understanding-a-class-assignment .try-it-all .draggable {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -417,13 +417,13 @@
     top: 1px;
     width: 95px;
     z-index: 1; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .draggable-1 {
+  .part-1 .understanding-a-class-assignment .try-it-all .draggable-1 {
     background-image: url(../shared/assets/img/arrow-slider-1.png);
     left: -26px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .draggable-2 {
+  .part-1 .understanding-a-class-assignment .try-it-all .draggable-2 {
     background-image: url(../shared/assets/img/arrow-slider-2.png);
     left: -42px; }
-  .part-1 .understanding-a-class-assignment .try-it-1 .right {
+  .part-1 .understanding-a-class-assignment .try-it-all .right {
     background-color: #e8e8e8;
     bottom: 0;
     padding: 24px 32px;
@@ -498,5 +498,4 @@
   color: #769b3e; }
 .part-1 .accordion-list .icon-triangle {
   fill: #abc16c; }
-
 /*# sourceMappingURL=part-1.css.map */

@@ -174,24 +174,123 @@ angular
 			} else if($scope.answers[0].isCorrect && !$scope.answers[1].isCorrect) {
 				if($scope.answers[0].value == 3) {
 					$scope.popup = 2;
-					//alert('1 correct (' + $scope.answers[0].value + '), 2 incorrect');
 				}
 				if($scope.answers[0].value == 4) {
 					$scope.popup = 3;
-					//alert('1 correct (' + $scope.answers[0].value +'), 2 incorrect');
 				}								
 			} else if(!$scope.answers[0].isCorrect && $scope.answers[1].isCorrect) {
 				if($scope.answers[1].value == 3) {
 					$scope.popup = 2;
-					//alert('1 incorrect, 2 correct (' + $scope.answers[1].value + ')');
 				}
 				if($scope.answers[1].value == 4) {
 					$scope.popup = 3;
-					//alert('1 incorrect, 2 correct (' + $scope.answers[1].value + ')');
 				}
 			} else {
 				$scope.popup = 4;
-				//alert('both incorrect');
+			}
+		}		
+	}])
+
+
+	/*
+	 * Part 1
+	 * Understanding your project or assignment
+	 * Understanding a class assignment
+	 * Try It 2
+	 */
+	.controller('part1UnderstandingYourProjectOrAssignmentUnderstandingAClassAssignmentTryIt2', ['$scope', function($scope) {
+		$scope.popup = 0;
+		$scope.answers = []
+
+		$scope.answers[0] = {};
+		$scope.answers[0].value = 0;
+		$scope.answers[0].isCorrect = false;
+		$scope.track1 = {};
+		$scope.track1.drop0 = [{title:'audience', class:'draggable draggable-1'}];
+		$scope.track1.drop1 = [];
+		$scope.track1.drop2 = [];
+		$scope.track1.drop3 = [];
+		$scope.track1.drop4 = [];
+		$scope.track1.drop5 = [];
+		$scope.track1.drop6 = [];
+		$scope.track1.drop7 = [];
+
+		$scope.sortableOptions1 = {
+			connectWith: '.track-1-drop-area',
+			axis: 'y',
+			revert: 150,
+			tolerance: 'pointer',
+			stop: function() {
+				for(var prop in $scope.track1) {
+					if($scope.track1[prop].length > 0) {
+						$scope.answers[0].value = prop[4];
+						if($scope.answers[0].value == 6) {
+							$scope.answers[0].isCorrect = true;
+						} else {
+							$scope.answers[0].isCorrect = false;
+						}
+					}
+				}
+			}
+		}
+
+		$scope.getAnswer = function() {
+			if($scope.answers[0].isCorrect) {
+				$scope.popup = 1;
+			} else {
+				$scope.popup = 2;
+			}
+		}		
+	}])
+
+
+	/*
+	 * Part 1
+	 * Understanding your project or assignment
+	 * Understanding a class assignment
+	 * Try It 2
+	 */
+	.controller('part1UnderstandingYourProjectOrAssignmentUnderstandingAClassAssignmentTryIt3', ['$scope', function($scope) {
+		$scope.popup = 0;
+		$scope.answers = []
+
+		$scope.answers[0] = {};
+		$scope.answers[0].value = 0;
+		$scope.answers[0].isCorrect = false;
+		$scope.track1 = {};
+		$scope.track1.drop0 = [{title:'context', class:'draggable draggable-1'}];
+		$scope.track1.drop1 = [];
+		$scope.track1.drop2 = [];
+		$scope.track1.drop3 = [];
+		$scope.track1.drop4 = [];
+		$scope.track1.drop5 = [];
+		$scope.track1.drop6 = [];
+		$scope.track1.drop7 = [];
+
+		$scope.sortableOptions1 = {
+			connectWith: '.track-1-drop-area',
+			axis: 'y',
+			revert: 150,
+			tolerance: 'pointer',
+			stop: function() {
+				for(var prop in $scope.track1) {
+					if($scope.track1[prop].length > 0) {
+						$scope.answers[0].value = prop[4];
+						if($scope.answers[0].value == 2 || $scope.answers[0].value == 5 || $scope.answers[0].value == 7) {
+							$scope.answers[0].isCorrect = true;
+						} else {
+							$scope.answers[0].isCorrect = false;
+						}
+					}
+				}
+			}
+		}
+
+		$scope.getAnswer = function() {
+			if($scope.answers[0].isCorrect) {
+				$scope.popup = 1;
+			} else {
+				$scope.popup = 2;
 			}
 		}		
 	}])
