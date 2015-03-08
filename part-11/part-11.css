@@ -52,6 +52,81 @@
   bottom: 20px;
   left: 40px;
   position: absolute; }
+.part-11 .to-separate-words-in-lists .learn-it-4 .popup {
+  height: 460px;
+  left: 20px;
+  position: absolute;
+  top: 50px;
+  width: 670px; }
+.part-11 .to-separate-words-in-lists .learn-it-4 .text-small {
+  font-family: 'Lora', serif;
+  padding: 32px 40px 0 40px; }
+.part-11 .to-separate-words-in-lists .learn-it-4 .text-big {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 36px;
+  padding: 32px 40px 0 40px; }
+.part-11 .to-separate-words-in-lists .learn-it-4 .semicolon {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px; }
+.part-11 .to-separate-words-in-lists .learn-it-5 .title {
+  font-family: 'Lora', serif;
+  font-size: 26px;
+  margin-bottom: 16px; }
+.part-11 .to-separate-words-in-lists .learn-it-5 .btn-tab {
+  border-top: 2px solid rgba(255, 255, 255, 0.75);
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(255, 255, 255, 0.75);
+  height: 52px; }
+  .part-11 .to-separate-words-in-lists .learn-it-5 .btn-tab:nth-of-type(1) {
+    margin-right: 20px;
+    width: 190px; }
+  .part-11 .to-separate-words-in-lists .learn-it-5 .btn-tab:nth-of-type(2) {
+    margin-right: 20px;
+    width: 230px; }
+  .part-11 .to-separate-words-in-lists .learn-it-5 .btn-tab:nth-of-type(3) {
+    margin-right: 0;
+    width: 190px; }
+  .part-11 .to-separate-words-in-lists .learn-it-5 .btn-tab.active {
+    background-color: #f9bcbb; }
+.part-11 .to-separate-words-in-lists .learn-it-5 .text-punctuation {
+  display: inline-block;
+  font-size: 68px;
+  font-weight: 400;
+  margin-top: -40px;
+  vertical-align: middle; }
+.part-11 .to-separate-words-in-lists .learn-it-5 .text-big {
+  font-size: 34px;
+  font-weight: 600;
+  vertical-align: middle; }
+.part-11 .to-separate-words-in-lists .learn-it-5 .text-small {
+  display: inline-block;
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  margin: 0 4px;
+  vertical-align: middle; }
+.part-11 .to-separate-words-in-lists .learn-it-5 .tab {
+  font-size: 15px;
+  left: 30px;
+  line-height: 17px;
+  opacity: 0;
+  position: absolute;
+  top: 200px;
+  -webkit-transition: opacity 150ms;
+          transition: opacity 150ms;
+  width: 650px; }
+  .part-11 .to-separate-words-in-lists .learn-it-5 .tab.active {
+    opacity: 1;
+    -webkit-transition: opacity 300ms;
+            transition: opacity 300ms; }
+.part-11 .to-separate-words-in-lists .learn-it-5 .text-serif {
+  font-family: 'Lora', serif;
+  margin-bottom: 16px; }
+.part-11 .to-separate-words-in-lists .learn-it-5 .text-bold {
+  font-weight: 700;
+  margin-bottom: 16px; }
 .part-11 .to-separate-words-in-lists .heading {
   font-size: 32px;
   line-height: 28px;
@@ -82,7 +157,7 @@
 .part-11 .to-separate-words-in-lists .interaction {
   clear: both;
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   position: relative; }
 .part-11 .to-separate-words-in-lists .arrow {
   border-radius: 50%;
@@ -154,7 +229,7 @@
   background-color: #efeadc;
   height: 530px;
   left: 40px;
-  padding: 48px 24px 0 24px;
+  padding: 60px 24px 0 24px;
   position: absolute;
   top: 100px;
   width: 710px; }

@@ -36,6 +36,15 @@
 			<p class="example example-right" ng-class="{showing: show2}">When our desires are left unchecked they lead to broken relationships<span class="comma">,</span> prison time<span class="comma">,</span> and forest fires.</p>
 		</div>
 
-		<button class="btn-primary">but...!</button>
+		<button class="btn-primary" ng-click="popupOpen = true">but...!</button>
+		<div class="popup" ng-show="popupOpen">
+			<button class="button-close-popup" ng-click="popupOpen = false">
+				<svg class="icon-x">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="shared/assets/img/icon-sprite.svg#icon-x"></use>
+				</svg>
+			</button>
+			<p class="text-small">Use semicolons—and not commas—between the items in a series of phrases that themselves contain commas or other punctuation:</p>
+			<p class="text-big">If you want freedom and security in a country, you need the following: the rule of law<span class="semicolon">;</span> property rights<span class="semicolon">;</span> a secure, and trustworthy, banking and monetary system<span class="semicolon">;</span> economic stability<span class="semicolon">;</span> and a reliable infrastructure.</p>
+		</div>
 	</div>
 </div>

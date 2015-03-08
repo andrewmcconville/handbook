@@ -1,4 +1,7 @@
 .to-separate-words-in-lists {
+	@import 'learn-it/4/4.scss'; 
+	@import 'learn-it/5/5.scss'; 
+
 	.heading {
 		font-size: 32px;
 		line-height: 28px;
@@ -42,7 +45,7 @@
 	.interaction {
 		clear: both;
 		font-size: 20px;
-		margin-bottom: 16px;
+		margin-bottom: 12px;
 		position: relative;
 	}
 
@@ -117,7 +120,7 @@
 			background-color: #efeadc;
 			height: 530px;
 			left: 40px;
-			padding: 48px 24px 0 24px;
+			padding: 60px 24px 0 24px;
 			position: absolute;
 			top: 100px;
 			width: 710px;
