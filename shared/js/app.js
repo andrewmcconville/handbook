@@ -275,6 +275,10 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			url: '/what-will-you-learn',
 			templateUrl: 'part-11/what-will-you-learn/what-will-you-learn.html'
 		})
+		.state('part-11.grammar', {
+			url: '/grammar',
+			templateUrl: 'shared/coming-soon/coming-soon.html'
+		})
 		.state('part-11.punctuation', {
 			url: '/punctuation',
 			templateUrl: 'part-11/punctuation/punctuation.html'
@@ -326,6 +330,10 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 		.state('part-11.punctuation/commas/to-separate-words-in-lists.try-it-5', {
 			url: '/try-it-5',
 			templateUrl: 'part-11/punctuation/commas/to-separate-words-in-lists/try-it/5/5.html'
+		})
+		.state('part-11.mechanics', {
+			url: '/mechanics',
+			templateUrl: 'shared/coming-soon/coming-soon.html'
 		})
 		/*
 		 * SEARCH
