@@ -1,6 +1,27 @@
-.learn-it-1 {
-	background-color: pink;
-	height: 100%;
-	padding: 92px 76px 40px 40px;
-	width: 100%;
+.learn-it-4 {
+	.popup {
+		height: 460px;
+		left: 20px;
+		position: absolute;
+		top: 50px;
+		width: 670px;
+	}
+
+	.text-small {
+		font-family: 'Lora', serif;
+		padding: 32px 40px 0 40px;
+	}
+
+	.text-big {
+		font-size: 28px;
+		font-weight: 300;
+		line-height: 36px;
+		padding: 32px 40px 0 40px;
+	}
+
+	.semicolon {
+		font-size: 36px;
+		font-weight: 400;
+		line-height: 36px;
+	}
 }
