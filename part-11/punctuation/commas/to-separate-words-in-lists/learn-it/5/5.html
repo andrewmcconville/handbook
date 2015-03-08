@@ -6,5 +6,49 @@
 
 	<div class="content">
 		<div class="the-pattern uppercase">The Pattern</div>
+		<h2 class="title">When using adjectives in lists, you have to decide:</h2>
+		<button class="btn-tab" ng-click="tab = 1" ng-class="{active: tab == 1}">
+			<span class="text-punctuation">,</span>
+			<span class="text-small">or</span>
+			<span class="text-big">and</span>
+		</button>
+		<button class="btn-tab" ng-click="tab = 2" ng-class="{active: tab == 2}">
+			<span class="text-small">either</span>
+			<span class="text-punctuation">,</span>
+			<span class="text-small">or</span>
+			<span class="text-big">and</span>
+		</button>
+		<button class="btn-tab" ng-click="tab = 3" ng-class="{active: tab == 3}">
+			<span class="text-punctuation">,</span>
+			<span class="text-small">and</span>
+			<span class="text-big">and</span>
+		</button>
+
+		<div class="tab" ng-show="tab == 1" ng-class="{active: tab == 1}">
+			<p class="text-serif">Use a comma or and to separate two adjectives if you can change their order without changing the meaning of the sentence. For example, the meaning of</p>
+			<p class="text-bold">He was a thin, dapper fellow who preferred a suit and vest to ordinary clothes.</p>
+			<p class="text-serif">isn’t changed when it is written as</p>
+			<p class="text-bold">He was a dapper, thin fellow who preferred a suit and vest to ordinary clothes.</p>
+			<p class="text-serif">or as</p>
+			<p class="text-bold">He was a thin and dapper fellow who preferred a suit and vest to ordinary clothes.</p>
+			<p class="text-serif">You could use any of the three examples above.</p>
+			<p class="text-bold">In these examples, thin and dapper are called coordinate adjectives, the name for adjectives whose order can be changed without the meaning of the sentence changing.</p>
+		</div>
+
+		<div class="tab" ng-show="tab == 2" ng-class="{active: tab == 2}">
+		<p class="text-serif">If you cannot rearrange a sentence’s adjectives without changing the sentence’s meaning, do not put a comma between them, no matter how many adjectives you are using:</p>
+		<p class="text-bold">The prize for my banana costume was a radio that looked like a box of frozen niblets corn.</p>
+		<p class="text-serif">This sentence doesn’t have a comma between frozen and niblets, in the United States, we would not say frozen niblets corn or niblets and frozen corn.</p>
+		<p class="text-bold">Here is another example:</p>
+		<p class="text-serif">Three huge gray whales swam by.</p>
+		<p class="text-bold">Gray whales are a species of whale, and so gray whales must be written in that order; gray cannot be shifted in the list of adjectives. Additionally, it is a feature of standard English that a number, like three, will come first in a list of adjectives, as though it were an article.</p>
+		<p class="text-serif">Adjectives that cannot be rearranged are called noncoordinate adjectives, and they do not have commas between them.</p>
+		</div>
+
+		<div class="tab" ng-show="tab == 3" ng-class="{active: tab == 3}">
+<p class="text-serif">When you have three adjectives whose order can be changed without changing the meaning of the sentence, use the same pattern as with lists of nouns, verbs, phrases, and clauses. Put a comma after each of the adjectives except the last:</p>
+<p class="text-bold">Reappropriate.com is a political, current-events, and personal blog written from the perspective of a loud and proud Asian-American woman.</p>
+<p class="text-bold">We have come to know zero intimately in its mathematical, physical, and psychological embodiments.</p>
+		</div>
 	</div>
 </div>
