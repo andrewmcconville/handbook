@@ -6,5 +6,54 @@
 
 	<div class="content">
 		<div class="the-pattern uppercase">The Pattern</div>
+
+		<p class="intro column-left">
+			<span class="big-italic">Only two nouns?</span>
+			<span class="big-italic">No commas.</span>
+		</p>
+		<p class="intro column-right">
+			<span class="big-italic">Three or more nouns?</span>
+			<span class="big-italic">Commas!</span>
+		</p>
+
+		<div class="interaction cf">
+			<p class="example example-left">I like sandwiches with ham and cheese.</p>
+			<div class="arrow" ng-click="show1 = true">
+				<svg class="icon-arrow" ng-class="{showing: show1}">
+					<use xlink:href="shared/assets/img/icon-sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+			<p class="example example-right" ng-class="{showing: show1}">I like sandwiches with ham<span class="comma">,</span> cheese<span class="comma">,</span> and pickles.</p>
+		</div>
+
+		<div class="interaction cf">
+			<p class="example example-left">Check out Louis C.K.’s pallor and eyebags.</p>
+			<div class="arrow" ng-click="show2 = true">
+				<svg class="icon-arrow" ng-class="{showing: show2}">
+					<use xlink:href="shared/assets/img/icon-sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+			<p class="example example-right" ng-class="{showing: show2}">Check out Louis C.K.’s pallor<span class="comma">,</span> pudge<span class="comma">,</span> and eyebags.</p>
+		</div>
+
+		<div class="interaction cf">
+			<p class="example example-left">A child is a territory and a landscape.</p>
+			<div class="arrow" ng-click="show3 = true">
+				<svg class="icon-arrow" ng-class="{showing: show3}">
+					<use xlink:href="shared/assets/img/icon-sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+			<p class="example example-right" ng-class="{showing: show3}">A child is a territory<span class="comma">,</span> a landscape<span class="comma">,</span> a republic<span class="comma">,</span> and an island of worry.</p>
+		</div>
+
+		<div class="interaction cf">
+			<p class="example example-left">Other writers who scholars have argued had temporal lobe epilepsy include Tennyson and Lear.</p>
+			<div class="arrow" ng-click="show4 = true">
+				<svg class="icon-arrow" ng-class="{showing: show4}">
+					<use xlink:href="shared/assets/img/icon-sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+			<p class="example example-right" ng-class="{showing: show4}">Other writers who scholars have argued had temporal lobe epilepsy include Tennyson<span class="comma">,</span> Lear<span class="comma">,</span> Poe<span class="comma">,</span><br> Byron<span class="comma">,</span> Molière<span class="comma">,</span> Pascal<span class="comma">,</span> Teresa of Avila<span class="comma">,</span> and Saint Paul.</p>
+		</div>
 	</div>
 </div>

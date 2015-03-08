@@ -6,5 +6,54 @@
 
 	<div class="content">
 		<div class="the-pattern uppercase">The Pattern</div>
+
+		<p class="intro column-left">
+			<span class="big-italic">Only two verbs?</span>
+			<span class="big-italic">No commas.</span>
+		</p>
+		<p class="intro column-right">
+			<span class="big-italic">Three or more verbs?</span>
+			<span class="big-italic">Commas!</span>
+		</p>
+
+		<div class="interaction cf">
+			<p class="example example-left">Infants eat and sleep.</p>
+			<div class="arrow" ng-click="show1 = true">
+				<svg class="icon-arrow" ng-class="{showing: show1}">
+					<use xlink:href="shared/assets/img/icon-sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+			<p class="example example-right" ng-class="{showing: show1}">Infants eat<span class="comma">,</span> sleep<span class="comma">,</span> and fill their diapers.</p>
+		</div>
+
+		<div class="interaction cf">
+			<p class="example example-left">A naturalist must observe and be quiet.</p>
+			<div class="arrow" ng-click="show2 = true">
+				<svg class="icon-arrow" ng-class="{showing: show2}">
+					<use xlink:href="shared/assets/img/icon-sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+			<p class="example example-right" ng-class="{showing: show2}">A naturalist must observe<span class="comma">,</span> listen<span class="comma">,</span> smell<span class="comma">,</span> touch<span class="comma">,</span> and be quiet.</p>
+		</div>
+
+		<div class="interaction cf">
+			<p class="example example-left">People who Parkour vault and jump through a city’s streets and walls.</p>
+			<div class="arrow" ng-click="show3 = true">
+				<svg class="icon-arrow" ng-class="{showing: show3}">
+					<use xlink:href="shared/assets/img/icon-sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+			<p class="example example-right" ng-class="{showing: show3}">People who Parkour vault<span class="comma">,</span> roll<span class="comma">,</span> run<span class="comma">,</span> climb<span class="comma">,</span> and jump through a city’s streets and walls.</p>
+		</div>
+
+		<div class="interaction cf">
+			<p class="example example-left">Lawrence North High School basketball center Greg Oden passes and scores.</p>
+			<div class="arrow" ng-click="show4 = true">
+				<svg class="icon-arrow" ng-class="{showing: show4}">
+					<use xlink:href="shared/assets/img/icon-sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+			<p class="example example-right" ng-class="{showing: show4}">Lawrence North High School basketball center Greg Oden passes<span class="comma">,</span> blocks<span class="comma">,</span> shoots<span class="comma">,</span> rebounds<span class="comma">,</span> and smiles.</p>
+		</div>
 	</div>
 </div>
