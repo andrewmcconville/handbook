@@ -189,8 +189,8 @@
       -webkit-transition: opacity 500ms linear 5625ms;
               transition: opacity 500ms linear 5625ms; }
     .part-11 .to-separate-words-in-lists .learn-it-1 .sequence-1.showing .bounce-2 {
-      -webkit-animation: bounce 2000ms linear 5000ms;
-              animation: bounce 2000ms linear 5000ms; }
+      -webkit-animation: bounce 2000ms linear 5500ms;
+              animation: bounce 2000ms linear 5500ms; }
     .part-11 .to-separate-words-in-lists .learn-it-1 .sequence-1.showing .last {
       -webkit-transform: translate3d(8px, 0, 0);
               transform: translate3d(8px, 0, 0);
