@@ -1,0 +1,152 @@
+.learn-it-1 {
+	.sequence-1 {
+		float: right;
+		opacity: 0;
+		padding-right: 40px;
+		position: relative;
+		transform: translate3d(-342px, 0, 0);
+		width: 320px;
+
+		.comma {
+			font-size: 52px;
+		}
+
+		&.showing {
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+			transition: all 1000ms ease-in-out;
+
+			.elem-2 {
+				opacity: 1;
+				transition: opacity 500ms linear 4625ms;
+			}
+
+			.bounce-1 {
+				animation: bounce 2000ms linear 4500ms;
+			}
+
+			@keyframes bounce { 
+				0% { transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				2.7% { transform: matrix3d(0.389, 0, 0, 0, 0, 0.389, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				5.41% { transform: matrix3d(0.916, 0, 0, 0, 0, 0.916, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				8.11% { transform: matrix3d(1.302, 0, 0, 0, 0, 1.302, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				10.71% { transform: matrix3d(1.426, 0, 0, 0, 0, 1.426, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				13.71% { transform: matrix3d(1.306, 0, 0, 0, 0, 1.306, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				16.62% { transform: matrix3d(1.077, 0, 0, 0, 0, 1.077, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				19.62% { transform: matrix3d(0.887, 0, 0, 0, 0, 0.887, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				22.52% { transform: matrix3d(0.826, 0, 0, 0, 0, 0.826, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				28.43% { transform: matrix3d(0.97, 0, 0, 0, 0, 0.97, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				34.33% { transform: matrix3d(1.071, 0, 0, 0, 0, 1.071, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				46.05% { transform: matrix3d(0.971, 0, 0, 0, 0, 0.971, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				57.86% { transform: matrix3d(1.012, 0, 0, 0, 0, 1.012, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				69.57% { transform: matrix3d(0.995, 0, 0, 0, 0, 0.995, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				81.38% { transform: matrix3d(1.002, 0, 0, 0, 0, 1.002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				93.19% { transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+				100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+  			}
+
+			.elem-3 {
+				transform: translate3d(-36px, 0, 0);
+				transition: all 750ms ease-in 1250ms;
+			}
+
+			.elem-4 {
+				opacity: 1;
+				transition: opacity 500ms linear 5625ms;
+			}
+
+			.bounce-2 {
+				animation: bounce 2000ms linear 5000ms;
+			}
+
+			.last {
+				transform: translate3d(8px, 0, 0);
+				transition: all 250ms ease-out 5750ms;
+			}
+
+			.elem-5 {
+				transform: translate3d(62px, 0, 0);
+				transition: all 750ms ease-in 1250ms;
+			}
+
+			.elem-6 {
+				opacity: 1;
+				transform: translate3d(0, 0, 0);
+				transition: opacity 750ms ease-out 3000ms;
+			}
+
+			.shake {
+				animation: shake 1000ms linear 3000ms;
+				animation-iteration-count: 1;
+			}
+
+			@keyframes shake { 
+				0% { transform: translate(2px, 1px) rotate(0deg); }
+				10% { transform: translate(-1px, -2px) rotate(-1deg); }
+				20% { transform: translate(-3px, 0px) rotate(1deg); }
+				30% { transform: translate(0px, 2px) rotate(0deg); }
+				40% { transform: translate(1px, -1px) rotate(1deg); }
+				50% { transform: translate(-1px, 2px) rotate(-1deg); }
+				60% { transform: translate(-3px, 1px) rotate(0deg); }
+				70% { transform: translate(2px, 1px) rotate(-1deg); }
+				80% { transform: translate(-1px, -1px) rotate(1deg); }
+				90% { transform: translate(2px, 2px) rotate(0deg); }
+				100% { transform: translate(1px, -2px) rotate(-1deg); }
+			}
+
+			.elem-7 {
+				transform: translate3d(64px, 0, 0);
+				transition: all 750ms ease-out 2000ms;
+			}
+		}
+
+		.elem {
+			display: block;
+			height: 25px;
+			position: absolute;
+		}
+
+		.elem-1 {
+			left: 0;
+			top: 0;
+		}
+
+		.elem-2 {
+			opacity: 0;
+			left: 222px;
+			top: -16px;
+		}
+
+		.elem-3 {
+			left: 36px;
+			top: 25px;
+		}
+
+		.elem-4 {
+			opacity: 0;
+			left: 56px;
+			top: 8px;
+		}
+
+		.last {
+			display: block;
+			transform: translate3d(0, 0, 0);
+		}
+
+		.elem-5 {
+			left: 0;
+			top: 25px;
+		}
+
+		.elem-6 {
+			left: 100px;
+			opacity: 0;
+			top: 25px;
+		}
+
+		.elem-7 {
+			left: 94px;
+			top: 25px;
+		}
+	}
+}
